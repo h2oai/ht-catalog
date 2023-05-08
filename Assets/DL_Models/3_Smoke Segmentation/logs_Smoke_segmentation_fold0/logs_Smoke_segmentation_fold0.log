@@ -1,0 +1,105 @@
+2023-05-05 14:57:57,995 - INFO: Starting Hydrogen Torch v1.2.0
+2023-05-05 14:57:58,089 - INFO: <pre>Fri May  5 14:57:58 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:00:1E.0 Off |                    0 |
+| N/A   41C    P0    29W / 300W |      2MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</pre>
+2023-05-05 14:57:58,089 - INFO: Global random seed: 822496
+2023-05-05 14:57:58,089 - INFO: Preparing the data...
+2023-05-05 14:57:58,089 - INFO: Setting up cross-validation...
+2023-05-05 14:57:58,129 - INFO: Running k-fold setup...
+2023-05-05 14:58:03,704 - INFO: Preparing train and validation data
+2023-05-05 14:58:03,704 - INFO: Loading train dataset...
+2023-05-05 14:58:03,707 - INFO: Loading validation dataset...
+2023-05-05 14:58:03,709 - INFO: Number of observations in train dataset: 51
+2023-05-05 14:58:03,709 - INFO: Number of observations in validation dataset: 13
+2023-05-05 14:58:03,712 - INFO: Preparing test data
+2023-05-05 14:58:03,731 - INFO: Loading test dataset...
+2023-05-05 14:58:03,733 - INFO: Number of observations in test dataset: 49
+2023-05-05 14:58:03,738 - INFO: Epoch: 1 / 5
+2023-05-05 14:58:03,739 - INFO: train loss:   0%|          | 0/3 [00:00<?, ?it/s]
+2023-05-05 14:58:06,752 - INFO: train loss: 2.17:  33%|###3      | 1/3 [00:03<00:06,  3.01s/it]
+2023-05-05 14:58:06,825 - INFO: train loss: 2.16:  67%|######6   | 2/3 [00:03<00:01,  1.28s/it]
+2023-05-05 14:58:06,893 - INFO: train loss: 2.01: 100%|##########| 3/3 [00:03<00:00,  1.37it/s]
+2023-05-05 14:58:06,894 - INFO: train loss: 2.01: 100%|##########| 3/3 [00:03<00:00,  1.05s/it]
+2023-05-05 14:58:06,895 - INFO: Starting validation inference
+2023-05-05 14:58:06,895 - INFO: validation progress:   0%|          | 0/1 [00:00<?, ?it/s]
+2023-05-05 14:58:07,798 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  1.11it/s]
+2023-05-05 14:58:07,801 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  1.10it/s]
+2023-05-05 14:58:07,875 - INFO: Mean validation loss: 1.95763
+2023-05-05 14:58:07,885 - INFO: Validation IoU: 0.23061
+2023-05-05 14:58:10,476 - INFO: Epoch: 2 / 5
+2023-05-05 14:58:10,477 - INFO: train loss:   0%|          | 0/3 [00:00<?, ?it/s]
+2023-05-05 14:58:11,049 - INFO: train loss: 1.42:  33%|###3      | 1/3 [00:00<00:01,  1.75it/s]
+2023-05-05 14:58:11,116 - INFO: train loss: 1.28:  67%|######6   | 2/3 [00:00<00:00,  3.64it/s]
+2023-05-05 14:58:11,182 - INFO: train loss: 1.20: 100%|##########| 3/3 [00:00<00:00,  5.57it/s]
+2023-05-05 14:58:11,183 - INFO: train loss: 1.20: 100%|##########| 3/3 [00:00<00:00,  4.25it/s]
+2023-05-05 14:58:11,183 - INFO: Starting validation inference
+2023-05-05 14:58:11,184 - INFO: validation progress:   0%|          | 0/1 [00:00<?, ?it/s]
+2023-05-05 14:58:11,559 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.67it/s]
+2023-05-05 14:58:11,562 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.65it/s]
+2023-05-05 14:58:11,633 - INFO: Mean validation loss: 12.56011
+2023-05-05 14:58:11,640 - INFO: Validation IoU: 0.25403
+2023-05-05 14:58:14,144 - INFO: Epoch: 3 / 5
+2023-05-05 14:58:14,144 - INFO: train loss:   0%|          | 0/3 [00:00<?, ?it/s]
+2023-05-05 14:58:14,680 - INFO: train loss: 0.85:  33%|###3      | 1/3 [00:00<00:01,  1.87it/s]
+2023-05-05 14:58:14,747 - INFO: train loss: 0.88:  67%|######6   | 2/3 [00:00<00:00,  3.85it/s]
+2023-05-05 14:58:14,813 - INFO: train loss: 0.90: 100%|##########| 3/3 [00:00<00:00,  5.83it/s]
+2023-05-05 14:58:14,814 - INFO: train loss: 0.90: 100%|##########| 3/3 [00:00<00:00,  4.48it/s]
+2023-05-05 14:58:14,814 - INFO: Starting validation inference
+2023-05-05 14:58:14,815 - INFO: validation progress:   0%|          | 0/1 [00:00<?, ?it/s]
+2023-05-05 14:58:15,209 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.54it/s]
+2023-05-05 14:58:15,212 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.52it/s]
+2023-05-05 14:58:15,289 - INFO: Mean validation loss: 7.35776
+2023-05-05 14:58:15,296 - INFO: Validation IoU: 0.29205
+2023-05-05 14:58:17,802 - INFO: Epoch: 4 / 5
+2023-05-05 14:58:17,802 - INFO: train loss:   0%|          | 0/3 [00:00<?, ?it/s]
+2023-05-05 14:58:18,355 - INFO: train loss: 0.67:  33%|###3      | 1/3 [00:00<00:01,  1.81it/s]
+2023-05-05 14:58:18,422 - INFO: train loss: 0.70:  67%|######6   | 2/3 [00:00<00:00,  3.74it/s]
+2023-05-05 14:58:18,490 - INFO: train loss: 0.77: 100%|##########| 3/3 [00:00<00:00,  5.67it/s]
+2023-05-05 14:58:18,491 - INFO: train loss: 0.77: 100%|##########| 3/3 [00:00<00:00,  4.36it/s]
+2023-05-05 14:58:18,492 - INFO: Starting validation inference
+2023-05-05 14:58:18,492 - INFO: validation progress:   0%|          | 0/1 [00:00<?, ?it/s]
+2023-05-05 14:58:18,878 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.59it/s]
+2023-05-05 14:58:18,881 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.57it/s]
+2023-05-05 14:58:18,958 - INFO: Mean validation loss: 2.97957
+2023-05-05 14:58:18,967 - INFO: Validation IoU: 0.41489
+2023-05-05 14:58:21,727 - INFO: Epoch: 5 / 5
+2023-05-05 14:58:21,728 - INFO: train loss:   0%|          | 0/3 [00:00<?, ?it/s]
+2023-05-05 14:58:22,286 - INFO: train loss: 0.64:  33%|###3      | 1/3 [00:00<00:01,  1.79it/s]
+2023-05-05 14:58:22,353 - INFO: train loss: 0.65:  67%|######6   | 2/3 [00:00<00:00,  3.71it/s]
+2023-05-05 14:58:22,420 - INFO: train loss: 0.71: 100%|##########| 3/3 [00:00<00:00,  5.65it/s]
+2023-05-05 14:58:22,421 - INFO: train loss: 0.71: 100%|##########| 3/3 [00:00<00:00,  4.33it/s]
+2023-05-05 14:58:22,422 - INFO: Starting validation inference
+2023-05-05 14:58:22,422 - INFO: validation progress:   0%|          | 0/1 [00:00<?, ?it/s]
+2023-05-05 14:58:22,798 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.66it/s]
+2023-05-05 14:58:22,801 - INFO: validation progress: 100%|##########| 1/1 [00:00<00:00,  2.64it/s]
+2023-05-05 14:58:22,875 - INFO: Mean validation loss: 1.48233
+2023-05-05 14:58:22,882 - INFO: Validation IoU: 0.60396
+2023-05-05 14:58:25,458 - INFO: Starting test inference
+2023-05-05 14:58:25,459 - INFO: test progress:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-05-05 14:58:26,805 - INFO: test progress:  25%|##5       | 1/4 [00:01<00:04,  1.35s/it]
+2023-05-05 14:58:26,852 - INFO: test progress:  50%|#####     | 2/4 [00:01<00:01,  1.72it/s]
+2023-05-05 14:58:26,893 - INFO: test progress:  75%|#######5  | 3/4 [00:01<00:00,  2.98it/s]
+2023-05-05 14:58:27,085 - INFO: test progress: 100%|##########| 4/4 [00:01<00:00,  3.59it/s]
+2023-05-05 14:58:27,088 - INFO: test progress: 100%|##########| 4/4 [00:01<00:00,  2.45it/s]
+2023-05-05 14:58:27,199 - INFO: Mean test loss: 1.59358
+2023-05-05 14:58:27,218 - INFO: Test IoU: 0.57580
+2023-05-05 14:58:27,849 - INFO: Saving last model checkpoint: val_loss 1.4823, val_IoU 0.60396 to output/anon/Smoke_segmentation/fold0/checkpoint.pth
+2023-05-05 14:58:28,057 - INFO: Building MLOps and Scoring Pipeline
