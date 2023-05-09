@@ -1,0 +1,106 @@
+2023-04-27 06:30:17,840 - INFO: Starting Hydrogen Torch v1.2.0
+2023-04-27 06:30:17,914 - INFO: <pre>Thu Apr 27 06:30:17 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:00:1D.0 Off |                    0 |
+| N/A   30C    P0    38W / 300W |      3MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</pre>
+2023-04-27 06:30:17,914 - INFO: Global random seed: 697159
+2023-04-27 06:30:17,914 - INFO: Preparing the data...
+2023-04-27 06:30:17,914 - INFO: Setting up cross-validation...
+2023-04-27 06:30:17,934 - INFO: Running k-fold setup...
+2023-04-27 06:30:18,370 - INFO: Loading pretrained weights from url (https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth)
+2023-04-27 06:30:22,632 - INFO: Preparing train and validation data
+2023-04-27 06:30:22,632 - INFO: Loading train dataset...
+2023-04-27 06:30:22,636 - INFO: Loading validation dataset...
+2023-04-27 06:30:22,638 - INFO: Number of observations in train dataset: 132
+2023-04-27 06:30:22,638 - INFO: Number of observations in validation dataset: 33
+2023-04-27 06:30:22,645 - INFO: Epoch: 1 / 5
+2023-04-27 06:30:22,645 - INFO: train loss:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-04-27 06:30:24,852 - INFO: train loss: 0.70:  25%|##5       | 1/4 [00:02<00:06,  2.21s/it]
+2023-04-27 06:30:24,917 - INFO: train loss: 0.70:  50%|#####     | 2/4 [00:02<00:01,  1.06it/s]
+2023-04-27 06:30:24,997 - INFO: train loss: 0.70:  75%|#######5  | 3/4 [00:02<00:00,  1.81it/s]
+2023-04-27 06:30:25,068 - INFO: train loss: 0.69: 100%|##########| 4/4 [00:02<00:00,  2.77it/s]
+2023-04-27 06:30:25,069 - INFO: train loss: 0.69: 100%|##########| 4/4 [00:02<00:00,  1.65it/s]
+2023-04-27 06:30:25,070 - INFO: Starting validation inference
+2023-04-27 06:30:25,070 - INFO: validation progress:   0%|          | 0/2 [00:00<?, ?it/s]
+2023-04-27 06:30:25,696 - INFO: validation progress:  50%|#####     | 1/2 [00:00<00:00,  1.60it/s]
+2023-04-27 06:30:26,040 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  2.18it/s]
+2023-04-27 06:30:26,042 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  2.06it/s]
+2023-04-27 06:30:26,112 - INFO: Mean validation loss: 0.68674
+2023-04-27 06:30:26,118 - INFO: Validation ROC_AUC: 0.44653
+2023-04-27 06:30:28,434 - INFO: Epoch: 2 / 5
+2023-04-27 06:30:28,434 - INFO: train loss:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-04-27 06:30:28,913 - INFO: train loss: 0.65:  25%|##5       | 1/4 [00:00<00:01,  2.09it/s]
+2023-04-27 06:30:28,986 - INFO: train loss: 0.64:  50%|#####     | 2/4 [00:00<00:00,  4.16it/s]
+2023-04-27 06:30:29,058 - INFO: train loss: 0.63:  75%|#######5  | 3/4 [00:00<00:00,  6.12it/s]
+2023-04-27 06:30:29,130 - INFO: train loss: 0.62: 100%|##########| 4/4 [00:00<00:00,  7.87it/s]
+2023-04-27 06:30:29,130 - INFO: train loss: 0.62: 100%|##########| 4/4 [00:00<00:00,  5.75it/s]
+2023-04-27 06:30:29,131 - INFO: Starting validation inference
+2023-04-27 06:30:29,131 - INFO: validation progress:   0%|          | 0/2 [00:00<?, ?it/s]
+2023-04-27 06:30:29,541 - INFO: validation progress:  50%|#####     | 1/2 [00:00<00:00,  2.44it/s]
+2023-04-27 06:30:29,554 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  5.68it/s]
+2023-04-27 06:30:29,556 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  4.72it/s]
+2023-04-27 06:30:29,625 - INFO: Mean validation loss: 0.65356
+2023-04-27 06:30:29,631 - INFO: Validation ROC_AUC: 0.70979
+2023-04-27 06:30:31,917 - INFO: Epoch: 3 / 5
+2023-04-27 06:30:31,918 - INFO: train loss:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-04-27 06:30:32,394 - INFO: train loss: 0.57:  25%|##5       | 1/4 [00:00<00:01,  2.10it/s]
+2023-04-27 06:30:32,466 - INFO: train loss: 0.57:  50%|#####     | 2/4 [00:00<00:00,  4.20it/s]
+2023-04-27 06:30:32,537 - INFO: train loss: 0.56:  75%|#######5  | 3/4 [00:00<00:00,  6.18it/s]
+2023-04-27 06:30:32,608 - INFO: train loss: 0.56: 100%|##########| 4/4 [00:00<00:00,  7.92it/s]
+2023-04-27 06:30:32,609 - INFO: train loss: 0.56: 100%|##########| 4/4 [00:00<00:00,  5.79it/s]
+2023-04-27 06:30:32,609 - INFO: Starting validation inference
+2023-04-27 06:30:32,610 - INFO: validation progress:   0%|          | 0/2 [00:00<?, ?it/s]
+2023-04-27 06:30:33,022 - INFO: validation progress:  50%|#####     | 1/2 [00:00<00:00,  2.43it/s]
+2023-04-27 06:30:33,034 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  5.65it/s]
+2023-04-27 06:30:33,036 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  4.70it/s]
+2023-04-27 06:30:33,107 - INFO: Mean validation loss: 0.62970
+2023-04-27 06:30:33,113 - INFO: Validation ROC_AUC: 0.81490
+2023-04-27 06:30:35,409 - INFO: Epoch: 4 / 5
+2023-04-27 06:30:35,410 - INFO: train loss:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-04-27 06:30:35,888 - INFO: train loss: 0.51:  25%|##5       | 1/4 [00:00<00:01,  2.09it/s]
+2023-04-27 06:30:35,960 - INFO: train loss: 0.51:  50%|#####     | 2/4 [00:00<00:00,  4.18it/s]
+2023-04-27 06:30:36,031 - INFO: train loss: 0.51:  75%|#######5  | 3/4 [00:00<00:00,  6.17it/s]
+2023-04-27 06:30:36,101 - INFO: train loss: 0.51: 100%|##########| 4/4 [00:00<00:00,  7.93it/s]
+2023-04-27 06:30:36,101 - INFO: train loss: 0.51: 100%|##########| 4/4 [00:00<00:00,  5.79it/s]
+2023-04-27 06:30:36,102 - INFO: Starting validation inference
+2023-04-27 06:30:36,102 - INFO: validation progress:   0%|          | 0/2 [00:00<?, ?it/s]
+2023-04-27 06:30:36,513 - INFO: validation progress:  50%|#####     | 1/2 [00:00<00:00,  2.44it/s]
+2023-04-27 06:30:36,526 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  5.67it/s]
+2023-04-27 06:30:36,527 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  4.71it/s]
+2023-04-27 06:30:36,599 - INFO: Mean validation loss: 0.63790
+2023-04-27 06:30:36,604 - INFO: Validation ROC_AUC: 0.88526
+2023-04-27 06:30:39,082 - INFO: Epoch: 5 / 5
+2023-04-27 06:30:39,082 - INFO: train loss:   0%|          | 0/4 [00:00<?, ?it/s]
+2023-04-27 06:30:39,546 - INFO: train loss: 0.53:  25%|##5       | 1/4 [00:00<00:01,  2.16it/s]
+2023-04-27 06:30:39,618 - INFO: train loss: 0.51:  50%|#####     | 2/4 [00:00<00:00,  4.28it/s]
+2023-04-27 06:30:39,690 - INFO: train loss: 0.50:  75%|#######5  | 3/4 [00:00<00:00,  6.26it/s]
+2023-04-27 06:30:39,761 - INFO: train loss: 0.49: 100%|##########| 4/4 [00:00<00:00,  8.03it/s]
+2023-04-27 06:30:39,761 - INFO: train loss: 0.49: 100%|##########| 4/4 [00:00<00:00,  5.89it/s]
+2023-04-27 06:30:39,762 - INFO: Starting validation inference
+2023-04-27 06:30:39,762 - INFO: validation progress:   0%|          | 0/2 [00:00<?, ?it/s]
+2023-04-27 06:30:40,174 - INFO: validation progress:  50%|#####     | 1/2 [00:00<00:00,  2.43it/s]
+2023-04-27 06:30:40,186 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  5.66it/s]
+2023-04-27 06:30:40,188 - INFO: validation progress: 100%|##########| 2/2 [00:00<00:00,  4.70it/s]
+2023-04-27 06:30:40,259 - INFO: Mean validation loss: 0.64872
+2023-04-27 06:30:40,265 - INFO: Validation ROC_AUC: 0.84045
+2023-04-27 06:30:42,615 - INFO: Saving last model checkpoint: val_loss 0.64872, val_ROC_AUC 0.84045 to output/anon/document_classification/fold4/checkpoint.pth
+2023-04-27 06:30:42,805 - INFO: Building MLOps and Scoring Pipeline
+2023-04-27 06:30:48,695 - INFO: Running interpretability analysis
+2023-04-27 06:31:05,711 - INFO: Interpretability analysis completed

@@ -1,0 +1,210 @@
+2023-04-27 15:38:29,291 - INFO: Starting Hydrogen Torch v1.2.0
+2023-04-27 15:38:29,362 - INFO: <pre>Thu Apr 27 15:38:29 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:00:1D.0 Off |                    0 |
+| N/A   32C    P0    38W / 300W |      3MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</pre>
+2023-04-27 15:38:29,362 - INFO: Global random seed: 361518
+2023-04-27 15:38:29,362 - INFO: Preparing the data...
+2023-04-27 15:38:29,362 - INFO: Setting up cross-validation...
+2023-04-27 15:38:29,526 - WARNING: Dropped 2 rows when reading dataframe 'data/anon/email_spam_classification/email_spam_classification.csv' due to missing values encountered in one of the following columns: ['spam']
+2023-04-27 15:38:29,526 - INFO: Running k-fold setup...
+2023-04-27 15:38:35,913 - INFO: Preparing train and validation data
+2023-04-27 15:38:35,913 - INFO: Loading train dataset...
+2023-04-27 15:38:36,256 - INFO: Loading validation dataset...
+2023-04-27 15:38:36,576 - INFO: Number of observations in train dataset: 4583
+2023-04-27 15:38:36,576 - INFO: Number of observations in validation dataset: 1146
+2023-04-27 15:38:36,583 - INFO: Epoch: 1 / 2
+2023-04-27 15:38:36,584 - INFO: train loss:   0%|          | 0/286 [00:00<?, ?it/s]
+2023-04-27 15:38:37,971 - INFO: train loss: 0.37:   5%|4         | 14/286 [00:01<00:26, 10.10it/s]
+2023-04-27 15:38:39,087 - INFO: train loss: 0.23:  10%|9         | 28/286 [00:02<00:22, 11.40it/s]
+2023-04-27 15:38:40,210 - INFO: train loss: 0.15:  15%|#4        | 42/286 [00:03<00:20, 11.87it/s]
+2023-04-27 15:38:41,330 - INFO: train loss: 0.09:  20%|#9        | 56/286 [00:04<00:18, 12.11it/s]
+2023-04-27 15:38:42,444 - INFO: train loss: 0.07:  24%|##4       | 70/286 [00:05<00:17, 12.27it/s]
+2023-04-27 15:38:43,599 - INFO: train loss: 0.04:  29%|##9       | 84/286 [00:07<00:16, 12.22it/s]
+2023-04-27 15:38:44,716 - INFO: train loss: 0.06:  34%|###4      | 98/286 [00:08<00:15, 12.32it/s]
+2023-04-27 15:38:45,833 - INFO: train loss: 0.03:  39%|###9      | 112/286 [00:09<00:14, 12.39it/s]
+2023-04-27 15:38:46,952 - INFO: train loss: 0.04:  44%|####4     | 126/286 [00:10<00:12, 12.43it/s]
+2023-04-27 15:38:48,066 - INFO: train loss: 0.02:  49%|####8     | 140/286 [00:11<00:11, 12.47it/s]
+2023-04-27 15:38:49,138 - INFO: train loss: 0.03:  54%|#####3    | 154/286 [00:12<00:10, 12.65it/s]
+2023-04-27 15:38:50,199 - INFO: train loss: 0.03:  59%|#####8    | 168/286 [00:13<00:09, 12.81it/s]
+2023-04-27 15:38:51,249 - INFO: train loss: 0.04:  64%|######3   | 182/286 [00:14<00:08, 12.96it/s]
+2023-04-27 15:38:52,302 - INFO: train loss: 0.02:  69%|######8   | 196/286 [00:15<00:06, 13.06it/s]
+2023-04-27 15:38:53,353 - INFO: train loss: 0.03:  73%|#######3  | 210/286 [00:16<00:05, 13.14it/s]
+2023-04-27 15:38:54,418 - INFO: train loss: 0.04:  78%|#######8  | 224/286 [00:17<00:04, 13.14it/s]
+2023-04-27 15:38:55,492 - INFO: train loss: 0.02:  83%|########3 | 238/286 [00:18<00:03, 13.11it/s]
+2023-04-27 15:38:56,551 - INFO: train loss: 0.03:  88%|########8 | 252/286 [00:19<00:02, 13.14it/s]
+2023-04-27 15:38:57,611 - INFO: train loss: 0.03:  93%|#########3| 266/286 [00:21<00:01, 13.16it/s]
+2023-04-27 15:38:58,661 - INFO: train loss: 0.03:  98%|#########7| 280/286 [00:22<00:00, 13.21it/s]
+2023-04-27 15:38:59,107 - INFO: train loss: 0.03: 100%|##########| 286/286 [00:22<00:00, 12.70it/s]
+2023-04-27 15:38:59,108 - INFO: Starting validation inference
+2023-04-27 15:38:59,108 - INFO: validation progress:   0%|          | 0/72 [00:00<?, ?it/s]
+2023-04-27 15:38:59,435 - INFO: validation progress:   4%|4         | 3/72 [00:00<00:07,  9.18it/s]
+2023-04-27 15:38:59,547 - INFO: validation progress:   8%|8         | 6/72 [00:00<00:04, 15.00it/s]
+2023-04-27 15:38:59,657 - INFO: validation progress:  12%|#2        | 9/72 [00:00<00:03, 18.87it/s]
+2023-04-27 15:38:59,767 - INFO: validation progress:  17%|#6        | 12/72 [00:00<00:02, 21.48it/s]
+2023-04-27 15:38:59,877 - INFO: validation progress:  21%|##        | 15/72 [00:00<00:02, 23.26it/s]
+2023-04-27 15:38:59,988 - INFO: validation progress:  25%|##5       | 18/72 [00:00<00:02, 24.40it/s]
+2023-04-27 15:39:00,099 - INFO: validation progress:  29%|##9       | 21/72 [00:00<00:02, 25.21it/s]
+2023-04-27 15:39:00,209 - INFO: validation progress:  33%|###3      | 24/72 [00:01<00:01, 25.79it/s]
+2023-04-27 15:39:00,320 - INFO: validation progress:  38%|###7      | 27/72 [00:01<00:01, 26.19it/s]
+2023-04-27 15:39:00,431 - INFO: validation progress:  42%|####1     | 30/72 [00:01<00:01, 26.48it/s]
+2023-04-27 15:39:00,541 - INFO: validation progress:  46%|####5     | 33/72 [00:01<00:01, 26.68it/s]
+2023-04-27 15:39:00,651 - INFO: validation progress:  50%|#####     | 36/72 [00:01<00:01, 26.82it/s]
+2023-04-27 15:39:00,763 - INFO: validation progress:  54%|#####4    | 39/72 [00:01<00:01, 26.83it/s]
+2023-04-27 15:39:00,874 - INFO: validation progress:  58%|#####8    | 42/72 [00:01<00:01, 26.93it/s]
+2023-04-27 15:39:00,984 - INFO: validation progress:  62%|######2   | 45/72 [00:01<00:01, 26.98it/s]
+2023-04-27 15:39:01,096 - INFO: validation progress:  67%|######6   | 48/72 [00:01<00:00, 26.98it/s]
+2023-04-27 15:39:01,207 - INFO: validation progress:  71%|#######   | 51/72 [00:02<00:00, 26.98it/s]
+2023-04-27 15:39:01,318 - INFO: validation progress:  75%|#######5  | 54/72 [00:02<00:00, 27.01it/s]
+2023-04-27 15:39:01,428 - INFO: validation progress:  79%|#######9  | 57/72 [00:02<00:00, 27.09it/s]
+2023-04-27 15:39:01,537 - INFO: validation progress:  83%|########3 | 60/72 [00:02<00:00, 27.16it/s]
+2023-04-27 15:39:01,648 - INFO: validation progress:  88%|########7 | 63/72 [00:02<00:00, 27.14it/s]
+2023-04-27 15:39:01,759 - INFO: validation progress:  92%|#########1| 66/72 [00:02<00:00, 27.12it/s]
+2023-04-27 15:39:01,869 - INFO: validation progress:  96%|#########5| 69/72 [00:02<00:00, 27.16it/s]
+2023-04-27 15:39:01,966 - INFO: validation progress: 100%|##########| 72/72 [00:02<00:00, 28.18it/s]
+2023-04-27 15:39:01,968 - INFO: validation progress: 100%|##########| 72/72 [00:02<00:00, 25.18it/s]
+2023-04-27 15:39:02,025 - INFO: Mean validation loss: 0.01730
+2023-04-27 15:39:02,031 - INFO: Validation ROC_AUC: 0.99988
+2023-04-27 15:39:02,041 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    spam_ its termination would not have such a phenomenal impact on the power situation .however ==1
+          ^
+SyntaxError: Python keyword not valid identifier in numexpr query
+2023-04-27 15:39:02,552 - INFO: Epoch: 2 / 2
+2023-04-27 15:39:02,552 - INFO: train loss:   0%|          | 0/286 [00:00<?, ?it/s]
+2023-04-27 15:39:03,868 - INFO: train loss: 0.02:   5%|4         | 14/286 [00:01<00:25, 10.65it/s]
+2023-04-27 15:39:04,921 - INFO: train loss: 0.01:  10%|9         | 28/286 [00:02<00:21, 12.05it/s]
+2023-04-27 15:39:05,975 - INFO: train loss: 0.01:  15%|#4        | 42/286 [00:03<00:19, 12.58it/s]
+2023-04-27 15:39:07,050 - INFO: train loss: 0.01:  20%|#9        | 56/286 [00:04<00:18, 12.76it/s]
+2023-04-27 15:39:08,099 - INFO: train loss: 0.01:  24%|##4       | 70/286 [00:05<00:16, 12.96it/s]
+2023-04-27 15:39:09,190 - INFO: train loss: 0.01:  29%|##9       | 84/286 [00:06<00:15, 12.92it/s]
+2023-04-27 15:39:10,280 - INFO: train loss: 0.02:  34%|###4      | 98/286 [00:07<00:14, 12.89it/s]
+2023-04-27 15:39:11,375 - INFO: train loss: 0.02:  39%|###9      | 112/286 [00:08<00:13, 12.86it/s]
+2023-04-27 15:39:12,480 - INFO: train loss: 0.01:  44%|####4     | 126/286 [00:09<00:12, 12.80it/s]
+2023-04-27 15:39:13,600 - INFO: train loss: 0.01:  49%|####8     | 140/286 [00:11<00:11, 12.70it/s]
+2023-04-27 15:39:14,713 - INFO: train loss: 0.01:  54%|#####3    | 154/286 [00:12<00:10, 12.67it/s]
+2023-04-27 15:39:15,780 - INFO: train loss: 0.01:  59%|#####8    | 168/286 [00:13<00:09, 12.80it/s]
+2023-04-27 15:39:16,845 - INFO: train loss: 0.01:  64%|######3   | 182/286 [00:14<00:08, 12.91it/s]
+2023-04-27 15:39:17,915 - INFO: train loss: 0.02:  69%|######8   | 196/286 [00:15<00:06, 12.96it/s]
+2023-04-27 15:39:18,983 - INFO: train loss: 0.01:  73%|#######3  | 210/286 [00:16<00:05, 13.00it/s]
+2023-04-27 15:39:20,058 - INFO: train loss: 0.01:  78%|#######8  | 224/286 [00:17<00:04, 13.01it/s]
+2023-04-27 15:39:21,125 - INFO: train loss: 0.01:  83%|########3 | 238/286 [00:18<00:03, 13.04it/s]
+2023-04-27 15:39:22,190 - INFO: train loss: 0.01:  88%|########8 | 252/286 [00:19<00:02, 13.07it/s]
+2023-04-27 15:39:23,243 - INFO: train loss: 0.01:  93%|#########3| 266/286 [00:20<00:01, 13.14it/s]
+2023-04-27 15:39:24,333 - INFO: train loss: 0.01:  98%|#########7| 280/286 [00:21<00:00, 13.05it/s]
+2023-04-27 15:39:24,791 - INFO: train loss: 0.01: 100%|##########| 286/286 [00:22<00:00, 12.86it/s]
+2023-04-27 15:39:24,792 - INFO: Starting validation inference
+2023-04-27 15:39:24,792 - INFO: validation progress:   0%|          | 0/72 [00:00<?, ?it/s]
+2023-04-27 15:39:25,086 - INFO: validation progress:   4%|4         | 3/72 [00:00<00:06, 10.23it/s]
+2023-04-27 15:39:25,196 - INFO: validation progress:   8%|8         | 6/72 [00:00<00:04, 16.14it/s]
+2023-04-27 15:39:25,307 - INFO: validation progress:  12%|#2        | 9/72 [00:00<00:03, 19.81it/s]
+2023-04-27 15:39:25,417 - INFO: validation progress:  17%|#6        | 12/72 [00:00<00:02, 22.17it/s]
+2023-04-27 15:39:25,529 - INFO: validation progress:  21%|##        | 15/72 [00:00<00:02, 23.69it/s]
+2023-04-27 15:39:25,639 - INFO: validation progress:  25%|##5       | 18/72 [00:00<00:02, 24.74it/s]
+2023-04-27 15:39:25,750 - INFO: validation progress:  29%|##9       | 21/72 [00:00<00:02, 25.47it/s]
+2023-04-27 15:39:25,861 - INFO: validation progress:  33%|###3      | 24/72 [00:01<00:01, 25.97it/s]
+2023-04-27 15:39:25,972 - INFO: validation progress:  38%|###7      | 27/72 [00:01<00:01, 26.28it/s]
+2023-04-27 15:39:26,083 - INFO: validation progress:  42%|####1     | 30/72 [00:01<00:01, 26.49it/s]
+2023-04-27 15:39:26,194 - INFO: validation progress:  46%|####5     | 33/72 [00:01<00:01, 26.64it/s]
+2023-04-27 15:39:26,306 - INFO: validation progress:  50%|#####     | 36/72 [00:01<00:01, 26.72it/s]
+2023-04-27 15:39:26,449 - INFO: validation progress:  54%|#####4    | 39/72 [00:01<00:01, 24.69it/s]
+2023-04-27 15:39:26,559 - INFO: validation progress:  58%|#####8    | 42/72 [00:01<00:01, 25.37it/s]
+2023-04-27 15:39:26,670 - INFO: validation progress:  62%|######2   | 45/72 [00:01<00:01, 25.83it/s]
+2023-04-27 15:39:26,781 - INFO: validation progress:  67%|######6   | 48/72 [00:01<00:00, 26.19it/s]
+2023-04-27 15:39:26,892 - INFO: validation progress:  71%|#######   | 51/72 [00:02<00:00, 26.44it/s]
+2023-04-27 15:39:27,003 - INFO: validation progress:  75%|#######5  | 54/72 [00:02<00:00, 26.61it/s]
+2023-04-27 15:39:27,115 - INFO: validation progress:  79%|#######9  | 57/72 [00:02<00:00, 26.72it/s]
+2023-04-27 15:39:27,226 - INFO: validation progress:  83%|########3 | 60/72 [00:02<00:00, 26.79it/s]
+2023-04-27 15:39:27,336 - INFO: validation progress:  88%|########7 | 63/72 [00:02<00:00, 26.89it/s]
+2023-04-27 15:39:27,447 - INFO: validation progress:  92%|#########1| 66/72 [00:02<00:00, 27.00it/s]
+2023-04-27 15:39:27,557 - INFO: validation progress:  96%|#########5| 69/72 [00:02<00:00, 27.04it/s]
+2023-04-27 15:39:27,655 - INFO: validation progress: 100%|##########| 72/72 [00:02<00:00, 28.04it/s]
+2023-04-27 15:39:27,657 - INFO: validation progress: 100%|##########| 72/72 [00:02<00:00, 25.14it/s]
+2023-04-27 15:39:27,720 - INFO: Mean validation loss: 0.01437
+2023-04-27 15:39:27,725 - INFO: Validation ROC_AUC: 0.99986
+2023-04-27 15:39:27,731 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    spam_ its termination would not have such a phenomenal impact on the power situation .however ==1
+          ^
+SyntaxError: Python keyword not valid identifier in numexpr query
+2023-04-27 15:39:28,294 - INFO: Saving last model checkpoint: val_loss 0.014375, val_ROC_AUC 0.99986 to output/anon/email_spam_classification/fold0/checkpoint.pth
+2023-04-27 15:39:29,018 - INFO: Building MLOps and Scoring Pipeline
+2023-04-27 15:39:55,503 - WARNING: Dropped 2 rows when reading dataframe 'data/anon/email_spam_classification/email_spam_classification.csv' due to missing values encountered in one of the following columns: ['spam']
+2023-04-27 15:39:55,869 - INFO: Running interpretability analysis
+2023-04-27 15:39:55,871 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    spam_ its termination would not have such a phenomenal impact on the power situation .however ==1
+          ^
+SyntaxError: Python keyword not valid identifier in numexpr query
+2023-04-27 15:40:05,272 - INFO: Interpretability analysis completed
