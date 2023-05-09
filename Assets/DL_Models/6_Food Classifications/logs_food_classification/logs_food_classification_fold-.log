@@ -1,0 +1,401 @@
+2023-05-05 15:00:50,044 - INFO: Starting Hydrogen Torch v1.2.0
+2023-05-05 15:00:50,108 - INFO: <pre>Fri May  5 15:00:50 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:00:1E.0 Off |                    0 |
+| N/A   43C    P0    51W / 300W |      2MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</pre>
+2023-05-05 15:00:50,109 - INFO: Global random seed: 536081
+2023-05-05 15:00:50,109 - INFO: Preparing the data...
+2023-05-05 15:00:50,566 - INFO: Loading pretrained weights from url (https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth)
+2023-05-05 15:00:54,641 - INFO: Preparing train and validation data
+2023-05-05 15:00:54,641 - INFO: Loading train dataset...
+2023-05-05 15:00:54,646 - INFO: Loading validation dataset...
+2023-05-05 15:00:54,648 - INFO: Number of observations in train dataset: 9866
+2023-05-05 15:00:54,648 - INFO: Number of observations in validation dataset: 362
+2023-05-05 15:00:54,652 - INFO: Preparing test data
+2023-05-05 15:00:54,662 - INFO: Loading test dataset...
+2023-05-05 15:00:54,665 - INFO: Number of observations in test dataset: 3347
+2023-05-05 15:00:54,670 - INFO: Epoch: 1 / 5
+2023-05-05 15:00:54,671 - INFO: train loss:   0%|          | 0/308 [00:00<?, ?it/s]
+2023-05-05 15:00:58,195 - INFO: train loss: 0.34:   5%|4         | 15/308 [00:03<01:08,  4.26it/s]
+2023-05-05 15:00:59,437 - INFO: train loss: 0.28:  10%|9         | 30/308 [00:04<00:40,  6.88it/s]
+2023-05-05 15:01:00,965 - INFO: train loss: 0.24:  15%|#4        | 45/308 [00:06<00:33,  7.97it/s]
+2023-05-05 15:01:02,282 - INFO: train loss: 0.19:  19%|#9        | 60/308 [00:07<00:27,  9.04it/s]
+2023-05-05 15:01:03,557 - INFO: train loss: 0.16:  24%|##4       | 75/308 [00:08<00:23,  9.86it/s]
+2023-05-05 15:01:04,832 - INFO: train loss: 0.13:  29%|##9       | 90/308 [00:10<00:20, 10.44it/s]
+2023-05-05 15:01:06,055 - INFO: train loss: 0.12:  34%|###4      | 105/308 [00:11<00:18, 10.97it/s]
+2023-05-05 15:01:07,282 - INFO: train loss: 0.10:  39%|###8      | 120/308 [00:12<00:16, 11.34it/s]
+2023-05-05 15:01:08,553 - INFO: train loss: 0.09:  44%|####3     | 135/308 [00:13<00:15, 11.48it/s]
+2023-05-05 15:01:09,861 - INFO: train loss: 0.09:  49%|####8     | 150/308 [00:15<00:13, 11.48it/s]
+2023-05-05 15:01:11,126 - INFO: train loss: 0.11:  54%|#####3    | 165/308 [00:16<00:12, 11.59it/s]
+2023-05-05 15:01:12,355 - INFO: train loss: 0.09:  58%|#####8    | 180/308 [00:17<00:10, 11.77it/s]
+2023-05-05 15:01:13,803 - INFO: train loss: 0.09:  63%|######3   | 195/308 [00:19<00:09, 11.30it/s]
+2023-05-05 15:01:15,054 - INFO: train loss: 0.09:  68%|######8   | 210/308 [00:20<00:08, 11.50it/s]
+2023-05-05 15:01:16,398 - INFO: train loss: 0.08:  73%|#######3  | 225/308 [00:21<00:07, 11.40it/s]
+2023-05-05 15:01:17,632 - INFO: train loss: 0.07:  78%|#######7  | 240/308 [00:22<00:05, 11.62it/s]
+2023-05-05 15:01:18,875 - INFO: train loss: 0.08:  83%|########2 | 255/308 [00:24<00:04, 11.75it/s]
+2023-05-05 15:01:20,138 - INFO: train loss: 0.08:  88%|########7 | 270/308 [00:25<00:03, 11.79it/s]
+2023-05-05 15:01:21,433 - INFO: train loss: 0.08:  93%|#########2| 285/308 [00:26<00:01, 11.72it/s]
+2023-05-05 15:01:22,737 - INFO: train loss: 0.08:  97%|#########7| 300/308 [00:28<00:00, 11.66it/s]
+2023-05-05 15:01:23,329 - INFO: train loss: 0.07: 100%|##########| 308/308 [00:28<00:00, 10.75it/s]
+2023-05-05 15:01:23,330 - INFO: Starting validation inference
+2023-05-05 15:01:23,330 - INFO: validation progress:   0%|          | 0/12 [00:00<?, ?it/s]
+2023-05-05 15:01:24,046 - INFO: validation progress:   8%|8         | 1/12 [00:00<00:07,  1.40it/s]
+2023-05-05 15:01:24,085 - INFO: validation progress:  17%|#6        | 2/12 [00:00<00:03,  3.15it/s]
+2023-05-05 15:01:24,119 - INFO: validation progress:  25%|##5       | 3/12 [00:00<00:01,  5.32it/s]
+2023-05-05 15:01:24,153 - INFO: validation progress:  33%|###3      | 4/12 [00:00<00:01,  7.86it/s]
+2023-05-05 15:01:24,186 - INFO: validation progress:  42%|####1     | 5/12 [00:00<00:00, 10.70it/s]
+2023-05-05 15:01:24,220 - INFO: validation progress:  50%|#####     | 6/12 [00:00<00:00, 13.66it/s]
+2023-05-05 15:01:24,254 - INFO: validation progress:  58%|#####8    | 7/12 [00:00<00:00, 16.57it/s]
+2023-05-05 15:01:24,288 - INFO: validation progress:  67%|######6   | 8/12 [00:00<00:00, 19.28it/s]
+2023-05-05 15:01:24,321 - INFO: validation progress:  75%|#######5  | 9/12 [00:00<00:00, 21.68it/s]
+2023-05-05 15:01:24,355 - INFO: validation progress:  83%|########3 | 10/12 [00:01<00:00, 23.63it/s]
+2023-05-05 15:01:24,389 - INFO: validation progress:  92%|#########1| 11/12 [00:01<00:00, 25.27it/s]
+2023-05-05 15:01:24,595 - INFO: validation progress: 100%|##########| 12/12 [00:01<00:00, 11.07it/s]
+2023-05-05 15:01:24,597 - INFO: validation progress: 100%|##########| 12/12 [00:01<00:00,  9.48it/s]
+2023-05-05 15:01:24,660 - INFO: Mean validation loss: 0.08607
+2023-05-05 15:01:24,662 - INFO: Validation ROC_AUC: nan
+2023-05-05 15:01:24,676 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:01:27,303 - INFO: Epoch: 2 / 5
+2023-05-05 15:01:27,303 - INFO: train loss:   0%|          | 0/308 [00:00<?, ?it/s]
+2023-05-05 15:01:30,664 - INFO: train loss: 0.05:   5%|4         | 15/308 [00:03<01:05,  4.46it/s]
+2023-05-05 15:01:31,855 - INFO: train loss: 0.05:  10%|9         | 30/308 [00:04<00:38,  7.20it/s]
+2023-05-05 15:01:33,117 - INFO: train loss: 0.05:  15%|#4        | 45/308 [00:05<00:29,  8.78it/s]
+2023-05-05 15:01:34,377 - INFO: train loss: 0.04:  19%|#9        | 60/308 [00:07<00:25,  9.79it/s]
+2023-05-05 15:01:35,630 - INFO: train loss: 0.05:  24%|##4       | 75/308 [00:08<00:22, 10.48it/s]
+2023-05-05 15:01:36,873 - INFO: train loss: 0.06:  29%|##9       | 90/308 [00:09<00:19, 10.97it/s]
+2023-05-05 15:01:38,119 - INFO: train loss: 0.06:  34%|###4      | 105/308 [00:10<00:17, 11.30it/s]
+2023-05-05 15:01:39,311 - INFO: train loss: 0.05:  39%|###8      | 120/308 [00:12<00:16, 11.68it/s]
+2023-05-05 15:01:40,581 - INFO: train loss: 0.06:  44%|####3     | 135/308 [00:13<00:14, 11.72it/s]
+2023-05-05 15:01:41,885 - INFO: train loss: 0.06:  49%|####8     | 150/308 [00:14<00:13, 11.65it/s]
+2023-05-05 15:01:43,333 - INFO: train loss: 0.04:  54%|#####3    | 165/308 [00:16<00:12, 11.22it/s]
+2023-05-05 15:01:44,596 - INFO: train loss: 0.04:  58%|#####8    | 180/308 [00:17<00:11, 11.41it/s]
+2023-05-05 15:01:45,834 - INFO: train loss: 0.06:  63%|######3   | 195/308 [00:18<00:09, 11.62it/s]
+2023-05-05 15:01:47,098 - INFO: train loss: 0.06:  68%|######8   | 210/308 [00:19<00:08, 11.69it/s]
+2023-05-05 15:01:48,401 - INFO: train loss: 0.06:  73%|#######3  | 225/308 [00:21<00:07, 11.64it/s]
+2023-05-05 15:01:49,676 - INFO: train loss: 0.05:  78%|#######7  | 240/308 [00:22<00:05, 11.68it/s]
+2023-05-05 15:01:50,965 - INFO: train loss: 0.06:  83%|########2 | 255/308 [00:23<00:04, 11.66it/s]
+2023-05-05 15:01:52,280 - INFO: train loss: 0.05:  88%|########7 | 270/308 [00:24<00:03, 11.58it/s]
+2023-05-05 15:01:53,547 - INFO: train loss: 0.04:  93%|#########2| 285/308 [00:26<00:01, 11.66it/s]
+2023-05-05 15:01:54,754 - INFO: train loss: 0.05:  97%|#########7| 300/308 [00:27<00:00, 11.88it/s]
+2023-05-05 15:01:55,335 - INFO: train loss: 0.06: 100%|##########| 308/308 [00:28<00:00, 10.99it/s]
+2023-05-05 15:01:55,336 - INFO: Starting validation inference
+2023-05-05 15:01:55,337 - INFO: validation progress:   0%|          | 0/12 [00:00<?, ?it/s]
+2023-05-05 15:01:55,767 - INFO: validation progress:   8%|8         | 1/12 [00:00<00:04,  2.32it/s]
+2023-05-05 15:01:55,804 - INFO: validation progress:  17%|#6        | 2/12 [00:00<00:01,  5.03it/s]
+2023-05-05 15:01:55,841 - INFO: validation progress:  25%|##5       | 3/12 [00:00<00:01,  7.99it/s]
+2023-05-05 15:01:55,881 - INFO: validation progress:  33%|###3      | 4/12 [00:00<00:00, 10.91it/s]
+2023-05-05 15:01:55,917 - INFO: validation progress:  42%|####1     | 5/12 [00:00<00:00, 14.04it/s]
+2023-05-05 15:01:55,956 - INFO: validation progress:  50%|#####     | 6/12 [00:00<00:00, 16.54it/s]
+2023-05-05 15:01:55,990 - INFO: validation progress:  58%|#####8    | 7/12 [00:00<00:00, 19.33it/s]
+2023-05-05 15:01:56,027 - INFO: validation progress:  67%|######6   | 8/12 [00:00<00:00, 21.25it/s]
+2023-05-05 15:01:56,061 - INFO: validation progress:  75%|#######5  | 9/12 [00:00<00:00, 23.24it/s]
+2023-05-05 15:01:56,103 - INFO: validation progress:  83%|########3 | 10/12 [00:00<00:00, 23.50it/s]
+2023-05-05 15:01:56,136 - INFO: validation progress:  92%|#########1| 11/12 [00:00<00:00, 25.12it/s]
+2023-05-05 15:01:56,151 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 31.03it/s]
+2023-05-05 15:01:56,153 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 14.70it/s]
+2023-05-05 15:01:56,210 - INFO: Mean validation loss: 0.02545
+2023-05-05 15:01:56,212 - INFO: Validation ROC_AUC: nan
+2023-05-05 15:01:56,222 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:01:58,707 - INFO: Epoch: 3 / 5
+2023-05-05 15:01:58,708 - INFO: train loss:   0%|          | 0/308 [00:00<?, ?it/s]
+2023-05-05 15:02:00,431 - INFO: train loss: 0.04:   5%|4         | 15/308 [00:01<00:33,  8.71it/s]
+2023-05-05 15:02:01,741 - INFO: train loss: 0.03:  10%|9         | 30/308 [00:03<00:27, 10.13it/s]
+2023-05-05 15:02:03,030 - INFO: train loss: 0.02:  15%|#4        | 45/308 [00:04<00:24, 10.77it/s]
+2023-05-05 15:02:04,287 - INFO: train loss: 0.03:  19%|#9        | 60/308 [00:05<00:22, 11.20it/s]
+2023-05-05 15:02:05,580 - INFO: train loss: 0.02:  24%|##4       | 75/308 [00:06<00:20, 11.34it/s]
+2023-05-05 15:02:06,833 - INFO: train loss: 0.03:  29%|##9       | 90/308 [00:08<00:18, 11.55it/s]
+2023-05-05 15:02:08,054 - INFO: train loss: 0.03:  34%|###4      | 105/308 [00:09<00:17, 11.78it/s]
+2023-05-05 15:02:09,329 - INFO: train loss: 0.02:  39%|###8      | 120/308 [00:10<00:15, 11.78it/s]
+2023-05-05 15:02:10,627 - INFO: train loss: 0.02:  44%|####3     | 135/308 [00:11<00:14, 11.71it/s]
+2023-05-05 15:02:12,129 - INFO: train loss: 0.03:  49%|####8     | 150/308 [00:13<00:14, 11.11it/s]
+2023-05-05 15:02:13,368 - INFO: train loss: 0.04:  54%|#####3    | 165/308 [00:14<00:12, 11.40it/s]
+2023-05-05 15:02:14,581 - INFO: train loss: 0.02:  58%|#####8    | 180/308 [00:15<00:10, 11.68it/s]
+2023-05-05 15:02:15,821 - INFO: train loss: 0.03:  63%|######3   | 195/308 [00:17<00:09, 11.80it/s]
+2023-05-05 15:02:17,104 - INFO: train loss: 0.02:  68%|######8   | 210/308 [00:18<00:08, 11.77it/s]
+2023-05-05 15:02:18,380 - INFO: train loss: 0.02:  73%|#######3  | 225/308 [00:19<00:07, 11.76it/s]
+2023-05-05 15:02:19,653 - INFO: train loss: 0.03:  78%|#######7  | 240/308 [00:20<00:05, 11.77it/s]
+2023-05-05 15:02:21,018 - INFO: train loss: 0.02:  83%|########2 | 255/308 [00:22<00:04, 11.53it/s]
+2023-05-05 15:02:22,553 - INFO: train loss: 0.02:  88%|########7 | 270/308 [00:23<00:03, 10.94it/s]
+2023-05-05 15:02:23,834 - INFO: train loss: 0.03:  93%|#########2| 285/308 [00:25<00:02, 11.16it/s]
+2023-05-05 15:02:25,100 - INFO: train loss: 0.02:  97%|#########7| 300/308 [00:26<00:00, 11.36it/s]
+2023-05-05 15:02:25,696 - INFO: train loss: 0.02: 100%|##########| 308/308 [00:26<00:00, 11.41it/s]
+2023-05-05 15:02:25,697 - INFO: Starting validation inference
+2023-05-05 15:02:25,698 - INFO: validation progress:   0%|          | 0/12 [00:00<?, ?it/s]
+2023-05-05 15:02:26,094 - INFO: validation progress:   8%|8         | 1/12 [00:00<00:04,  2.53it/s]
+2023-05-05 15:02:26,130 - INFO: validation progress:  17%|#6        | 2/12 [00:00<00:01,  5.43it/s]
+2023-05-05 15:02:26,164 - INFO: validation progress:  25%|##5       | 3/12 [00:00<00:01,  8.62it/s]
+2023-05-05 15:02:26,200 - INFO: validation progress:  33%|###3      | 4/12 [00:00<00:00, 11.90it/s]
+2023-05-05 15:02:26,240 - INFO: validation progress:  42%|####1     | 5/12 [00:00<00:00, 14.62it/s]
+2023-05-05 15:02:26,276 - INFO: validation progress:  50%|#####     | 6/12 [00:00<00:00, 17.50it/s]
+2023-05-05 15:02:26,310 - INFO: validation progress:  58%|#####8    | 7/12 [00:00<00:00, 20.13it/s]
+2023-05-05 15:02:26,344 - INFO: validation progress:  67%|######6   | 8/12 [00:00<00:00, 22.37it/s]
+2023-05-05 15:02:26,378 - INFO: validation progress:  75%|#######5  | 9/12 [00:00<00:00, 24.20it/s]
+2023-05-05 15:02:26,422 - INFO: validation progress:  83%|########3 | 10/12 [00:00<00:00, 23.77it/s]
+2023-05-05 15:02:26,456 - INFO: validation progress:  92%|#########1| 11/12 [00:00<00:00, 25.23it/s]
+2023-05-05 15:02:26,471 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 31.09it/s]
+2023-05-05 15:02:26,473 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 15.49it/s]
+2023-05-05 15:02:26,530 - INFO: Mean validation loss: 0.00678
+2023-05-05 15:02:26,532 - INFO: Validation ROC_AUC: nan
+2023-05-05 15:02:26,542 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:02:29,012 - INFO: Epoch: 4 / 5
+2023-05-05 15:02:29,012 - INFO: train loss:   0%|          | 0/308 [00:00<?, ?it/s]
+2023-05-05 15:02:30,723 - INFO: train loss: 0.01:   5%|4         | 15/308 [00:01<00:33,  8.77it/s]
+2023-05-05 15:02:31,968 - INFO: train loss: 0.02:  10%|9         | 30/308 [00:02<00:26, 10.44it/s]
+2023-05-05 15:02:33,252 - INFO: train loss: 0.01:  15%|#4        | 45/308 [00:04<00:23, 10.97it/s]
+2023-05-05 15:02:34,512 - INFO: train loss: 0.02:  19%|#9        | 60/308 [00:05<00:21, 11.32it/s]
+2023-05-05 15:02:35,810 - INFO: train loss: 0.01:  24%|##4       | 75/308 [00:06<00:20, 11.41it/s]
+2023-05-05 15:02:37,064 - INFO: train loss: 0.01:  29%|##9       | 90/308 [00:08<00:18, 11.59it/s]
+2023-05-05 15:02:38,295 - INFO: train loss: 0.01:  34%|###4      | 105/308 [00:09<00:17, 11.78it/s]
+2023-05-05 15:02:39,526 - INFO: train loss: 0.02:  39%|###8      | 120/308 [00:10<00:15, 11.90it/s]
+2023-05-05 15:02:41,040 - INFO: train loss: 0.01:  44%|####3     | 135/308 [00:12<00:15, 11.20it/s]
+2023-05-05 15:02:42,321 - INFO: train loss: 0.01:  49%|####8     | 150/308 [00:13<00:13, 11.35it/s]
+2023-05-05 15:02:43,549 - INFO: train loss: 0.01:  54%|#####3    | 165/308 [00:14<00:12, 11.60it/s]
+2023-05-05 15:02:44,785 - INFO: train loss: 0.01:  58%|#####8    | 180/308 [00:15<00:10, 11.76it/s]
+2023-05-05 15:02:46,067 - INFO: train loss: 0.01:  63%|######3   | 195/308 [00:17<00:09, 11.74it/s]
+2023-05-05 15:02:47,323 - INFO: train loss: 0.01:  68%|######8   | 210/308 [00:18<00:08, 11.80it/s]
+2023-05-05 15:02:48,617 - INFO: train loss: 0.01:  73%|#######3  | 225/308 [00:19<00:07, 11.74it/s]
+2023-05-05 15:02:49,902 - INFO: train loss: 0.01:  78%|#######7  | 240/308 [00:20<00:05, 11.72it/s]
+2023-05-05 15:02:51,132 - INFO: train loss: 0.01:  83%|########2 | 255/308 [00:22<00:04, 11.86it/s]
+2023-05-05 15:02:52,416 - INFO: train loss: 0.01:  88%|########7 | 270/308 [00:23<00:03, 11.80it/s]
+2023-05-05 15:02:53,689 - INFO: train loss: 0.01:  93%|#########2| 285/308 [00:24<00:01, 11.80it/s]
+2023-05-05 15:02:54,993 - INFO: train loss: 0.01:  97%|#########7| 300/308 [00:25<00:00, 11.71it/s]
+2023-05-05 15:02:55,787 - INFO: train loss: 0.01: 100%|##########| 308/308 [00:26<00:00, 11.50it/s]
+2023-05-05 15:02:55,788 - INFO: Starting validation inference
+2023-05-05 15:02:55,788 - INFO: validation progress:   0%|          | 0/12 [00:00<?, ?it/s]
+2023-05-05 15:02:56,189 - INFO: validation progress:   8%|8         | 1/12 [00:00<00:04,  2.50it/s]
+2023-05-05 15:02:56,225 - INFO: validation progress:  17%|#6        | 2/12 [00:00<00:01,  5.36it/s]
+2023-05-05 15:02:56,260 - INFO: validation progress:  25%|##5       | 3/12 [00:00<00:01,  8.53it/s]
+2023-05-05 15:02:56,304 - INFO: validation progress:  33%|###3      | 4/12 [00:00<00:00, 11.32it/s]
+2023-05-05 15:02:56,339 - INFO: validation progress:  42%|####1     | 5/12 [00:00<00:00, 14.49it/s]
+2023-05-05 15:02:56,379 - INFO: validation progress:  50%|#####     | 6/12 [00:00<00:00, 16.92it/s]
+2023-05-05 15:02:56,413 - INFO: validation progress:  58%|#####8    | 7/12 [00:00<00:00, 19.66it/s]
+2023-05-05 15:02:56,447 - INFO: validation progress:  67%|######6   | 8/12 [00:00<00:00, 21.98it/s]
+2023-05-05 15:02:56,501 - INFO: validation progress:  75%|#######5  | 9/12 [00:00<00:00, 20.73it/s]
+2023-05-05 15:02:56,539 - INFO: validation progress:  83%|########3 | 10/12 [00:00<00:00, 22.20it/s]
+2023-05-05 15:02:56,572 - INFO: validation progress:  92%|#########1| 11/12 [00:00<00:00, 24.11it/s]
+2023-05-05 15:02:56,587 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 29.99it/s]
+2023-05-05 15:02:56,589 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 14.98it/s]
+2023-05-05 15:02:56,646 - INFO: Mean validation loss: 0.00288
+2023-05-05 15:02:56,648 - INFO: Validation ROC_AUC: nan
+2023-05-05 15:02:56,658 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:02:59,286 - INFO: Epoch: 5 / 5
+2023-05-05 15:02:59,287 - INFO: train loss:   0%|          | 0/308 [00:00<?, ?it/s]
+2023-05-05 15:03:01,091 - INFO: train loss: 0.00:   5%|4         | 15/308 [00:01<00:35,  8.32it/s]
+2023-05-05 15:03:02,372 - INFO: train loss: 0.01:  10%|9         | 30/308 [00:03<00:27, 10.02it/s]
+2023-05-05 15:03:03,682 - INFO: train loss: 0.01:  15%|#4        | 45/308 [00:04<00:24, 10.63it/s]
+2023-05-05 15:03:04,923 - INFO: train loss: 0.01:  19%|#9        | 60/308 [00:05<00:22, 11.16it/s]
+2023-05-05 15:03:06,161 - INFO: train loss: 0.01:  24%|##4       | 75/308 [00:06<00:20, 11.49it/s]
+2023-05-05 15:03:07,458 - INFO: train loss: 0.01:  29%|##9       | 90/308 [00:08<00:18, 11.51it/s]
+2023-05-05 15:03:08,719 - INFO: train loss: 0.01:  34%|###4      | 105/308 [00:09<00:17, 11.64it/s]
+2023-05-05 15:03:10,046 - INFO: train loss: 0.01:  39%|###8      | 120/308 [00:10<00:16, 11.53it/s]
+2023-05-05 15:03:11,458 - INFO: train loss: 0.01:  44%|####3     | 135/308 [00:12<00:15, 11.23it/s]
+2023-05-05 15:03:12,724 - INFO: train loss: 0.00:  49%|####8     | 150/308 [00:13<00:13, 11.41it/s]
+2023-05-05 15:03:13,997 - INFO: train loss: 0.01:  54%|#####3    | 165/308 [00:14<00:12, 11.53it/s]
+2023-05-05 15:03:15,265 - INFO: train loss: 0.01:  58%|#####8    | 180/308 [00:15<00:11, 11.61it/s]
+2023-05-05 15:03:16,562 - INFO: train loss: 0.01:  63%|######3   | 195/308 [00:17<00:09, 11.60it/s]
+2023-05-05 15:03:17,798 - INFO: train loss: 0.01:  68%|######8   | 210/308 [00:18<00:08, 11.76it/s]
+2023-05-05 15:03:19,069 - INFO: train loss: 0.01:  73%|#######3  | 225/308 [00:19<00:07, 11.77it/s]
+2023-05-05 15:03:20,312 - INFO: train loss: 0.01:  78%|#######7  | 240/308 [00:21<00:05, 11.86it/s]
+2023-05-05 15:03:21,586 - INFO: train loss: 0.01:  83%|########2 | 255/308 [00:22<00:04, 11.83it/s]
+2023-05-05 15:03:22,925 - INFO: train loss: 0.01:  88%|########7 | 270/308 [00:23<00:03, 11.64it/s]
+2023-05-05 15:03:24,204 - INFO: train loss: 0.01:  93%|#########2| 285/308 [00:24<00:01, 11.66it/s]
+2023-05-05 15:03:25,453 - INFO: train loss: 0.01:  97%|#########7| 300/308 [00:26<00:00, 11.76it/s]
+2023-05-05 15:03:26,068 - INFO: train loss: 0.01: 100%|##########| 308/308 [00:26<00:00, 11.50it/s]
+2023-05-05 15:03:26,069 - INFO: Starting validation inference
+2023-05-05 15:03:26,070 - INFO: validation progress:   0%|          | 0/12 [00:00<?, ?it/s]
+2023-05-05 15:03:26,505 - INFO: validation progress:   8%|8         | 1/12 [00:00<00:04,  2.30it/s]
+2023-05-05 15:03:26,545 - INFO: validation progress:  17%|#6        | 2/12 [00:00<00:02,  4.93it/s]
+2023-05-05 15:03:26,581 - INFO: validation progress:  25%|##5       | 3/12 [00:00<00:01,  7.91it/s]
+2023-05-05 15:03:26,616 - INFO: validation progress:  33%|###3      | 4/12 [00:00<00:00, 11.05it/s]
+2023-05-05 15:03:26,669 - INFO: validation progress:  42%|####1     | 5/12 [00:00<00:00, 12.98it/s]
+2023-05-05 15:03:26,703 - INFO: validation progress:  50%|#####     | 6/12 [00:00<00:00, 16.00it/s]
+2023-05-05 15:03:26,737 - INFO: validation progress:  58%|#####8    | 7/12 [00:00<00:00, 18.84it/s]
+2023-05-05 15:03:26,775 - INFO: validation progress:  67%|######6   | 8/12 [00:00<00:00, 20.67it/s]
+2023-05-05 15:03:26,824 - INFO: validation progress:  75%|#######5  | 9/12 [00:00<00:00, 20.58it/s]
+2023-05-05 15:03:26,860 - INFO: validation progress:  83%|########3 | 10/12 [00:00<00:00, 22.39it/s]
+2023-05-05 15:03:26,894 - INFO: validation progress:  92%|#########1| 11/12 [00:00<00:00, 24.25it/s]
+2023-05-05 15:03:26,909 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 30.09it/s]
+2023-05-05 15:03:26,911 - INFO: validation progress: 100%|##########| 12/12 [00:00<00:00, 14.27it/s]
+2023-05-05 15:03:26,980 - INFO: Mean validation loss: 0.00236
+2023-05-05 15:03:26,982 - INFO: Validation ROC_AUC: nan
+2023-05-05 15:03:26,992 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:03:29,556 - INFO: Starting test inference
+2023-05-05 15:03:29,557 - INFO: test progress:   0%|          | 0/105 [00:00<?, ?it/s]
+2023-05-05 15:03:30,116 - INFO: test progress:   5%|4         | 5/105 [00:00<00:11,  8.95it/s]
+2023-05-05 15:03:30,327 - INFO: test progress:  10%|9         | 10/105 [00:00<00:06, 14.11it/s]
+2023-05-05 15:03:30,764 - INFO: test progress:  14%|#4        | 15/105 [00:01<00:07, 12.76it/s]
+2023-05-05 15:03:31,274 - INFO: test progress:  19%|#9        | 20/105 [00:01<00:07, 11.40it/s]
+2023-05-05 15:03:31,561 - INFO: test progress:  24%|##3       | 25/105 [00:02<00:06, 13.02it/s]
+2023-05-05 15:03:31,742 - INFO: test progress:  29%|##8       | 30/105 [00:02<00:04, 15.87it/s]
+2023-05-05 15:03:31,992 - INFO: test progress:  33%|###3      | 35/105 [00:02<00:04, 17.03it/s]
+2023-05-05 15:03:32,165 - INFO: test progress:  38%|###8      | 40/105 [00:02<00:03, 19.57it/s]
+2023-05-05 15:03:32,372 - INFO: test progress:  43%|####2     | 45/105 [00:02<00:02, 20.81it/s]
+2023-05-05 15:03:32,575 - INFO: test progress:  48%|####7     | 50/105 [00:03<00:02, 21.87it/s]
+2023-05-05 15:03:32,803 - INFO: test progress:  52%|#####2    | 55/105 [00:03<00:02, 21.87it/s]
+2023-05-05 15:03:33,017 - INFO: test progress:  57%|#####7    | 60/105 [00:03<00:02, 22.33it/s]
+2023-05-05 15:03:33,287 - INFO: test progress:  62%|######1   | 65/105 [00:03<00:01, 21.01it/s]
+2023-05-05 15:03:33,519 - INFO: test progress:  67%|######6   | 70/105 [00:03<00:01, 21.18it/s]
+2023-05-05 15:03:33,719 - INFO: test progress:  71%|#######1  | 75/105 [00:04<00:01, 22.19it/s]
+2023-05-05 15:03:33,959 - INFO: test progress:  76%|#######6  | 80/105 [00:04<00:01, 21.76it/s]
+2023-05-05 15:03:34,149 - INFO: test progress:  81%|########  | 85/105 [00:04<00:00, 22.95it/s]
+2023-05-05 15:03:34,337 - INFO: test progress:  86%|########5 | 90/105 [00:04<00:00, 23.94it/s]
+2023-05-05 15:03:34,518 - INFO: test progress:  90%|######### | 95/105 [00:04<00:00, 24.94it/s]
+2023-05-05 15:03:35,615 - INFO: test progress:  95%|#########5| 100/105 [00:06<00:00, 10.65it/s]
+2023-05-05 15:03:36,644 - INFO: test progress: 100%|##########| 105/105 [00:07<00:00,  7.84it/s]
+2023-05-05 15:03:36,646 - INFO: test progress: 100%|##########| 105/105 [00:07<00:00, 14.81it/s]
+2023-05-05 15:03:36,709 - INFO: Mean test loss: 0.02899
+2023-05-05 15:03:36,728 - INFO: Test ROC_AUC: 0.99745
+2023-05-05 15:03:37,588 - INFO: Saving last model checkpoint: val_loss 0.0023632, val_ROC_AUC nan to output/anon/food_classification/fold-/checkpoint.pth
+2023-05-05 15:03:37,780 - INFO: Building MLOps and Scoring Pipeline
+2023-05-05 15:03:43,779 - INFO: Running interpretability analysis
+2023-05-05 15:03:43,784 - ERROR: Stratified random sampling error: 
+Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/data_utils.py", line 276, in hydrogen_torch.src.utils.data_utils.stratified_sample_indices
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4111, in query
+    res = self.eval(expr, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 4240, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/eval.py", line 350, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 811, in __init__
+    self.terms = self.parse()
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 830, in parse
+    return self._visitor.visit(self.expr)
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 411, in visit
+    raise e
+  File "/resources/venv/lib/python3.8/site-packages/pandas/core/computation/expr.py", line 407, in visit
+    node = ast.fix_missing_locations(ast.parse(clean))
+  File "/usr/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    label_Dairy product ==1
+                ^
+SyntaxError: invalid syntax
+2023-05-05 15:04:30,522 - INFO: Interpretability analysis completed
