@@ -1,7 +1,7 @@
 
-# Model Zoo
+# H2O DL Catalog
 
-Model Zoo is a collection of 50 deep learning models that have been trained on various datasets from Kaggle. The models cover a range of use cases and industries, making them useful for anyone looking to apply deep learning to their data. These models are created using Hydrogen Torch.
+H2O DL Catalog is a collection of 50 deep learning models that have been trained on various datasets from Kaggle. The models cover a range of use cases and industries, making them useful for anyone looking to apply deep learning to their data. These models are created using Hydrogen Torch.
 
 ## 📝 Table of Contents
 1. [<font face="Lucida Handwriting"><b> Project Goals</b></font>](#1-project-goals)
