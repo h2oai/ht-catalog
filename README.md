@@ -12,7 +12,7 @@ H2O DL Catalog is a collection of 50 deep learning models that have been trained
 
 ## 🎯 Project Goals<a name="1-project-goals"></a>
 
-Deep learning is a powerful technology that has the potential to transform many industries. However, building deep learning models from scratch can be a daunting task, requiring significant expertise and resources.The Model Zoo was created to simplify the process of developing deep learning models for deep learning tasks. By providing a collection of pre-trained models that are tailored to specific industries and use cases, the Model Zoo allows developers to easily integrate these models into their applications.
+Deep learning is a powerful technology that has the potential to transform many industries. However, building deep learning models from scratch can be a daunting task, requiring significant expertise and resources.The H2O DL Catalog was created to simplify the process of developing deep learning models for deep learning tasks. By providing a collection of pre-trained models that are tailored to specific industries and use cases, the H2O DL Catalog allows developers to easily integrate these models into their applications.
 
 ## 💡 Potential Use Cases<a name="2-potential-use-cases"></a>
 
