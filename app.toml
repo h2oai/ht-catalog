@@ -1,0 +1,11 @@
+[App]
+Name = "ai.h2o.wave.dl-ht-catalog"
+Version = "0.0.1"
+Title = "DL-HT-Catalog | Hydrogen Torch | H2O Wave"
+Description = "Fifty deep learning models that are created using Hydrogen Torch"
+InstanceLifecycle = "MANAGED"
+Tags = ["DATA_SCIENCE"]
+LongDescription = "about.md"
+
+[Runtime]
+Module = "src.app"
