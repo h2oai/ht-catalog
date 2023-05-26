@@ -138,13 +138,16 @@ def get_use_case_card_items(use_case: UseCase) -> List[Component]:
     return [
         ui.inline(
             items=[
-                ui.text(f"<p>{use_case.industry_type.value}</p>"),
+                get_badge_content("#514644", "#efc8b1", use_case.industry_type.value),
                 ui.text(" | "),
-                ui.text(f"<p>{use_case.data_type.value}</p>"),
+                get_badge_content("#270540", "#F2E3FA", use_case.data_type.value),
+                # ui.text(" | "),
+                # get_badge_content("red","blue",use_case.problem_type.value),
             ],
             justify=ui.InlineJustify.CENTER,
         ),
         ui.text_l(f"<p style='text-align: center;'>{use_case.name}</p>"),
+        ui.text(f"<p style='text-align: center;'>{use_case.prediction_target}.</p>"),
         # ui.template(content=" "),
         # ui.inline(
         #     items=[
@@ -201,16 +204,16 @@ def get_use_case_details_page_items(use_case: UseCase) -> List[Component]:
                 ),
                 ui.inline(
                     items=[
-                        ui.text_l(
-                            f"<p style='text-transform: uppercase;'>{use_case.industry_type.value}</p>"
+                        get_badge_content(
+                            "#514644", "#efc8b1", use_case.industry_type.value.upper()
                         ),
                         ui.text_l(" | "),
-                        ui.text_l(
-                            f"<p style='text-transform: uppercase;'>{use_case.data_type.value}</p>"
+                        get_badge_content(
+                            "#270540", "#F2E3FA", use_case.data_type.value.upper()
                         ),
                         ui.text_l(" | "),
-                        ui.text_l(
-                            f"<p style='text-transform: uppercase;'>{use_case.problem_type.value}</p>"
+                        get_badge_content(
+                            "#132B13", "#E3FAE4", use_case.problem_type.value.upper()
                         ),
                     ],
                     justify=ui.InlineJustify.CENTER,
@@ -229,7 +232,12 @@ def get_use_case_details_page_items(use_case: UseCase) -> List[Component]:
         ui.separator(),
         ui.text_xl("<p style='text-transform: uppercase;'>Business Problem</p>"),
         ui.text_l(
-            f"<p style='text-align: justify; text-indent: 30px;'>{use_case.description}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;'>{use_case.description}.</p>"
+        ),
+        ui.template(content=" "),
+        ui.text_xl("<p style='text-transform: uppercase;'>Business Impact</p>"),
+        ui.text_l(
+            f"<p style='text-align: justify; text-indent: 30px;'>{use_case.business_impact}</p>"
         ),
         ui.template(content=" "),
         ui.text_xl("<p style='text-transform: uppercase;'>Dataset</p>"),
@@ -238,19 +246,39 @@ def get_use_case_details_page_items(use_case: UseCase) -> List[Component]:
                 <li>{use_case.dataset.capitalize()} dataset has been used.</li>
                 <li>You can access the dataset <a href='{use_case.dataset_source}' target='_blank'>here</a>.</li>
                 <li>{use_case.dataset_description}</li>
-                <li>Expectation: {use_case.prediction_target}</li>
                 <br>
                 <p><img src='{use_case.train_data_image_path}'></p>
             </ui>"""
         ),
         ui.template(content=" "),
+        ui.text_xl("<p style='text-transform: uppercase;'>Prediction Output</p>"),
+        ui.text_l(
+            f"<p style='text-align: justify; text-indent: 30px;'>{use_case.prediction_target}</p>"
+        ),
+        ui.template(content=" "),
         ui.text_xl("<p style='text-transform: uppercase;'>Model Training</p>"),
+        ui.text_l("<p style='font-family:JackInput Regular;'><b>Architecture</b></p>"),
+        ui.text_l(
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: {use_case.cfg_log_dict['architecture']['backbone']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: {use_case.cfg_log_dict['architecture']['pretrained']}</p>"
+        ),
+        ui.text_l("<p style='font-family:JackInput Regular;'><b>Augmentation</b></p>"),
+        ui.text_l(
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>augmentations_strategy: {use_case.cfg_log_dict['augmentation']['augmentations_strategy']}</p>"
+        ),
+        ui.text_l("<p style='font-family:JackInput Regular;'><b>Training</b></p>"),
+        ui.text_l(
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: {use_case.cfg_log_dict['training']['batch_size']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: {use_case.cfg_log_dict['training']['epochs']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: {use_case.cfg_log_dict['training']['gradient_clip']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: {use_case.cfg_log_dict['training']['learning_rate']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: {use_case.cfg_log_dict['training']['optimizer']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: {use_case.cfg_log_dict['training']['schedule']}</p>"
+            f"<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: {use_case.cfg_log_dict['training']['weight_decay']}</p>"
+        ),
         ui.text(f"<p><img src='{use_case.chart_image_path}'></p>"),
         ui.template(content=" "),
         ui.text_xl("<p style='text-transform: uppercase;'>Model Predictions</p>"),
-        ui.text_l(
-            f"<p style='text-align: justify; text-indent: 30px;'>Prediction Outcome: {use_case.prediction_target}</p>"
-        ),
         ui.text(f"<p><img src='{use_case.validation_predictions_image_path}'></p>"),
         ui.template(content=" "),
         ui.text_xl("<p style='text-transform: uppercase;'>License</p>"),
@@ -261,11 +289,28 @@ def get_use_case_details_page_items(use_case: UseCase) -> List[Component]:
         ui.inline(
             items=[
                 ui.button(
-                    name="go_ht_instance_button",
-                    label="Go to Hydrogen Torch Instance",
+                    name="download_cfg_button",
+                    label="View cfg.yaml file",
+                    path=f"{use_case.cfg_log_path}",
                     primary=True,
-                    icon="ArrowTallUpRight",
-                    path=f"{use_case.ht_instance_link}",
+                ),
+                ui.button(
+                    name="download_charts_button",
+                    label="View charts.json file",
+                    path=f"{use_case.charts_log_path}",
+                    primary=True,
+                ),
+                ui.button(
+                    name="download_logs_button",
+                    label="View log file",
+                    path=f"{use_case.logs_log_path}",
+                    primary=True,
+                ),
+                ui.button(
+                    name="download_logs_button",
+                    label="Download logs",
+                    value=f"{use_case.cfg_log_path},{use_case.charts_log_path},{use_case.logs_log_path}",
+                    primary=True,
                 ),
             ],
             justify=ui.InlineJustify.END,
@@ -305,4 +350,15 @@ def _filter_use_cases(
             ),
             use_cases.values(),
         )
+    )
+
+
+def get_badge_content(fcolor, bcolor, text):
+    return ui.markup(
+        f"""
+                <svg width="{len(text)*8+21}" height="25">
+                    <rect width="{len(text)*8+21}" height="25" rx="5" ry="5" style="fill:{bcolor};"/>
+                    <text x="6" y="17" fill={fcolor}>{text}</text>
+                </svg>
+                """
     )

@@ -18,7 +18,7 @@ class IndustryType(BaseEnum):
     Manufacturing = "Manufacturing"
     Healthcare = "Healthcare"
     AI_Good = "AI for Good"
-    Agriculture = "Agriculture / AI for Good"
+    Agriculture = "Agriculture"
     Content_Creation = "Content Creation"
     FnB = "FnB"
     Unknown = "Unknown"
@@ -37,7 +37,7 @@ class ProblemType(BaseEnum):
     Classification = "Classification"
     Regression = "Regression"
     Segmentation = "Segmentation"
-    Object_Detecton = "Object Detecton"
+    Object_Detection = "Object Detection"
     Metric_Learning = "Metric Learning"
     Text_Sequence = "Text sequence to sequence"
     Unknown = "Unknown"
@@ -68,10 +68,16 @@ class UseCase:
     dataset: Optional[str] = None
     dataset_source: Optional[str] = None
     dataset_description: Optional[str] = None
+    business_impact: Optional[str] = None
     prediction_target: Optional[str] = None
     ht_instance_link: Optional[str] = None
     chart_image_path: Optional[str] = None
     train_data_image_path: Optional[str] = None
     validation_predictions_image_path: Optional[str] = None
     cover_image_path: Optional[str] = None
+    cfg_log_path: Optional[str] = None
+    charts_log_path: Optional[str] = None
+    logs_log_path: Optional[str] = None
+    logs_folder: Optional[str] = None
+    cfg_log_dict = None
     license_type: LicenseType = LicenseType.Unknown
