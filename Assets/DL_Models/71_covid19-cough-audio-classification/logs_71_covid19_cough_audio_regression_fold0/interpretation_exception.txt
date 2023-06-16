@@ -1,0 +1,35 @@
+RuntimeError('CUDA out of memory. Tried to allocate 144.00 MiB (GPU 0; 15.78 GiB total capacity; 14.19 GiB already allocated; 14.75 MiB free; 14.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF')Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/interpretation_utils.py", line 38, in hydrogen_torch.src.utils.interpretation_utils.create_interpretation_plots
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/interpretation_utils.py", line 111, in hydrogen_torch.src.utils.interpretation_utils.interpretations_loop
+  File "hydrogen_torch_cythonized/hydrogen_torch/interpretability/interpretations/audio_classification_interpretations.py", line 40, in hydrogen_torch.interpretability.interpretations.audio_classification_interpretations.AudioGradCam.__call__
+  File "/resources/venv/lib/python3.8/site-packages/pytorch_grad_cam/base_cam.py", line 184, in __call__
+    return self.forward(input_tensor,
+  File "/resources/venv/lib/python3.8/site-packages/pytorch_grad_cam/base_cam.py", line 74, in forward
+    outputs = self.activations_and_grads(input_tensor)
+  File "/resources/venv/lib/python3.8/site-packages/pytorch_grad_cam/activations_and_gradients.py", line 42, in __call__
+    return self.model(x)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "hydrogen_torch_cythonized/hydrogen_torch/interpretability/interpretations/audio_classification_interpretations.py", line 23, in hydrogen_torch.interpretability.interpretations.audio_classification_interpretations.PatchedModel.forward
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/models/audio_classification_model.py", line 60, in hydrogen_torch.src.models.audio_classification_model.Model.get_logits
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/timm/models/resnet.py", line 730, in forward
+    x = self.forward_features(x)
+  File "/resources/venv/lib/python3.8/site-packages/timm/models/resnet.py", line 719, in forward_features
+    x = self.layer3(x)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/timm/models/resnet.py", line 453, in forward
+    x = self.conv3(x)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/resources/venv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 144.00 MiB (GPU 0; 15.78 GiB total capacity; 14.19 GiB already allocated; 14.75 MiB free; 14.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
