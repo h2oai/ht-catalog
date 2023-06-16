@@ -1,0 +1,76 @@
+architecture:
+    backbone: tf_efficientnet_b0_ns
+    dropout: 0
+    embedding_size: 512
+    pool: Average
+    pretrained: true
+augmentation:
+    augmentations_strategy: Soft
+    custom_inference_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    custom_train_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+dataset:
+    data_folder: data/anon/market_1501_metric_learning/bounding_box_train/
+    data_folder_test: data/anon/market_1501_metric_learning/bounding_box_train/
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: image_id
+    image_column: image_id
+    label_columns: label
+    test_dataframe: data/anon/market_1501_metric_learning/test.csv
+    train_dataframe: data/anon/market_1501_metric_learning/train.csv
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 61_market_1501
+image:
+    image_channels: 3
+    image_height: 512
+    image_normalization: Simple
+    image_width: 512
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_images: 8
+prediction:
+    metric: mAP
+    test_time_augmentations: []
+    top_k_similar: 50
+training:
+    arcface_margin: 0.1
+    arcface_scale: 45
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: ArcFace
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
