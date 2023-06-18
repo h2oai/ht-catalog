@@ -1,0 +1,13 @@
+RuntimeError('CUDA out of memory. Tried to allocate 486.00 MiB (GPU 0; 15.78 GiB total capacity; 13.64 GiB already allocated; 484.00 MiB free; 13.89 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF')Traceback (most recent call last):
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/interpretation_utils.py", line 38, in hydrogen_torch.src.utils.interpretation_utils.create_interpretation_plots
+  File "hydrogen_torch_cythonized/hydrogen_torch/src/utils/interpretation_utils.py", line 111, in hydrogen_torch.src.utils.interpretation_utils.interpretations_loop
+  File "hydrogen_torch_cythonized/hydrogen_torch/interpretability/interpretations/audio_classification_interpretations.py", line 40, in hydrogen_torch.interpretability.interpretations.audio_classification_interpretations.AudioGradCam.__call__
+  File "/resources/venv/lib/python3.8/site-packages/pytorch_grad_cam/base_cam.py", line 184, in __call__
+    return self.forward(input_tensor,
+  File "/resources/venv/lib/python3.8/site-packages/pytorch_grad_cam/base_cam.py", line 82, in forward
+    loss.backward(retain_graph=True)
+  File "/resources/venv/lib/python3.8/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/resources/venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 486.00 MiB (GPU 0; 15.78 GiB total capacity; 13.64 GiB already allocated; 484.00 MiB free; 13.89 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
