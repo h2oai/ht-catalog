@@ -64,7 +64,7 @@ Using the models in this project is easy and straightforward. Follow these simpl
 
 | Industry | Usecase | Prediction Target | Predictions Snapshot |
 | -------- | ------- | ----------------- | ---------------- |
-| AI for Good | Smoke Classification in Images | Classify whether the image has smoke or not | ![smoke_classification_image](Assets/DL_Models/4_Smoke%20Classification/Validation%20Predictions.png)|
+| AI for Good | ![Smoke Classification in Images](Assets/DL_Models/4_Smoke%20Classification) | Classify whether the image has smoke or not | ![smoke_classification_image](Assets/DL_Models/4_Smoke%20Classification/Validation%20Predictions.png)|
 | FnB | Food Image Classification | Categorize different types of food based on their visual characteristics | ![food_classification_image](Assets/DL_Models/6_Food%20Classifications/Validation%20Predictions.png) |
 | Manufacturing | Surface Crack Classifier | Classify whether the image has crack or not | ![crack_classification_image](Assets/DL_Models/7_Crack%20Detection/Validation%20Predictions.png) |
 | Healthcare | Brain Tumor Classification | Predict the type of tumor based on medical imaging data | ![tumor_classification_image](Assets/DL_Models/8_Brain%20MRI/Validation%20Predictions.png) |
