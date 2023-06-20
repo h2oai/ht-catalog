@@ -95,13 +95,13 @@ Using the models in this project is easy and straightforward. Follow these simpl
 
 | Industry | Use Case | Prediction Target | Predictions Snapshot |
 | --- | --- | --- | --- |
-| Public Safety | [Crowd Control](Assets/DL_Models/29_Crowd%20Counting) | Estimate the number of people in a given area | ![Predictions Snapshot](Assets/DL_Models/29_Crowd%20Counting/Validation%20Predictions.png) |
+| Public Safety | [Crowd Control](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/29_Crowd%20Counting) | Estimate the number of people in a given area | ![Predictions Snapshot](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/29_Crowd%20Counting/Validation%20Predictions.png) |
 
 ### Image Segmentation
 
 | Industry | Use Case | Prediction Target | Predictions Snapshot |
 | --- | --- | --- | --- |
-| AI for Good | [Smoke Segmentation in Images](Assets/DL_Models/3_Smoke%20Segmentation) | Segment the presence and location of smoke within images | ![Smoke Segmentation Predictions Snapshot](Assets/DL_Models/3_Smoke%20Segmentation/Validation%20Predictions.png)|
+| AI for Good | [Smoke Segmentation in Images](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/3_Smoke%20Segmentation) | Segment the presence and location of smoke within images | ![Smoke Segmentation Predictions Snapshot](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/3_Smoke%20Segmentation/Validation%20Predictions.png)|
 | AI for Good | [Flooding Area Segmentation](https://github.com/h2oai/HT-Catalog/blob/24453db9a0ae06b627ffb71ad320d223b3256711/Assets/DL_Models/12_Flooding%20Area%20Prediction) | Segmenting the water regions in flooding area | ![Flooding Area Segmentation Predictions Snapshot](https://github.com/h2oai/HT-Catalog/blob/24453db9a0ae06b627ffb71ad320d223b3256711/Assets/DL_Models/12_Flooding%20Area%20Prediction/Validation%20Predictions.png) |
 | AI for Good | [Flood area multi label segmentation](https://github.com/h2oai/HT-Catalog/blob/24453db9a0ae06b627ffb71ad320d223b3256711/Assets/DL_Models/14_Flood%20Area%20%3A%20Classification) | Segment the flooding area in UAS imageries | ![Flood Area Segmentation Predictions Snapshot](https://github.com/h2oai/HT-Catalog/blob/24453db9a0ae06b627ffb71ad320d223b3256711/Assets/DL_Models/14_Flood%20Area%20%3A%20Classification/Validation%20Predictions.png) |
 | AI for Good | [Indian Roads segmentation](https://github.com/h2oai/HT-Catalog/blob/1bd3b25bf6e6d4268d635aa937887d0bb9155137/Assets/DL_Models/15_Indian%20Roads%20segmentation) | Segment the roads, potholes, and footpaths in the images | ![Indian Roads segmentation Predictions Snapshot](https://github.com/h2oai/HT-Catalog/blob/1bd3b25bf6e6d4268d635aa937887d0bb9155137/Assets/DL_Models/15_Indian%20Roads%20segmentation/Validation%20Predictions.png) |
