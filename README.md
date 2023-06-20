@@ -1,7 +1,7 @@
 
 # H2O DL Catalog
 
-H2O DL Catalog is a collection of 50 deep learning models that have been trained on various datasets from Kaggle. The models cover a range of use cases and industries, making them useful for anyone looking to apply deep learning to their data. These models are created using Hydrogen Torch.
+H2O DL Catalog is a collection of 100 deep learning models that have been trained on various datasets from Kaggle. The models cover a range of use cases and industries, making them useful for anyone looking to apply deep learning to their data. These models are created using Hydrogen Torch.
 
 ## 📝 Table of Contents
 1. [<font face="Lucida Handwriting"><b> Project Goals</b></font>](#1-project-goals)
@@ -35,6 +35,7 @@ The models in this project have a wide range of potential use cases across diffe
 - `Text Regression`
 - `Text Sequence to Sequence`
 - `Text Span Prediction`
+- `Text Token Classification`
 
 These models can help businesses automate manual processes, improve decision-making, and provide better customer experiences.
 
