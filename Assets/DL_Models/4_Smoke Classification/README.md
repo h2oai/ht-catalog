@@ -1,0 +1,48 @@
+# SMOKE CLASSIFICATION IN IMAGES
+### AI for Good | Image | Classification
+
+![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/cover.png)
+![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/cover.jpg)
+![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/cover.jpeg)
+![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/cover.webp)
+![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/cover)
+
+### BUSINESS PROBLEM
+<p style='text-align: justify; text-indent: 30px;'>Smoke Classification model can accurately classify smoke. This model is an essential tool for fire safety professionals, allowing them to detect and classify smoke accurately and efficiently..</p>
+
+### BUSINESS IMPACT
+<p style='text-align: justify; text-indent: 30px;'>Smoke classification in images has wide-ranging business impact. In fire detection systems, accurate smoke classification enhances early warning systems, allowing for prompt response and reducing the risk of fire-related damage. In industrial settings, smoke classification enables proactive monitoring of smoke emissions, ensuring compliance with environmental regulations and promoting sustainable practices. Public safety agencies benefit from smoke classification in surveillance systems, aiding in the identification of potential fire hazards and enhancing emergency response. Additionally, in insurance and risk assessment, smoke classification provides valuable insights for property underwriting and assessing fire-related risks. Overall, smoke classification in images enhances safety measures, regulatory compliance, and risk management..</p>
+
+### DATASET
+- Smoke classification dataset has been used.
+- You can access the dataset [here](s3://apac-cds/ht_datasets/image_classification/wildfire_image_classification.zip).
+- 343 images with label  0 or 1 .
+
+![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/train%20data.png)
+
+### PREDICTION OUTPUT
+<p style='text-align: justify; text-indent: 30px;'>Classify whether the image has smoke or not.</p>
+
+### MODEL TRAINING
+<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+
+<p style='font-family:JackInput Regular;'><b>Training</b></p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
+<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+
+![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/chart.png)
+
+### MODEL PREDICTIONS
+
+![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/4_Smoke%20Classification/Validation%20Predictions.png)
+
+### LICENSE
+<p style='text-align: justify; text-indent: 30px;'>nan</p>
+    

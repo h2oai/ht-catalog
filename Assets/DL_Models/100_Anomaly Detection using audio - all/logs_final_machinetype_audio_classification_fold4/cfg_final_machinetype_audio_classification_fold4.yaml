@@ -1,0 +1,79 @@
+architecture:
+    backbone: resnet34
+    dropout: 0
+    pool: GeM
+    pretrained: false
+audio:
+    audio_parameters: Manual
+    hop_size: 512
+    maximum_frequency: 16000
+    mel_frequency_bins: 128
+    minimum_frequency: 50
+    sample_rate: 22050
+    spectrogram_normalization: 'No'
+    stft_window_size: 2048
+    training_chunk_seconds: 10
+augmentation:
+    mix_audio: Disabled
+    mix_concentration: 1.0
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    audio_column: audio
+    data_folder: data/anon/audio_classification_all_1/sound_data_all/
+    data_folder_test: data/anon/audio_classification_all_1/sound_data_all/
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: 'Unnamed: 0'
+    label_columns:
+    - label
+    test_dataframe: None
+    train_dataframe: data/anon/audio_classification_all_1/audio_dataset_all_1.csv
+    unlabeled_dataframe: None
+    validation_dataframe: data/anon/audio_classification_all_1/audio_dataset_all_val_1.csv
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: final_machinetype_audio_classification
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    inference_chunk_method: Fix
+    inference_chunk_seconds: 5
+    max_inference_chunk_seconds: 600
+    metric: F1
+    probability_threshold: 0.5
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0
