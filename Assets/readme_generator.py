@@ -7,7 +7,6 @@ ASSETS_URL = "https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241
 UCS_FOLDER_PATH = "DL_Models/"
 UC_CSV_FILE = "docs/use_cases.csv"
 
-
 def get_cfg_log_dict(uc_id, dataset):
     folder_path = f"{UCS_FOLDER_PATH}{uc_id}_{dataset}"
     usecase_files = os.listdir(folder_path)
