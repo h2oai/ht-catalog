@@ -30,7 +30,7 @@ def master_readme():
 """
 
 def individual_usecases():
-	base = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
+	base = "https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/"
 
 	base_l = "../use-cases/"
 	
