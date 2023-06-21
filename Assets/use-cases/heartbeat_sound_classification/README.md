@@ -1,48 +1,125 @@
-# HEARTBEAT SOUND CLASSIFICATION
-### Healthcare | Audio | Classification
+## Use Case 48: Heartbeat Sound Classification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/cover)
+Classify heartbeat sounds into different categories
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Heartbeat Sound Classification model is a machine learning model designed to classify heartbeat sounds into different categories such as normal heartbeat and abnormal heartbeats. The model is trained on a dataset of heartbeat sounds, which includes recordings of both healthy and unhealthy heartbeats. By analyzing the sound patterns in the recordings, the model can accurately classify the heartbeat sounds into their respective categories.The potential use cases of this model include early detection of heart problems, remote monitoring of heart health, and improving the accuracy of medical diagnoses. The model can be integrated into healthcare systems and wearable devices to provide real-time analysis of heartbeat sounds and alert medical professionals to any abnormalities..</p>
+- `Industry: Healthcare`
+- `Problem Type: Audio Classification`
+- `Data Type: Audio`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Heartbeat sound classification has significant implications in healthcare and medical diagnostics. By analyzing audio data of heartbeat sounds, machine learning algorithms can classify and identify abnormal heart patterns or conditions. Accurate heartbeat sound classification aids in early detection of cardiac abnormalities, assisting medical professionals in diagnosing cardiovascular diseases and providing timely interventions. It contributes to improved patient care, personalized treatment plans, and better management of heart-related conditions. Heartbeat sound classification technology enhances diagnostic capabilities, supports preventive healthcare, and improves patient outcomes in cardiology..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/cover)
 
-### DATASET
-- Heartbeat sound classification dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/image_classification/heartbeat_sound_classification.zip).
-- 832 train images with their labels (artifact,extrastole,murmur,normal,unlabel).
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/train%20data.png)
+Heartbeat Sound Classification model is a machine learning model designed to classify heartbeat sounds into different categories such as normal heartbeat and abnormal heartbeats. The model is trained on a dataset of heartbeat sounds, which includes recordings of both healthy and unhealthy heartbeats. By analyzing the sound patterns in the recordings, the model can accurately classify the heartbeat sounds into their respective categories.The potential use cases of this model include early detection of heart problems, remote monitoring of heart health, and improving the accuracy of medical diagnoses. The model can be integrated into healthcare systems and wearable devices to provide real-time analysis of heartbeat sounds and alert medical professionals to any abnormalities.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Classify heartbeat sounds into different categories..</p>
+Heartbeat sound classification has significant implications in healthcare and medical diagnostics. By analyzing audio data of heartbeat sounds, machine learning algorithms can classify and identify abnormal heart patterns or conditions. Accurate heartbeat sound classification aids in early detection of cardiac abnormalities, assisting medical professionals in diagnosing cardiovascular diseases and providing timely interventions. It contributes to improved patient care, personalized treatment plans, and better management of heart-related conditions. Heartbeat sound classification technology enhances diagnostic capabilities, supports preventive healthcare, and improves patient outcomes in cardiology.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+832 train images with their labels (artifact,extrastole,murmur,normal,unlabel)
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/48_Heartbeat%20Sound%20Classification/Validation%20Predictions.png)
+Objective: Classify heartbeat sounds into different categories
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>CC0: Public Domain</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: resnet50
+    dropout: 0
+    pool: Average
+    pretrained: true
+audio:
+    audio_parameters: Auto
+    hop_size: 512
+    maximum_frequency: 16000
+    mel_frequency_bins: 128
+    minimum_frequency: 50
+    sample_rate: 4000
+    spectrogram_normalization: 'No'
+    stft_window_size: 2048
+    training_chunk_seconds: 28
+augmentation:
+    mix_audio: Disabled
+    mix_concentration: 1.0
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    audio_column: audio
+    data_folder: data/anon/heartbeat_sound_classification/Heartbeat_Sound/
+    data_folder_test: None
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: audio
+    label_columns:
+    - class
+    test_dataframe: None
+    train_dataframe: data/anon/heartbeat_sound_classification/train.pq
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: heartbeat_sound_classification
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    inference_chunk_method: Fix
+    inference_chunk_seconds: 28
+    max_inference_chunk_seconds: 600
+    metric: ROC_AUC
+    probability_threshold: 0.5
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/Validation%20Predictions.png)
+
+### License
+
+CC0: Public Domain

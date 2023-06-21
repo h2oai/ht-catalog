@@ -1,48 +1,125 @@
-# SPOKEN DIGITS CLASSIFICATION
-### Voice technology. | Audio | Classification
+## Use Case 52: Spoken Digits Classification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/cover)
+Classify the spoken digits into 0 to 9
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>The spoken digits classification use case involves developing a machine learning model that can accurately recognize and classify spoken digits. The model takes audio recordings of spoken digits as input and predicts the corresponding digit. This task is commonly used in various applications such as voice assistants, automated phone systems, and speech recognition technologies..</p>
+- `Industry: Manufacturing`
+- `Problem Type: Audio Classification`
+- `Data Type: Audio`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Accurate spoken digits classification has significant business impact across multiple industries. In the telecommunications sector, it can enhance call routing systems, enabling more efficient and automated customer support. In the finance industry, it can improve the security of voice-based authentication systems. Additionally, in the automotive sector, it can enhance hands-free calling and voice control functionalities in vehicles. By automating the recognition and classification of spoken digits, businesses can streamline operations, improve customer experiences, and enable more seamless interactions through voice interfaces..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/cover)
 
-### DATASET
-- Audio samples of spoken digits dataset has been used.
-- You can access the dataset [here](s3://h2oai-hydrogen-torch-internal/dev_datasets/amnist_audio_regression.zip).
-- 30000 audio samples of spoken digits (0-9) of 60 different speakers..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/train%20data.png)
+The spoken digits classification use case involves developing a machine learning model that can accurately recognize and classify spoken digits. The model takes audio recordings of spoken digits as input and predicts the corresponding digit. This task is commonly used in various applications such as voice assistants, automated phone systems, and speech recognition technologies.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Classify the Spoken Digits into 0 to 9.</p>
+Accurate spoken digits classification has significant business impact across multiple industries. In the telecommunications sector, it can enhance call routing systems, enabling more efficient and automated customer support. In the finance industry, it can improve the security of voice-based authentication systems. Additionally, in the automotive sector, it can enhance hands-free calling and voice control functionalities in vehicles. By automating the recognition and classification of spoken digits, businesses can streamline operations, improve customer experiences, and enable more seamless interactions through voice interfaces.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+30000 audio samples of spoken digits (0-9) of 60 different speakers.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/52_Audio%20Samples%20of%20Spoken%20Digits/Validation%20Predictions.png)
+Objective: Classify the spoken digits into 0 to 9
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>nan</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: resnet50
+    dropout: 0
+    pool: Average
+    pretrained: true
+audio:
+    audio_parameters: Auto
+    hop_size: 512
+    maximum_frequency: 16000
+    mel_frequency_bins: 128
+    minimum_frequency: 50
+    sample_rate: 22050
+    spectrogram_normalization: 'No'
+    stft_window_size: 2048
+    training_chunk_seconds: 1
+augmentation:
+    mix_audio: Disabled
+    mix_concentration: 1.0
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    audio_column: audio
+    data_folder: data/anon/amnist_audio_regression/amnist_audios/
+    data_folder_test: None
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: audio
+    label_columns:
+    - label
+    test_dataframe: None
+    train_dataframe: data/anon/amnist_audio_regression/amnist_meta.csv
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 52_ambits
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    inference_chunk_method: Fix
+    inference_chunk_seconds: 1
+    max_inference_chunk_seconds: 600
+    metric: ROC_AUC
+    probability_threshold: 0.5
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/Validation%20Predictions.png)
+
+### License
+
+NA

@@ -1,48 +1,108 @@
-# INSURANCE HOLDER DETECTION
-### E-commerce | Text | Span Prediction
+## Use Case 84: Insurance Holder Detection
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/cover)
+Determine and classify individuals holding insurance policies or claims
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Insurance holder detection refers to the automated identification and verification of individuals who hold insurance policies or claims. This technology utilizes various data sources and machine learning algorithms to match and associate relevant information, assisting insurance providers in accurately identifying policyholders, preventing fraud, and ensuring efficient claims processing..</p>
+- `Industry: Banking`
+- `Problem Type: Text Span Prediction`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>The business impact of insurance holder detection is significant for insurance providers and fraud prevention. By accurately identifying and verifying insurance policyholders, this technology helps mitigate fraud risks and ensures accurate claims processing. It enables insurance companies to streamline operations, reduce losses, and enhance underwriting accuracy. By maintaining the integrity of their policies and safeguarding against fraudulent activities, insurance providers can build trust with customers, strengthen their reputation, and improve overall business performance..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/cover)
 
-### DATASET
-- Insurance_holder_detection dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/text_span_prediction/insurance_holder_detection.zip).
-- 7632 train rows with their answers..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/train%20data.png)
+Insurance holder detection refers to the automated identification and verification of individuals who hold insurance policies or claims. This technology utilizes various data sources and machine learning algorithms to match and associate relevant information, assisting insurance providers in accurately identifying policyholders, preventing fraud, and ensuring efficient claims processing.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Determine and classify individuals holding insurance policies or claims using text classification techniques for accurate identification and fraud prevention..</p>
+The business impact of insurance holder detection is significant for insurance providers and fraud prevention. By accurately identifying and verifying insurance policyholders, this technology helps mitigate fraud risks and ensures accurate claims processing. It enables insurance companies to streamline operations, reduce losses, and enhance underwriting accuracy. By maintaining the integrity of their policies and safeguarding against fraudulent activities, insurance providers can build trust with customers, strengthen their reputation, and improve overall business performance.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: distilbert-base-cased-distilled-squad</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+7632 train rows with their answers.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/84_insurance_holder_detection/Validation%20Predictions.png)
+Objective: Determine and classify individuals holding insurance policies or claims
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Unknown</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: distilbert-base-cased-distilled-squad
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pretrained: true
+augmentation: {}
+dataset:
+    answer_column: answers
+    answer_start_column: None
+    context_column: context
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: id
+    number_of_predicted_answers: 3
+    question_column: question
+    test_dataframe: data/anon/insurance_holder_detection.1/policies-named-insured-test.csv
+    train_dataframe: data/anon/insurance_holder_detection.1/policies-named-insured-train.csv
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 84_insurance_holder_detection
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: Jaccard
+tokenizer:
+    doc_stride: 64
+    lowercase: false
+    max_length: 256
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: CrossEntropy
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/Validation%20Predictions.png)
+
+### License
+
+Unknown

@@ -1,48 +1,125 @@
-# EMERGENCY VEHICLE SIREN SOUNDS DETECTION
-### AI for good | Audio | Classification
+## Use Case 88: Siren Sounds Classification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/cover)
+Detect and classify emergency vehicle siren sounds from audio data
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Emergency vehicle siren sounds detection involves the automated identification and classification of siren sounds emitted by emergency vehicles, such as police cars, ambulances, or fire trucks. This technology utilizes audio analysis and pattern recognition techniques to distinguish emergency vehicle sirens from background noise, enabling timely response and efficient traffic management.</p>
+- `Industry: Government`
+- `Problem Type: Audio Classification`
+- `Data Type: Audio`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>The business impact of emergency vehicle siren sounds detection is vital in traffic management and emergency response systems. By automatically identifying and detecting emergency vehicle sirens from audio data, this technology enables efficient traffic routing, timely emergency response, and improved road safety. It optimizes emergency vehicle dispatching, reduces response times, and minimizes traffic congestion. It contributes to faster emergency assistance, enhances public safety, and supports effective urban planning..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/cover)
 
-### DATASET
-- Emergency_vehicle_siren_sounds dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/audio_classification/emergency-vehicle-siren-sounds.zip).
-- 600 train audio samples with 3 different labels such as ambulance,traffic,firetruck..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/train%20data.png)
+Emergency vehicle siren sounds detection involves the automated identification and classification of siren sounds emitted by emergency vehicles, such as police cars, ambulances, or fire trucks. This technology utilizes audio analysis and pattern recognition techniques to distinguish emergency vehicle sirens from background noise, enabling timely response and efficient traffic management
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Detect and classify emergency vehicle siren sounds from audio data using audio classification techniques for timely response and traffic management..</p>
+The business impact of emergency vehicle siren sounds detection is vital in traffic management and emergency response systems. By automatically identifying and detecting emergency vehicle sirens from audio data, this technology enables efficient traffic routing, timely emergency response, and improved road safety. It optimizes emergency vehicle dispatching, reduces response times, and minimizes traffic congestion. It contributes to faster emergency assistance, enhances public safety, and supports effective urban planning.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+600 train audio samples with 3 different labels such as ambulance,traffic,firetruck.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/88_emergency_vehicle_siren_sounds/Validation%20Predictions.png)
+Objective: Detect and classify emergency vehicle siren sounds from audio data
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Other</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: resnet50
+    dropout: 0
+    pool: Average
+    pretrained: true
+audio:
+    audio_parameters: Auto
+    hop_size: 512
+    maximum_frequency: 16000
+    mel_frequency_bins: 128
+    minimum_frequency: 50
+    sample_rate: 44100
+    spectrogram_normalization: 'No'
+    stft_window_size: 2048
+    training_chunk_seconds: 4
+augmentation:
+    mix_audio: Disabled
+    mix_concentration: 1.0
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    audio_column: audio
+    data_folder: data/anon/emergency-vehicle-siren-sounds/sounds/
+    data_folder_test: None
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: audio
+    label_columns:
+    - class
+    test_dataframe: None
+    train_dataframe: data/anon/emergency-vehicle-siren-sounds/train.pq
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 88_vehicle-siren-sounds
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    inference_chunk_method: Fix
+    inference_chunk_seconds: 4
+    max_inference_chunk_seconds: 600
+    metric: ROC_AUC
+    probability_threshold: 0.5
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/Validation%20Predictions.png)
+
+### License
+
+Other

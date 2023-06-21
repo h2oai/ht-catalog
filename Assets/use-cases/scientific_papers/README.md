@@ -1,48 +1,109 @@
-# SCIENTIFIC PAPERS NER
-### AI for good | Text | Sequence to Sequence
+## Use Case 82: Scientific Papers NER
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/cover)
+Extract and classify named entities from scientific papers 
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Scientific papers NER (Named Entity Recognition) entails the identification and extraction of named entities such as names of researchers, organizations, chemicals, or biological entities from scientific articles and papers. This technology assists in organizing and indexing scientific literature, enabling efficient information retrieval and knowledge discovery in specific domains.</p>
+- `Industry: Research`
+- `Problem Type: Text Sequence to Sequence`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Scientific papers NER has significant business implications in scientific research and knowledge management. By automatically extracting named entities from scientific articles and papers, this technology enhances information retrieval, literature review, and knowledge discovery. Researchers, academic institutions, and R&D departments can efficiently locate relevant literature, identify key authors or organizations, and establish collaborations. It fosters scientific progress, accelerates innovation, and supports evidence-based decision-making..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/cover)
 
-### DATASET
-- Scientific_papers dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/text_sequence_to_sequence/scientific papers.zip).
-- 202914 train rows with their summaries.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/train%20data.png)
+Scientific papers NER (Named Entity Recognition) entails the identification and extraction of named entities such as names of researchers, organizations, chemicals, or biological entities from scientific articles and papers. This technology assists in organizing and indexing scientific literature, enabling efficient information retrieval and knowledge discovery in specific domains
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Extract and classify named entities from scientific papers using named entity recognition techniques for efficient organization and indexing of scientific literature..</p>
+Scientific papers NER has significant business implications in scientific research and knowledge management. By automatically extracting named entities from scientific articles and papers, this technology enhances information retrieval, literature review, and knowledge discovery. Researchers, academic institutions, and R&D departments can efficiently locate relevant literature, identify key authors or organizations, and establish collaborations. It fosters scientific progress, accelerates innovation, and supports evidence-based decision-making.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: sshleifer/distilbart-cnn-12-6</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 4</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+202914 train rows with their summaries
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/82_scientific_papers/Validation%20Predictions.png)
+Objective: Extract and classify named entities from scientific papers 
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Unknown</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: sshleifer/distilbart-cnn-12-6
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pretrained: true
+augmentation: {}
+dataset:
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: article
+    label_columns: abstract
+    test_dataframe: data/anon/scientific papers/scientific_papers_test.csv
+    text_column: article
+    train_dataframe: data/anon/scientific papers/scientific_papers_train.csv
+    validation_dataframe: data/anon/scientific papers/scientific_papers_validation.csv
+    validation_size: 0.2
+    validation_strategy: custom
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 82_paper_summary
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    do_sample: false
+    max_length: 128
+    metric: BLEU
+    num_beams: 1
+    temperature: 1.0
+tokenizer:
+    label_max_length: 128
+    lowercase: false
+    max_length: 128
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 4
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: CrossEntropy
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/Validation%20Predictions.png)
+
+### License
+
+Unknown

@@ -21,13 +21,6 @@ def master_readme():
 		htm += "\n"
 	print (htm)
 
-"""
-'id', 'use-case', 'industry', 'prediction-target', 'problem-type', 'github_url', 
-'data-type', 
-'description', 'Business Impact', 
-'instance-link', 'dataset', 'dataset-description', 
-'source', 'license', 'artifacts-link'
-"""
 
 def individual_usecases():
 	base = "https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/"
@@ -99,12 +92,13 @@ Model Configuration (Hydrogen Torch yaml)
 
 {r['license']}
 """
-		
-		print (readme)
+		if 'pest_clas' in url_l:
+			continue
+		open(url_l + "readme.md", "w").write(readme)
 
 
 
 
-		break
+		# break
 
 individual_usecases()

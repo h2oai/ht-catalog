@@ -1,48 +1,128 @@
-# CASTING DEFECT CLASSIFICATION
-### Manufacturing  | Image | Classification
+## Use Case 28: Casting Defect Classification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/cover)
+Detect and classify the casting defects
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Casting Defect Classification model uses computer vision techniques to classify images of casting defects into their respective categories. By accurately identifying and classifying the defects, manufacturers can detect and prevent them during the casting process, leading to better product quality and reduced waste. The model can be used as a tool for quality control and inspection in the manufacturing industry..</p>
+- `Industry: Manufacturing `
+- `Problem Type: Image Classification`
+- `Data Type: Image`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Casting defect classification has a significant impact on the manufacturing and engineering industries. By applying computer vision and machine learning algorithms, it allows for the automated detection and classification of defects in casted components. Early identification of defects such as porosity, cracks, or surface irregularities ensures the production of high-quality casted parts. Casting defect classification enhances manufacturing efficiency, reduces scrap rates, and improves product reliability. It enables timely interventions, minimizing rework and production delays, thereby optimizing manufacturing processes and ensuring customer satisfaction..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/cover)
 
-### DATASET
-- Casting defect classification dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/image_classification/casting_defect_classification.zip).
-- 1300 images with labels. such as def or ok.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/train%20data.png)
+Casting Defect Classification model uses computer vision techniques to classify images of casting defects into their respective categories. By accurately identifying and classifying the defects, manufacturers can detect and prevent them during the casting process, leading to better product quality and reduced waste. The model can be used as a tool for quality control and inspection in the manufacturing industry.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Accurately detect and classify the casting defects..</p>
+Casting defect classification has a significant impact on the manufacturing and engineering industries. By applying computer vision and machine learning algorithms, it allows for the automated detection and classification of defects in casted components. Early identification of defects such as porosity, cracks, or surface irregularities ensures the production of high-quality casted parts. Casting defect classification enhances manufacturing efficiency, reduces scrap rates, and improves product reliability. It enables timely interventions, minimizing rework and production delays, thereby optimizing manufacturing processes and ensuring customer satisfaction.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+1300 images with labels. such as def or ok
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/28_Casting%20Defect%20Classification/Validation%20Predictions.png)
+Objective: Detect and classify the casting defects
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Attribution 4.0 International (CC BY 4.0)</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: resnet50
+    dropout: 0
+    pool: Average
+    pretrained: true
+augmentation:
+    augmentations_strategy: Soft
+    custom_inference_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    custom_train_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    cutmix_corner: false
+    mix_concentration: 1.0
+    mix_image: Disabled
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    data_folder: data/anon/casting_defect_classification/casting_512x512/
+    data_folder_test: None
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: image
+    image_column: image
+    label_columns:
+    - class
+    test_dataframe: None
+    train_dataframe: data/anon/casting_defect_classification/casting_defect_classification.pq
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: casting_defect_classification
+image:
+    image_channels: 3
+    image_height: 224
+    image_normalization: Simple
+    image_width: 224
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_images: 8
+prediction:
+    metric: ROC_AUC
+    probability_threshold: 0.5
+    test_time_augmentations: []
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/Validation%20Predictions.png)
+
+### License
+
+Attribution 4.0 International (CC BY 4.0)

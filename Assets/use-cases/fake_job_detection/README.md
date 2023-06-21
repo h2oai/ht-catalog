@@ -1,48 +1,125 @@
-# FAKE JOB POST DETECTION FROM POSTS
-### AI for good | Text | Classification
+## Use Case 78: Fake Job Posting Detection
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/cover)
+Detect and classify fraudulent job postings in online platforms
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Fake job detection entails the identification and classification of fraudulent or misleading job postings in online job platforms. This technology leverages natural language processing and machine learning techniques to analyze job descriptions, qualifications, and other relevant factors, assisting job seekers in avoiding scams and ensuring a safe and trustworthy job search experience..</p>
+- `Industry: Security`
+- `Problem Type: Text Classification`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Fake job detection offers critical business benefits for job platforms, recruitment agencies, and job seekers. By automatically identifying and flagging fraudulent job postings, this technology helps job platforms maintain their integrity, trustworthiness, and user satisfaction. It protects job seekers from scams, ensures a safe and reliable job search environment, and fosters a positive user experience. It contributes to building a reputable job marketplace, attracting top talent, and facilitating successful job placements..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/cover)
 
-### DATASET
-- Fake_job_detection dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/text_classification/fake_job_postings.csv).
-- 17880 train text samples with 2 classes(0 or 1).
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/train%20data.png)
+Fake job detection entails the identification and classification of fraudulent or misleading job postings in online job platforms. This technology leverages natural language processing and machine learning techniques to analyze job descriptions, qualifications, and other relevant factors, assisting job seekers in avoiding scams and ensuring a safe and trustworthy job search experience.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Detect and classify fraudulent job postings in online platforms using text classification techniques for a safe and trustworthy job search experience.</p>
+Fake job detection offers critical business benefits for job platforms, recruitment agencies, and job seekers. By automatically identifying and flagging fraudulent job postings, this technology helps job platforms maintain their integrity, trustworthiness, and user satisfaction. It protects job seekers from scams, ensures a safe and reliable job search environment, and fosters a positive user experience. It contributes to building a reputable job marketplace, attracting top talent, and facilitating successful job placements.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: bert-base-uncased</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+17880 train text samples with 2 classes(0 or 1)
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/78_fake_job_detection/Validation%20Predictions.png)
+Objective: Detect and classify fraudulent job postings in online platforms
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>CC0: Public Domain</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: bert-base-uncased
+    dropout: 0
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pool: '[CLS] token'
+    pretrained: true
+augmentation: {}
+dataset:
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: job_id
+    label_columns:
+    - fraudulent
+    separator: ''
+    test_dataframe: None
+    text_column:
+    - title
+    - department
+    - salary_range
+    - company_profile
+    - description
+    - requirements
+    - benefits
+    - employment_type
+    - required_experience
+    - required_education
+    - industry
+    - function
+    - location
+    train_dataframe: data/anon/fake_job_postings/fake_job_postings.csv
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 78_fake-job
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: ROC_AUC
+    probability_threshold: 0.5
+tokenizer:
+    lowercase: false
+    max_length: 128
+    padding_quantile: 1.0
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/Validation%20Predictions.png)
+
+### License
+
+CC0: Public Domain

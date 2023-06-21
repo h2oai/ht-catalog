@@ -1,48 +1,114 @@
-# MENTAL DISORDER IDENTIFICATION
-### Healthcare | Text | Classification
+## Use Case 79: Mental Disorder identification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/cover)
+Identify and classify mental disorders 
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Mental disorder identification involves the automated screening and assessment of individuals for potential mental health conditions. This technology analyzes textual or behavioral data to detect patterns, symptoms, and risk factors associated with various mental disorders, aiding healthcare professionals in early intervention, treatment planning, and personalized care.</p>
+- `Industry: Healthcare`
+- `Problem Type: Text Classification`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>The business impact of mental disorder identification is significant in healthcare and well-being industries. By automating the screening and identification of potential mental health conditions, this technology enables early intervention, appropriate treatment planning, and personalized care. Mental healthcare providers can optimize resource allocation, streamline patient triage, and improve mental health outcomes. Additionally, businesses focused on mental well-being can develop targeted products and services, tailor interventions, and contribute to a healthier and more productive workforce..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/cover)
 
-### DATASET
-- Mental_disorder_identification dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/text_classification/mental-disorders-identification.zip).
-- 701787 train samples with 2 classes.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/train%20data.png)
+Mental disorder identification involves the automated screening and assessment of individuals for potential mental health conditions. This technology analyzes textual or behavioral data to detect patterns, symptoms, and risk factors associated with various mental disorders, aiding healthcare professionals in early intervention, treatment planning, and personalized care
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Identify and classify mental disorders based on textual or behavioral data using machine learning techniques for early intervention and personalized care..</p>
+The business impact of mental disorder identification is significant in healthcare and well-being industries. By automating the screening and identification of potential mental health conditions, this technology enables early intervention, appropriate treatment planning, and personalized care. Mental healthcare providers can optimize resource allocation, streamline patient triage, and improve mental health outcomes. Additionally, businesses focused on mental well-being can develop targeted products and services, tailor interventions, and contribute to a healthier and more productive workforce.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: bert-base-uncased</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+701787 train samples with 2 classes
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/79_mental_disorder_identification/Validation%20Predictions.png)
+Objective: Identify and classify mental disorders 
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Reddit API Terms</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: bert-base-uncased
+    dropout: 0
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pool: '[CLS] token'
+    pretrained: true
+augmentation: {}
+dataset:
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: title
+    label_columns:
+    - subreddit
+    separator: ''
+    test_dataframe: None
+    text_column:
+    - selftext
+    - title
+    train_dataframe: data/anon/mental-disorders-identification/mental_disorders_reddit.csv
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 79_mental-disorders-identification
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: ROC_AUC
+    probability_threshold: 0.5
+tokenizer:
+    lowercase: false
+    max_length: 128
+    padding_quantile: 1.0
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/Validation%20Predictions.png)
+
+### License
+
+Reddit API Terms

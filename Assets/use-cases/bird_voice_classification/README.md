@@ -1,48 +1,125 @@
-# BIRD VOICE CLASSIFICATION
-### AI for Good | Audio | Classification
+## Use Case 37: Bird Voice Classification
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/cover)
+Identify the bird by using their audio
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>The Bird Voice Classification model is a machine learning model designed to identify and classify bird species based on their vocalizations. By analyzing bird calls and songs, the model can accurately identify different bird species and distinguish them from one another. This model can be useful for ecological studies, birdwatching, and conservation efforts, as it can provide information about the presence and abundance of different bird species in an area. Additionally, the model can be used to track changes in bird populations over time and monitor the impact of environmental factors on bird behavior and vocalizations..</p>
+- `Industry: AI4Good`
+- `Problem Type: Audio Classification`
+- `Data Type: Audio`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Bird voice classification plays a crucial role in ornithology, ecological research, and biodiversity conservation. By leveraging audio signal processing techniques and machine learning algorithms, it enables the identification and classification of bird species based on their vocalizations. Accurate bird voice classification assists researchers in studying bird populations, monitoring habitats, and assessing ecological health. It supports conservation efforts, species monitoring, and understanding the impact of environmental changes on bird populations. Bird voice classification technology contributes to biodiversity preservation, ecological research, and the conservation of avian species..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/cover)
 
-### DATASET
-- Bird voice classification dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/audio_classification/whale_detection.zip).
-- 5407 train images and 687 test images with 41 uniques labels.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/train%20data.png)
+The Bird Voice Classification model is a machine learning model designed to identify and classify bird species based on their vocalizations. By analyzing bird calls and songs, the model can accurately identify different bird species and distinguish them from one another. This model can be useful for ecological studies, birdwatching, and conservation efforts, as it can provide information about the presence and abundance of different bird species in an area. Additionally, the model can be used to track changes in bird populations over time and monitor the impact of environmental factors on bird behavior and vocalizations.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Accurately identify the bird by using it's voice.</p>
+Bird voice classification plays a crucial role in ornithology, ecological research, and biodiversity conservation. By leveraging audio signal processing techniques and machine learning algorithms, it enables the identification and classification of bird species based on their vocalizations. Accurate bird voice classification assists researchers in studying bird populations, monitoring habitats, and assessing ecological health. It supports conservation efforts, species monitoring, and understanding the impact of environmental changes on bird populations. Bird voice classification technology contributes to biodiversity preservation, ecological research, and the conservation of avian species.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet50</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 32</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+5407 train images and 687 test images with 41 uniques labels
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/37_Bird%20Voice%20Classification/Validation%20Predictions.png)
+Objective: Identify the bird by using their audio
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>CC0: Public Domain</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: resnet50
+    dropout: 0
+    pool: Average
+    pretrained: true
+audio:
+    audio_parameters: Auto
+    hop_size: 512
+    maximum_frequency: 16000
+    mel_frequency_bins: 128
+    minimum_frequency: 50
+    sample_rate: 44100
+    spectrogram_normalization: 'No'
+    stft_window_size: 2048
+    training_chunk_seconds: 15
+augmentation:
+    mix_audio: Disabled
+    mix_concentration: 1.0
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    audio_column: image
+    data_folder: data/anon/bird_voice_classification/train/
+    data_folder_test: data/anon/bird_voice_classification/test/
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: image
+    label_columns:
+    - class
+    test_dataframe: data/anon/bird_voice_classification/test.pq
+    train_dataframe: data/anon/bird_voice_classification/train.pq
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: bird_voice_classification
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    inference_chunk_method: Fix
+    inference_chunk_seconds: 15
+    max_inference_chunk_seconds: 600
+    metric: ROC_AUC
+    probability_threshold: 0.5
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 32
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/Validation%20Predictions.png)
+
+### License
+
+CC0: Public Domain

@@ -1,48 +1,108 @@
-# ADVERSARIALQA
-### Content creation | Text | Span Prediction
+## Use Case 81: Adversarial-QA
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/cover)
+Develop and test robust question-answering systems against adversarial attacks 
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>AdversarialQA (Question Answering) involves the development and testing of robust question-answering systems against adversarial attacks or attempts to manipulate the system. This technology aims to enhance the reliability and security of QA models by identifying vulnerabilities, improving their resistance to adversarial inputs, and ensuring accurate and trustworthy responses..</p>
+- `Industry: Security`
+- `Problem Type: Text Span Prediction`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>The business impact of AdversarialQA lies in enhancing the reliability and security of question-answering systems. By identifying vulnerabilities and improving resistance to adversarial attacks, this technology strengthens trust in QA models and safeguards their integrity. It ensures accurate responses, reduces the risk of misinformation, and protects user confidence. Businesses can utilize robust QA systems to provide reliable information, enhance user experience, and differentiate themselves in competitive markets..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/cover)
 
-### DATASET
-- Adversarialqa dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/text_span_prediction/adversarialQA.zip).
-- 30000 train rows with their details.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/train%20data.png)
+AdversarialQA (Question Answering) involves the development and testing of robust question-answering systems against adversarial attacks or attempts to manipulate the system. This technology aims to enhance the reliability and security of QA models by identifying vulnerabilities, improving their resistance to adversarial inputs, and ensuring accurate and trustworthy responses.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Develop and test robust question-answering systems against adversarial attacks using machine learning techniques for reliable and secure QA models..</p>
+The business impact of AdversarialQA lies in enhancing the reliability and security of question-answering systems. By identifying vulnerabilities and improving resistance to adversarial attacks, this technology strengthens trust in QA models and safeguards their integrity. It ensures accurate responses, reduces the risk of misinformation, and protects user confidence. Businesses can utilize robust QA systems to provide reliable information, enhance user experience, and differentiate themselves in competitive markets.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: deepset/xlm-roberta-base-squad2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+30000 train rows with their details
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/81_AdversarialQA/Validation%20Predictions.png)
+Objective: Develop and test robust question-answering systems against adversarial attacks 
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>cc-by-sa-4.0</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: deepset/xlm-roberta-base-squad2
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pretrained: true
+augmentation: {}
+dataset:
+    answer_column: answers
+    answer_start_column: None
+    context_column: context
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: id
+    number_of_predicted_answers: 3
+    question_column: question
+    test_dataframe: None
+    train_dataframe: data/anon/adversarialqa-train/adversarialqa-train.csv
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 81_adversarial_qa
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: Jaccard
+tokenizer:
+    doc_stride: 64
+    lowercase: false
+    max_length: 256
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: CrossEntropy
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/Validation%20Predictions.png)
+
+### License
+
+cc-by-sa-4.0

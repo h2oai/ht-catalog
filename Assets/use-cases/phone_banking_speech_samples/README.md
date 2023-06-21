@@ -1,48 +1,109 @@
-# TRANSCRIPT GENERATION FOR US-EN SPEECHES
-### Media | Speech/Audio | Recognition
+## Use Case 68: Speech Transcript Generation
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/cover)
+Generate transcripts for US english speech samples
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Transcript generation for US-EN speeches involves automatically converting spoken content from US-English speeches or audio recordings into written transcripts. This technology aids in transcribing large volumes of audio data efficiently and accurately, enabling easy access to spoken information in text format..</p>
+- `Industry: Government`
+- `Problem Type: Speech Recognition`
+- `Data Type: Speech`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Transcript generation for US-EN speeches has significant business implications in various domains. In media and entertainment, it enables the creation of closed captions for videos and enhances accessibility for individuals with hearing impairments. In education, it facilitates the transcription of lectures, making them searchable and enabling easy note-taking for students. In market research, it streamlines the analysis of recorded interviews or focus group discussions. It also finds applications in legal and compliance sectors for transcribing audio recordings of proceedings and interviews. Overall, transcript generation for US-EN speeches improves productivity, accessibility, and information retrieval from spoken content..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/cover)
 
-### DATASET
-- Phone banking speech samples dataset has been used.
-- You can access the dataset [here](s3://h2oai-hydrogen-torch-internal/dev_datasets/minds14_US_speech_recognition.zip).
-- 558 train audio samples with their transcript..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/train%20data.png)
+Transcript generation for US-EN speeches involves automatically converting spoken content from US-English speeches or audio recordings into written transcripts. This technology aids in transcribing large volumes of audio data efficiently and accurately, enabling easy access to spoken information in text format.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Generate Transcript for US English Speech Samples.</p>
+Transcript generation for US-EN speeches has significant business implications in various domains. In media and entertainment, it enables the creation of closed captions for videos and enhances accessibility for individuals with hearing impairments. In education, it facilitates the transcription of lectures, making them searchable and enabling easy note-taking for students. In market research, it streamlines the analysis of recorded interviews or focus group discussions. It also finds applications in legal and compliance sectors for transcribing audio recordings of proceedings and interviews. Overall, transcript generation for US-EN speeches improves productivity, accessibility, and information retrieval from spoken content.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: openai/whisper-base.en</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 1</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 3</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+558 train audio samples with their transcript.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/68_Phone%20Banking%20Speech%20Samples/Validation%20Predictions.png)
+Objective: Generate transcripts for US english speech samples
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>nan</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: openai/whisper-base.en
+    freeze_encoder: false
+    gradient_checkpointing: false
+    language: en
+    pretrained: true
+audio:
+    sample_rate: 16000
+augmentation: {}
+dataset:
+    audio_column: file
+    data_folder: data/user/minds14_US_speech_recognition/audio/
+    data_folder_test: data/user/minds14_US_speech_recognition/audio/
+    data_sample: 1.0
+    data_sample_choice:
+    - Train
+    - Validation
+    group_fold_column: file
+    label_columns: transcript
+    selected_folds:
+    - '0'
+    test_dataframe: None
+    train_dataframe: data/user/minds14_US_speech_recognition/annotations.csv
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_seeds_per_run: 1
+    number_of_workers: 4
+    seed: -1
+experiment_name: 68_minds14_US_speech_recognition
+logging:
+    log_grad_norm: false
+    logger: None
+    neptune_project: ''
+    number_of_audios: 8
+prediction:
+    duration_in_visualizations: 60
+    metric: WER
+    normalize_text: true
+    suppress_default_tokens: false
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 1
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    drop_last_batch: true
+    epochs: 3
+    evaluate_before_training: true
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/Validation%20Predictions.png)
+
+### License
+
+NA

@@ -1,48 +1,108 @@
-# QUESTION ANSWERING IN CONTEXTS
-### AI for good | Text | Span Prediction
+## Use Case 65: Question Answering in Contexts
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/cover)
+Answer the questions from given contexts
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Question Answering in Contexts involves developing models or algorithms that can accurately answer questions based on specific contexts or documents. This use case is particularly relevant for information retrieval systems, virtual assistants, and chatbot applications, where users seek answers or information from a given context. By understanding the context and accurately answering questions, these systems can provide timely and relevant information, improve user experience, and streamline information access. Question answering in contexts finds applications in various domains, including customer support, education, healthcare, and research, where users need precise and contextually relevant answers to their queries..</p>
+- `Industry: Media`
+- `Problem Type: Text Span Prediction`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Implementing question answering in contexts can have significant business impacts across multiple industries. In customer support, it can reduce the need for manual assistance, enabling faster response times and enhancing customer satisfaction. Virtual assistants equipped with question answering capabilities can provide users with immediate and accurate information, improving their overall experience and productivity. In educational settings, question answering systems can support students' learning by providing contextual explanations and answers to their queries. In healthcare, such systems can assist healthcare professionals in accessing relevant medical information and guidelines quickly, enabling better decision-making and improving patient care. Overall, question answering in contexts enhances information retrieval, empowers users, and drives efficiency in various industry sectors..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/cover)
 
-### DATASET
-- Questions with answers and contexts dataset has been used.
-- You can access the dataset [here](s3://h2oai-hydrogen-torch-internal/dev_datasets/squad_text_span_prediction.zip).
-- 87598 train questions for 18891 contexts.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/train%20data.png)
+Question Answering in Contexts involves developing models or algorithms that can accurately answer questions based on specific contexts or documents. This use case is particularly relevant for information retrieval systems, virtual assistants, and chatbot applications, where users seek answers or information from a given context. By understanding the context and accurately answering questions, these systems can provide timely and relevant information, improve user experience, and streamline information access. Question answering in contexts finds applications in various domains, including customer support, education, healthcare, and research, where users need precise and contextually relevant answers to their queries.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Answer the Questions from given Contexts.</p>
+Implementing question answering in contexts can have significant business impacts across multiple industries. In customer support, it can reduce the need for manual assistance, enabling faster response times and enhancing customer satisfaction. Virtual assistants equipped with question answering capabilities can provide users with immediate and accurate information, improving their overall experience and productivity. In educational settings, question answering systems can support students' learning by providing contextual explanations and answers to their queries. In healthcare, such systems can assist healthcare professionals in accessing relevant medical information and guidelines quickly, enabling better decision-making and improving patient care. Overall, question answering in contexts enhances information retrieval, empowers users, and drives efficiency in various industry sectors.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: distilbert-base-cased-distilled-squad</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 20</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 2</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+87598 train questions for 18891 contexts
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/65_Questions%20with%20Answers%20and%20Contexts/Validation%20Predictions.png)
+Objective: Answer the questions from given contexts
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>nan</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: distilbert-base-cased-distilled-squad
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pretrained: true
+augmentation: {}
+dataset:
+    answer_column: answer
+    answer_start_column: None
+    context_column: context
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: question
+    number_of_predicted_answers: 3
+    question_column: question
+    test_dataframe: None
+    train_dataframe: data/anon/squad_text_span_prediction/squad_v1.csv
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 65_squad
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: Jaccard
+tokenizer:
+    doc_stride: 64
+    lowercase: false
+    max_length: 256
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 20
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 2
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: CrossEntropy
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/Validation%20Predictions.png)
+
+### License
+
+NA

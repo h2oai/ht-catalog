@@ -1,48 +1,124 @@
-# NERVES SEGMENTATION IN ULTRASOUND IMAGES
-### Healthcare | Image | Semantic Segmentation
+## Use Case 70: Nerves Segmentation in Ultrasound Images
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/cover)
+Segment a collection of nerves in the ultrasound images
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Nerves segmentation in ultrasound images involves the automated identification and segmentation of nerve structures in ultrasound scans. This technology aids in medical imaging and diagnostic procedures by enabling precise nerve localization, analysis, and evaluation.</p>
+- `Industry: Healthcare`
+- `Problem Type: Image Semantic Segmentation`
+- `Data Type: Image`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>Nerves segmentation in ultrasound images has significant business implications in the healthcare industry. It improves the accuracy and efficiency of nerve-related diagnostics, such as identifying nerve damage, guiding nerve blocks, and assisting in surgical procedures. This technology enhances the detection and monitoring of nerve-related conditions, such as neuropathies and nerve entrapments, facilitating early intervention and appropriate treatment planning. It also contributes to research and development in neurology and enables advancements in nerve-related therapies and interventions. Overall, nerves segmentation in ultrasound images enhances the quality of nerve-related medical imaging and diagnosis, leading to improved patient care and outcomes..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/cover)
 
-### DATASET
-- Ultrasound images of brachial plexus dataset has been used.
-- You can access the dataset [here](s3://h2oai-hydrogen-torch-internal/dev_datasets/nerves_image_semantic_segmentation.zip).
-- 2323 train images with their masks..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/train%20data.png)
+Nerves segmentation in ultrasound images involves the automated identification and segmentation of nerve structures in ultrasound scans. This technology aids in medical imaging and diagnostic procedures by enabling precise nerve localization, analysis, and evaluation
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Segment a Collection of Nerves in Ultrasound Images.</p>
+Nerves segmentation in ultrasound images has significant business implications in the healthcare industry. It improves the accuracy and efficiency of nerve-related diagnostics, such as identifying nerve damage, guiding nerve blocks, and assisting in surgical procedures. This technology enhances the detection and monitoring of nerve-related conditions, such as neuropathies and nerve entrapments, facilitating early intervention and appropriate treatment planning. It also contributes to research and development in neurology and enables advancements in nerve-related therapies and interventions. Overall, nerves segmentation in ultrasound images enhances the quality of nerve-related medical imaging and diagnosis, leading to improved patient care and outcomes.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet34</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+2323 train images with their masks.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/70_Ultrasound%20Images%20of%20Brachial%20Plexus/Validation%20Predictions.png)
+Objective: Segment a collection of nerves in the ultrasound images
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>nan</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    architecture: Unet
+    backbone: resnet34
+    pretrained: true
+augmentation:
+    augmentations_strategy: Soft
+    custom_inference_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    custom_train_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    cutmix_corner: false
+    mix_concentration: 1.0
+    mix_image: Disabled
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    class_name_column: class_id
+    data_folder: data/anon/nerves_image_semantic_segmentation/images/
+    data_folder_test: data/anon/nerves_image_semantic_segmentation/images/
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: image
+    image_column: image
+    rle_mask_column: rle_mask
+    test_dataframe: None
+    train_dataframe: data/anon/nerves_image_semantic_segmentation/train.pq
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 70_nerves_image_semantic_segmentation.4.1
+image:
+    image_channels: 3
+    image_height: 448
+    image_normalization: Simple
+    image_width: 448
+logging:
+    logger: None
+    neptune_project: ''
+prediction:
+    metric: IoU
+    probability_threshold: 0.5
+    test_time_augmentations: []
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCEDice
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/Validation%20Predictions.png)
+
+### License
+
+NA

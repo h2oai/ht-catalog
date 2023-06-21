@@ -1,48 +1,124 @@
-# STAMP DETECTION IN DOCUMENTS
-### Banking | Image | Segmentation
+## Use Case 30: Document Stamp Detection
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/cover)
+Detect stamps in the digital documents using object detection techniques
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>Stamp detection model is designed to detect stamps from images using computer vision techniques. With the help of stamp datasets containing images of different stamps, the model can accurately identify and localize the stamps in the input image. The model can be used for various applications, such as stamp authentication and sorting, postal services, and philately. It employs object detection algorithms, including convolutional neural networks and feature extraction methods to recognize and segment the stamps from the background..</p>
+- `Industry: Banking`
+- `Problem Type: Image Segmentation`
+- `Data Type: Image`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>A stamp detection model offers several valuable benefits to businesses. It automates the process of identifying stamps in documents or images, improving efficiency and accuracy while saving time and costs. It helps prevent fraud by detecting forged or counterfeit stamps, ensuring compliance with regulations. Additionally, it enhances customer experience in industries like postal services by facilitating faster processing. Overall, a stamp detection model provides businesses with increased efficiency, cost savings, fraud prevention, regulatory compliance, and improved customer experience, leading to improved operational effectiveness and a competitive edge..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/cover)
 
-### DATASET
-- Stamp detection dataset has been used.
-- You can access the dataset [here](s3://apac-cds/ht_datasets/image_segmentation/stamp_detection.zip).
-- 400 images with their coordinates.
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/train%20data.png)
+Stamp detection model is designed to detect stamps from images using computer vision techniques. With the help of stamp datasets containing images of different stamps, the model can accurately identify and localize the stamps in the input image. The model can be used for various applications, such as stamp authentication and sorting, postal services, and philately. It employs object detection algorithms, including convolutional neural networks and feature extraction methods to recognize and segment the stamps from the background.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Detect Stamps in Documents using Object Detection Techniques.</p>
+A stamp detection model offers several valuable benefits to businesses. It automates the process of identifying stamps in documents or images, improving efficiency and accuracy while saving time and costs. It helps prevent fraud by detecting forged or counterfeit stamps, ensuring compliance with regulations. Additionally, it enhances customer experience in industries like postal services by facilitating faster processing. Overall, a stamp detection model provides businesses with increased efficiency, cost savings, fraud prevention, regulatory compliance, and improved customer experience, leading to improved operational effectiveness and a competitive edge.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: resnet101</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 16</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 5</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 0.001</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+400 images with their coordinates
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/30_Stamp%20Detection/Validation%20Predictions.png)
+Objective: Detect stamps in the digital documents using object detection techniques
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>Unknown</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    architecture: Unet
+    backbone: resnet101
+    pretrained: true
+augmentation:
+    augmentations_strategy: Soft
+    custom_inference_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    custom_train_augmentations: '{"__version__": "1.1.0", "transform": {"__class_fullname__":
+        "Compose", "p": 1.0, "transforms": [{"__class_fullname__": "Resize", "always_apply":
+        true, "p": 1, "height": IMAGE_HEIGHT, "width": IMAGE_WIDTH, "interpolation":
+        1}], "bbox_params": null, "keypoint_params": null, "additional_targets": {}}}'
+    cutmix_corner: false
+    mix_concentration: 1.0
+    mix_image: Disabled
+    mix_iterations: 1
+    mix_probability: 1.0
+    mix_target: Ratio
+dataset:
+    class_name_column: class_id
+    data_folder: data/anon/stamp_detection/scans/
+    data_folder_test: None
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '0'
+    group_fold_column: image
+    image_column: image
+    rle_mask_column: rle_mask
+    test_dataframe: None
+    train_dataframe: data/anon/stamp_detection/stamp_detection.pq
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: stamp_detection
+image:
+    image_channels: 3
+    image_height: 672
+    image_normalization: Simple
+    image_width: 672
+logging:
+    logger: None
+    neptune_project: ''
+prediction:
+    metric: IoU
+    probability_threshold: 0.5
+    test_time_augmentations: []
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 16
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 0.001
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 5
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 0.001
+    loss_function: BCEDice
+    optimizer: AdamW
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/Validation%20Predictions.png)
+
+### License
+
+Unknown

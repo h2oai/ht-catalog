@@ -1,48 +1,112 @@
-# READABILITY SCORING FOR TEXTS
-### Content creation | Text | Regression
+## Use Case 59: Article Readability Scoring
 
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/cover.png)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/cover.jpg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/cover.jpeg)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/cover.webp)
-![](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/cover)
+Calculate the readability scores of the texts
 
-### BUSINESS PROBLEM
-<p style='text-align: justify; text-indent: 30px;'>The Readability Scoring for Texts use case involves developing an algorithm or tool that can assess the readability level of a given text. It aims to provide a numerical score or categorization indicating the difficulty of comprehending the text. This tool can be useful in various domains, such as education, publishing, content creation, and language learning, to evaluate and enhance the readability of written material..</p>
+- `Industry: Marketing`
+- `Problem Type: Text Regression`
+- `Data Type: Text`
 
-### BUSINESS IMPACT
-<p style='text-align: justify; text-indent: 30px;'>The Readability Scoring tool can have a significant impact on industries that heavily rely on written communication. In education, it can assist teachers in selecting appropriate reading materials for students based on their reading abilities. Publishers can utilize this tool to assess the readability of their content and make necessary modifications to cater to their target audience. Content creators can optimize their writing styles to ensure clarity and accessibility. Language learning platforms can integrate this tool to provide tailored reading materials for learners at different proficiency levels..</p>
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/cover)
 
-### DATASET
-- Texts with readability scores dataset has been used.
-- You can access the dataset [here](s3://h2oai-hydrogen-torch-internal/dev_datasets/commonlit_readability_text_regression.zip).
-- 2834 train texts with readability scores..
+### Business Problem 
 
-![train data](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/train%20data.png)
+The Readability Scoring for Texts use case involves developing an algorithm or tool that can assess the readability level of a given text. It aims to provide a numerical score or categorization indicating the difficulty of comprehending the text. This tool can be useful in various domains, such as education, publishing, content creation, and language learning, to evaluate and enhance the readability of written material.
 
-### PREDICTION OUTPUT
-<p style='text-align: justify; text-indent: 30px;'>Calculate the readability scores of the Texts.</p>
+The Readability Scoring tool can have a significant impact on industries that heavily rely on written communication. In education, it can assist teachers in selecting appropriate reading materials for students based on their reading abilities. Publishers can utilize this tool to assess the readability of their content and make necessary modifications to cater to their target audience. Content creators can optimize their writing styles to ensure clarity and accessibility. Language learning platforms can integrate this tool to provide tailored reading materials for learners at different proficiency levels.
 
-### MODEL TRAINING
-<p style='font-family:JackInput Regular;'><b>Architecture</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>backbone: roberta-base</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>pretrained: True</p>
+### Dataset
 
-<p style='font-family:JackInput Regular;'><b>Training</b></p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>batch_size: 12</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>epochs: 6</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>gradient_clip: 0.0</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>learning_rate: 1e-05</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>optimizer: AdamW</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>schedule: Cosine</p>
-<p style='text-align: justify; text-indent: 30px;font-family:JackInput Regular;'>weight_decay: 0.0</p>
+2834 train texts with readability scores.
 
-![chart](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/chart.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/train%20data.png)
 
-### MODEL PREDICTIONS
+### Model Training
 
-![Validation Predictions](https://github.com/h2oai/HT-Catalog/blob/1432be958ab3f41b67c57c241b946b4a3d4699e1/Assets/DL_Models/59_Texts%20with%20Readability%20Scores/Validation%20Predictions.png)
+Objective: Calculate the readability scores of the texts
 
-### LICENSE
-<p style='text-align: justify; text-indent: 30px;'>nan</p>
-    
+Model Configuration (Hydrogen Torch yaml)
+
+```yaml
+architecture:
+    backbone: roberta-base
+    dropout: 0
+    gradient_checkpointing: false
+    intermediate_dropout: 0.0
+    pool: '[CLS] token'
+    pretrained: true
+augmentation: {}
+dataset:
+    data_sample: 1
+    data_sample_choice:
+    - Train
+    - Validation
+    folds:
+    - '4'
+    group_fold_column: id
+    label_columns:
+    - target
+    separator: ''
+    test_dataframe: None
+    text_column:
+    - text
+    train_dataframe: data/anon/commonlit_readability_text_regression/train.csv
+    unlabeled_dataframe: None
+    validation_dataframe: None
+    validation_size: 0.2
+    validation_strategy: kfold
+environment:
+    gpus:
+    - '0'
+    mixed_precision_inference: false
+    mixed_precision_training: true
+    number_of_workers: 4
+    seed: -1
+experiment_name: 59_commonly_readability.1.1
+logging:
+    logger: None
+    neptune_project: ''
+    number_of_texts: 10
+prediction:
+    metric: MAE
+tokenizer:
+    lowercase: false
+    max_length: 384
+    padding_quantile: 1.0
+training:
+    automatically_adjust_batch_size: false
+    batch_size: 12
+    build_scoring_pipelines: true
+    calculate_train_metric: false
+    differential_learning_rate: 1.0e-05
+    differential_learning_rate_layers: []
+    drop_last_batch: true
+    epochs: 6
+    evaluation_epochs: 1
+    grad_accumulation: 1
+    gradient_clip: 0.0
+    learning_rate: 1.0e-05
+    loss_function: MAE
+    optimizer: AdamW
+    run_interpretations: true
+    save_best_checkpoint: false
+    schedule: Cosine
+    train_validation_data: false
+    warmup_epochs: 0
+    weight_decay: 0.0
+
+```
+
+![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/chart.png)
+
+
+### Prediction
+
+![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/Validation%20Predictions.png)
+
+### License
+
+NA
