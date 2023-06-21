@@ -21,6 +21,7 @@ Implementing commands speech recognition has significant business implications a
 ### Dataset
 
 6798 train audio samples with their transcript.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/commands_speech_recognition.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/commands_speech_recognition/train%20data.png)
 

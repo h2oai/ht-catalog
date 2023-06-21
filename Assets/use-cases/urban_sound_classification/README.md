@@ -21,6 +21,7 @@ Urban sound classification has practical applications in urban planning, noise p
 ### Dataset
 
 8732 train images with 10 uniques labels
+Dataset path: s3://apac-cds/ht_datasets/audio_classification/urban_sound_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/urban_sound_classification/train%20data.png)
 

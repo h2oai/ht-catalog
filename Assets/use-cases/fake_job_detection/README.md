@@ -21,6 +21,7 @@ Fake job detection offers critical business benefits for job platforms, recruitm
 ### Dataset
 
 17880 train text samples with 2 classes(0 or 1)
+Dataset path: s3://apac-cds/ht_datasets/text_classification/fake_job_postings.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/train%20data.png)
 

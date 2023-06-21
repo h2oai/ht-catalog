@@ -21,6 +21,7 @@ Speaker recognition has significant business implications in various industries,
 ### Dataset
 
 2511 train audio samples with 50 different speakers
+Dataset path: s3://apac-cds/ht_datasets/audio_classification/speaker_recognition.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/speaker_recognition/train%20data.png)
 

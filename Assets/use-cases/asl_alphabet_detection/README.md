@@ -21,6 +21,7 @@ ASL (American Sign Language) alphabet detection has a significant impact on acce
 ### Dataset
 
 87000 train data with their 29 different labels (A-Z,del,nothing,space)
+Dataset path: s3://apac-cds/ht_datasets/image_classification/asl_alphabet_train.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/asl_alphabet_detection/train%20data.png)
 

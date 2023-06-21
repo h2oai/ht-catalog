@@ -21,6 +21,7 @@ Biomedical text publication classification offers valuable business implications
 ### Dataset
 
 7570 train text samples with their labels
+Dataset path: s3://apac-cds/ht_datasets/text_classification/biomedical-text-publication-classification.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/biomedical_text_publication_classification/train%20data.png)
 

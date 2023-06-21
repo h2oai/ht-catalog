@@ -21,6 +21,7 @@ Chest and lungs segmentation in CT scans has significant business impact in the 
 ### Dataset
 
 20 3d train images with their masks.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/covid_ct_image_semantic_segmentation_3d.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/covid19_ct_scans/train%20data.png)
 

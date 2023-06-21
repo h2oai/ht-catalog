@@ -21,6 +21,7 @@ Malicious drones prediction has business implications in security, public safety
 ### Dataset
 
 776 train images with 5 different categories such as Aeroplane,Bird,Drone,Helicopter,Malicious UAV
+Dataset path: s3://apac-cds/ht_datasets/image_classification/malicious_drones_prediction.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/malicious_drones_prediction/train%20data.png)
 

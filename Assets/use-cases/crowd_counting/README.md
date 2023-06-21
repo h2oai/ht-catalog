@@ -21,6 +21,7 @@ Crowd counting technology has widespread applications in various industries, inc
 ### Dataset
 
 2000 images with their value
+Dataset path: s3://apac-cds/ht_datasets/image_regression/crowd_counting.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crowd_counting/train%20data.png)
 

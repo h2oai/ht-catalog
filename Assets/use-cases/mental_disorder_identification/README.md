@@ -21,6 +21,7 @@ The business impact of mental disorder identification is significant in healthca
 ### Dataset
 
 701787 train samples with 2 classes
+Dataset path: s3://apac-cds/ht_datasets/text_classification/mental-disorders-identification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/train%20data.png)
 

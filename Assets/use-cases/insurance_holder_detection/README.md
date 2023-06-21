@@ -21,6 +21,7 @@ The business impact of insurance holder detection is significant for insurance p
 ### Dataset
 
 7632 train rows with their answers.
+Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/insurance_holder_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/train%20data.png)
 

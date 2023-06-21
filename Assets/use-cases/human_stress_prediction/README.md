@@ -21,6 +21,7 @@ Human stress prediction has significant business impact in the fields of healthc
 ### Dataset
 
 2838 train text samples with 2 different labels.
+Dataset path: s3://apac-cds/ht_datasets/text_classification/stress_prediction.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/human_stress_prediction/train%20data.png)
 

@@ -21,6 +21,7 @@ Railway defect classification has significant business implications in the trans
 ### Dataset
 
 300 train images with their labels(Defective or Non Defective)
+Dataset path: s3://apac-cds/ht_datasets/image_classification/railway_defect_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/railway_defect_classification/train%20data.png)
 

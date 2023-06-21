@@ -21,6 +21,7 @@ Hardhat object detection plays a vital role in construction site safety and work
 ### Dataset
 
 4750 train images with their annotations
+Dataset path: s3://apac-cds/ht_datasets/object_detection/hardhat-object-detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hardhat_object_detection/train%20data.png)
 

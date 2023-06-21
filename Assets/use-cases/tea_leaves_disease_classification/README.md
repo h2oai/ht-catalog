@@ -21,6 +21,7 @@ Accurate classification of tea leaf diseases holds significant business impact i
 ### Dataset
 
 885 images with 8 categories
+Dataset path: s3://apac-cds/ht_datasets/image_classification/tea_leaves_disease_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/tea_leaves_disease_classification/train%20data.png)
 

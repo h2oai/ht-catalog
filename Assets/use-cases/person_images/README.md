@@ -21,6 +21,7 @@ Person re-identification has significant business impacts across multiple indust
 ### Dataset
 
 12936 train images of 751 humans. 534 test images.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/market_1501_metric_learning.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/person_images/train%20data.png)
 

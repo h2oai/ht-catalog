@@ -21,6 +21,7 @@ A stamp detection model offers several valuable benefits to businesses. It autom
 ### Dataset
 
 400 images with their coordinates
+Dataset path: s3://apac-cds/ht_datasets/image_segmentation/stamp_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/train%20data.png)
 

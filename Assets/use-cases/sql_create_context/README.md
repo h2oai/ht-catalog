@@ -21,6 +21,7 @@ SQL create context has important business implications for database management a
 ### Dataset
 
 202914 train rows with their details
+Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/sql-create-context.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/sql_create_context/train%20data.png)
 

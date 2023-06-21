@@ -21,6 +21,7 @@ Motorcycle night ride segmentation has business implications in areas such as tr
 ### Dataset
 
 200 train imags with their masks
+Dataset path: s3://apac-cds/ht_datasets/image_segmentation/Motorcycle_Night_Ride_Dataset.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/motorcycle_night_ride_segmentation/train%20data.png)
 

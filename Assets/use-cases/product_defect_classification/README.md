@@ -21,6 +21,7 @@ Product defect classification has a significant business impact in manufacturing
 ### Dataset
 
 NA
+Dataset path: s3://apac-cds/ht_datasets/manufacturing/product_defect_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/product_defect_classification/train%20data.png)
 

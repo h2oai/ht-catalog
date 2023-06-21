@@ -21,6 +21,7 @@ Implementing Physical Objects NER can have a significant impact on various indus
 ### Dataset
 
 14041 train, 3250 validation, and 3453 test texts with POS,CHUNK, and NER tags.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/conll2003_text_token_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/physical_objects_name_specified_texts/train%20data.png)
 

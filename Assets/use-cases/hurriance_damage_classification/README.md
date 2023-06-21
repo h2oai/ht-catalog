@@ -21,6 +21,7 @@ Hurricane damage classification has a significant business impact in the insuran
 ### Dataset
 
 10000 train images , 2000 validation images, 2000 test images with labels is damage or not
+Dataset path: s3://apac-cds/ht_datasets/image_classification/Hurriance_Damage_Classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hurriance_damage_classification/train%20data.png)
 

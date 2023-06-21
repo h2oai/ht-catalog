@@ -21,6 +21,7 @@ Brain tumor classification has significant implications in the healthcare indust
 ### Dataset
 
 2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor
+Dataset path: s3://apac-cds/ht_datasets/image_classification/brain-tumor-classification-mri-v2.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/brain_mri/train%20data.png)
 

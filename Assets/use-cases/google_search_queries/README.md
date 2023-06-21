@@ -21,6 +21,7 @@ Improving search query well-formedness can have significant business impacts for
 ### Dataset
 
 17375 train texts with one label. The label has value between 0 to 1.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/wellformed_query_text_regression.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/google_search_queries/train%20data.png)
 

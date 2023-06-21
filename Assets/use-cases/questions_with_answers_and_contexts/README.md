@@ -21,6 +21,7 @@ Implementing question answering in contexts can have significant business impact
 ### Dataset
 
 87598 train questions for 18891 contexts
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/squad_text_span_prediction.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/train%20data.png)
 

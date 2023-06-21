@@ -21,6 +21,7 @@ Document classification has a wide range of applications in industries such as l
 ### Dataset
 
 165 train images with 3 uniques labels [scientific_publication, email, resume]
+Dataset path: s3://apac-cds/ht_datasets/image_classification/document_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/document_classification/train%20data.png)
 

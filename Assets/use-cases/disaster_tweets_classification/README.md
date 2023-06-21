@@ -21,6 +21,7 @@ Disaster tweets classification is essential for crisis management and emergency 
 ### Dataset
 
 11370 train images with their labels(0 or 1)
+Dataset path: s3://apac-cds/ht_datasets/text_classification/disaster_tweets_classification.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/disaster_tweets_classification/train%20data.png)
 

@@ -21,6 +21,7 @@ Transcript generation for US-EN speeches has significant business implications i
 ### Dataset
 
 558 train audio samples with their transcript.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/minds14_US_speech_recognition.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/train%20data.png)
 

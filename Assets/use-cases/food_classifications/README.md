@@ -21,6 +21,7 @@ Food image classification has significant business impact in the food and bevera
 ### Dataset
 
 9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit
+Dataset path: s3://apac-cds/ht_datasets/image_classification/food_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/food_classifications/train%20data.png)
 

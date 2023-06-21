@@ -21,6 +21,7 @@ Pill detection technology offers significant business benefits, especially in he
 ### Dataset
 
 449 train images with their object coordinates
+Dataset path: s3://apac-cds/ht_datasets/object_detection/pill_object_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pill_detection/train%20data.png)
 

@@ -21,6 +21,7 @@ Indian roads segmentation has a significant business impact in transportation an
 ### Dataset
 
 2475 train images, 752 validation images, 753 validation images with labels ['roads' 'potholes' 'footpaths' 'shallow paths' 'backgrounds']
+Dataset path: s3://apac-cds/ht_datasets/instance_segmentation/indian_road_seg_v4.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/indian_roads_segmentation/train%20data.png)
 

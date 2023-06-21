@@ -21,6 +21,7 @@ Nerves segmentation in ultrasound images has significant business implications i
 ### Dataset
 
 2323 train images with their masks.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/nerves_image_semantic_segmentation.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/train%20data.png)
 

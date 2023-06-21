@@ -21,6 +21,7 @@ Accurate spoken digits classification has significant business impact across mul
 ### Dataset
 
 30000 audio samples of spoken digits (0-9) of 60 different speakers.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amnist_audio_regression.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/train%20data.png)
 

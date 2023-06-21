@@ -21,6 +21,7 @@ AI generated image detection plays a crucial role in addressing the challenges a
 ### Dataset
 
 100000 train images and 20000 test images with 2 labels [ fake or real ] 
+Dataset path: s3://apac-cds/ht_datasets/image_classification/ai-generated-image-detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ai_generated_image_detection/train%20data.png)
 

@@ -21,6 +21,7 @@ Book rating text regression has a significant impact on the publishing industry 
 ### Dataset
 
 10000 train rows with its label
+Dataset path: s3://apac-cds/ht_datasets/text_regression/book-rating-text-regression.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/book_rating_text_regression/train%20data.png)
 

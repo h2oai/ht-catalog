@@ -21,6 +21,7 @@ The fiber segmentation in concrete has significant business impact in the constr
 ### Dataset
 
 7902 train images with their mask
+Dataset path: s3://apac-cds/ht_datasets/image_segmentation/fiber-augmented.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fiber_segmentation/train%20data.png)
 

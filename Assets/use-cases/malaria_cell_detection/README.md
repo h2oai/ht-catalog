@@ -21,6 +21,7 @@ Malaria cell detection has significant business implications in the healthcare a
 ### Dataset
 
 27558 train images with their labels
+Dataset path: s3://apac-cds/ht_datasets/image_classification/Malaria_cell_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/malaria_cell_detection/train%20data.png)
 

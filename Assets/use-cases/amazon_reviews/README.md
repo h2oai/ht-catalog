@@ -21,6 +21,7 @@ The Amazon Reviews Text Classification use case has a significant business impac
 ### Dataset
 
 48093 train texts with their labels Positive or Negative
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amazon_reviews_text_classification.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/amazon_reviews/train%20data.png)
 

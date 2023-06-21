@@ -21,6 +21,7 @@ The business impact of emergency vehicle siren sounds detection is vital in traf
 ### Dataset
 
 600 train audio samples with 3 different labels such as ambulance,traffic,firetruck.
+Dataset path: s3://apac-cds/ht_datasets/audio_classification/emergency-vehicle-siren-sounds.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/train%20data.png)
 

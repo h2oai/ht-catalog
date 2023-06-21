@@ -21,6 +21,7 @@ Steel defect detection plays a crucial role in the manufacturing and constructio
 ### Dataset
 
 7095 train images with 4 class ids
+Dataset path: s3://apac-cds/ht_datasets/image_segmentation/steel_defect_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/steel_defect_detection/train%20data.png)
 

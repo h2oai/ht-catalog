@@ -21,6 +21,7 @@ Building segmentation in images has significant implications in the fields of ar
 ### Dataset
 
 8366 train images with their object coordinates
+Dataset path: s3://apac-cds/ht_datasets/object_detection/mapping_challenge_v2.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/satellite_imagery___(map_challenge)/train%20data.png)
 

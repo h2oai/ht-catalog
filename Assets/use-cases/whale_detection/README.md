@@ -21,6 +21,7 @@ Whale detection in audios has significant business impact in industries related 
 ### Dataset
 
 30000 audio rows with thei label 0 or 1
+Dataset path: s3://apac-cds/ht_datasets/audio_classification/whale_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/whale_detection/train%20data.png)
 

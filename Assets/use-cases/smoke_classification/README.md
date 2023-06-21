@@ -21,6 +21,7 @@ Smoke classification in images has wide-ranging business impact. In fire detecti
 ### Dataset
 
 343 images with label  0 or 1 
+Dataset path: s3://apac-cds/ht_datasets/image_classification/wildfire_image_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/smoke_classification/train%20data.png)
 

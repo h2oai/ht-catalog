@@ -21,6 +21,7 @@ Textile defect detection has significant business impact in the textile and fash
 ### Dataset
 
 108000 train images with labels (good or damaged)
+Dataset path: s3://apac-cds/ht_datasets/image_classification/textile_damage_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/textile_defect_detection/train%20data.png)
 

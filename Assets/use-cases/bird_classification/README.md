@@ -21,6 +21,7 @@ Bird species classification has significant business impact in various industrie
 ### Dataset
 
 2500 train images with 25 bird classes
+Dataset path: s3://apac-cds/ht_datasets/image_classification/bird_classification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_classification/train%20data.png)
 

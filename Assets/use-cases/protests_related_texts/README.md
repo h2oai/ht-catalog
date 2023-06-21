@@ -21,6 +21,7 @@ The identification and analysis of protest-related texts can have significant bu
 ### Dataset
 
 21020 train and 5204 test texts with one label. The label has value either 0 or 1.
+Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/protests.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/protests_related_texts/train%20data.png)
 

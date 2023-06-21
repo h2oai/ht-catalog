@@ -21,6 +21,7 @@ Signature detection in documents has a significant business impact across variou
 ### Dataset
 
 1000 train images with their masks
+Dataset path: s3://apac-cds/ht_datasets/object_detection/signature_object_detection_v2.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/signature_detection/train%20data.png)
 

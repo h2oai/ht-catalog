@@ -21,6 +21,7 @@ Trash detection has significant business impact in waste management and environm
 ### Dataset
 
 369 train images with 4 unique labels {glass,paper,metal, plastic}
+Dataset path: s3://apac-cds/ht_datasets/object_detection/trash-detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/trash_detection/train%20data.png)
 

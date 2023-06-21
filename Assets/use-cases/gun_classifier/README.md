@@ -21,6 +21,7 @@ Gun classifier has business implications in security and public safety industrie
 ### Dataset
 
 851 train audio samples with 9 different classes.
+Dataset path: s3://apac-cds/ht_datasets/audio_classification/Gun_sound_detection.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/gun_classifier/train%20data.png)
 

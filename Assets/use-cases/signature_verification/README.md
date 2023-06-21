@@ -21,6 +21,7 @@ Signature verification in documents has a profound impact on business operations
 ### Dataset
 
 1100 train images with 55 unique labels.
+Dataset path: s3://apac-cds/ht_datasets/sign_verification/sign_verification.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/signature_verification/train%20data.png)
 

@@ -21,6 +21,7 @@ Scientific papers NER has significant business implications in scientific resear
 ### Dataset
 
 202914 train rows with their summaries
+Dataset path: s3://apac-cds/ht_datasets/text_sequence_to_sequence/scientific papers.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/train%20data.png)
 

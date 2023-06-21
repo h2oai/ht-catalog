@@ -68,6 +68,7 @@ def individual_usecases():
 ### Dataset
 
 {r["dataset-description"]}
+Dataset path: {r["dataset-link"]}
 
 ![train data]({url}train%20data.png)
 
@@ -102,3 +103,32 @@ Model Configuration (Hydrogen Torch yaml)
 		# break
 
 individual_usecases()
+
+
+def html_generator():
+	visited = []
+	url = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
+	html = ""
+	df = pd.read_csv("use_cases.csv").fillna("NA")
+	for i, r in df.head(100).iterrows():
+		r = dict(r)
+
+		## Do not remove
+		# if r['industry'].replace(" ", "") not in visited:
+		# 	visited.append(r['industry'].replace(" ", ""))
+		# 	print (f"""<option value="{r['industry'].replace(" ", "")}">{r['industry']}</option>""")
+		
+		html += f"""<div class="card mb-4 all {r['problem-type'].replace(" ", "")} {r['data-type']} {r['industry']}">
+	<font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+	<h3 class="card-title">{r['use-case']}</h3>
+	<p>{r['prediction-target']}</p>
+	<p><span class="badge1">{r['problem-type']}</span> <span class="badge1">{r['industry']}</span> <span class="badge1">{r['data-type']}</span> </p>
+	<p class="card-icon"><a target='_blank' href="{url + r['github_url'].strip()}"><i class="fa-solid fa-arrow-right"></i></a></p>
+</div>"""
+
+	print (html)	
+		
+
+
+
+# html_generator()

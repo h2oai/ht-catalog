@@ -21,6 +21,7 @@ The business impact of fake news detection in documents is crucial for maintaini
 ### Dataset
 
 78617 train rows with their labels
+Dataset path: s3://apac-cds/ht_datasets/text_classification/fake_news_detection.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_news_detection/train%20data.png)
 

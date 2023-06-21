@@ -21,6 +21,7 @@ Email spam detection is crucial for maintaining efficient communication channels
 ### Dataset
 
 5729 train images with their labels (spam or not_spam)
+Dataset path: s3://apac-cds/ht_datasets/text_classification/email_spam_classification.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/email_spam_detection/train%20data.png)
 

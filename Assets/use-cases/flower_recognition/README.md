@@ -21,6 +21,7 @@ Flower recognition has business implications in various industries, including ho
 ### Dataset
 
 5000 train images with their 5 labels such as lilly,lotus,orchid,sunflower,tulip
+Dataset path: s3://apac-cds/ht_datasets/image_classification/flower_recognition.zip
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flower_recognition/train%20data.png)
 

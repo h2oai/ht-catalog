@@ -21,6 +21,7 @@ Emotion detection from tweets has significant business implications in social me
 ### Dataset
 
 40000 train rows with 13 different classes
+Dataset path: s3://apac-cds/ht_datasets/text_classification/tweet_emotions.csv
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emotion_detection_from_tweets/train%20data.png)
 
