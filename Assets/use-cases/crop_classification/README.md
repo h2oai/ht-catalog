@@ -14,16 +14,23 @@ Identify different types of crops in an agricultural field
 
 ### Business Problem 
 
-Crop classification model is an image classification model designed to identify different types of crops in an agricultural field using computer vision techniques. By analyzing the visual features of crops in the images, the model can accurately classify them into different categories, such as wheat, corn, soybean, and more. This model can be used in precision agriculture to monitor crop growth, yield, and health, and to make informed decisions for crop management.
+Crop classification model is an image classification model designed to identify different types of crops in an agricultural field using computer vision techniques. By analyzing the visual features of crops in the images, the model can classify them into different categories, such as wheat, corn, soybean, and more. This model can be used in precision agriculture to monitor crop growth, yield, and health, and to make informed decisions for crop management.
+
+### Impact
 
 Crop classification plays a crucial role in agriculture and precision farming. By utilizing remote sensing data, machine learning algorithms, and satellite imagery, it enables the identification and classification of different crop types in large agricultural areas. Accurate crop classification provides valuable insights into crop health, growth stages, and yield estimation. It assists farmers in making informed decisions regarding crop management, resource allocation, and optimizing agricultural practices. Crop classification technology promotes efficient resource utilization, sustainable farming practices, and improved crop productivity, contributing to food security and agricultural sustainability.
 
 ### Dataset
 
-829 train images with 30 different classes
 Dataset path: s3://apac-cds/ht_datasets/image_classification/Agricultural-crops.zip
 
+829 train images with 30 different classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crop_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

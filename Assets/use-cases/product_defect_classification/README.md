@@ -14,16 +14,23 @@ Classify the defects in the machinery
 
 ### Business Problem 
 
-Product Defect Classification model is a machine learning model designed to detect and classify defects in products using image analysis techniques. The model uses a dataset containing images of products with and without defects, and trains a deep learning algorithm to accurately classify the images into their respective categories. This model can be used to improve quality control processes in manufacturing industries, by detecting defects early in the production process and preventing defective products from reaching customers.
+Product Defect Classification model is a machine learning model designed to detect and classify defects in products using image analysis techniques. The model uses a dataset containing images of products with and without defects, and trains a deep learning algorithm to classify the images into their respective categories. This model can be used to improve quality control processes in manufacturing industries, by detecting defects early in the production process and preventing defective products from reaching customers.
 
-Product defect classification has a significant business impact in manufacturing and quality control. By automatically detecting and classifying defects in products during the production process, manufacturers can proactively identify and address quality issues, leading to improved product quality, reduced rework, and enhanced customer satisfaction. This technology helps minimize production costs, ensure compliance with quality standards, and maintain brand reputation by delivering high-quality products to the market.
+### Impact
+
+Product defect classification plays a key role in manufacturing and quality control. By automatically detecting and classifying defects in products during the production process, manufacturers can proactively identify and address quality issues, leading to improved product quality, reduced rework, and enhanced customer satisfaction. This technology helps minimize production costs, ensure compliance with quality standards, and maintain brand reputation by delivering high-quality products to the market.
 
 ### Dataset
 
-NA
 Dataset path: s3://apac-cds/ht_datasets/manufacturing/product_defect_classification.zip
 
+NA Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/product_defect_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Identify and classify the disease in the leaves
 
 ### Business Problem 
 
-Tea Leaves Disease Classification model is designed to predict the presence of common diseases in tea leaves using image analysis techniques. With the help of the tea sickness dataset, which contains images of healthy tea leaves and those affected by various diseases, the model can accurately classify the images into their respective disease categories. The model can be used as a tool for early detection and prevention of tea diseases, which is crucial for maintaining tea quality and yield.
+Tea Leaves Disease Classification model is designed to predict the presence of common diseases in tea leaves using image analysis techniques. With the help of the tea sickness dataset, which contains images of healthy tea leaves and those affected by various diseases, the model can classify the images into their respective disease categories. The model can be used as a tool for early detection and prevention of tea diseases, which is crucial for maintaining tea quality and yield.
 
-Accurate classification of tea leaf diseases holds significant business impact in the agriculture industry. By leveraging image recognition and machine learning algorithms, it enables early detection and diagnosis of diseases affecting tea plants. Timely identification of diseases such as fungal infections or pest infestations allows for targeted interventions, reducing crop loss and improving yield. Tea leaves disease classification enhances farm productivity, preserves the quality of tea leaves, and contributes to the sustainability of tea production, ensuring business profitability and maintaining industry standards.
+### Impact
+
+Accurate classification of tea leaf diseases holds significant role in the agriculture industry. By leveraging image recognition and machine learning algorithms, it enables early detection and diagnosis of diseases affecting tea plants. Timely identification of diseases such as fungal infections or pest infestations allows for targeted interventions, reducing crop loss and improving yield. Tea leaves disease classification enhances farm productivity, preserves the quality of tea leaves, and contributes to the sustainability of tea production, ensuring business profitability and maintaining industry standards.
 
 ### Dataset
 
-885 images with 8 categories
 Dataset path: s3://apac-cds/ht_datasets/image_classification/tea_leaves_disease_classification.zip
 
+885 images with 8 categories Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/tea_leaves_disease_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

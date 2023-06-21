@@ -14,16 +14,23 @@ Classify the online comments into different categories
 
 ### Business Problem 
 
-Toxic Comment Classification is a natural language processing (NLP) task that involves identifying and categorizing toxic or offensive comments in online platforms, such as social media, discussion forums, or comment sections. The goal is to develop a model that can accurately classify comments into different categories, such as toxic, non-toxic, hate speech, or spam, to ensure a safer and more respectful online environment. This use case is particularly relevant for social media platforms, online communities, and content moderation teams who aim to proactively identify and filter out harmful content. By automating the identification of toxic comments, platforms can protect users from harassment, bullying, and other negative experiences. Additionally, it helps moderators prioritize their efforts by flagging potentially harmful content for review, leading to a more efficient content moderation process.
+Toxic Comment Classification is a natural language processing (NLP) task that involves identifying and categorizing toxic or offensive comments in online platforms, such as social media, discussion forums, or comment sections. The goal is to develop a model that can classify comments into different categories, such as toxic, non-toxic, hate speech, or spam, to ensure a safer and more respectful online environment. This use case is particularly relevant for social media platforms, online communities, and content moderation teams who aim to proactively identify and filter out harmful content. By automating the identification of toxic comments, platforms can protect users from harassment, bullying, and other negative experiences. Additionally, it helps moderators prioritize their efforts by flagging potentially harmful content for review, leading to a more efficient content moderation process.
+
+### Impact
 
 Implementing a toxic comment classification system can have several positive impacts on businesses and online communities. Firstly, it helps maintain a positive and inclusive online environment by promptly detecting and filtering out toxic comments, which enhances user satisfaction and engagement. By reducing the presence of offensive content, companies can protect their brand reputation and retain users. Furthermore, it contributes to fostering a safer online space, making it more appealing to a wider range of users. From a content moderation perspective, automating the identification of toxic comments allows moderation teams to handle a larger volume of user-generated content effectively. This results in improved efficiency, reduced manual effort, and quicker response times to address potentially harmful situations. Overall, toxic comment classification helps businesses and online platforms create a more welcoming and secure environment for their users.
 
 ### Dataset
 
-159571 train texts with 6 labels. Each label has value either 0 or 1.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/jigsaw_text_classification.zip
 
+159571 train texts with 6 labels. Each label has value either 0 or 1. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/wikipedia_toxic_comments/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

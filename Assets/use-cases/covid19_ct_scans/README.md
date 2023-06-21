@@ -14,16 +14,23 @@ Segment the human chest and lungs in CT-Scan images
 
 ### Business Problem 
 
-Chest and lungs segmentation in CT scans involves the automated extraction and delineation of chest and lung regions from CT (computed tomography) scans. This technology aids in medical image analysis and diagnosis by providing precise anatomical segmentation, which is crucial for identifying and analyzing abnormalities, tumors, or lung diseases.
+Chest and lungs segmentation in CT scans involves the automated extraction and delineation of chest and lung regions from CT (computed tomography) scans. This solution aids in medical image analysis and diagnosis by providing precise anatomical segmentation, which is crucial for identifying and analyzing abnormalities, tumors, or lung diseases.
 
-Chest and lungs segmentation in CT scans has significant business impact in the healthcare industry. It enables accurate and efficient diagnosis by providing detailed anatomical information to radiologists and physicians. It aids in the detection and tracking of lung diseases, tumors, and abnormalities, allowing for early intervention and improved patient outcomes. This technology also facilitates treatment planning, surgical guidance, and monitoring of disease progression. Overall, chest and lungs segmentation in CT scans enhances the accuracy and efficiency of medical imaging analysis, leading to better patient care and treatment decisions.
+### Impact
+
+Chest and lungs segmentation in CT scans has significant role in the healthcare industry. It enables accurate and efficient diagnosis by providing detailed anatomical information to radiologists and physicians. It aids in the detection and tracking of lung diseases, tumors, and abnormalities, allowing for early intervention and improved patient outcomes. This technology also facilitates treatment planning, surgical guidance, and monitoring of disease progression. Overall, chest and lungs segmentation in CT scans enhances the accuracy and efficiency of medical imaging analysis, leading to better patient care and treatment decisions.
 
 ### Dataset
 
-20 3d train images with their masks.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/covid_ct_image_semantic_segmentation_3d.zip
 
+20 3d train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/covid19_ct_scans/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

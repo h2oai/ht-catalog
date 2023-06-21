@@ -16,14 +16,21 @@ Identify and verify individuals based on vocal characteristics or speech pattern
 
 Speaker recognition refers to the identification and verification of individuals based on their unique vocal characteristics or speech patterns. This technology analyzes voice signals, speaker-specific features, and linguistic patterns to establish the identity of a speaker, facilitating applications such as access control, voice authentication, and forensic investigations.
 
-Speaker recognition has significant business implications in various industries, including security, telecommunications, and customer service. By accurately identifying and verifying individuals based on their unique vocal characteristics, this technology enhances access control systems, voice authentication processes, and fraud prevention measures. It enables secure transactions, personalized customer experiences, and targeted communication. It finds applications in call centers, voice-based virtual assistants, and telecommunication networks, enhancing operational efficiency and customer satisfaction
+### Impact
+
+Speaker recognition is very useful in various industries, including security, telecommunications, and customer service. By accurately identifying and verifying individuals based on their unique vocal characteristics, this technology enhances access control systems, voice authentication processes, and fraud prevention measures. It enables secure transactions, personalized customer experiences, and targeted communication. It finds applications in call centers, voice-based virtual assistants, and telecommunication networks, enhancing operational efficiency and customer satisfaction
 
 ### Dataset
 
-2511 train audio samples with 50 different speakers
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/speaker_recognition.zip
 
+2511 train audio samples with 50 different speakers Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/speaker_recognition/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

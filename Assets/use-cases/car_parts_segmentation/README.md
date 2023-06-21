@@ -14,16 +14,23 @@ Segment the car parts in a given image containing one or more cars
 
 ### Business Problem 
 
-Car parts segmentation in images involves the task of identifying and delineating different components of a car in images, such as doors, windows, wheels, and bumpers. This is accomplished by applying computer vision techniques and machine learning algorithms to analyze and segment the relevant regions of the car parts. The goal is to accurately detect and segment these parts, enabling various applications in automotive industries, including autonomous driving, vehicle maintenance, and car design.
+Car parts segmentation in images involves the task of identifying and delineating different components of a car in images, such as doors, windows, wheels, and bumpers. This is accomplished by applying computer vision techniques and machine learning algorithms to analyze and segment the relevant regions of the car parts. The goal is to detect and segment these parts, enabling various applications in automotive industries, including autonomous driving, vehicle maintenance, and car design.
+
+### Impact
 
 Accurate car parts segmentation in images has significant implications for the automotive industry. It enables advanced driver assistance systems (ADAS) and autonomous vehicles to better perceive their surroundings, leading to improved safety and reliability. Furthermore, in vehicle maintenance and repair, precise part segmentation can assist technicians in diagnosing and fixing issues efficiently. Additionally, car manufacturers and designers can leverage this technology to streamline the prototyping and design processes, allowing for faster iterations and reducing development costs.
 
 ### Dataset
 
-400 train images with their masks.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/car_parts_coco_format_image_semantic_segmentation.zip
 
+400 train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/car_parts_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Classify whether a given image contain smoke(s) or not
 
 ### Business Problem 
 
-Smoke Classification model can accurately classify smoke. This model is an essential tool for fire safety professionals, allowing them to detect and classify smoke accurately and efficiently.
+Smoke Classification model can classify smoke. This model is an essential tool for fire safety professionals, allowing them to detect and classify smoke and efficiently.
 
-Smoke classification in images has wide-ranging business impact. In fire detection systems, accurate smoke classification enhances early warning systems, allowing for prompt response and reducing the risk of fire-related damage. In industrial settings, smoke classification enables proactive monitoring of smoke emissions, ensuring compliance with environmental regulations and promoting sustainable practices. Public safety agencies benefit from smoke classification in surveillance systems, aiding in the identification of potential fire hazards and enhancing emergency response. Additionally, in insurance and risk assessment, smoke classification provides valuable insights for property underwriting and assessing fire-related risks. Overall, smoke classification in images enhances safety measures, regulatory compliance, and risk management.
+### Impact
+
+In fire detection systems, accurate smoke classification enhances early warning systems, allowing for prompt response and reducing the risk of fire-related damage. In industrial settings, smoke classification enables proactive monitoring of smoke emissions, ensuring compliance with environmental regulations and promoting sustainable practices. Public safety agencies benefit from smoke classification in surveillance systems, aiding in the identification of potential fire hazards and enhancing emergency response. Additionally, in insurance and risk assessment, smoke classification provides valuable insights for property underwriting and assessing fire-related risks. Overall, smoke classification in images enhances safety measures, regulatory compliance, and risk management.
 
 ### Dataset
 
-343 images with label  0 or 1 
 Dataset path: s3://apac-cds/ht_datasets/image_classification/wildfire_image_classification.zip
 
+343 images with label  0 or 1  Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/smoke_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

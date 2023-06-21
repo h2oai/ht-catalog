@@ -14,16 +14,23 @@ Classify the American Sign Language (ASL) alphabet letters from images
 
 ### Business Problem 
 
-The ASL Alphabet Detection model is designed to accurately recognize and classify the American Sign Language (ASL) alphabet letters from images. The model uses a convolutional neural network (CNN) architecture and is trained on a dataset of ASL alphabet images to learn the distinctive features of each letter. The model can be used to help individuals with hearing or speech impairments to communicate more effectively by accurately recognizing and interpreting their hand signs. Additionally, the model can be used in educational settings to teach ASL or in research for sign language recognition
+The ASL Alphabet Detection model is designed to recognize and classify the American Sign Language (ASL) alphabet letters from images. The model uses a convolutional neural network (CNN) architecture and is trained on a dataset of ASL alphabet images to learn the distinctive features of each letter. The model can be used to help individuals with hearing or speech impairments to communicate more effectively by recognizing and interpreting their hand signs. Additionally, the model can be used in educational settings to teach ASL or in research for sign language recognition
+
+### Impact
 
 ASL (American Sign Language) alphabet detection has a significant impact on accessibility and communication for the deaf and hard of hearing community. By leveraging computer vision and deep learning techniques, it enables real-time detection and recognition of ASL hand gestures representing different alphabet letters. ASL alphabet detection technology enhances communication and inclusivity by providing a means for individuals to express themselves and interact with others effectively. It supports the development of applications and devices that facilitate seamless communication between ASL users and non-ASL users, promoting equal participation and bridging communication barriers.
 
 ### Dataset
 
-87000 train data with their 29 different labels (A-Z,del,nothing,space)
 Dataset path: s3://apac-cds/ht_datasets/image_classification/asl_alphabet_train.zip
 
+87000 train data with their 29 different labels (A-Z,del,nothing,space) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/asl_alphabet_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

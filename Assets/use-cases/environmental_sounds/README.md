@@ -14,16 +14,23 @@ Classify the environmental sounds using audio classification techniques
 
 ### Business Problem 
 
-Environmental sound classification involves the categorization and identification of different types of sounds present in the environment, such as sirens, car horns, birdsong, and machinery noise. This technology utilizes machine learning algorithms to analyze audio data and assign relevant labels to the sounds. The aim is to develop a system that can automatically recognize and classify environmental sounds in real-time, enabling various applications in areas such as soundscape analysis, urban planning, wildlife monitoring, and noise pollution management.
+Environmental sound classification involves the categorization and identification of different types of sounds present in the environment, such as sirens, car horns, birdsong, and machinery noise. This solution utilizes machine learning algorithms to analyze audio data and assign relevant labels to the sounds. The aim is to develop a system that can recognize and classify environmental sounds in real-time, enabling various applications in areas such as soundscape analysis, urban planning, wildlife monitoring, and noise pollution management.
+
+### Impact
 
 Environmental sound classification has significant implications across industries. In urban planning, it helps identify noise hotspots and optimize city infrastructure for noise reduction. Industries like transportation and manufacturing can use it to detect and mitigate noise pollution. Environmental agencies can benefit from soundscape analysis for wildlife conservation and habitat monitoring. The technology also aids in improving public safety by alerting emergency services to specific sounds like explosions or gunfire. Overall, environmental sound classification empowers organizations to make data-driven decisions for sustainable development and enhances the quality of life for individuals in urban environments.
 
 ### Dataset
 
-5-second-long 400 audio recordings organized into ten classes.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/esc10_audio_classification.zip
 
+5-second-long 400 audio recordings organized into ten classes. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/environmental_sounds/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

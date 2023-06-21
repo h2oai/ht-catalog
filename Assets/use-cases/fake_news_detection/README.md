@@ -14,16 +14,23 @@ Detect fake news using text classification techniques
 
 ### Business Problem 
 
-Fake news detection in documents refers to the automated identification and classification of misinformation or fabricated content within textual documents. This technology helps combat the spread of false information by analyzing linguistic patterns, fact-checking sources, and assessing the credibility of the content, assisting users in distinguishing between reliable and unreliable information.
+Fake news detection in documents refers to the automated identification and classification of misinformation or fabricated content within textual documents. This solution helps combat the spread of false information by analyzing linguistic patterns, fact-checking sources, and assessing the credibility of the content, assisting users in distinguishing between reliable and unreliable information.
 
-The business impact of fake news detection in documents is crucial for maintaining trust, credibility, and reputation in the digital age. By automatically identifying and flagging fake or misleading content, this technology helps media organizations, news agencies, and online platforms to ensure the integrity of their news sources and protect their users from misinformation. It enhances user trust, fosters a reliable information ecosystem, and safeguards brands' credibility, contributing to sustained user engagement, customer loyalty, and brand loyalty.
+### Impact
+
+The usefulness fake news detection in documents is crucial for maintaining trust, credibility, and reputation in the digital age. By automatically identifying and flagging fake or misleading content, this technology helps media organizations, news agencies, and online platforms to ensure the integrity of their news sources and protect their users from misinformation. It enhances user trust, fosters a reliable information ecosystem, and safeguards brands' credibility, contributing to sustained user engagement, customer loyalty, and brand loyalty.
 
 ### Dataset
 
-78617 train rows with their labels
 Dataset path: s3://apac-cds/ht_datasets/text_classification/fake_news_detection.csv
 
+78617 train rows with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_news_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

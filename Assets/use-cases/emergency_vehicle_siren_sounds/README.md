@@ -16,14 +16,21 @@ Detect and classify emergency vehicle siren sounds from audio data
 
 Emergency vehicle siren sounds detection involves the automated identification and classification of siren sounds emitted by emergency vehicles, such as police cars, ambulances, or fire trucks. This technology utilizes audio analysis and pattern recognition techniques to distinguish emergency vehicle sirens from background noise, enabling timely response and efficient traffic management
 
-The business impact of emergency vehicle siren sounds detection is vital in traffic management and emergency response systems. By automatically identifying and detecting emergency vehicle sirens from audio data, this technology enables efficient traffic routing, timely emergency response, and improved road safety. It optimizes emergency vehicle dispatching, reduces response times, and minimizes traffic congestion. It contributes to faster emergency assistance, enhances public safety, and supports effective urban planning.
+### Impact
+
+The usefulness emergency vehicle siren sounds detection is vital in traffic management and emergency response systems. By automatically identifying and detecting emergency vehicle sirens from audio data, this technology enables efficient traffic routing, timely emergency response, and improved road safety. It optimizes emergency vehicle dispatching, reduces response times, and minimizes traffic congestion. It contributes to faster emergency assistance, enhances public safety, and supports effective urban planning.
 
 ### Dataset
 
-600 train audio samples with 3 different labels such as ambulance,traffic,firetruck.
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/emergency-vehicle-siren-sounds.zip
 
+600 train audio samples with 3 different labels such as ambulance,traffic,firetruck. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

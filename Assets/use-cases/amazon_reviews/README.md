@@ -14,16 +14,23 @@ Classify the online reviews as positive, negative, and neutral
 
 ### Business Problem 
 
-The Amazon Reviews Text Classification use case involves classifying customer reviews of products on the Amazon platform into different categories based on the sentiments expressed in the text. Sentiment analysis is performed on the textual data to determine whether a review is positive or negative. This classification enables businesses to gain insights into customer opinions, identify areas for improvement, and make data-driven decisions to enhance customer satisfaction.
+The Reviews Text Classification use case involves classifying customer reviews of products on the platform into different categories based on the sentiments expressed in the text. Sentiment analysis is performed on the textual data to determine whether a review is positive or negative. This classification enables businesses to gain insights into customer opinions, identify areas for improvement, and make data-driven decisions to enhance customer satisfaction.
 
-The Amazon Reviews Text Classification use case has a significant business impact. By accurately classifying customer reviews, businesses can gain valuable insights into customer opinions, preferences, and satisfaction levels. This enables them to make informed decisions to enhance products, address customer concerns, and manage their online reputation effectively. The classification helps identify areas for improvement, optimize marketing and sales strategies, and leverage positive reviews for brand promotion. By automating the review classification process, businesses can save time and resources while extracting actionable insights that drive customer-centric improvements, leading to increased customer satisfaction, loyalty, and ultimately, business growth.
+### Impact
+
+The Reviews Text Classification use case plays a key role. By accurately classifying customer reviews, businesses can gain valuable insights into customer opinions, preferences, and satisfaction levels. This enables them to make informed decisions to enhance products, address customer concerns, and manage their online reputation effectively. The classification helps identify areas for improvement, optimize marketing and sales strategies, and leverage positive reviews for brand promotion. By automating the review classification process, businesses can save time and resources while extracting actionable insights that drive customer-centric improvements, leading to increased customer satisfaction, loyalty, and ultimately, business growth.
 
 ### Dataset
 
-48093 train texts with their labels Positive or Negative
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amazon_reviews_text_classification.csv
 
+48093 train texts with their labels Positive or Negative Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/amazon_reviews/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

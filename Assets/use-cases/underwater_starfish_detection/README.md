@@ -14,16 +14,23 @@ Detect the underwater starfish using object detection techniques
 
 ### Business Problem 
 
-Underwater Starfish Detection model can accurately detect and classify starfish in underwater images. This model is useful for marine biologists and environmental scientists, helping them to monitor and protect underwater ecosystems.
+Underwater Starfish Detection model can detect and classify starfish in underwater images. This model is useful for marine biologists and environmental scientists, helping them to monitor and protect underwater ecosystems.
 
-Underwater starfish object detection offers valuable business impact. In marine biology and ecological research, accurate detection of starfish species aids in population monitoring, habitat conservation, and understanding ecosystem dynamics. For underwater exploration and mapping, starfish object detection contributes to mapping marine biodiversity, assisting in underwater surveys and conservation efforts. Fisheries management benefits from starfish detection by providing insights into the interactions between starfish and fish populations, informing sustainable fishing practices. Moreover, in the tourism and diving industry, underwater starfish object detection enhances the experience for divers and snorkelers, allowing them to observe and appreciate marine life more effectively. Overall, underwater starfish object detection has implications for ecological research, conservation, fisheries management, and marine tourism.
+### Impact
+
+In marine biology and ecological research, accurate detection of starfish species aids in population monitoring, habitat conservation, and understanding ecosystem dynamics. For underwater exploration and mapping, starfish object detection contributes to mapping marine biodiversity, assisting in underwater surveys and conservation efforts. Fisheries management benefits from starfish detection by providing insights into the interactions between starfish and fish populations, informing sustainable fishing practices. Moreover, in the tourism and diving industry, underwater starfish object detection enhances the experience for divers and snorkelers, allowing them to observe and appreciate marine life more effectively. Overall, underwater starfish object detection has implications for ecological research, conservation, fisheries management, and marine tourism.
 
 ### Dataset
 
-429 images with their object coordinates
 Dataset path: s3://apac-cds/ht_datasets/object_detection/cots_detection.zip
 
+429 images with their object coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/underwater_starfish_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

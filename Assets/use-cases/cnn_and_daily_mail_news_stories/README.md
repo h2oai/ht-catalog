@@ -14,16 +14,23 @@ Summarize the news articles
 
 ### Business Problem 
 
-Text summarization in news stories involves automatically condensing lengthy news articles into concise summaries, enabling readers to quickly grasp the key points and main ideas of the article. This technology utilizes natural language processing algorithms to identify important sentences and extract the most relevant information, providing users with a succinct overview of the news story.
+Text summarization in news stories involves condensing lengthy news articles into concise summaries, enabling readers to quickly grasp the key points and main ideas of the article. This solution utilizes natural language processing algorithms to identify important sentences and extract the most relevant information, providing users with a succinct overview of the news story.
+
+### Impact
 
 Implementing text summarization in news stories can have a significant impact on the news industry. It enables news organizations to deliver information to readers more efficiently, saving their time and effort. With shorter and more digestible summaries, readers can quickly scan multiple articles and stay informed about various topics. Additionally, this technology can be integrated into news aggregators and personalized news apps, enhancing user experiences and attracting more engaged audiences. By automating the summarization process, news organizations can streamline their content production and dissemination, increasing their overall productivity and competitiveness.
 
 ### Dataset
 
-4000 train, 4000 validation, and 4000 test texts with summaries.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/cnn_dailymail_text_sequence_to_sequence.zip
 
+4000 train, 4000 validation, and 4000 test texts with summaries. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/cnn_and_daily_mail_news_stories/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

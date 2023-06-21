@@ -14,16 +14,23 @@ Classify human emotions from audio signals
 
 ### Business Problem 
 
-Audio Emotion Detection model is designed to recognize human emotions from audio signals. With the help of various audio datasets, the model can be trained to identify different emotions such as happiness, sadness, anger, fear, and more. This technology can be applied in various industries such as entertainment, healthcare, and customer service to improve user experience and engagement. For example, in the entertainment industry, the model can be used to recommend music playlists based on the user's mood. In healthcare, the model can be used to detect emotions in patients' voices and provide personalized treatment plans accordingly. Similarly, in customer service, the model can be used to detect the customer's emotions during a call and provide customized solutions to improve customer satisfaction.
+Audio Emotion Detection model is designed to recognize human emotions from audio signals. With the help of various audio datasets, the model can be trained to identify different emotions such as happiness, sadness, anger, fear, and more. This solution can be applied in various industries such as entertainment, healthcare, and customer service to improve user experience and engagement. For example, in the entertainment industry, the model can be used to recommend music playlists based on the user's mood. In healthcare, the model can be used to detect emotions in patients' voices and provide personalized treatment plans accordingly. Similarly, in customer service, the model can be used to detect the customer's emotions during a call and provide customized solutions to improve customer satisfaction.
+
+### Impact
 
 Audio emotion detection has applications in various fields, including psychology, mental health, and market research. By analyzing speech signals using machine learning algorithms, it enables the identification and classification of emotions conveyed in audio recordings. Accurate audio emotion detection assists in understanding human emotions, facilitating psychological research, and supporting mental health assessments. It also has potential applications in market research, enabling companies to gauge customer sentiment and emotional responses to products or services. Audio emotion detection technology enhances emotional understanding, psychological analysis, and market insights.
 
 ### Dataset
 
-12798 train images with 7 uniques labels [Angry, Disgusted, Fearful,Happy,Neutral,Sad,Suprised]
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/audio_emotion_detection.zip
 
+12798 train images with 7 uniques labels [Angry, Disgusted, Fearful,Happy,Neutral,Sad,Suprised] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_emotion_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

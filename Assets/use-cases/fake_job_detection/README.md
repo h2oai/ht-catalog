@@ -14,16 +14,23 @@ Detect and classify fraudulent job postings in online platforms
 
 ### Business Problem 
 
-Fake job detection entails the identification and classification of fraudulent or misleading job postings in online job platforms. This technology leverages natural language processing and machine learning techniques to analyze job descriptions, qualifications, and other relevant factors, assisting job seekers in avoiding scams and ensuring a safe and trustworthy job search experience.
+Fake job detection entails the identification and classification of fraudulent or misleading job postings in online job platforms. This solution leverages natural language processing and machine learning techniques to analyze job descriptions, qualifications, and other relevant factors, assisting job seekers in avoiding scams and ensuring a safe and trustworthy job search experience.
+
+### Impact
 
 Fake job detection offers critical business benefits for job platforms, recruitment agencies, and job seekers. By automatically identifying and flagging fraudulent job postings, this technology helps job platforms maintain their integrity, trustworthiness, and user satisfaction. It protects job seekers from scams, ensures a safe and reliable job search environment, and fosters a positive user experience. It contributes to building a reputable job marketplace, attracting top talent, and facilitating successful job placements.
 
 ### Dataset
 
-17880 train text samples with 2 classes(0 or 1)
 Dataset path: s3://apac-cds/ht_datasets/text_classification/fake_job_postings.csv
 
+17880 train text samples with 2 classes(0 or 1) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fake_job_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -16,14 +16,21 @@ Rate the wellformedness of the online search engine queries
 
 Search Queries Wellformedness involves validating and improving the well-formedness of user search queries in search engines or information retrieval systems. The objective is to ensure that users' queries are properly formatted, contain the necessary syntax, and are correctly interpreted by the search engine. By validating and enhancing the well-formedness of search queries, this use case aims to improve search accuracy, relevance, and user satisfaction. It is particularly relevant for search engine providers, e-commerce platforms, and information retrieval systems where accurate interpretation of user queries is crucial for delivering relevant search results and improving the overall search experience.
 
-Improving search query well-formedness can have significant business impacts for search engine providers and e-commerce platforms. Firstly, it enhances search accuracy and relevance by ensuring that user queries are correctly understood and interpreted. This leads to more accurate search results, improved user satisfaction, and increased engagement. By providing users with relevant search results, search engines can attract and retain more users, thereby increasing their market share and revenue potential. Additionally, well-formed search queries enable e-commerce platforms to deliver more targeted product recommendations and personalized search experiences, which can lead to higher conversion rates and customer satisfaction. Overall, search query well-formedness plays a crucial role in optimizing search performance, user experience, and business outcomes.
+### Impact
+
+Improving search query well-formedness can hplays a key roles for search engine providers and e-commerce platforms. Firstly, it enhances search accuracy and relevance by ensuring that user queries are correctly understood and interpreted. This leads to more accurate search results, improved user satisfaction, and increased engagement. By providing users with relevant search results, search engines can attract and retain more users, thereby increasing their market share and revenue potential. Additionally, well-formed search queries enable e-commerce platforms to deliver more targeted product recommendations and personalized search experiences, which can lead to higher conversion rates and customer satisfaction. Overall, search query well-formedness plays a crucial role in optimizing search performance, user experience, and business outcomes.
 
 ### Dataset
 
-17375 train texts with one label. The label has value between 0 to 1.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/wellformed_query_text_regression.csv
 
+17375 train texts with one label. The label has value between 0 to 1. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/google_search_queries/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

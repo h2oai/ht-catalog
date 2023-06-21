@@ -14,16 +14,23 @@ Develop and test robust question-answering systems against adversarial attacks
 
 ### Business Problem 
 
-AdversarialQA (Question Answering) involves the development and testing of robust question-answering systems against adversarial attacks or attempts to manipulate the system. This technology aims to enhance the reliability and security of QA models by identifying vulnerabilities, improving their resistance to adversarial inputs, and ensuring accurate and trustworthy responses.
+AdversarialQA (Question Answering) involves the development and testing of robust question-answering systems against adversarial attacks or attempts to manipulate the system. The solution approach aims to enhance the reliability and security of QA models by identifying vulnerabilities, improving their resistance to adversarial inputs, and ensuring accurate and trustworthy responses.
 
-The business impact of AdversarialQA lies in enhancing the reliability and security of question-answering systems. By identifying vulnerabilities and improving resistance to adversarial attacks, this technology strengthens trust in QA models and safeguards their integrity. It ensures accurate responses, reduces the risk of misinformation, and protects user confidence. Businesses can utilize robust QA systems to provide reliable information, enhance user experience, and differentiate themselves in competitive markets.
+### Impact
+
+The usefulness AdversarialQA lies in enhancing the reliability and security of question-answering systems. By identifying vulnerabilities and improving resistance to adversarial attacks, this technology strengthens trust in QA models and safeguards their integrity. It ensures accurate responses, reduces the risk of misinformation, and protects user confidence. Businesses can utilize robust QA systems to provide reliable information, enhance user experience, and differentiate themselves in competitive markets.
 
 ### Dataset
 
-30000 train rows with their details
 Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/adversarialQA.zip
 
+30000 train rows with their details Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/adversarialqa/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

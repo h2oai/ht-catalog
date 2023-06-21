@@ -14,16 +14,23 @@ Classify an input flower image into its corresponding species or category
 
 ### Business Problem 
 
-Flower recognition involves the automated identification and classification of different types of flowers based on their visual characteristics, such as color, shape, and petal arrangement. This technology utilizes computer vision algorithms and machine learning models to analyze flower images and assign them to specific flower species or categories.
+Flower recognition is a model to identify and classify various types of flowers based on their visual features like color, shape, and petal arrangement. By leveraging computer vision algorithms and powerful machine learning models, this model analyzes images of flowers and assigns them to their respective species or categories.
 
-Flower recognition has business implications in various industries, including horticulture, floriculture, and e-commerce. By automating the flower identification process, horticulturists and florists can quickly and accurately classify flowers, aiding in plant breeding, cultivation, and floral arrangement planning. E-commerce platforms can leverage flower recognition to improve search functionalities, offer personalized recommendations, and streamline product categorization, enhancing the customer shopping experience. Additionally, botanical gardens and conservation efforts can benefit from flower recognition in documenting and monitoring plant species, supporting biodiversity research, and preservation initiatives.
+### Impact
+
+Flower recognition use-case is highly beneficial in various industries, including horticulture, floriculture, and e-commerce. By automating the flower identification process, horticulturists and florists can quickly and accurately classify flowers, aiding in plant breeding, cultivation, and floral arrangement planning. E-commerce platforms can leverage flower recognition to improve search functionalities, offer personalized recommendations, and streamline product categorization, enhancing the customer shopping experience. Additionally, botanical gardens and conservation efforts can benefit from flower recognition in documenting and monitoring plant species, supporting biodiversity research, and preservation initiatives.
 
 ### Dataset
 
-5000 train images with their 5 labels such as lilly,lotus,orchid,sunflower,tulip
 Dataset path: s3://apac-cds/ht_datasets/image_classification/flower_recognition.zip
 
+5000 train images with their 5 labels such as lilly,lotus,orchid,sunflower,tulip Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flower_recognition/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

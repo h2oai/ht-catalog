@@ -14,16 +14,23 @@ Classifies the audio segments into 4 machine parts: valve, fan, slider and pump
 
 ### Business Problem 
 
-Anomaly detection using audio-fan involves analyzing the sound patterns produced by a fan to identify any abnormal or unusual behavior. By capturing and processing the audio signals emitted by the fan, anomalies such as mechanical faults, bearing wear, or other malfunctions can be detected. The audio data is collected continuously or periodically from the fan, and machine learning algorithms are applied to classify normal and anomalous sound patterns. This enables proactive maintenance, as anomalies can be detected early, minimizing downtime and preventing further damage.
+Anomaly detection using audio involves analyzing sounds from different machinery components like fans, pumps, sliders, and valves. By studying the audio data, we can identify unusual sound patterns that indicate mechanical faults or malfunctions. Machine learning algorithms help classify normal and abnormal sounds, allowing us to proactively maintain the machinery and prevent potential failures or disruptions.
+
+### Impact
 
 Implementing anomaly detection using audio - all can have a broad business impact across industries where multiple components or systems are critical for operations. By integrating audio analysis from various sources, potential failures or abnormalities can be detected holistically, improving overall equipment reliability and operational efficiency. Proactive maintenance based on anomaly detection helps prevent costly breakdowns, reduces downtime, and enhances safety. Additionally, this comprehensive approach allows for optimized resource allocation, as maintenance activities can be scheduled based on the detected anomalies across multiple components or systems.
 
 ### Dataset
 
-NA
 Dataset path: s3://apac-cds/ht_datasets/manufacturing/anomaly_detection_using_audio_all.zip
 
+NA Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/anomaly_detection_using_audio___all/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

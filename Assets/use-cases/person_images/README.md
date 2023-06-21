@@ -14,16 +14,23 @@ Identify the images of the same person from set of person images
 
 ### Business Problem 
 
-Person Re-Identification is a computer vision task that involves identifying and tracking individuals across multiple non-overlapping camera views. The goal is to develop an algorithm or model that can match a person's identity across different surveillance cameras or video frames, regardless of changes in appearance, pose, lighting conditions, or camera angles. This use case finds applications in various domains such as law enforcement, public safety, retail analytics, and crowd management. By accurately re-identifying individuals, organizations can enhance security measures, detect suspicious activities, and gather valuable insights for business optimization or safety purposes. The person re-identification technology enables the tracking of individuals in real-time or post-event analysis, providing a powerful tool for video surveillance systems.
+Person Re-Identification is a computer vision task that involves identifying and tracking individuals across multiple non-overlapping camera views. The goal is to develop an algorithm or model that can match a person's identity across different surveillance cameras or video frames, regardless of changes in appearance, pose, lighting conditions, or camera angles. This use case finds applications in various domains such as law enforcement, public safety, retail analytics, and crowd management. By re-identifying individuals, organizations can enhance security measures, detect suspicious activities, and gather insights for business optimization or safety purposes. The person re-identification technology enables the tracking of individuals in real-time or post-event analysis, providing a powerful tool for video surveillance systems.
 
-Person re-identification has significant business impacts across multiple industries. In the field of law enforcement and public safety, it enables authorities to track and monitor individuals of interest across different camera feeds, aiding in investigations and crime prevention. Retail businesses can leverage person re-identification for customer behavior analysis, footfall tracking, and targeted marketing strategies. By understanding customer movement patterns and preferences, retailers can optimize store layouts, personalize shopping experiences, and improve customer satisfaction. Crowd management at large events or transportation hubs can also benefit from person re-identification to monitor crowd flow, identify potential security risks, and ensure public safety. Overall, person re-identification technology enhances security, enables efficient video analysis, and provides valuable insights for decision-making across various industries.
+### Impact
+
+Person re-identification plays a key roles across multiple industries. In the field of law enforcement and public safety, it enables authorities to track and monitor individuals of interest across different camera feeds, aiding in investigations and crime prevention. Retail businesses can leverage person re-identification for customer behavior analysis, footfall tracking, and targeted marketing strategies. By understanding customer movement patterns and preferences, retailers can optimize store layouts, personalize shopping experiences, and improve customer satisfaction. Crowd management at large events or transportation hubs can also benefit from person re-identification to monitor crowd flow, identify potential security risks, and ensure public safety. Overall, person re-identification technology enhances security, enables efficient video analysis, and provides valuable insights for decision-making across various industries.
 
 ### Dataset
 
-12936 train images of 751 humans. 534 test images.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/market_1501_metric_learning.zip
 
+12936 train images of 751 humans. 534 test images. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/person_images/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

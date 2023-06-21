@@ -14,16 +14,23 @@ Classify an input resistor image into its corresponding type or category
 
 ### Business Problem 
 
-Resistor image classification involves the automated recognition and categorization of different types of resistors based on their visual characteristics and markings. This technology utilizes computer vision techniques and machine learning algorithms to analyze resistor images and assign them to specific classes or categories.
+Resistor image classification enables automated recognition and categorization of resistors by analyzing their visual characteristics and markings. This ensures efficient identification and organization of different resistor types, empowering industries with streamlined processes and accurate component classification for enhanced electrical engineering and circuit design.
 
-Resistor image classification has significant business implications in the electronics manufacturing and distribution industry. By automating the classification process, it streamlines quality control, inventory management, and product identification. Electronic component manufacturers can ensure accurate labeling and sorting of resistors, reducing errors and improving operational efficiency. Distributors can optimize inventory tracking and fulfillment, ensuring the right resistors are supplied to customers, thereby enhancing customer satisfaction and reducing returns or errors in orders.
+### Impact
+
+Resistor image classification is very useful in the electronics manufacturing and distribution industry. By automating the classification process, it streamlines quality control, inventory management, and product identification. Electronic component manufacturers can ensure accurate labeling and sorting of resistors, reducing errors and improving operational efficiency. Distributors can optimize inventory tracking and fulfillment, ensuring the right resistors are supplied to customers, thereby enhancing customer satisfaction and reducing returns or errors in orders.
 
 ### Dataset
 
-2881 train images with 37 different categories
 Dataset path: s3://apac-cds/ht_datasets/image_classification/Resistor.zip
 
+2881 train images with 37 different categories Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/resistor_image_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

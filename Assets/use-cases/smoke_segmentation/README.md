@@ -14,16 +14,23 @@ Segment the presence and location of smoke within images
 
 ### Business Problem 
 
-This model can accurately identify and segment smoke in images. By distinguishing smoke from other objects and backgrounds, our model helps to improve the accuracy of fire detection systems and enhance safety in various industries, including manufacturing, transportation, and public safety.
+This model can identify and segment smoke in images. By distinguishing smoke from other objects and backgrounds, The model helps to improve the accuracy of fire detection systems and enhance safety in various industries, including manufacturing, transportation, and public safety.
 
-Smoke segmentation in images has a profound impact across industries. In the field of fire prevention and safety, accurate smoke segmentation enables early detection and response, enhancing emergency management and minimizing property damage. In industrial settings, smoke segmentation helps monitor the presence of smoke, improving workplace safety and preventing accidents. Environmental agencies benefit from smoke segmentation in the detection and monitoring of wildfires, aiding in timely intervention and minimizing ecological damage. Furthermore, in the field of computer vision and image analysis, smoke segmentation contributes to various applications, including surveillance, image understanding, and object recognition.
+### Impact
+
+The utilization of a smoke detection model has far-reaching implications in various sectors. Within the realm of fire prevention and safety, precise smoke segmentation plays a crucial role in identifying smoke early on, thereby facilitating prompt response and bolstering emergency management efforts while minimizing the extent of property destruction. Industrial environments also benefit from smoke segmentation by enabling constant monitoring of smoke presence, thus enhancing workplace safety and preventing accidents. Environmental agencies find value in smoke segmentation for detecting and monitoring wildfires, aiding in timely intervention and reducing ecological harm. Additionally, the field of computer vision and image analysis benefits from smoke segmentation as it contributes to a multitude of applications, such as surveillance, image comprehension, and object recognition.
 
 ### Dataset
 
-64 train images segmented using class_id 'smoke'
 Dataset path: s3://apac-cds/ht_datasets/instance_segmentation/bush_fire_image_segment.zip
 
+64 train images segmented using class_id 'smoke' Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/smoke_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

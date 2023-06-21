@@ -14,16 +14,23 @@ Detect and recognize footpaths or pedestrian walkways in images or video data
 
 ### Business Problem 
 
-Footpath recognition involves the automated detection and recognition of footpaths or pedestrian walkways in images or video data. This technology utilizes computer vision techniques to identify and segment footpaths, assisting in urban planning, navigation systems, and pedestrian safety initiatives.
+Footpath recognition in road  utilizes advanced computer vision algorithms to detect and identify pedestrian walkways within road images. This model significantly contributes to enhancing pedestrian safety, streamlining urban planning efforts, optimizing transportation infrastructure development, and creating more pedestrian-friendly cities.
 
-Footpath recognition has business implications in urban planning, transportation, and navigation systems. By automatically detecting and recognizing pedestrian walkways or footpaths in images or video data, this technology aids in pedestrian safety, infrastructure development, and navigation optimization. Urban planners can analyze footpath usage, identify areas needing improvement, and design pedestrian-friendly environments. Navigation systems can provide accurate pedestrian routing, enhance mobility options, and improve overall transportation efficiency.
+### Impact
+
+Footpath recognition use-case is highly beneficial in urban planning, transportation, and navigation systems. By automatically detecting and recognizing pedestrian walkways or footpaths in images or video data, this technology aids in pedestrian safety, infrastructure development, and navigation optimization. Urban planners can analyze footpath usage, identify areas needing improvement, and design pedestrian-friendly environments. Navigation systems can provide accurate pedestrian routing, enhance mobility options, and improve overall transportation efficiency.
 
 ### Dataset
 
-3000 train images with their masks
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/footpath-image-dataset.zip
 
+3000 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/footpath_recognition/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

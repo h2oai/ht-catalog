@@ -14,16 +14,23 @@ Predict individuals stress levels based on physiological or behavioral signals
 
 ### Business Problem 
 
-Human stress prediction entails the analysis and prediction of individuals' stress levels based on various physiological or behavioral signals. This technology leverages machine learning algorithms and sensor data to detect patterns, changes, and indicators of stress, providing insights for stress management, mental health support, and overall well-being
+Human stress prediction entails the analysis and prediction of individuals' stress levels based on various physiological or behavioral signals. The solution approach leverages machine learning algorithms and sensor data to detect patterns, changes, and indicators of stress, providing insights for stress management, mental health support, and overall well-being
 
-Human stress prediction has significant business impact in the fields of healthcare, wellness, and human resources. By analyzing physiological or behavioral signals to detect stress levels, this technology enables proactive stress management, mental health support, and employee well-being initiatives. Healthcare providers can offer targeted interventions and treatments, while employers can implement stress reduction programs, improve workplace productivity, and foster a positive work environment. It contributes to enhanced employee satisfaction, reduced healthcare costs, and improved overall organizational performance.
+### Impact
+
+Human stress prediction has significant role in the fields of healthcare, wellness, and human resources. By analyzing physiological or behavioral signals to detect stress levels, this technology enables proactive stress management, mental health support, and employee well-being initiatives. Healthcare providers can offer targeted interventions and treatments, while employers can implement stress reduction programs, improve workplace productivity, and foster a positive work environment. It contributes to enhanced employee satisfaction, reduced healthcare costs, and improved overall organizational performance.
 
 ### Dataset
 
-2838 train text samples with 2 different labels.
 Dataset path: s3://apac-cds/ht_datasets/text_classification/stress_prediction.csv
 
+2838 train text samples with 2 different labels. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/human_stress_prediction/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

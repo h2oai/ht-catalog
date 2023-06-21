@@ -14,16 +14,23 @@ Classify biomedicine scientific articles in different categories
 
 ### Business Problem 
 
-Biomedical text publication classification involves the categorization and organization of scientific articles and publications in the field of biomedicine. This technology employs natural language processing techniques to automatically assign relevant topics, domains, or subfields to scientific papers, aiding researchers and professionals in efficient literature review and knowledge discovery.
+Biomedical text publication classification involves the categorization and organization of scientific articles and publications in the field of biomedicine. This solution employs natural language processing techniques to assign relevant topics, domains, or subfields to scientific papers, aiding researchers and professionals in efficient literature review and knowledge discovery.
+
+### Impact
 
 Biomedical text publication classification offers valuable business implications in the field of scientific research and healthcare. By automatically categorizing and organizing scientific articles and publications, this technology facilitates efficient literature review, accelerates knowledge discovery, and supports evidence-based decision-making. It aids researchers, healthcare professionals, and pharmaceutical companies in staying updated with the latest advancements, identifying potential collaborations, and driving innovation, thereby fostering scientific progress and enhancing competitiveness.
 
 ### Dataset
 
-7570 train text samples with their labels
 Dataset path: s3://apac-cds/ht_datasets/text_classification/biomedical-text-publication-classification.csv
 
+7570 train text samples with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/biomedical_text_publication_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

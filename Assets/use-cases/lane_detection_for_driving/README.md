@@ -16,14 +16,21 @@ Identify and segment the lanes on the road
 
 Lane detection for driving is a technique used in autonomous vehicles to identify and track the lanes on the road. This is done using image segmentation, where the lanes are isolated from the rest of the image. The lane detection model analyzes the input image, identifies the lane markers, and generates an output image with the lane markers highlighted. This information is then used by the autonomous vehicle to maintain its position within the lane and navigate the road safely. Lane detection is a critical component of autonomous driving, as it helps ensure the safety of passengers and other drivers on the road.
 
+### Impact
+
 Lane detection technology has a significant impact on the field of autonomous driving, advanced driver-assistance systems (ADAS), and road safety. By analyzing live or recorded video feeds from cameras mounted on vehicles, it enables the detection and tracking of lane markings on the road. Accurate lane detection assists in vehicle positioning, lane keeping, and autonomous navigation. It enhances road safety by providing warnings and assistance to drivers in maintaining their lanes. Lane detection technology contributes to the development of safer and more efficient transportation systems, reducing the risk of accidents and improving traffic flow.
 
 ### Dataset
 
-3075 train images and 129 test images with 3 uniques segmentation labels ['left-lane' 'right-lane' 'background']
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/lane-detection.zip
 
+3075 train images and 129 test images with 3 uniques segmentation labels ['left-lane' 'right-lane' 'background'] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/lane_detection_for_driving/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Determine and classify individuals holding insurance policies or claims
 
 ### Business Problem 
 
-Insurance holder detection refers to the automated identification and verification of individuals who hold insurance policies or claims. This technology utilizes various data sources and machine learning algorithms to match and associate relevant information, assisting insurance providers in accurately identifying policyholders, preventing fraud, and ensuring efficient claims processing.
+Insurance holder detection refers to the automated identification and verification of individuals who hold insurance policies or claims. The solution approach utilizes various data sources and machine learning algorithms to match and associate relevant information, assisting insurance providers in identifying policyholders, preventing fraud, and ensuring efficient claims processing.
 
-The business impact of insurance holder detection is significant for insurance providers and fraud prevention. By accurately identifying and verifying insurance policyholders, this technology helps mitigate fraud risks and ensures accurate claims processing. It enables insurance companies to streamline operations, reduce losses, and enhance underwriting accuracy. By maintaining the integrity of their policies and safeguarding against fraudulent activities, insurance providers can build trust with customers, strengthen their reputation, and improve overall business performance.
+### Impact
+
+The usefulness insurance holder detection is significant for insurance providers and fraud prevention. By accurately identifying and verifying insurance policyholders, this technology helps mitigate fraud risks and ensures accurate claims processing. It enables insurance companies to streamline operations, reduce losses, and enhance underwriting accuracy. By maintaining the integrity of their policies and safeguarding against fraudulent activities, insurance providers can build trust with customers, strengthen their reputation, and improve overall business performance.
 
 ### Dataset
 
-7632 train rows with their answers.
 Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/insurance_holder_detection.zip
 
+7632 train rows with their answers. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

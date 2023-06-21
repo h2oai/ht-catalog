@@ -14,16 +14,23 @@ Detect and segment the roads in urban areas
 
 ### Business Problem 
 
-Road detection models are essential for various applications, such as urban planning, transportation management, and autonomous driving. In urban areas, where roads can be complex and diverse, road detection from satellite images is a challenging task. This is because satellite images may contain various objects and features, such as buildings, trees, and cars, which can interfere with road detection. To overcome these challenges, the road detection model uses image processing techniques and machine learning algorithms to accurately identify and classify road segments in urban areas. The model can be trained on large datasets of satellite images labeled with road and non-road segments, and it can then be used to classify new satellite images for road detection applications.
+Road detection models are essential for various applications, such as urban planning, transportation management, and autonomous driving. In urban areas, where roads can be complex and diverse, road detection from satellite images is a challenging task. This is because satellite images may contain various objects and features, such as buildings, trees, and cars, which can interfere with road detection. To overcome these challenges, the road detection model uses image processing techniques and machine learning algorithms to identify and classify road segments in urban areas. The model can be trained on large datasets of satellite images labeled with road and non-road segments, and it can then be used to classify new satellite images for road detection applications.
+
+### Impact
 
 Road detection technology is essential in the fields of autonomous driving, transportation planning, and infrastructure development. By analyzing aerial or satellite imagery using computer vision algorithms, it enables the automated identification and mapping of roads and road networks. Accurate road detection supports navigation systems, intelligent transportation systems, and urban planning initiatives. It aids in route planning, traffic management, and infrastructure maintenance. Road detection technology enhances road safety, improves transportation efficiency, and contributes to the development of smart cities and advanced transportation solutions.
 
 ### Dataset
 
-6226 train images with class id ''road"
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/road_data.zip
 
+6226 train images with class id ''road" Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/road_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

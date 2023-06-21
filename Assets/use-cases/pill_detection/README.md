@@ -14,16 +14,23 @@ Detect the pills in a given image
 
 ### Business Problem 
 
-A pill detection model is used to automatically identify pills and capsules from digital images. The model uses computer vision techniques to analyze the shape, color, size, and texture of the pills to determine their identity. This can be useful for pharmaceutical companies, hospitals, and pharmacies to ensure accuracy in inventory management, pill identification, and patient safety
+A pill detection model is used to identify pills and capsules from digital images. The model uses computer vision techniques to analyze the shape, color, size, and texture of the pills to determine their identity. This can be useful for pharmaceutical companies, hospitals, and pharmacies to ensure accuracy in inventory management, pill identification, and patient safety
+
+### Impact
 
 Pill detection technology offers significant business benefits, especially in healthcare settings. Automated pill detection systems assist in medication management, ensuring patient safety and medication adherence. By accurately identifying and verifying pills, these systems help prevent medication errors, improve inventory management, and enhance patient care. Pill detection technology also supports pharmaceutical research and development by enabling efficient identification and tracking of specific pills during clinical trials, reducing human error and speeding up the drug discovery process. Overall, pill detection enhances healthcare efficiency, minimizes risks, and improves patient outcomes.
 
 ### Dataset
 
-449 train images with their object coordinates
 Dataset path: s3://apac-cds/ht_datasets/object_detection/pill_object_detection.zip
 
+449 train images with their object coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pill_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

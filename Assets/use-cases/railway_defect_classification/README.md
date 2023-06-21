@@ -14,16 +14,23 @@ Classify an input image or video frame into the corresponding defect category
 
 ### Business Problem 
 
-Railway defect classification involves the automated identification and categorization of defects or anomalies in railway infrastructure, such as tracks, switches, or signals. This technology utilizes computer vision algorithms and machine learning models to analyze images or video data captured during railway inspections and classify them into specific defect categories, such as cracks, breaks, or wear.
+Railway Defect Classification in image data is a application that utilizes advanced techniques to analyze images of railway tracks. By employing sophisticated algorithms, this approach can identify various defects such as cracks, corrosion, and structural abnormalities. Accurate classification of these defects facilitates proactive maintenance, enhances railway safety, and ensures efficient operations by minimizing potential risks and addressing maintenance needs promptly.
 
-Railway defect classification has significant business implications in the transportation and railway maintenance industry. By automating the defect identification process, railway operators can improve safety measures, optimize maintenance schedules, and enhance overall infrastructure reliability. It allows for proactive maintenance planning, reduces downtime, and mitigates the risk of accidents or disruptions, resulting in improved operational efficiency and cost savings.
+### Impact
+
+Railway defect classification is very useful in the transportation and railway maintenance industry. By automating the defect identification process, railway operators can improve safety measures, optimize maintenance schedules, and enhance overall infrastructure reliability. It allows for proactive maintenance planning, reduces downtime, and mitigates the risk of accidents or disruptions, resulting in improved operational efficiency and cost savings.
 
 ### Dataset
 
-300 train images with their labels(Defective or Non Defective)
 Dataset path: s3://apac-cds/ht_datasets/image_classification/railway_defect_classification.zip
 
+300 train images with their labels(Defective or Non Defective) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/railway_defect_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

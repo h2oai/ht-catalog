@@ -14,16 +14,23 @@ Detect the presence of hardhats in images
 
 ### Business Problem 
 
-Hardhat Object Detection model is designed to detect and classify the presence of hardhats in images. The model is based on object detection techniques that use deep learning algorithms to identify and locate objects in images. With the help of a dataset of labeled images that contain hardhats, the model can accurately detect the presence and location of hardhats in new images. This model can be useful in various applications, such as construction site monitoring, safety analysis, and worker compliance monitoring.
+Hardhat Object Detection model is designed to detect and classify the presence of hardhats in images. The model is based on object detection techniques that use deep learning algorithms to identify and locate objects in images. With the help of a dataset of labeled images that contain hardhats, the model can detect the presence and location of hardhats in new images. This model can be useful in various applications, such as construction site monitoring, safety analysis, and worker compliance monitoring.
+
+### Impact
 
 Hardhat object detection plays a vital role in construction site safety and worker protection. By analyzing visual data from cameras or surveillance systems, hardhat object detection technology identifies and tracks the presence of hardhats worn by workers in real-time. Accurate hardhat object detection ensures compliance with safety regulations, reduces the risk of head injuries, and enhances overall workplace safety. It enables proactive monitoring, alerts for non-compliance, and helps in assessing safety performance. Hardhat object detection technology contributes to accident prevention, injury reduction, and improved safety practices in construction and industrial settings.
 
 ### Dataset
 
-4750 train images with their annotations
 Dataset path: s3://apac-cds/ht_datasets/object_detection/hardhat-object-detection.zip
 
+4750 train images with their annotations Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hardhat_object_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

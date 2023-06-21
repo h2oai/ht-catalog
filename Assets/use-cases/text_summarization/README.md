@@ -14,16 +14,23 @@ Generate a concise summary of a longer text
 
 ### Business Problem 
 
-Text summarization is a natural language processing technique used to automatically generate a concise and coherent summary of a text. The need for text summarization model arises when we need to quickly comprehend a large amount of text data. It is particularly useful for news articles, research papers, and legal documents, where the reader needs to quickly grasp the main points without having to read the entire document
+Text summarization is a natural language processing technique used to generate a concise and coherent summary of a text. The need for text summarization model arises when we need to quickly comprehend a large amount of text data. It is particularly useful for news articles, research papers, and legal documents, where the reader needs to quickly grasp the main points without having to read the entire document
+
+### Impact
 
 Text summarization has a wide range of business applications, particularly in industries dealing with large volumes of textual information, such as news media, market research, and legal services. By automatically generating concise and coherent summaries from lengthy documents, text summarization improves information retrieval and comprehension. It allows users to quickly grasp the main points, key insights, and relevant details without having to read the entire text. This significantly enhances productivity, decision-making, and knowledge management. In news media, text summarization enables efficient content curation, aiding in the delivery of timely and relevant news to audiences. In legal services, it assists in digesting complex legal documents, conducting legal research, and preparing case summaries, saving valuable time and resources.
 
 ### Dataset
 
-500 text documents with their summarization
 Dataset path: s3://apac-cds/ht_datasets/text_sequence_to_sequence/text_summarization.zip
 
+500 text documents with their summarization Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/text_summarization/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

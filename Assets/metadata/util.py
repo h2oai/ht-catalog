@@ -63,17 +63,21 @@ def individual_usecases():
 
 {r["description"]}
 
+### Impact
+
 {r["Business Impact"]}
 
 ### Dataset
 
-{r["dataset-description"]}
-
 Dataset path: {r["dataset-link"]}
 
-Import this link directly in Hydrogen Torch
+{r["dataset-description"]} Import this link directly in Hydrogen Torch using Amazon S3 ingestion
 
 ![train data]({url}train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 
@@ -96,10 +100,10 @@ Model Configuration (Hydrogen Torch yaml)
 
 {r['license']}
 """
-		if 'pest_clas' in url_l:
-			print (url_l)
+		# if 'pest_clas' in url_l:
+			# print (url_l)
 		# 	continue
-		# open(url_l + "readme.md", "w").write(readme)
+		open(url_l + "readme.md", "w").write(readme)
 
 
 

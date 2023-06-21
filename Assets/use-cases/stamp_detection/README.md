@@ -14,16 +14,23 @@ Detect stamps in the digital documents using object detection techniques
 
 ### Business Problem 
 
-Stamp detection model is designed to detect stamps from images using computer vision techniques. With the help of stamp datasets containing images of different stamps, the model can accurately identify and localize the stamps in the input image. The model can be used for various applications, such as stamp authentication and sorting, postal services, and philately. It employs object detection algorithms, including convolutional neural networks and feature extraction methods to recognize and segment the stamps from the background.
+Stamp detection model is designed to detect stamps from images using computer vision techniques. With the help of stamp datasets containing images of different stamps, the model can identify and localize the stamps in the input image. The model can be used for various applications, such as stamp authentication and sorting, postal services, and philately. It employs object detection algorithms, including convolutional neural networks and feature extraction methods to recognize and segment the stamps from the background.
+
+### Impact
 
 A stamp detection model offers several valuable benefits to businesses. It automates the process of identifying stamps in documents or images, improving efficiency and accuracy while saving time and costs. It helps prevent fraud by detecting forged or counterfeit stamps, ensuring compliance with regulations. Additionally, it enhances customer experience in industries like postal services by facilitating faster processing. Overall, a stamp detection model provides businesses with increased efficiency, cost savings, fraud prevention, regulatory compliance, and improved customer experience, leading to improved operational effectiveness and a competitive edge.
 
 ### Dataset
 
-400 images with their coordinates
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/stamp_detection.zip
 
+400 images with their coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

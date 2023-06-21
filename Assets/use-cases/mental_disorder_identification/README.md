@@ -14,16 +14,23 @@ Identify and classify mental disorders
 
 ### Business Problem 
 
-Mental disorder identification involves the automated screening and assessment of individuals for potential mental health conditions. This technology analyzes textual or behavioral data to detect patterns, symptoms, and risk factors associated with various mental disorders, aiding healthcare professionals in early intervention, treatment planning, and personalized care
+Mental disorder identification involves the automated screening and assessment of individuals for potential mental health conditions. This solution analyzes textual or behavioral data to detect patterns, symptoms, and risk factors associated with various mental disorders, aiding healthcare professionals in early intervention, treatment planning, and personalized care
 
-The business impact of mental disorder identification is significant in healthcare and well-being industries. By automating the screening and identification of potential mental health conditions, this technology enables early intervention, appropriate treatment planning, and personalized care. Mental healthcare providers can optimize resource allocation, streamline patient triage, and improve mental health outcomes. Additionally, businesses focused on mental well-being can develop targeted products and services, tailor interventions, and contribute to a healthier and more productive workforce.
+### Impact
+
+The usefulness mental disorder identification is significant in healthcare and well-being industries. By automating the screening and identification of potential mental health conditions, this technology enables early intervention, appropriate treatment planning, and personalized care. Mental healthcare providers can optimize resource allocation, streamline patient triage, and improve mental health outcomes. Additionally, businesses focused on mental well-being can develop targeted products and services, tailor interventions, and contribute to a healthier and more productive workforce.
 
 ### Dataset
 
-701787 train samples with 2 classes
 Dataset path: s3://apac-cds/ht_datasets/text_classification/mental-disorders-identification.zip
 
+701787 train samples with 2 classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

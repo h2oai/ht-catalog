@@ -14,16 +14,23 @@ Classify the roads based on their quality
 
 ### Business Problem 
 
-The Road Quality Classification model is used to automatically classify road quality based on image, which can be used for road maintenance planning and improving safety. It provides a cost-effective and efficient solution for monitoring road conditions on a large scale.
+The Road Quality Classification model is used to classify road quality based on image, which can be used for road maintenance planning and improving safety. It provides a cost-effective and efficient solution for monitoring road conditions on a large scale.
 
-Road quality classification has a substantial impact on transportation and infrastructure management. By automatically assessing the quality of road surfaces, this technology helps transportation authorities identify areas that require maintenance or repairs. It enables efficient resource allocation, ensuring that limited funds are directed towards the most critical areas. Road quality classification contributes to safer and smoother travel experiences, reducing vehicle damage and minimizing accidents caused by poor road conditions. Additionally, it supports urban planning efforts by providing valuable data on road infrastructure conditions, enabling authorities to make informed decisions regarding road improvement projects.
+### Impact
+
+By automatically assessing the quality of road surfaces, this technology helps transportation authorities identify areas that require maintenance or repairs. It enables efficient resource allocation, ensuring that limited funds are directed towards the most critical areas. Road quality classification contributes to safer and smoother travel experiences, reducing vehicle damage and minimizing accidents caused by poor road conditions. Additionally, it supports urban planning efforts by providing valuable data on road infrastructure conditions, enabling authorities to make informed decisions regarding road improvement projects.
 
 ### Dataset
 
-1659 images with 4 labels.Such as good,poor,very_poor,satisfactory
 Dataset path: s3://apac-cds/ht_datasets/image_classification/road_image_sih_classification.zip
 
+1659 images with 4 labels.Such as good,poor,very_poor,satisfactory Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/road_quality_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

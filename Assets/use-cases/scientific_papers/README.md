@@ -14,16 +14,23 @@ Extract and classify named entities from scientific papers
 
 ### Business Problem 
 
-Scientific papers NER (Named Entity Recognition) entails the identification and extraction of named entities such as names of researchers, organizations, chemicals, or biological entities from scientific articles and papers. This technology assists in organizing and indexing scientific literature, enabling efficient information retrieval and knowledge discovery in specific domains
+Scientific papers NER (Named Entity Recognition) entails the identification and extraction of named entities such as names of researchers, organizations, chemicals, or biological entities from scientific articles and papers. The solution approach assists in organizing and indexing scientific literature, enabling efficient information retrieval and knowledge discovery in specific domains
 
-Scientific papers NER has significant business implications in scientific research and knowledge management. By automatically extracting named entities from scientific articles and papers, this technology enhances information retrieval, literature review, and knowledge discovery. Researchers, academic institutions, and R&D departments can efficiently locate relevant literature, identify key authors or organizations, and establish collaborations. It fosters scientific progress, accelerates innovation, and supports evidence-based decision-making.
+### Impact
+
+Scientific papers NER is very useful in scientific research and knowledge management. By automatically extracting named entities from scientific articles and papers, this technology enhances information retrieval, literature review, and knowledge discovery. Researchers, academic institutions, and R&D departments can efficiently locate relevant literature, identify key authors or organizations, and establish collaborations. It fosters scientific progress, accelerates innovation, and supports evidence-based decision-making.
 
 ### Dataset
 
-202914 train rows with their summaries
 Dataset path: s3://apac-cds/ht_datasets/text_sequence_to_sequence/scientific papers.zip
 
+202914 train rows with their summaries Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/scientific_papers/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

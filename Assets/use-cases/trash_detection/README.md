@@ -16,14 +16,21 @@ Identify and classify various types of trash objects
 
 The Trash Detection and Classification model is designed to identify and classify various types of trash objects in an image. This model can help in automated waste management by detecting and segregating different types of waste for efficient recycling and disposal. The model uses image classification techniques to classify trash objects into categories such as plastic, glass, paper, metal, and organic waste. The model can be trained on a large dataset of annotated images of trash objects to improve its accuracy in detecting and classifying various types of waste. Once deployed, the model can be used in various settings such as waste sorting plants, recycling centers, and smart waste bins.
 
-Trash detection has significant business impact in waste management and environmental sustainability. By utilizing computer vision and machine learning algorithms, trash detection technology enables the automated identification and classification of different types of trash in images or videos. Accurate trash detection facilitates efficient waste sorting, recycling, and disposal processes. It helps in reducing contamination, optimizing recycling efforts, and minimizing environmental impact. Trash detection technology contributes to improved waste management practices, resource conservation, and a cleaner, more sustainable environment.
+### Impact
+
+Trash detection plays a key role in waste management and environmental sustainability. By utilizing computer vision and machine learning algorithms, trash detection technology enables the automated identification and classification of different types of trash in images or videos. Accurate trash detection facilitates efficient waste sorting, recycling, and disposal processes. It helps in reducing contamination, optimizing recycling efforts, and minimizing environmental impact. Trash detection technology contributes to improved waste management practices, resource conservation, and a cleaner, more sustainable environment.
 
 ### Dataset
 
-369 train images with 4 unique labels {glass,paper,metal, plastic}
 Dataset path: s3://apac-cds/ht_datasets/object_detection/trash-detection.zip
 
+369 train images with 4 unique labels {glass,paper,metal, plastic} Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/trash_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

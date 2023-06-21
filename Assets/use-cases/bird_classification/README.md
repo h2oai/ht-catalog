@@ -14,16 +14,23 @@ Classify the bird species in a given image
 
 ### Business Problem 
 
-Bird classification is a use case of image classification that involves identifying and classifying different bird species from images. The main goal of this task is to develop a model that can accurately classify bird images based on their visual features such as shape, color, and texture. This can have applications in fields such as wildlife conservation, ornithology, and environmental monitoring.
+Bird classification is a use case of image classification that involves identifying and classifying different bird species from images. The main goal of this task is to develop a model that can classify bird images based on their visual features such as shape, color, and texture. This can have applications in fields such as wildlife conservation, ornithology, and environmental monitoring.
 
-Bird species classification has significant business impact in various industries. In the field of ornithology and wildlife conservation, accurate classification of bird species helps in monitoring and understanding biodiversity, migration patterns, and population dynamics. This information is crucial for making informed conservation decisions and implementing targeted conservation efforts. Additionally, in the tourism industry, bird species classification can enhance birdwatching experiences by providing accurate identification and information about the species present in a particular area. It can also contribute to the development of birding-related products and services, such as specialized tours, guides, and photography equipment.
+### Impact
+
+Bird species classification plays a key role in various industries. In the field of ornithology and wildlife conservation, accurate classification of bird species helps in monitoring and understanding biodiversity, migration patterns, and population dynamics. This information is crucial for making informed conservation decisions and implementing targeted conservation efforts. Additionally, in the tourism industry, bird species classification can enhance birdwatching experiences by providing accurate identification and information about the species present in a particular area. It can also contribute to the development of birding-related products and services, such as specialized tours, guides, and photography equipment.
 
 ### Dataset
 
-2500 train images with 25 bird classes
 Dataset path: s3://apac-cds/ht_datasets/image_classification/bird_classification.zip
 
+2500 train images with 25 bird classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

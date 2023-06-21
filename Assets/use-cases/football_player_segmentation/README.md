@@ -14,16 +14,23 @@ Segment each football player present in the video frames
 
 ### Business Problem 
 
-Football player segmentation involves the automated separation and extraction of football players from live game footage or video recordings. This technology utilizes computer vision algorithms and machine learning models to identify and segment individual players from complex scenes, enabling various applications such as player tracking, sports analytics, or immersive fan experiences.
+Football player segmentation in images leverages computer vision techniques to extract and separate individual players from a static image. By isolating players from the background, this technology enables various applications, including player statistics analysis, team formation evaluation, and immersive fan experiences, enhancing the understanding and enjoyment of football imagery.
 
-Football player segmentation has business implications in the sports industry, including sports broadcasting, team analysis, and fan engagement. By accurately segmenting players from game footage, broadcasters can provide enhanced visual experiences, highlight specific player actions, and deliver more engaging sports content to viewers. Sports teams and analysts can utilize player segmentation for performance analysis, tactical evaluations, and injury prevention strategies. It contributes to improved sports coverage, enhanced fan experiences, and data-driven decision-making in professional football.
+### Impact
+
+Football player segmentation use-case is highly beneficial in the sports industry, including sports broadcasting, team analysis, and fan engagement. By accurately segmenting players from game footage, broadcasters can provide enhanced visual experiences, highlight specific player actions, and deliver more engaging sports content to viewers. Sports teams and analysts can utilize player segmentation for performance analysis, tactical evaluations, and injury prevention strategies. It contributes to improved sports coverage, enhanced fan experiences, and data-driven decision-making in professional football.
 
 ### Dataset
 
-512 train images with their masks
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/football-player-segmentation.zip
 
+512 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/football_player_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

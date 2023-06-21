@@ -14,16 +14,23 @@ Predict potential diseases or medical conditions based on reported symptoms
 
 ### Business Problem 
 
-Symptom to disease prediction involves the analysis and prediction of potential diseases or medical conditions based on reported symptoms. This technology employs machine learning algorithms and medical knowledge to correlate symptoms with specific diseases, facilitating early diagnosis, triage, and appropriate medical interventions.
+Symptom to disease prediction involves the analysis and prediction of potential diseases or medical conditions based on reported symptoms. This solution employs machine learning algorithms and medical knowledge to correlate symptoms with specific diseases, facilitating early diagnosis, triage, and appropriate medical interventions.
 
-The business impact of symptom to disease prediction is substantial for healthcare providers and patients alike. By correlating reported symptoms with potential diseases, this technology enables early diagnosis, timely intervention, and personalized treatment planning. Healthcare providers can optimize resource allocation, reduce healthcare costs, and improve patient outcomes by delivering targeted and efficient care. Patients benefit from accurate diagnoses, faster access to appropriate treatments, and improved quality of life.
+### Impact
+
+The usefulness symptom to disease prediction is substantial for healthcare providers and patients alike. By correlating reported symptoms with potential diseases, this technology enables early diagnosis, timely intervention, and personalized treatment planning. Healthcare providers can optimize resource allocation, reduce healthcare costs, and improve patient outcomes by delivering targeted and efficient care. Patients benefit from accurate diagnoses, faster access to appropriate treatments, and improved quality of life.
 
 ### Dataset
 
-1200 train rows with 24 different categories
 Dataset path: s3://apac-cds/ht_datasets/text_classification/Symptom2Disease.csv
 
+1200 train rows with 24 different categories Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/symptom_to_desease_prediction/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

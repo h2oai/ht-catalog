@@ -16,14 +16,21 @@ Classify if a given region(area) contains flooding damage or not
 
 Hurricane Damage Classification model is used to assess the extent of damage caused by hurricanes on buildings and infrastructure. It helps emergency responders and insurance companies to prioritize their response and allocate resources efficiently. The model uses drone imagery and classify the level of damage into categories, providing a faster and more accurate assessment of the damage.
 
-Hurricane damage classification has a significant business impact in the insurance industry. By accurately identifying and categorizing the extent of damage caused by hurricanes, insurance companies can efficiently assess claims, determine coverage eligibility, and expedite the claims process. This technology enables prompt and fair settlements, reduces fraudulent claims, and enhances customer satisfaction by streamlining the insurance workflow.
+### Impact
+
+By accurately identifying and categorizing the extent of damage caused by hurricanes, insurance companies can efficiently assess claims, determine coverage eligibility, and expedite the claims process. This technology enables prompt and fair settlements, reduces fraudulent claims, and enhances customer satisfaction by streamlining the insurance workflow.
 
 ### Dataset
 
-10000 train images , 2000 validation images, 2000 test images with labels is damage or not
 Dataset path: s3://apac-cds/ht_datasets/image_classification/Hurriance_Damage_Classification.zip
 
+10000 train images , 2000 validation images, 2000 test images with labels is damage or not Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hurriance_damage_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

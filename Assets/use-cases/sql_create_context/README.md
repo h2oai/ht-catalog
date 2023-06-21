@@ -14,16 +14,23 @@ Generate SQL queries or statements based on contextual information
 
 ### Business Problem 
 
-SQL create context refers to the process of dynamically generating SQL queries or statements based on contextual information or user requirements. This technology allows for the flexible creation and customization of SQL commands, enabling efficient database management, data retrieval, and system integration
+SQL create context refers to the process of dynamically generating SQL queries or statements based on contextual information or user requirements. The solution approach allows for the flexible creation and customization of SQL commands, enabling efficient database management, data retrieval, and system integration
+
+### Impact
 
 SQL create context has important business implications for database management and software development. By dynamically generating SQL queries based on contextual information or user requirements, this technology enhances the flexibility and adaptability of database systems. It facilitates efficient data retrieval, streamlines application development, and enables seamless integration with external systems. It empowers businesses to leverage data-driven insights, improve decision-making processes, and optimize operational efficiency
 
 ### Dataset
 
-202914 train rows with their details
 Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/sql-create-context.csv
 
+202914 train rows with their details Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/sql_create_context/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

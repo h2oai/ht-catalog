@@ -14,16 +14,23 @@ Recognize and classify firearms or gun-related objects from images or video data
 
 ### Business Problem 
 
-Gun classifier refers to the automated recognition and classification of firearms or gun-related objects from images or video data. This technology employs computer vision algorithms and deep learning models to identify and distinguish between different types of guns, aiding in security applications, law enforcement, and public safety efforts
+Gun classifier refers to the automated recognition and classification of firearms or gun-related objects from images or video data. The solution approach employs computer vision algorithms and deep learning models to identify and distinguish between different types of guns, aiding in security applications, law enforcement, and public safety efforts
 
-Gun classifier has business implications in security and public safety industries. By automatically recognizing and classifying firearms or gun-related objects from images or video data, this technology aids in threat detection, security screening, and law enforcement efforts. It enhances public safety measures, supports security personnel in identifying potential risks, and contributes to crime prevention. Deploying gun classifiers in critical infrastructure, public spaces, or high-risk areas helps mitigate security threats, safeguarding individuals and assets.
+### Impact
+
+Gun type classification use-case is highly beneficial in security and public safety industries. By automatically recognizing and classifying firearms or gun-related objects from images or video data, this technology aids in threat detection, security screening, and law enforcement efforts. It enhances public safety measures, supports security personnel in identifying potential risks, and contributes to crime prevention. Deploying gun classifiers in critical infrastructure, public spaces, or high-risk areas helps mitigate security threats, safeguarding individuals and assets.
 
 ### Dataset
 
-851 train audio samples with 9 different classes.
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/Gun_sound_detection.zip
 
+851 train audio samples with 9 different classes. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/gun_classifier/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

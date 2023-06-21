@@ -14,16 +14,23 @@ Verify, match, and compare the digital signatures
 
 ### Business Problem 
 
-Signature verification model is designed to ensure the authenticity and security of legal, financial, and personal transactions. By accurately identifying and authenticating signatures, this model helps prevent fraud and identity theft.
+Signature verification model is designed to ensure the authenticity and security of legal, financial, and personal transactions. By identifying and authenticating signatures, this model helps prevent fraud and identity theft.
 
-Signature verification in documents has a profound impact on business operations. In banking and financial services, it strengthens fraud prevention by accurately verifying signatures on checks, contracts, and financial documents, minimizing the risk of unauthorized transactions. The legal sector benefits from streamlined document authentication and integrity, ensuring the validity of legal agreements and reducing legal disputes. Healthcare organizations rely on signature verification to authenticate patient consent forms and medical records, ensuring compliance with regulations and enhancing patient safety. In government agencies, signature verification helps validate important documents, reducing the risk of forgery and ensuring the credibility of administrative processes. Overall, signature verification provides businesses with increased security, improved compliance, and enhanced operational efficiency.
+### Impact
+
+The utilization of computer vision techniques for signature verification, particularly through the comparison of a signature with historical signatures, has a significant impact on various aspects of business operations. In sectors such as banking and financial services, this approach plays a crucial role in fortifying fraud prevention efforts by accurately validating signatures on checks, contracts, and financial documents. By doing so, it effectively minimizes the possibility of unauthorized transactions. Similarly, the legal sector benefits greatly from the streamlined authentication and integrity of documents, thereby ensuring the legitimacy of legal agreements and reducing the occurrence of legal disputes. Healthcare organizations heavily rely on signature verification to authenticate patient consent forms and medical records, ensuring adherence to regulations and promoting an elevated level of patient safety. Moreover, government agencies find signature verification invaluable in validating vital documents, thereby significantly mitigating the risk of forgery and reinforcing the credibility of administrative processes. Ultimately, the implementation of signature verification techniques provides businesses with heightened security measures, improved compliance, and increased operational efficiency.
 
 ### Dataset
 
-1100 train images with 55 unique labels.
 Dataset path: s3://apac-cds/ht_datasets/sign_verification/sign_verification.zip
 
+1100 train images with 55 unique labels. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/signature_verification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

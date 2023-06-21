@@ -14,16 +14,23 @@ Detect the traffic lights in image data
 
 ### Business Problem 
 
-A Traffic Light Detection model is designed to detect the location and state (red, yellow, or green) of traffic lights in image data. This can be useful in a variety of applications, such as autonomous driving or traffic monitoring systems. The model uses object detection techniques to locate the traffic lights in the image and then applies image segmentation to determine the color of the traffic light. The model is typically trained on large datasets of annotated images containing traffic lights, including variations in lighting conditions, weather, and perspective. Once trained, the model can accurately detect and classify traffic lights in real-world scenarios.
+A Traffic Light Detection model is designed to detect the location and state (red, yellow, or green) of traffic lights in image data. This can be useful in a variety of applications, such as autonomous driving or traffic monitoring systems. The model uses object detection techniques to locate the traffic lights in the image and then applies image segmentation to determine the color of the traffic light. The model is typically trained on large datasets of annotated images containing traffic lights, including variations in lighting conditions, weather, and perspective. Once trained, the model can detect and classify traffic lights in real-world scenarios.
+
+### Impact
 
 Traffic light detection is a crucial component of intelligent transportation systems and autonomous vehicles. By analyzing visual data from cameras or sensors, it enables the identification and localization of traffic lights at intersections or roadways. Accurate traffic light detection assists in traffic flow optimization, autonomous vehicle navigation, and advanced driver-assistance systems. It enables vehicles to perceive and respond to traffic signals, improving road safety and reducing the risk of accidents. Traffic light detection technology contributes to the development of efficient and safe transportation systems, promoting smoother traffic operations and supporting the transition towards autonomous driving.
 
 ### Dataset
 
-1222 train images with green,red,yellow labels
 Dataset path: s3://apac-cds/ht_datasets/object_detection/traffic-light-detection.zip
 
+1222 train images with green,red,yellow labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/traffic_light_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Identify and segment fibers in concrete images
 
 ### Business Problem 
 
-The Fiber Segmentation in concrete model aims to accurately identify and segment fibers in concrete images, which can be useful for various engineering and construction applications. By using deep learning techniques, the model can automatically detect and classify fibers, providing a more efficient and accurate solution than traditional manual methods. This can improve the quality of concrete structures and reduce the risk of failure, ultimately leading to safer and more durable infrastructure.
+The Fiber Segmentation in concrete model aims to identify and segment fibers in concrete images, which can be useful for various engineering and construction applications. By using deep learning techniques, the model can detect and classify fibers, providing a more efficient and accurate solution than traditional manual methods. This can improve the quality of concrete structures and reduce the risk of failure, ultimately leading to safer and more durable infrastructure.
 
-The fiber segmentation in concrete has significant business impact in the construction and infrastructure industries. By accurately segmenting and analyzing the distribution of fibers in concrete, it is possible to assess the structural integrity and durability of concrete structures. This information helps in optimizing the design and composition of concrete mixtures, ensuring the desired mechanical properties and performance. Moreover, fiber segmentation assists in quality control during the construction process, enabling early detection of any inconsistencies or defects in the fiber reinforcement. This ultimately leads to improved construction practices, increased safety, and enhanced longevity of concrete structures.
+### Impact
+
+The fiber segmentation in concrete has significant role in the construction and infrastructure industries. By accurately segmenting and analyzing the distribution of fibers in concrete, it is possible to assess the structural integrity and durability of concrete structures. This information helps in optimizing the design and composition of concrete mixtures, ensuring the desired mechanical properties and performance. Moreover, fiber segmentation assists in quality control during the construction process, enabling early detection of any inconsistencies or defects in the fiber reinforcement. This ultimately leads to improved construction practices, increased safety, and enhanced longevity of concrete structures.
 
 ### Dataset
 
-7902 train images with their mask
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/fiber-augmented.zip
 
+7902 train images with their mask Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fiber_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

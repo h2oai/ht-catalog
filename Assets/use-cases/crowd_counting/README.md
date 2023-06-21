@@ -16,14 +16,21 @@ Estimate the number of people in a given area
 
 Crowd counting model is designed to estimate the number of people in a given area or image using computer vision techniques. It is commonly used in various applications such as public safety, crowd management, and event planning.
 
+### Impact
+
 Crowd counting technology has widespread applications in various industries, including retail, transportation, and event management. By utilizing computer vision techniques, it enables accurate estimation of crowd sizes in different environments. Crowd counting helps businesses optimize resource allocation, enhance crowd management strategies, and improve overall operational efficiency. It aids in ensuring crowd safety, optimizing staffing levels, and streamlining customer experiences. Crowd counting also provides valuable insights for urban planning, public safety, and marketing strategies, making it a valuable tool for decision-making and business growth.
 
 ### Dataset
 
-2000 images with their value
 Dataset path: s3://apac-cds/ht_datasets/image_regression/crowd_counting.zip
 
+2000 images with their value Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crowd_counting/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

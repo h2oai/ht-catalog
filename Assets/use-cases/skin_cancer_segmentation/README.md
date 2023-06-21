@@ -14,16 +14,23 @@ Detect and segment skin lesions in medical images
 
 ### Business Problem 
 
-A Skin Cancer image Segmentation model is a powerful tool for accurately detecting and segmenting skin lesions in medical images. By analyzing the images with advanced machine learning algorithms, the model can accurately identify and isolate the cancerous regions from the rest of the skin. This helps in early detection and diagnosis of skin cancer, which is crucial for effective treatment and prevention. The model can be used in hospitals, clinics, and other medical facilities to assist dermatologists and other healthcare professionals in diagnosing skin cancer.
+A Skin Cancer image Segmentation model is a powerful tool for detecting and segmenting skin lesions in medical images. By analyzing the images with advanced machine learning algorithms, the model can identify and isolate the cancerous regions from the rest of the skin. This helps in early detection and diagnosis of skin cancer, which is crucial for effective treatment and prevention. The model can be used in hospitals, clinics, and other medical facilities to assist dermatologists and other healthcare professionals in diagnosing skin cancer.
+
+### Impact
 
 Skin cancer segmentation has a significant impact on the field of dermatology and healthcare. By utilizing computer vision and deep learning algorithms, it enables the accurate identification and segmentation of skin cancer lesions from medical images. Precise segmentation assists dermatologists in diagnosing and monitoring skin cancer, improving the efficiency and accuracy of treatment plans. Skin cancer segmentation technology enhances early detection, promotes timely intervention, and contributes to improved patient outcomes, reducing the burden of skin cancer on individuals and healthcare systems.
 
 ### Dataset
 
-10015 train images with their masks
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/skin_cancer_segmentation.zip
 
+10015 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/skin_cancer_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

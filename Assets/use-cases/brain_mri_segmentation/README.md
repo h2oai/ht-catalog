@@ -14,16 +14,23 @@ Segment FLAIR abnormality regions in brain MR images
 
 ### Business Problem 
 
-The Brain MRI Segmentation model is designed to accurately segment FLAIR abnormality regions in brain MR images. With the help of the brain MRI dataset, which contains images of lower-grade glioma patients with manual segmentation masks, the model can identify and isolate regions of abnormality in the brain. The model can be used as a tool for assisting medical professionals in diagnosing and treating brain tumors, improving patient outcomes and quality of life.
+The Brain MRI Segmentation model is designed to segment FLAIR abnormality regions in brain MR images. With the help of the brain MRI dataset, which contains images of lower-grade glioma patients with manual segmentation masks, the model can identify and isolate regions of abnormality in the brain. The model can be used as a tool for assisting medical professionals in diagnosing and treating brain tumors, improving patient outcomes and quality of life.
+
+### Impact
 
 Brain MRI segmentation plays a crucial role in the healthcare industry, specifically in the field of neurology. By utilizing advanced image processing techniques and deep learning algorithms, it enables accurate delineation and identification of different brain structures and abnormalities. Precise brain MRI segmentation aids in the diagnosis and treatment planning for various neurological conditions, including tumors, strokes, or degenerative diseases. It facilitates better understanding of brain anatomy, enhances clinical decision-making, and improves patient outcomes. Brain MRI segmentation technology improves medical imaging workflows, reduces interpretation time, and promotes efficient healthcare delivery.
 
 ### Dataset
 
-1373 train images with it's segmentation mask
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/lgg-mri-segmentation_v1.zip
 
+1373 train images with it's segmentation mask Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/brain_mri_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

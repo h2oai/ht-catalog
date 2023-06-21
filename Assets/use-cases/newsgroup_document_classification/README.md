@@ -14,16 +14,23 @@ Classify news articles in different categories
 
 ### Business Problem 
 
-Newsgroup document classification entails the automated categorization and classification of textual documents from various newsgroups or online forums. This technology facilitates efficient information retrieval and organization by accurately assigning relevant topics or categories to each document, enabling users to quickly locate and access the information they need.
+Newsgroup document classification entails the automated categorization and classification of textual documents from various newsgroups or online forums. This solution facilitates efficient information retrieval and organization by assigning relevant topics or categories to each document, enabling users to quickly locate and access the information they need.
+
+### Impact
 
 Newsgroup document classification offers significant business benefits in information management and content organization. By automatically categorizing and classifying textual documents from various newsgroups or online forums, this technology enables efficient information retrieval, targeted advertising, and personalized content delivery. It enhances user experience, increases user engagement, and enables businesses to gain insights into customer preferences, trends, and market dynamics, supporting informed decision-making and driving competitive advantage.
 
 ### Dataset
 
-1000 train data with their labels
 Dataset path: s3://apac-cds/ht_datasets/text_classification/newsgroup_document_classification.csv
 
+1000 train data with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/newsgroup_document_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

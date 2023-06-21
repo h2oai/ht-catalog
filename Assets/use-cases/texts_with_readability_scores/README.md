@@ -16,14 +16,21 @@ Calculate the readability scores of the texts
 
 The Readability Scoring for Texts use case involves developing an algorithm or tool that can assess the readability level of a given text. It aims to provide a numerical score or categorization indicating the difficulty of comprehending the text. This tool can be useful in various domains, such as education, publishing, content creation, and language learning, to evaluate and enhance the readability of written material.
 
+### Impact
+
 The Readability Scoring tool can have a significant impact on industries that heavily rely on written communication. In education, it can assist teachers in selecting appropriate reading materials for students based on their reading abilities. Publishers can utilize this tool to assess the readability of their content and make necessary modifications to cater to their target audience. Content creators can optimize their writing styles to ensure clarity and accessibility. Language learning platforms can integrate this tool to provide tailored reading materials for learners at different proficiency levels.
 
 ### Dataset
 
-2834 train texts with readability scores.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/commonlit_readability_text_regression.zip
 
+2834 train texts with readability scores. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

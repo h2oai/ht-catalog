@@ -16,14 +16,21 @@ Recognize the physical objects of the tokens in each text
 
 Physical Objects Name Entity Recognition (NER) is a natural language processing (NLP) task that aims to identify and classify physical objects mentioned in text. It involves extracting specific entities such as product names, brand names, or object categories from unstructured text data. By implementing NER for physical objects, businesses can automate the process of identifying and categorizing objects mentioned in customer reviews, social media posts, or product descriptions.
 
+### Impact
+
 Implementing Physical Objects NER can have a significant impact on various industries. In e-commerce, it can automate the extraction of product names and categories from customer feedback, allowing businesses to quickly analyze sentiment and identify areas for improvement. For manufacturers, NER can help monitor mentions of their brand and products in social media, enabling them to gauge customer sentiment and track brand reputation. In the logistics industry, NER can automate the identification of objects mentioned in shipping or inventory documents, improving operational efficiency and reducing errors.
 
 ### Dataset
 
-14041 train, 3250 validation, and 3453 test texts with POS,CHUNK, and NER tags.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/conll2003_text_token_classification.zip
 
+14041 train, 3250 validation, and 3453 test texts with POS,CHUNK, and NER tags. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/physical_objects_name_specified_texts/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

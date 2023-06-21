@@ -14,16 +14,23 @@ Classify musical instruments based on audio recordings
 
 ### Business Problem 
 
-Musical instruments audio classification involves the automatic recognition and classification of different musical instruments based on audio recordings. This technology analyzes acoustic features and timbral characteristics to distinguish between instruments, facilitating tasks such as instrument identification, music transcription, and sound synthesis.
+Musical instruments audio classification involves the automatic recognition and classification of different musical instruments based on audio recordings. The solution approach analyzes acoustic features and timbral characteristics to distinguish between instruments, facilitating tasks such as instrument identification, music transcription, and sound synthesis.
 
-Musical instruments audio classification has business implications in various industries, including music production, entertainment, and e-commerce. By automatically recognizing and classifying different musical instruments based on audio recordings, this technology enhances music transcription, instrument identification, and sound synthesis. Music producers can optimize their production workflows, create more immersive sound experiences, and develop innovative music technologies. E-commerce platforms can provide targeted recommendations and personalized shopping experiences for musical instrument enthusiasts, driving customer engagement and sales.
+### Impact
+
+Musical instruments audio classification use-case is highly beneficial in various industries, including music production, entertainment, and e-commerce. By automatically recognizing and classifying different musical instruments based on audio recordings, this technology enhances music transcription, instrument identification, and sound synthesis. Music producers can optimize their production workflows, create more immersive sound experiences, and develop innovative music technologies. E-commerce platforms can provide targeted recommendations and personalized shopping experiences for musical instrument enthusiasts, driving customer engagement and sales.
 
 ### Dataset
 
-2629 train audio samples with 4 classes.
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/musical_instruments_audio_classification.zip
 
+2629 train audio samples with 4 classes. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/musical_instruments_audio_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

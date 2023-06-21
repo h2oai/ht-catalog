@@ -14,16 +14,23 @@ Segment the roads, potholes, and footpaths in a given image
 
 ### Business Problem 
 
-Indian roads, potholes, and footpaths segmentation model can be used to accurately identify and locate areas such as potholes ,roads and footpaths. This information can be used by city planners and road maintenance teams to prioritize repairs, improve road safety, and reduce accidents caused by damaged roads. The model can also be used to monitor the progress of repairs and ensure that they are carried out effectively.
+Indian roads, potholes, and footpaths segmentation model can be used to identify and locate areas such as potholes ,roads and footpaths. This information can be used by city planners and road maintenance teams to prioritize repairs, improve road safety, and reduce accidents caused by damaged roads. The model can also be used to monitor the progress of repairs and ensure that they are carried out effectively.
 
-Indian roads segmentation has a significant business impact in transportation and logistics. By accurately segmenting and mapping road networks in India, logistics companies can optimize route planning, fleet management, and delivery operations. This technology helps reduce transportation costs, improve delivery efficiency, and enhance customer service by providing accurate and up-to-date road network information. Additionally, government agencies can utilize this data for infrastructure planning, traffic management, and urban development, ultimately leading to improved transportation systems and economic growth.
+### Impact
+
+Indian roads segmentation plays a key role in transportation and logistics. By accurately segmenting and mapping road networks in India, logistics companies can optimize route planning, fleet management, and delivery operations. This technology helps reduce transportation costs, improve delivery efficiency, and enhance customer service by providing accurate and up-to-date road network information. Additionally, government agencies can utilize this data for infrastructure planning, traffic management, and urban development, ultimately leading to improved transportation systems and economic growth.
 
 ### Dataset
 
-2475 train images, 752 validation images, 753 validation images with labels ['roads' 'potholes' 'footpaths' 'shallow paths' 'backgrounds']
 Dataset path: s3://apac-cds/ht_datasets/instance_segmentation/indian_road_seg_v4.zip
 
+2475 train images, 752 validation images, 753 validation images with labels ['roads' 'potholes' 'footpaths' 'shallow paths' 'backgrounds'] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/indian_roads_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

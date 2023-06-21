@@ -16,14 +16,21 @@ Detect and classify individuals wearing or not wearing face masks from images or
 
 Face mask detection entails the automated recognition and identification of individuals wearing or not wearing face masks from images or video streams. This technology employs computer vision algorithms to analyze facial features and detect the presence or absence of face masks, contributing to public health initiatives, crowd monitoring, and compliance enforcement
 
+### Impact
+
 Face mask detection has business impact in various industries, particularly in public health, retail, and security. By automatically recognizing and identifying individuals wearing or not wearing face masks, this technology aids in enforcing public health guidelines, ensuring compliance, and mitigating the spread of infectious diseases. It enables businesses to implement mask-wearing policies, protect their customers and employees, and maintain a safe environment. Retailers can monitor compliance in their stores, while security personnel can identify potential risks and address non-compliance effectively
 
 ### Dataset
 
-853 train images with their masks
 Dataset path: s3://apac-cds/ht_datasets/image_classification/face-mask-detection.zip
 
+853 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/face_mask_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Segment buildings in the satellite images
 
 ### Business Problem 
 
-The Building Segmentation in Satellite Images model uses image segmentation techniques to accurately identify and delineate buildings in satellite imagery. The model can be trained on large datasets of satellite images with labeled building boundaries to learn to recognize building features such as roofs, walls, and windows. Once trained, the model can quickly and accurately segment buildings in new satellite images, making it a valuable tool for applications such as urban planning, disaster response, and environmental monitoring. By automating the process of building segmentation, this model can save time and resources compared to traditional manual method
+The Building Segmentation in Satellite Images model uses image segmentation techniques to identify and delineate buildings in satellite imagery. The model can be trained on large datasets of satellite images with labeled building boundaries to learn to recognize building features such as roofs, walls, and windows. Once trained, the model can quickly and segment buildings in new satellite images, making it a tool for applications such as urban planning, disaster response, and environmental monitoring. By automating the process of building segmentation, this model can save time and resources compared to traditional manual method
+
+### Impact
 
 Building segmentation in images has significant implications in the fields of architecture, real estate, and urban planning. By automatically segmenting buildings in images, this technology assists in architectural design and visualization, allowing architects and designers to create accurate 3D models and renderings. Real estate professionals can leverage building segmentation to identify property boundaries, evaluate property features, and enhance marketing materials. Urban planners can utilize this technology to analyze building density, monitor urban growth, and make informed decisions regarding zoning and land use. Building segmentation contributes to more efficient urban development and improved decision-making processes in the built environment.
 
 ### Dataset
 
-8366 train images with their object coordinates
 Dataset path: s3://apac-cds/ht_datasets/object_detection/mapping_challenge_v2.zip
 
+8366 train images with their object coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/satellite_imagery___(map_challenge)/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

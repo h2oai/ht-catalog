@@ -14,16 +14,23 @@ Identify and classify red blood cells as infected or uninfected with malaria par
 
 ### Business Problem 
 
-Malaria cell detection involves the automated identification and detection of malaria-infected red blood cells in microscopic images. This technology utilizes image analysis algorithms and machine learning models to analyze and classify red blood cells as either infected or uninfected, aiding in the diagnosis and monitoring of malaria.
+Malaria cell detection  automates the identification of malaria-infected red blood cells in microscope images. By using image analysis algorithms and machine learning, it helps classify the cells as infected or uninfected. This plays a vital role in diagnosing and monitoring malaria, improving the accuracy of detection and facilitating effective treatment.
 
-Malaria cell detection has significant business implications in the healthcare and medical diagnostics industry. By automating the detection of malaria-infected cells, healthcare providers can improve the efficiency and accuracy of malaria diagnosis, enabling timely treatment interventions. It aids in epidemiological studies, supports public health initiatives, and contributes to the overall management and control of malaria. It also helps researchers and pharmaceutical companies in developing new antimalarial drugs and vaccines
+### Impact
+
+Malaria cell detection is very useful in the healthcare and medical diagnostics industry. By automating the detection of malaria-infected cells, healthcare providers can improve the efficiency and accuracy of malaria diagnosis, enabling timely treatment interventions. It aids in epidemiological studies, supports public health initiatives, and contributes to the overall management and control of malaria. It also helps researchers and pharmaceutical companies in developing new antimalarial drugs and vaccines
 
 ### Dataset
 
-27558 train images with their labels
 Dataset path: s3://apac-cds/ht_datasets/image_classification/Malaria_cell_detection.zip
 
+27558 train images with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/malaria_cell_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

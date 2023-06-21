@@ -16,14 +16,21 @@ Classify the weather type from a given image
 
 A Weather Classification model is a type of image classification model that can categorize different weather conditions based on input images. The model can be trained on datasets of images that represent various weather conditions, such as sunny, cloudy, rainy, snowy, foggy, and stormy. Once the model is trained, it can be used to classify new images of weather conditions with high accuracy, which can be useful for a variety of applications such as weather forecasting, climate modeling, and transportation safety.
 
+### Impact
+
 Weather classification has a wide range of applications in industries such as agriculture, aviation, energy, and tourism. By analyzing meteorological data, satellite imagery, and machine learning algorithms, it enables the categorization and prediction of different weather conditions. Accurate weather classification supports decision-making processes related to crop management, flight operations, energy production, and tourism planning. It helps in assessing risks, optimizing resource allocation, and ensuring safety measures in various industries. Weather classification technology facilitates better planning, preparedness, and mitigation strategies for weather-related events, contributing to operational efficiency, safety, and economic stability.
 
 ### Dataset
 
-1491 train images with 6 labels. such as alien_test,cloudy,foggy,rainy,shine,sunrise,
 Dataset path: s3://apac-cds/ht_datasets/image_classification/weather_classification.zip
 
+1491 train images with 6 labels. such as alien_test,cloudy,foggy,rainy,shine,sunrise, Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/weather_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

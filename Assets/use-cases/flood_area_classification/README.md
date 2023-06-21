@@ -14,16 +14,23 @@ Segment the flooding area in UAS (Unarmed Aerial System) imageries
 
 ### Business Problem 
 
-Flood area segmentation/classification is a computer vision application that aims to identify and delineate flooded regions in satellite or aerial images. This use case is important for disaster management and emergency response operations, as it can help officials to quickly assess the extent of flooding and plan their response accordingly. The model uses image segmentation and classification techniques to accurately identify flooded regions, which can aid in decision-making for evacuation, rescue, and relief efforts.
+Flood area segmentation/classification is a computer vision application that aims to identify and delineate flooded regions in satellite or aerial images. This use case is important for disaster management and emergency response operations, as it can help officials to quickly assess the extent of flooding and plan their response accordingly. The model uses image segmentation and classification techniques to identify flooded regions, which can aid in decision-making for evacuation, rescue, and relief efforts.
+
+### Impact
 
 Flood area multi-label segmentation has a valuable business impact in disaster response and urban planning. By accurately segmenting flooded areas into multiple categories such as residential, commercial, or critical infrastructure, emergency responders can prioritize rescue and recovery operations based on the severity of the affected areas. Additionally, urban planners can use this information to develop effective flood management strategies, optimize land use, and improve infrastructure resilience to mitigate the impact of future flooding events.
 
 ### Dataset
 
-1450 train images and 448 test images with segmenting labels  ['Background' 'Building-flooded' 'Building-non-flooded' 'Road-flooded' 'Road-non-flooded' 'Water' 'Tree' 'Vehicle' 'Pool' 'Grass']
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/flood_segmentation_multi_label.zip
 
+1450 train images and 448 test images with segmenting labels  ['Background' 'Building-flooded' 'Building-non-flooded' 'Road-flooded' 'Road-non-flooded' 'Water' 'Tree' 'Vehicle' 'Pool' 'Grass'] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flood_area_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

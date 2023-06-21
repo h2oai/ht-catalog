@@ -14,16 +14,23 @@ Identify and classify defects in steel surfaces
 
 ### Business Problem 
 
-Steel Defect Detection model is a computer vision-based system used to identify and classify defects in steel surfaces such as cracks, scratches, and pitting. The model employs image processing techniques and deep learning algorithms to detect and classify the defects accurately. This system is useful for steel manufacturers to ensure the quality of their products and avoid costly repairs and recalls. The model can also be used for predictive maintenance, helping manufacturers identify potential defects before they become severe.
+Steel Defect Detection model is a computer vision-based system used to identify and classify defects in steel surfaces such as cracks, scratches, and pitting. The model employs image processing techniques and deep learning algorithms to detect and classify the defects. This system is useful for steel manufacturers to ensure the quality of their products and avoid costly repairs and recalls. The model can also be used for predictive maintenance, helping manufacturers identify potential defects before they become severe.
+
+### Impact
 
 Steel defect detection plays a crucial role in the manufacturing and construction industries. By employing advanced imaging techniques and machine learning algorithms, it enables rapid and precise identification of defects in steel products. Early detection of defects such as cracks, corrosion, or uneven surfaces ensures the production of high-quality steel materials, reducing waste, and increasing operational efficiency. Steel defect detection also enhances safety standards, as it helps prevent structural failures and potential hazards. By ensuring the integrity of steel products, it fosters customer satisfaction, maintains industry reputation, and drives business growth.
 
 ### Dataset
 
-7095 train images with 4 class ids
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/steel_defect_detection.zip
 
+7095 train images with 4 class ids Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/steel_defect_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

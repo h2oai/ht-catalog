@@ -16,14 +16,21 @@ Detect the wind turbines using object detection techniques
 
 A Wind Turbines Object Detection model is used to identify and locate wind turbines in images. The model uses deep learning algorithms and image processing techniques to detect the presence and location of wind turbines in the image. It can be used for various applications such as renewable energy planning, maintenance scheduling, and environmental impact assessment. The model works by analyzing the image pixel by pixel and identifying patterns and shapes that resemble wind turbines.
 
+### Impact
+
 Wind turbines object detection technology plays a crucial role in the renewable energy sector. By leveraging computer vision techniques, it enables the detection and localization of wind turbines in aerial or satellite imagery. Accurate wind turbines object detection aids in site selection, monitoring, and maintenance of wind farms. It assists in optimizing energy production, detecting potential issues or malfunctions, and ensuring proper functioning of wind turbines. Wind turbines object detection technology contributes to the efficient utilization of renewable energy resources, supports sustainable energy production, and helps in achieving climate change mitigation goals.
 
 ### Dataset
 
-2628 train images with their class ids
 Dataset path: s3://apac-cds/ht_datasets/object_detection/wind_turbines_detection.zip
 
+2628 train images with their class ids Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/wind_turbines_object_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

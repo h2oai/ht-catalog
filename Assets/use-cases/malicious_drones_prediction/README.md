@@ -16,14 +16,21 @@ Predict and classify potentially harmful or unauthorized drones
 
 Malicious drones prediction involves the detection and prediction of potentially harmful or unauthorized drones in a given airspace or restricted area. This technology combines drone tracking, image analysis, and machine learning techniques to identify suspicious behaviors or patterns, assisting in early threat detection, security measures, and counter-drone strategies.
 
-Malicious drones prediction has business implications in security, public safety, and critical infrastructure protection. By detecting and predicting potentially harmful or unauthorized drones, this technology assists in identifying security threats, preventing unauthorized surveillance or attacks, and safeguarding sensitive areas. It enhances the effectiveness of counter-drone measures, enables efficient response protocols, and contributes to maintaining public safety and security. It finds applications in airports, government facilities, public events, and high-security zones.
+### Impact
+
+Malicious drones prediction use-case is highly beneficial in security, public safety, and critical infrastructure protection. By detecting and predicting potentially harmful or unauthorized drones, this technology assists in identifying security threats, preventing unauthorized surveillance or attacks, and safeguarding sensitive areas. It enhances the effectiveness of counter-drone measures, enables efficient response protocols, and contributes to maintaining public safety and security. It finds applications in airports, government facilities, public events, and high-security zones.
 
 ### Dataset
 
-776 train images with 5 different categories such as Aeroplane,Bird,Drone,Helicopter,Malicious UAV
 Dataset path: s3://apac-cds/ht_datasets/image_classification/malicious_drones_prediction.zip
 
+776 train images with 5 different categories such as Aeroplane,Bird,Drone,Helicopter,Malicious UAV Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/malicious_drones_prediction/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

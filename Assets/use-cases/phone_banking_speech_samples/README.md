@@ -14,16 +14,23 @@ Generate transcripts for US english speech samples
 
 ### Business Problem 
 
-Transcript generation for US-EN speeches involves automatically converting spoken content from US-English speeches or audio recordings into written transcripts. This technology aids in transcribing large volumes of audio data efficiently and accurately, enabling easy access to spoken information in text format.
+Transcript generation for US-EN speeches involves converting spoken content from US-English speeches or audio recordings into written transcripts. This solution aids in transcribing large volumes of audio data efficiently and, enabling easy access to spoken information in text format.
 
-Transcript generation for US-EN speeches has significant business implications in various domains. In media and entertainment, it enables the creation of closed captions for videos and enhances accessibility for individuals with hearing impairments. In education, it facilitates the transcription of lectures, making them searchable and enabling easy note-taking for students. In market research, it streamlines the analysis of recorded interviews or focus group discussions. It also finds applications in legal and compliance sectors for transcribing audio recordings of proceedings and interviews. Overall, transcript generation for US-EN speeches improves productivity, accessibility, and information retrieval from spoken content.
+### Impact
+
+Transcript generation for US-EN speeches is very useful in various domains. In media and entertainment, it enables the creation of closed captions for videos and enhances accessibility for individuals with hearing impairments. In education, it facilitates the transcription of lectures, making them searchable and enabling easy note-taking for students. In market research, it streamlines the analysis of recorded interviews or focus group discussions. It also finds applications in legal and compliance sectors for transcribing audio recordings of proceedings and interviews. Overall, transcript generation for US-EN speeches improves productivity, accessibility, and information retrieval from spoken content.
 
 ### Dataset
 
-558 train audio samples with their transcript.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/minds14_US_speech_recognition.zip
 
+558 train audio samples with their transcript. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

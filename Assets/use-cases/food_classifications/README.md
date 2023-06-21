@@ -14,16 +14,23 @@ Categorize food types based on their visual characteristics
 
 ### Business Problem 
 
-Our Food Classification model is used to accurately identify and classify food items in images. This model is useful for food and nutrition professionals, allowing them to analyze and track dietary habits and trends accurately.
+Food Classification model is used to identify and classify food items in images. This model is useful for food and nutrition professionals, allowing them to analyze and track dietary habits and trends.
 
-Food image classification has significant business impact in the food and beverage industry. It enables automatic categorization and identification of food items, which can be utilized for various purposes. Restaurants and food delivery services can benefit from accurate food image classification to improve menu organization, streamline order processing, and enhance customer experience. Food manufacturers can use this technology to automate quality control processes, ensuring product consistency and reducing errors in packaging and labeling. Additionally, nutrition and diet tracking applications can leverage food image classification to provide users with accurate nutritional information and personalized dietary recommendations.
+### Impact
+
+It enables automatic categorization and identification of food items, which can be utilized for various purposes. Restaurants and food delivery services can benefit from accurate food image classification to improve menu organization, streamline order processing, and enhance customer experience. Food manufacturers can use this technology to automate quality control processes, ensuring product consistency and reducing errors in packaging and labeling. Additionally, nutrition and diet tracking applications can leverage food image classification to provide users with accurate nutritional information and personalized dietary recommendations.
 
 ### Dataset
 
-9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit
 Dataset path: s3://apac-cds/ht_datasets/image_classification/food_classification.zip
 
+9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/food_classifications/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

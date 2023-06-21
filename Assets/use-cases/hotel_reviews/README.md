@@ -16,15 +16,21 @@ Rate the quality of 6 differnet facilities of the hotels using their reviews
 
 The use case involves recommending hotels based on ratings. Users can provide their preferences, such as destination, budget, and desired amenities, and the system will generate hotel recommendations based on the ratings received from previous guests. The ratings reflect the overall satisfaction and quality of service offered by the hotels. By considering these ratings, the system aims to provide users with reliable and trustworthy recommendations that align with their preferences, ensuring a positive hotel experience.
 
-Implementing a hotel recommendation system based on ratings can have a significant impact on the hospitality industry. It enhances customer satisfaction by guiding them towards hotels that have consistently received high ratings from previous guests. This improves the overall quality of service provided, leading to positive guest experiences, increased customer loyalty, and improved customer reviews. Moreover, it enables hotels to differentiate themselves based on their ratings, attracting more potential guests and increasing their occupancy rates. The system also benefits travel agencies and online platforms by providing them with a valuable tool to enhance their user experience and generate higher customer engagement.
+### Impact
 
+Implementing a hotel recommendation system based on ratings can have a significant impact on the hospitality industry. It enhances customer satisfaction by guiding them towards hotels that have consistently received high ratings from previous guests. This improves the overall quality of service provided, leading to positive guest experiences, increased customer loyalty, and improved customer reviews. Moreover, it enables hotels to differentiate themselves based on their ratings, attracting more potential guests and increasing their occupancy rates. The system also benefits travel agencies and online platforms by providing them with a valuable tool to enhance their user experience and generate higher customer engagement.
 
 ### Dataset
 
-50000 train texts with 6 labels. Each label has value between 1 to 5.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/hotel_recommendation_text_regression.csv
 
+50000 train texts with 6 labels. Each label has value between 1 to 5. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hotel_reviews/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

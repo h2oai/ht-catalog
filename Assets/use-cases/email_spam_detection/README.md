@@ -14,16 +14,23 @@ Classify emails into spam or non-spam categories
 
 ### Business Problem 
 
-Email Spam Detection model is designed to classify emails into spam or non-spam categories. Using a dataset of labeled emails, the model is trained to recognize common features of spam emails, such as specific keywords, suspicious URLs, or message formatting. Once trained, the model can accurately classify new incoming emails as either spam or non-spam, helping to reduce the amount of unwanted emails in users' inboxes and prevent potential security risks associated with phishing or malware attacks. The Email Spam Detection model can be integrated into email services or used as a standalone tool to improve email management and security.
+Email Spam Detection model is designed to classify emails into spam or non-spam categories. Using a dataset of labeled emails, the model is trained to recognize common features of spam emails, such as specific keywords, suspicious URLs, or message formatting. Once trained, the model can classify new incoming emails as either spam or non-spam, helping to reduce the amount of unwanted emails in users' inboxes and prevent potential security risks associated with phishing or malware attacks. The Email Spam Detection model can be integrated into email services or used as a standalone tool to improve email management and security.
+
+### Impact
 
 Email spam detection is crucial for maintaining efficient communication channels and preventing cyber threats. By analyzing email content and metadata, machine learning algorithms can identify and filter out unsolicited and malicious emails. Accurate email spam detection protects users from phishing attacks, malware, and unwanted solicitations. It helps in safeguarding sensitive information, ensuring email security, and maintaining productivity by reducing the time and effort spent on dealing with spam messages. Email spam detection technology enhances email communication efficiency, protects against cyber threats, and preserves data integrity.
 
 ### Dataset
 
-5729 train images with their labels (spam or not_spam)
 Dataset path: s3://apac-cds/ht_datasets/text_classification/email_spam_classification.csv
 
+5729 train images with their labels (spam or not_spam) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/email_spam_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

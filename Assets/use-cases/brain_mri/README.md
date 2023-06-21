@@ -14,16 +14,23 @@ Predict the type of tumor based on medical imaging data
 
 ### Business Problem 
 
-Brain MRI classification model uses deep learning algorithms to accurately classify MRI scans of the brain, detecting and classifying abnormalities such as tumors, hemorrhages, and other anomalies in brain tissue. It is an essential tool for healthcare professionals concerned with diagnosing and treating brain-related disorders, providing fast and accurate analysis of brain MRI scans to improve patient outcomes and enhance the efficiency of healthcare systems.
+Brain MRI classification model uses deep learning algorithms to classify MRI scans of the brain, detecting and classifying abnormalities such as tumors, hemorrhages, and other anomalies in brain tissue. It is an essential tool for healthcare professionals concerned with diagnosing and treating brain-related disorders, providing fast and accurate analysis of brain MRI scans to improve patient outcomes and enhance the efficiency of healthcare systems.
 
-Brain tumor classification has significant implications in the healthcare industry. It plays a crucial role in early detection, diagnosis, and treatment planning for brain tumors. By accurately classifying brain tumor images, healthcare professionals can make informed decisions about the appropriate course of treatment, leading to improved patient outcomes. This technology reduces the time and effort required for manual analysis, enabling healthcare providers to prioritize and allocate resources effectively. It also contributes to research and advancements in brain tumor treatment, aiding in the development of personalized therapies and improving overall patient care.
+### Impact
+
+It plays a crucial role in early detection, diagnosis, and treatment planning for brain tumors. By accurately classifying brain tumor images, healthcare professionals can make informed decisions about the appropriate course of treatment, leading to improved patient outcomes. This technology reduces the time and effort required for manual analysis, enabling healthcare providers to prioritize and allocate resources effectively. It also contributes to research and advancements in brain tumor treatment, aiding in the development of personalized therapies and improving overall patient care.
 
 ### Dataset
 
-2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor
 Dataset path: s3://apac-cds/ht_datasets/image_classification/brain-tumor-classification-mri-v2.zip
 
+2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/brain_mri/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

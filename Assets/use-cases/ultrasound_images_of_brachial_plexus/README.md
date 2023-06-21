@@ -14,16 +14,23 @@ Segment a collection of nerves in the ultrasound images
 
 ### Business Problem 
 
-Nerves segmentation in ultrasound images involves the automated identification and segmentation of nerve structures in ultrasound scans. This technology aids in medical imaging and diagnostic procedures by enabling precise nerve localization, analysis, and evaluation
+Nerves segmentation in ultrasound images involves the automated identification and segmentation of nerve structures in ultrasound scans. This solution aids in medical imaging and diagnostic procedures by enabling precise nerve localization, analysis, and evaluation
 
-Nerves segmentation in ultrasound images has significant business implications in the healthcare industry. It improves the accuracy and efficiency of nerve-related diagnostics, such as identifying nerve damage, guiding nerve blocks, and assisting in surgical procedures. This technology enhances the detection and monitoring of nerve-related conditions, such as neuropathies and nerve entrapments, facilitating early intervention and appropriate treatment planning. It also contributes to research and development in neurology and enables advancements in nerve-related therapies and interventions. Overall, nerves segmentation in ultrasound images enhances the quality of nerve-related medical imaging and diagnosis, leading to improved patient care and outcomes.
+### Impact
+
+Nerves segmentation in ultrasound images is very useful in the healthcare industry. It improves the accuracy and efficiency of nerve-related diagnostics, such as identifying nerve damage, guiding nerve blocks, and assisting in surgical procedures. This technology enhances the detection and monitoring of nerve-related conditions, such as neuropathies and nerve entrapments, facilitating early intervention and appropriate treatment planning. It also contributes to research and development in neurology and enables advancements in nerve-related therapies and interventions. Overall, nerves segmentation in ultrasound images enhances the quality of nerve-related medical imaging and diagnosis, leading to improved patient care and outcomes.
 
 ### Dataset
 
-2323 train images with their masks.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/nerves_image_semantic_segmentation.zip
 
+2323 train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

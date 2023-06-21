@@ -16,14 +16,21 @@ Detect signatures in the digital documents
 
 The signature detection model automates signature detection in large volumes of documents, saving time and reducing errors. It offers a faster and more accurate alternative to manual detection, verifying authenticity, identifying forgeries, and detecting potential fraud
 
-Signature detection in documents has a significant business impact across various industries. In the financial sector, accurate signature detection enables fraud prevention and identity verification, safeguarding transactions and protecting against financial losses. It streamlines the legal industry by simplifying the validation of legal documents, reducing the risk of fraudulent claims, and improving overall efficiency. In healthcare, signature detection ensures proper patient consent verification, enhancing regulatory compliance and patient safety. Additionally, in logistics and supply chain management, signature detection facilitates the verification of delivery receipts and shipping documents, reducing disputes and improving supply chain transparency. Government agencies and administrative departments benefit from signature detection by ensuring the authenticity of official documents, licenses, and permits, improving data integrity and compliance.
+### Impact
+
+The utilization of computer vision for signature detection yields a profound impact in various sectors. In the realm of finance, the precise identification of signatures enables the prevention of fraud and the verification of identities, thereby safeguarding transactions and mitigating financial losses. The legal industry experiences enhanced efficiency through streamlined validation of legal documents, minimizing the risk of fraudulent claims. This also contributes to an overall improvement in operational effectiveness. Within the healthcare domain, signature detection plays a vital role in ensuring the accurate verification of patient consent, thereby bolstering regulatory compliance and enhancing patient safety. Furthermore, in logistics and supply chain management, the implementation of signature detection facilitates the verification of delivery receipts and shipping documents. Consequently, this reduces disputes and enhances transparency within the supply chain. Government agencies and administrative departments also derive significant benefits from signature detection as it guarantees the authenticity of official documents, licenses, and permits. This fortifies data integrity and improves compliance with regulations.
 
 ### Dataset
 
-1000 train images with their masks
 Dataset path: s3://apac-cds/ht_datasets/object_detection/signature_object_detection_v2.zip
 
+1000 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/signature_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

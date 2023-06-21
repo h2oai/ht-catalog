@@ -14,16 +14,23 @@ Segment the motorcycle and the rider from the surrounding nighttime environment
 
 ### Business Problem 
 
-Motorcycle night ride segmentation involves the automated segmentation or separation of motorcycle objects from nighttime scenes or videos. This technology utilizes computer vision algorithms and image processing techniques to distinguish motorcycle riders and their vehicles from the background, even in low-light conditions.
+The Motorcycle Night Ride Segmentation Model is a powerful computer vision tool designed to separate motorcycles from complex and poorly illuminated backgrounds in images. By isolating motorcycles, this model facilitates detailed analysis, object recognition, and safety evaluations, aiding in the monitoring and understanding of motorcycle activities in low-light situations.
 
-Motorcycle night ride segmentation has business implications in areas such as traffic surveillance, safety analysis, and law enforcement. By accurately segmenting motorcycles and riders from nighttime scenes, traffic monitoring systems can track motorcycle movement, analyze traffic patterns, and identify potential safety risks. Law enforcement agencies can utilize this technology for traffic law enforcement, crime prevention, or accident investigations. It contributes to improved road safety, enhanced traffic management, and effective law enforcement measures.
+### Impact
+
+Motorcycle night ride segmentation use-case is highly beneficial in areas such as traffic surveillance, safety analysis, and law enforcement. By accurately segmenting motorcycles and riders from nighttime scenes, traffic monitoring systems can track motorcycle movement, analyze traffic patterns, and identify potential safety risks. Law enforcement agencies can utilize this technology for traffic law enforcement, crime prevention, or accident investigations. It contributes to improved road safety, enhanced traffic management, and effective law enforcement measures.
 
 ### Dataset
 
-200 train imags with their masks
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/Motorcycle_Night_Ride_Dataset.zip
 
+200 train imags with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/motorcycle_night_ride_segmentation/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

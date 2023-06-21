@@ -16,14 +16,21 @@ Classify categories of audio signals in the urban environments
 
 The Urban Sound Classification model is designed to classify audio signals into different sound categories commonly heard in urban environments such as sirens, car horns, and street music. The model uses audio signal processing techniques and machine learning algorithms to extract features such as frequency, pitch, and amplitude from audio samples and then trains a classifier to recognize patterns in these features and categorize them into their respective sound classes. The model has applications in noise pollution monitoring, city planning, and urban soundscape analysis.
 
+### Impact
+
 Urban sound classification has practical applications in urban planning, noise pollution management, and public health. By analyzing audio recordings using machine learning algorithms, it enables the classification and identification of different urban sounds, such as traffic noise, sirens, construction noise, and public transport sounds. Accurate urban sound classification aids in assessing noise pollution levels, identifying noise sources, and implementing mitigation strategies. It supports urban planning initiatives, noise regulation enforcement, and the improvement of living conditions in urban areas. Urban sound classification technology contributes to creating healthier and more livable cities.
 
 ### Dataset
 
-8732 train images with 10 uniques labels
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/urban_sound_classification.zip
 
+8732 train images with 10 uniques labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/urban_sound_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

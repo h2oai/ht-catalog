@@ -14,16 +14,23 @@ Identify whether an audio signal is related to a whale or not
 
 ### Business Problem 
 
-Whale detection model using audio data is designed to identify and classify sounds emitted by whale. This model can be used by marine biologists and researchers to study whale behavior, migration patterns, and population dynamics. By analyzing the acoustic features of whale sounds such as frequency, duration, and amplitude, the model can accurately identify whale. The model uses various techniques such as signal processing, machine learning, and deep learning to extract features from audio recordings and classify them.
+Whale detection model using audio data is designed to identify and classify sounds emitted by whale. This model can be used by marine biologists and researchers to study whale behavior, migration patterns, and population dynamics. By analyzing the acoustic features of whale sounds such as frequency, duration, and amplitude, the model can identify whale. The model uses various techniques such as signal processing, machine learning, and deep learning to extract features from audio recordings and classify them.
 
-Whale detection in audios has significant business impact in industries related to marine research, environmental monitoring, and maritime operations. By accurately detecting and classifying whale vocalizations in audio recordings, it helps in understanding whale behavior, migration patterns, and population dynamics. This information is crucial for marine biologists, conservationists, and policymakers in making informed decisions regarding marine conservation and protection efforts. In the shipping and maritime industry, whale detection contributes to the implementation of measures to avoid collisions with whales, ensuring compliance with regulations and minimizing environmental impact. Furthermore, in the field of underwater acoustics, whale detection supports research and development of technologies for passive acoustic monitoring, providing valuable insights into the marine ecosystem and facilitating oceanic studies.
+### Impact
+
+Whale detection in audios plays a key role in industries related to marine research, environmental monitoring, and maritime operations. By accurately detecting and classifying whale vocalizations in audio recordings, it helps in understanding whale behavior, migration patterns, and population dynamics. This information is crucial for marine biologists, conservationists, and policymakers in making informed decisions regarding marine conservation and protection efforts. In the shipping and maritime industry, whale detection contributes to the implementation of measures to avoid collisions with whales, ensuring compliance with regulations and minimizing environmental impact. Furthermore, in the field of underwater acoustics, whale detection supports research and development of technologies for passive acoustic monitoring, providing valuable insights into the marine ecosystem and facilitating oceanic studies.
 
 ### Dataset
 
-30000 audio rows with thei label 0 or 1
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/whale_detection.zip
 
+30000 audio rows with thei label 0 or 1 Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/whale_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

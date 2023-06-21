@@ -14,16 +14,23 @@ Identify the protests related texts
 
 ### Business Problem 
 
-Protests Related Texts Identification involves automatically identifying and categorizing text data related to protests or demonstrations. With the rise of social and political activism, there is a growing need to analyze and understand the sentiment, topics, and underlying messages expressed during protests. This use case is relevant for media organizations, social listening platforms, and government agencies to track public sentiment, assess social movements, and monitor potential risks or unrest. By automatically identifying and analyzing protest-related texts, organizations can gain insights into public opinions, identify emerging trends, and detect misinformation or propaganda. This information can be used for various purposes, such as informing media coverage, policy-making, crisis management, or public opinion research.
+Protests Related Texts Identification involves identifying and categorizing text data related to protests or demonstrations. With the rise of social and political activism, there is a growing need to analyze and understand the sentiment, topics, and underlying messages expressed during protests. This use case is relevant for media organizations, social listening platforms, and government agencies to track public sentiment, assess social movements, and monitor potential risks or unrest. By identifying and analyzing protest-related texts, organizations can gain insights into public opinions, identify emerging trends, and detect misinformation or propaganda. This information can be used for various purposes, such as informing media coverage, policy-making, crisis management, or public opinion research.
 
-The identification and analysis of protest-related texts can have significant business impacts in different industries. Media organizations can use this information to provide more comprehensive coverage of social movements, understand public sentiment, and align their reporting with current events. Social listening platforms can offer real-time monitoring and analysis of protests, helping businesses understand the impact of social issues on their brand reputation and customer sentiment. Government agencies can utilize protest-related text identification to track public sentiment, assess the effectiveness of policies, and identify potential risks or areas of concern. This can aid in decision-making, crisis response, and public engagement. Overall, protest-related text identification enables organizations to stay informed, make data-driven decisions, and effectively respond to societal changes.
+### Impact
+
+The identification and analysis of protest-related texts can hplays a key roles in different industries. Media organizations can use this information to provide more comprehensive coverage of social movements, understand public sentiment, and align their reporting with current events. Social listening platforms can offer real-time monitoring and analysis of protests, helping businesses understand the impact of social issues on their brand reputation and customer sentiment. Government agencies can utilize protest-related text identification to track public sentiment, assess the effectiveness of policies, and identify potential risks or areas of concern. This can aid in decision-making, crisis response, and public engagement. Overall, protest-related text identification enables organizations to stay informed, make data-driven decisions, and effectively respond to societal changes.
 
 ### Dataset
 
-21020 train and 5204 test texts with one label. The label has value either 0 or 1.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/protests.zip
 
+21020 train and 5204 test texts with one label. The label has value either 0 or 1. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/protests_related_texts/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Detect seedlings to assess quality of germination process
 
 ### Business Problem 
 
-Germination Seedling Detection is a computer vision model that is designed to detect and classify seedlings at different stages of growth. This model uses image processing techniques to analyze images of seedlings and classify them based on their growth stage. The model can be used in a variety of applications, such as monitoring crop growth, identifying plant diseases, and optimizing plant growth conditions. By accurately detecting and classifying seedlings, the model can help farmers and plant researchers make informed decisions about planting, harvesting, and plant management.
+Germination Seedling Detection is a computer vision model that is designed to detect and classify seedlings at different stages of growth. This model uses image processing techniques to analyze images of seedlings and classify them based on their growth stage. The model can be used in a variety of applications, such as monitoring crop growth, identifying plant diseases, and optimizing plant growth conditions. By detecting and classifying seedlings, the model can help farmers and plant researchers make informed decisions about planting, harvesting, and plant management.
+
+### Impact
 
 Germination seedling detection has applications in agriculture and plant science. By analyzing images or videos of seedlings, it enables the automated detection and tracking of germinating seeds and early-stage plant growth. Accurate germination seedling detection assists in monitoring crop development, optimizing planting techniques, and assessing seed quality. It facilitates early identification of plant diseases, nutrient deficiencies, or environmental stressors, enabling timely intervention and improved crop yield. Germination seedling detection technology supports precision agriculture, crop management, and sustainable farming practices, contributing to increased productivity and food security.
 
 ### Dataset
 
-451 train images with their object coordinates
 Dataset path: s3://apac-cds/ht_datasets/object_detection/germination-seeing-detection.zip
 
+451 train images with their object coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/germination_seedling_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

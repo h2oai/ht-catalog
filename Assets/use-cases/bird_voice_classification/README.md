@@ -14,16 +14,23 @@ Identify the bird by using their audio
 
 ### Business Problem 
 
-The Bird Voice Classification model is a machine learning model designed to identify and classify bird species based on their vocalizations. By analyzing bird calls and songs, the model can accurately identify different bird species and distinguish them from one another. This model can be useful for ecological studies, birdwatching, and conservation efforts, as it can provide information about the presence and abundance of different bird species in an area. Additionally, the model can be used to track changes in bird populations over time and monitor the impact of environmental factors on bird behavior and vocalizations.
+The Bird Voice Classification model is a machine learning model designed to identify and classify bird species based on their vocalizations. By analyzing bird calls and songs, the model can identify different bird species and distinguish them from one another. This model can be useful for ecological studies, birdwatching, and conservation efforts, as it can provide information about the presence and abundance of different bird species in an area. Additionally, the model can be used to track changes in bird populations over time and monitor the impact of environmental factors on bird behavior and vocalizations.
+
+### Impact
 
 Bird voice classification plays a crucial role in ornithology, ecological research, and biodiversity conservation. By leveraging audio signal processing techniques and machine learning algorithms, it enables the identification and classification of bird species based on their vocalizations. Accurate bird voice classification assists researchers in studying bird populations, monitoring habitats, and assessing ecological health. It supports conservation efforts, species monitoring, and understanding the impact of environmental changes on bird populations. Bird voice classification technology contributes to biodiversity preservation, ecological research, and the conservation of avian species.
 
 ### Dataset
 
-5407 train images and 687 test images with 41 uniques labels
 Dataset path: s3://apac-cds/ht_datasets/audio_classification/whale_detection.zip
 
+5407 train images and 687 test images with 41 uniques labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_voice_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

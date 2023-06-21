@@ -14,16 +14,23 @@ Classify heartbeat sounds into different categories
 
 ### Business Problem 
 
-Heartbeat Sound Classification model is a machine learning model designed to classify heartbeat sounds into different categories such as normal heartbeat and abnormal heartbeats. The model is trained on a dataset of heartbeat sounds, which includes recordings of both healthy and unhealthy heartbeats. By analyzing the sound patterns in the recordings, the model can accurately classify the heartbeat sounds into their respective categories.The potential use cases of this model include early detection of heart problems, remote monitoring of heart health, and improving the accuracy of medical diagnoses. The model can be integrated into healthcare systems and wearable devices to provide real-time analysis of heartbeat sounds and alert medical professionals to any abnormalities.
+Heartbeat Sound Classification model is a machine learning model designed to classify heartbeat sounds into different categories such as normal heartbeat and abnormal heartbeats. The model is trained on a dataset of heartbeat sounds, which includes recordings of both healthy and unhealthy heartbeats. By analyzing the sound patterns in the recordings, the model can classify the heartbeat sounds into their respective categories.The potential use cases of this model include early detection of heart problems, remote monitoring of heart health, and improving the accuracy of medical diagnoses. The model can be integrated into healthcare systems and wearable devices to provide real-time analysis of heartbeat sounds and alert medical professionals to any abnormalities.
+
+### Impact
 
 Heartbeat sound classification has significant implications in healthcare and medical diagnostics. By analyzing audio data of heartbeat sounds, machine learning algorithms can classify and identify abnormal heart patterns or conditions. Accurate heartbeat sound classification aids in early detection of cardiac abnormalities, assisting medical professionals in diagnosing cardiovascular diseases and providing timely interventions. It contributes to improved patient care, personalized treatment plans, and better management of heart-related conditions. Heartbeat sound classification technology enhances diagnostic capabilities, supports preventive healthcare, and improves patient outcomes in cardiology.
 
 ### Dataset
 
-832 train images with their labels (artifact,extrastole,murmur,normal,unlabel)
 Dataset path: s3://apac-cds/ht_datasets/image_classification/heartbeat_sound_classification.zip
 
+832 train images with their labels (artifact,extrastole,murmur,normal,unlabel) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

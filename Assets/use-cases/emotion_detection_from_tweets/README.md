@@ -14,16 +14,23 @@ Detect and classify emotions expressed in tweets
 
 ### Business Problem 
 
-Emotion detection from tweets refers to the automated identification and classification of emotions expressed within short messages posted on the social media platform Twitter. This technology analyzes linguistic cues, sentiment, and contextual information to discern various emotions, providing valuable insights into public sentiment, opinion trends, and social dynamics
+Emotion detection from tweets refers to the automated identification and classification of emotions expressed within short messages posted on the social media platform Twitter. This solution analyzes linguistic cues, sentiment, and contextual information to discern various emotions, providing insights into public sentiment, opinion trends, and social dynamics
 
-Emotion detection from tweets has significant business implications in social media analytics and marketing. By automatically identifying and classifying emotions expressed in tweets, this technology allows businesses to gauge public sentiment, monitor brand reputation, and tailor marketing strategies accordingly. It enables real-time customer feedback analysis, facilitates proactive customer support, and enhances brand perception and customer satisfaction. Businesses can adapt their products, services, and communications to meet customer expectations, driving customer loyalty and market growth.
+### Impact
+
+Emotion detection from tweets is very useful in social media analytics and marketing. By automatically identifying and classifying emotions expressed in tweets, this technology allows businesses to gauge public sentiment, monitor brand reputation, and tailor marketing strategies accordingly. It enables real-time customer feedback analysis, facilitates proactive customer support, and enhances brand perception and customer satisfaction. Businesses can adapt their products, services, and communications to meet customer expectations, driving customer loyalty and market growth.
 
 ### Dataset
 
-40000 train rows with 13 different classes
 Dataset path: s3://apac-cds/ht_datasets/text_classification/tweet_emotions.csv
 
+40000 train rows with 13 different classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emotion_detection_from_tweets/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

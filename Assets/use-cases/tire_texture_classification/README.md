@@ -14,16 +14,23 @@ Classify an input tire image into its corresponding texture category
 
 ### Business Problem 
 
-Tire texture classification involves the automated identification and classification of tire textures or patterns based on their visual characteristics. This technology utilizes computer vision algorithms and machine learning techniques to analyze tire images and classify them into different categories, such as slick tires, all-terrain tires, or winter tires.
+The Tire Texture Classification Model is a state-of-the-art system designed to classify various tire textures. By analyzing intricate details such as tread patterns, sidewall designs, and surface textures, this model plays a crucial role in industries such as automotive manufacturing, tire production, and road safety. With its ability to distinguish between different tire types, the model aids in quality control processes, ensures proper tire identification, and contributes to enhanced overall safety on the roads.
 
-Tire texture classification has business implications in the automotive industry, particularly in areas such as tire manufacturing, retail, and vehicle safety. By automating the classification process, tire manufacturers can ensure consistent quality control and proper categorization of their products. Retailers can improve inventory management and provide more accurate product recommendations to customers based on their specific needs and preferences. Moreover, automotive safety systems can utilize tire texture classification to enhance vehicle performance and optimize driving conditions based on the type of tire in use, contributing to safer and more efficient transportation.
+### Impact
+
+Tire texture classification use-case is highly beneficial in the automotive industry, particularly in areas such as tire manufacturing, retail, and vehicle safety. By automating the classification process, tire manufacturers can ensure consistent quality control and proper categorization of their products. Retailers can improve inventory management and provide more accurate product recommendations to customers based on their specific needs and preferences. Moreover, automotive safety systems can utilize tire texture classification to enhance vehicle performance and optimize driving conditions based on the type of tire in use, contributing to safer and more efficient transportation.
 
 ### Dataset
 
-703 train images with their labels such as cracked or normal.
 Dataset path: s3://apac-cds/ht_datasets/image_classification/tire_texture_classification.zip
 
+703 train images with their labels such as cracked or normal. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/tire_texture_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

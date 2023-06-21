@@ -14,16 +14,23 @@ Detect and classify the casting defects
 
 ### Business Problem 
 
-Casting Defect Classification model uses computer vision techniques to classify images of casting defects into their respective categories. By accurately identifying and classifying the defects, manufacturers can detect and prevent them during the casting process, leading to better product quality and reduced waste. The model can be used as a tool for quality control and inspection in the manufacturing industry.
+Casting Defect Classification model uses computer vision techniques to classify images of casting defects into their respective categories. By identifying and classifying the defects, manufacturers can detect and prevent them during the casting process, leading to better product quality and reduced waste. The model can be used as a tool for quality control and inspection in the manufacturing industry.
+
+### Impact
 
 Casting defect classification has a significant impact on the manufacturing and engineering industries. By applying computer vision and machine learning algorithms, it allows for the automated detection and classification of defects in casted components. Early identification of defects such as porosity, cracks, or surface irregularities ensures the production of high-quality casted parts. Casting defect classification enhances manufacturing efficiency, reduces scrap rates, and improves product reliability. It enables timely interventions, minimizing rework and production delays, thereby optimizing manufacturing processes and ensuring customer satisfaction.
 
 ### Dataset
 
-1300 images with labels. such as def or ok
 Dataset path: s3://apac-cds/ht_datasets/image_classification/casting_defect_classification.zip
 
+1300 images with labels. such as def or ok Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Classify the spoken digits into 0 to 9
 
 ### Business Problem 
 
-The spoken digits classification use case involves developing a machine learning model that can accurately recognize and classify spoken digits. The model takes audio recordings of spoken digits as input and predicts the corresponding digit. This task is commonly used in various applications such as voice assistants, automated phone systems, and speech recognition technologies.
+The spoken digits classification use case involves developing a machine learning model that can recognize and classify spoken digits. The model takes audio recordings of spoken digits as input and predicts the corresponding digit. This task is commonly used in various applications such as voice assistants, automated phone systems, and speech recognition technologies.
 
-Accurate spoken digits classification has significant business impact across multiple industries. In the telecommunications sector, it can enhance call routing systems, enabling more efficient and automated customer support. In the finance industry, it can improve the security of voice-based authentication systems. Additionally, in the automotive sector, it can enhance hands-free calling and voice control functionalities in vehicles. By automating the recognition and classification of spoken digits, businesses can streamline operations, improve customer experiences, and enable more seamless interactions through voice interfaces.
+### Impact
+
+Accurate spoken digits classification plays a key role across multiple industries. In the telecommunications sector, it can enhance call routing systems, enabling more efficient and automated customer support. In the finance industry, it can improve the security of voice-based authentication systems. Additionally, in the automotive sector, it can enhance hands-free calling and voice control functionalities in vehicles. By automating the recognition and classification of spoken digits, businesses can streamline operations, improve customer experiences, and enable more seamless interactions through voice interfaces.
 
 ### Dataset
 
-30000 audio samples of spoken digits (0-9) of 60 different speakers.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amnist_audio_regression.zip
 
+30000 audio samples of spoken digits (0-9) of 60 different speakers. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -16,14 +16,21 @@ Classify tweets as either disaster-related or not disaster-related
 
 The Disaster Tweets Classification model is designed to classify tweets as either disaster-related or not disaster-related using natural language processing techniques. The model was trained on a dataset of tweets labeled as either disaster-related or not disaster-related, and can be used to quickly identify tweets that may be relevant to emergency response efforts in the event of a disaster. This can be particularly useful for organizations involved in disaster response and relief efforts, as it can help them quickly identify and prioritize relevant information on social media
 
+### Impact
+
 Disaster tweets classification is essential for crisis management and emergency response. By analyzing text data from social media platforms, machine learning models can classify tweets related to disasters or emergencies. Accurate disaster tweets classification enables real-time monitoring of critical events, helps in assessing the severity and impact of disasters, and facilitates efficient resource allocation and coordination of response efforts. It aids in disseminating timely information, mobilizing support, and enhancing situational awareness during emergencies. Disaster tweets classification technology contributes to effective crisis communication, rapid response, and better disaster management.
 
 ### Dataset
 
-11370 train images with their labels(0 or 1)
 Dataset path: s3://apac-cds/ht_datasets/text_classification/disaster_tweets_classification.csv
 
+11370 train images with their labels(0 or 1) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/disaster_tweets_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

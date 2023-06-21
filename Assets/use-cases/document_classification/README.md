@@ -14,16 +14,23 @@ Classify different types of documents based on their content
 
 ### Business Problem 
 
-A Document Classification model is a machine learning model that can automatically classify different types of documents based on their content. In this case, the model is trained to classify documents into three categories: emails, scientific papers, and letters. The model analyzes the text and structure of each document and assigns it to the appropriate category based on patterns and features it has learned from a large training dataset. This model can be useful for businesses and organizations that deal with large volumes of documents and need to organize them efficiently
+A Document Classification model is a machine learning model that can classify different types of documents based on their content. In this case, the model is trained to classify documents into three categories: emails, scientific papers, and letters. The model analyzes the text and structure of each document and assigns it to the appropriate category based on patterns and features it has learned from a large training dataset. This model can be useful for businesses and organizations that deal with large volumes of documents and need to organize them efficiently
+
+### Impact
 
 Document classification has a wide range of applications in industries such as legal,financial services, healthcare, and information management. By utilizing natural language processing and machine learning techniques, document classification enables the automated categorization and organization of textual documents based on their content and purpose. Accurate document classification streamlines information retrieval, enhances data management processes, and improves operational efficiency. In the legal industry, it supports document discovery, case management, and contract analysis. In financial services, it aids in fraud detection, risk assessment, and compliance with regulatory requirements. In healthcare, it facilitates patient record management and medical coding. Document classification technology contributes to enhanced productivity, data accuracy, and regulatory compliance across various industries.
 
 ### Dataset
 
-165 train images with 3 uniques labels [scientific_publication, email, resume]
 Dataset path: s3://apac-cds/ht_datasets/image_classification/document_classification.zip
 
+165 train images with 3 uniques labels [scientific_publication, email, resume] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/document_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

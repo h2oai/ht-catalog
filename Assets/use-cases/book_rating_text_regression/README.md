@@ -14,16 +14,23 @@ Predict the book rating using their reviews
 
 ### Business Problem 
 
-Book rating text regression encompasses the analysis and regression of textual reviews or feedback provided by readers for books. This technology aims to extract sentiment, opinion, and other relevant features from the text, enabling the prediction and estimation of book ratings, assisting readers in making informed choices and aiding authors and publishers in understanding readers' preferences.
+Book rating text regression encompasses the analysis and regression of textual reviews or feedback provided by readers for books. This solution aims to extract sentiment, opinion, and other relevant features from the text, enabling the prediction and estimation of book ratings, assisting readers in making informed choices and aiding authors and publishers in understanding readers' preferences.
+
+### Impact
 
 Book rating text regression has a significant impact on the publishing industry and consumer decision-making. By analyzing textual reviews and extracting sentiment and opinion, this technology provides valuable insights into readers' preferences, book quality, and market trends. Publishers and authors can utilize this information to optimize book marketing strategies, refine content offerings, and improve overall reader satisfaction. It enables data-driven decision-making, boosts sales, and cultivates a loyal reader base.
 
 ### Dataset
 
-10000 train rows with its label
 Dataset path: s3://apac-cds/ht_datasets/text_regression/book-rating-text-regression.csv
 
+10000 train rows with its label Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/book_rating_text_regression/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

@@ -14,16 +14,23 @@ Detect and classify the defects in Printed Circuit Boards
 
 ### Business Problem 
 
-The PCB Defect model was created using a public synthetic dataset containing 1386 images with 6 different types of defects found in printed circuit boards (PCBs). The aim of this model is to accurately detect and classify these defects, which include missing holes, mouse bites, open circuits, shorts, spurs, and spurious copper. The model was trained using deep learning algorithms and image processing techniques to identify the specific characteristics of each defect type and classify them accordingly. The model is designed to aid in quality control and product analysis in the electronics industry, ensuring that PCBs meet high standards and are free from defects that could affect their performance.
+The PCB Defect model was created using a public synthetic dataset containing 1386 images with 6 different types of defects found in printed circuit boards (PCBs). The aim of this model is to detect and classify these defects, which include missing holes, mouse bites, open circuits, shorts, spurs, and spurious copper. The model was trained using deep learning algorithms and image processing techniques to identify the specific characteristics of each defect type and classify them accordingly. The model is designed to aid in quality control and product analysis in the electronics industry, ensuring that PCBs meet high standards and are free from defects that could affect their performance.
+
+### Impact
 
 PCB (Printed Circuit Board) defect detection is crucial in the electronics manufacturing industry. By employing advanced computer vision techniques, it enables the automated identification of defects in PCBs, such as short circuits, open circuits, or component misalignment. Timely detection of such defects during the production process ensures the delivery of reliable and high-quality electronic devices. PCB defect detection technology reduces production costs by minimizing the need for manual inspection and rework. It enhances manufacturing efficiency, speeds up the production cycle, and reduces the risk of faulty electronic products reaching the market. Overall, PCB defect detection improves product quality, customer satisfaction, and business competitiveness in the electronics industry.
 
 ### Dataset
 
-1500 images with their object labels ['open' 'short' 'mousebite' 'spur' 'copper' 'pin-hole'] 
 Dataset path: s3://apac-cds/ht_datasets/object_detection/pcb_defect.zip
 
+1500 images with their object labels ['open' 'short' 'mousebite' 'spur' 'copper' 'pin-hole']  Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pcb_defect/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

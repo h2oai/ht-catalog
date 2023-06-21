@@ -16,14 +16,21 @@ identify whether the textile is damage or not
 
 Textile Defect classification model is used to classify defects in textiles as damaged or not damaged. The model uses computer vision and machine learning algorithms to detect and classify defects based on their properties such as shape, size, and texture. This helps manufacturers to identify and remove defective products and ensure product quality. The model can be trained on large datasets of images containing both defective and non-defective textiles to improve its accuracy and efficiency.
 
-Textile defect detection has significant business impact in the textile and fashion industries. By leveraging computer vision and image analysis, it enables automated detection of defects in fabrics and garments during the production process. Timely identification of defects such as holes, stains, or misprints helps maintain product quality and reduces waste. Textile defect detection enhances production efficiency, as it allows for real-time monitoring and quality control, minimizing the need for manual inspection. By ensuring the delivery of defect-free textiles to customers, it enhances brand reputation, customer satisfaction, and overall business profitability.
+### Impact
+
+Textile defect detection has significant role in the textile and fashion industries. By leveraging computer vision and image analysis, it enables automated detection of defects in fabrics and garments during the production process. Timely identification of defects such as holes, stains, or misprints helps maintain product quality and reduces waste. Textile defect detection enhances production efficiency, as it allows for real-time monitoring and quality control, minimizing the need for manual inspection. By ensuring the delivery of defect-free textiles to customers, it enhances brand reputation, customer satisfaction, and overall business profitability.
 
 ### Dataset
 
-108000 train images with labels (good or damaged)
 Dataset path: s3://apac-cds/ht_datasets/image_classification/textile_damage_classification.zip
 
+108000 train images with labels (good or damaged) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/textile_defect_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

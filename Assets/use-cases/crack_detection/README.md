@@ -14,16 +14,23 @@ Classify whether a given image contain crack(s) or not
 
 ### Business Problem 
 
-Our Crack Detection model is used to detect and locate cracks in various surfaces. This model is useful for engineers and maintenance professionals, helping them to monitor and maintain the safety and structural integrity of buildings and infrastructure.
+Crack Detection model is used to detect and locate cracks in various surfaces. This model is useful for engineers and maintenance professionals, helping them to monitor and maintain the safety and structural integrity of buildings and infrastructure.
+
+### Impact
 
 The surface crack classifier has substantial business impact in industries such as infrastructure, construction, and manufacturing. By automatically identifying and classifying surface cracks on structures, such as buildings, bridges, and pipelines, it aids in proactive maintenance and inspection. This technology enables early detection of cracks, facilitating timely repairs and preventing potential safety hazards. Industries can benefit from cost savings by minimizing the need for manual inspections and conducting targeted maintenance based on the severity and location of the detected cracks. Moreover, it enhances overall infrastructure reliability and safety, ensuring compliance with regulatory standards.
 
 ### Dataset
 
-36000 train images and 4000 test images with labels postive and negative
 Dataset path: s3://apac-cds/ht_datasets/image_classification/surface-crack-detection_v1.zip
 
+36000 train images and 4000 test images with labels postive and negative Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crack_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

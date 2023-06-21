@@ -16,14 +16,21 @@ Identify the images of same bicycle within the same advertisement
 
 The use case involves utilizing similar image grouping in bicycle ads. When advertising bicycles, it is essential to showcase a variety of models, features, and styles to attract potential customers. However, manually organizing and selecting images for ads can be time-consuming and challenging. By leveraging similar image grouping, an automated system can analyze the visual content of bicycle images and group them based on similarities in design, color, or style. This process helps streamline the ad creation process by providing a curated selection of images that can be easily incorporated into advertisements.
 
+### Impact
+
 Implementing similar image grouping in bicycle ads can have several positive impacts on businesses. Firstly, it improves efficiency by reducing the time and effort required to manually sort and organize images for advertisements. This allows marketers to focus on other crucial tasks, leading to increased productivity. Secondly, by presenting visually coherent and appealing ads, businesses can enhance customer engagement and increase the likelihood of attracting potential buyers. This can result in higher conversion rates and improved sales for bicycle companies. Lastly, by automating the image grouping process, companies can reduce the chances of human error and inconsistencies in ad visuals, ensuring a more professional and polished advertising campaign.
 
 ### Dataset
 
-8313 images of 1148 online bicycle ads. Each ad has multiple images marked by their class ID.
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/bicycle_image_metric_learning.zip
 
+8313 images of 1148 online bicycle ads. Each ad has multiple images marked by their class ID. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/online_bicycle_ads/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

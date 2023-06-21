@@ -14,16 +14,23 @@ Predict the severity of cough using cough audio
 
 ### Business Problem 
 
-Cough audio regression in COVID data involves the analysis and regression of cough sounds recorded from individuals with COVID-19. This technology aims to identify and quantify different acoustic features of coughs, allowing for the assessment and prediction of disease severity, progression, and potential complications.
+Cough audio regression in COVID data involves the analysis and regression of cough sounds recorded from individuals with COVID-19. This solution aims to identify and quantify different acoustic features of coughs, allowing for the assessment and prediction of disease severity, progression, and potential complications.
 
-Cough audio regression in COVID data has substantial business impact in the healthcare sector. By accurately quantifying cough characteristics and analyzing disease progression, this technology aids in assessing the severity of COVID-19 cases, predicting potential complications, and monitoring treatment effectiveness. It enables healthcare providers to make informed decisions about patient management, allocate resources efficiently, and provide personalized care, ultimately leading to improved patient outcomes and optimized healthcare delivery.
+### Impact
+
+Cough audio regression in COVID data has substantial role in the healthcare sector. By accurately quantifying cough characteristics and analyzing disease progression, this technology aids in assessing the severity of COVID-19 cases, predicting potential complications, and monitoring treatment effectiveness. It enables healthcare providers to make informed decisions about patient management, allocate resources efficiently, and provide personalized care, ultimately leading to improved patient outcomes and optimized healthcare delivery.
 
 ### Dataset
 
-25985 train audio samples with their values.
 Dataset path: s3://apac-cds/ht_datasets/audio_regression/covid19-cough-audio-classification.zip
 
+25985 train audio samples with their values. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/covid19_cough_audio_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

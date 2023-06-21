@@ -14,16 +14,23 @@ Classify whether a pill is dirty or not
 
 ### Business Problem 
 
-Pill Quality Classification model is used for identifying and classifying pills based on their shape, color, and markings. This model is useful in pharmaceutical manufacturing, where quality control is critical for ensuring that medications are safe and effective. By accurately classifying pills, manufacturers can quickly detect and remove defective or counterfeit pills from the production line. The model uses image processing and machine learning techniques to classify pills based on their unique features, helping to improve the efficiency and accuracy of quality control processes.
+Pill Quality Classification model is used for identifying and classifying pills based on their shape, color, and markings. This model is useful in pharmaceutical manufacturing, where quality control is critical for ensuring that medications are safe and effective. By classifying pills, manufacturers can quickly detect and remove defective or counterfeit pills from the production line. The model uses image processing and machine learning techniques to classify pills based on their unique features, helping to improve the efficiency and accuracy of quality control processes.
+
+### Impact
 
 Accurate pill quality classification holds immense business impact, particularly in the pharmaceutical industry. By leveraging computer vision and machine learning techniques, it enables pharmaceutical companies to ensure the quality and safety of their products. Reliable pill quality classification helps identify and eliminate defective or counterfeit pills from the market, safeguarding patient health and maintaining brand reputation. It streamlines quality control processes, reduces the risk of product recalls, and ensures compliance with regulatory standards, ultimately enhancing customer trust and overall business success.
 
 ### Dataset
 
-330 train images with their labels [chip,dirt,normal]
 Dataset path: s3://apac-cds/ht_datasets/image_classification/pill_quality_classification.zip
 
+330 train images with their labels [chip,dirt,normal] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pill_quality_classification/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

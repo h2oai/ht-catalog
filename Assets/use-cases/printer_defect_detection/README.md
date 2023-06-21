@@ -14,16 +14,23 @@ Detect malicious defects in 3D printer operations
 
 ### Business Problem 
 
-The Printer Defect Detection model uses the provided dataset to identify and classify anomalies in 3D printer operations. The dataset contains two categories: defected and non-defected. Using machine learning algorithms and image processing techniques, the model can accurately detect defects in the printer operation and classify them accordingly. This model can be useful in the quality control of 3D printing processes, allowing for early detection and correction of defects, and improving the overall efficiency of the printing process.
+The Printer Defect Detection model uses the provided dataset to identify and classify anomalies in 3D printer operations. The dataset contains two categories: defected and non-defected. Using machine learning algorithms and image processing techniques, the model can detect defects in the printer operation and classify them accordingly. This model can be useful in the quality control of 3D printing processes, allowing for early detection and correction of defects, and improving the overall efficiency of the printing process.
+
+### Impact
 
 Printer defect detection has a direct impact on the printing industry, quality control processes, and customer satisfaction. By analyzing printed images or documents using computer vision techniques, it enables the automated detection of defects, such as misprints, ink smudges, or color inaccuracies. Effective printer defect detection ensures the delivery of high-quality printed materials, reducing waste and production costs. It helps in maintaining brand reputation, meeting customer expectations, and minimizing the need for reprints. Printer defect detection technology enhances printing efficiency, quality control measures, and customer satisfaction.
 
 ### Dataset
 
-1507 train images with defected or no_defected labels
 Dataset path: s3://apac-cds/ht_datasets/image_classification/3D_printer_defect_classification.zip
 
+1507 train images with defected or no_defected labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/printer_defect_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

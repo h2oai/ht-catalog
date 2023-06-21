@@ -14,16 +14,23 @@ Answer the questions from given contexts
 
 ### Business Problem 
 
-Question Answering in Contexts involves developing models or algorithms that can accurately answer questions based on specific contexts or documents. This use case is particularly relevant for information retrieval systems, virtual assistants, and chatbot applications, where users seek answers or information from a given context. By understanding the context and accurately answering questions, these systems can provide timely and relevant information, improve user experience, and streamline information access. Question answering in contexts finds applications in various domains, including customer support, education, healthcare, and research, where users need precise and contextually relevant answers to their queries.
+Question Answering in Contexts involves developing models or algorithms that can answer questions based on specific contexts or documents. This use case is particularly relevant for information retrieval systems, virtual assistants, and chatbot applications, where users seek answers or information from a given context. By understanding the context and answering questions, these systems can provide timely and relevant information, improve user experience, and streamline information access. Question answering in contexts finds applications in various domains, including customer support, education, healthcare, and research, where users need precise and contextually relevant answers to their queries.
 
-Implementing question answering in contexts can have significant business impacts across multiple industries. In customer support, it can reduce the need for manual assistance, enabling faster response times and enhancing customer satisfaction. Virtual assistants equipped with question answering capabilities can provide users with immediate and accurate information, improving their overall experience and productivity. In educational settings, question answering systems can support students' learning by providing contextual explanations and answers to their queries. In healthcare, such systems can assist healthcare professionals in accessing relevant medical information and guidelines quickly, enabling better decision-making and improving patient care. Overall, question answering in contexts enhances information retrieval, empowers users, and drives efficiency in various industry sectors.
+### Impact
+
+Implementing question answering in contexts can hplays a key roles across multiple industries. In customer support, it can reduce the need for manual assistance, enabling faster response times and enhancing customer satisfaction. Virtual assistants equipped with question answering capabilities can provide users with immediate and accurate information, improving their overall experience and productivity. In educational settings, question answering systems can support students' learning by providing contextual explanations and answers to their queries. In healthcare, such systems can assist healthcare professionals in accessing relevant medical information and guidelines quickly, enabling better decision-making and improving patient care. Overall, question answering in contexts enhances information retrieval, empowers users, and drives efficiency in various industry sectors.
 
 ### Dataset
 
-87598 train questions for 18891 contexts
 Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/squad_text_span_prediction.zip
 
+87598 train questions for 18891 contexts Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/questions_with_answers_and_contexts/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

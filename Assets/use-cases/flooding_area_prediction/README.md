@@ -14,16 +14,23 @@ Segment the water regions in flooding area
 
 ### Business Problem 
 
-Flooding Area Segmentation Model is a computer vision model that can automatically identify and segment areas affected by flooding in images. This model can be useful for disaster response teams, allowing them to quickly identify and prioritize areas in need of aid.
+Flooding Area Segmentation Model is a computer vision model that can identify and segment areas affected by flooding in images. This model can be useful for disaster response teams, allowing them to quickly identify and prioritize areas in need of aid.
+
+### Impact
 
 Flooding area segmentation has a crucial business impact in urban planning and disaster management. By accurately delineating and mapping flooded areas, city authorities and emergency responders can effectively allocate resources, prioritize rescue efforts, and implement evacuation plans. This technology aids in real-time decision-making, reduces response time, and improves the overall efficiency of emergency management, ultimately minimizing the impact of flooding on infrastructure, public safety, and property.
 
 ### Dataset
 
-231 train images and 58 test images with class id "flood"
 Dataset path: s3://apac-cds/ht_datasets/image_segmentation/Flooding Area Prediction.zip
 
+231 train images and 58 test images with class id "flood" Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flooding_area_prediction/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 

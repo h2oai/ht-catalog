@@ -14,16 +14,23 @@ Detect and classify customer emotions during interactions with banking services
 
 ### Business Problem 
 
-Bank emotion detection involves the automated analysis and detection of customer emotions and sentiments during interactions with banking services or systems. This technology utilizes natural language processing and sentiment analysis techniques to discern customer satisfaction, frustration, or other emotional states, helping banks enhance customer experience and improve service quality
+Bank emotion detection involves the automated analysis and detection of customer emotions and sentiments during interactions with banking services or systems. The solution approach utilizes natural language processing and sentiment analysis techniques to discern customer satisfaction, frustration, or other emotional states, helping banks enhance customer experience and improve service quality
 
-Bank emotion detection has substantial business impact in the banking and financial services industry. By analyzing customer emotions and sentiments during interactions, this technology provides valuable insights into customer satisfaction, frustration, or other emotional states. Banks can utilize this information to enhance customer experience, tailor their services, and improve customer retention. It enables proactive customer support, targeted marketing campaigns, and personalized financial solutions, fostering customer loyalty and driving business growth.
+### Impact
+
+Bank emotion detection has substantial role in the banking and financial services industry. By analyzing customer emotions and sentiments during interactions, this technology provides valuable insights into customer satisfaction, frustration, or other emotional states. Banks can utilize this information to enhance customer experience, tailor their services, and improve customer retention. It enables proactive customer support, targeted marketing campaigns, and personalized financial solutions, fostering customer loyalty and driving business growth.
 
 ### Dataset
 
-108 train samples with 2 classes
 Dataset path: s3://apac-cds/ht_datasets/text_classification/bank_emotion_detection.zip
 
+108 train samples with 2 classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bank_emotion_detection/train%20data.png)
+
+### Solution
+
+[H2O Hydrogen Torch](https://docs.h2o.ai/h2o-hydrogen-torch/)
 
 ### Model Training
 
