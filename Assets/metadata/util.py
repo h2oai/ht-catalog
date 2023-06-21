@@ -31,7 +31,7 @@ def master_readme():
 
 def individual_usecases():
 	base = "https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/"
-	base = "../use-cases/"
+	base_l = "../use-cases/"
 	
 
 	df = pd.read_csv("use_cases.csv").fillna("NA")
@@ -39,19 +39,18 @@ def individual_usecases():
 		r = dict(r)
 		url = base + r['github_url'].strip()  + "/"
 
+		url_l = base_l + r['github_url'].strip()  + "/"
 		yaml_string = ""
 
 		try:
-			for _ in os.listdir(url):
+			for _ in os.listdir(url_l):
 				if _.startswith("log"):
-					yaml_file = [a for a in os.listdir(url+ _) if a.endswith(".yaml")][0]
+					yaml_file = [a for a in os.listdir(url_l+ _) if a.endswith(".yaml")][0]
 
-					yaml_string = open(url +_+"/"+ yaml_file).read()
+					yaml_string = open(url_l +_+"/"+ yaml_file).read()
 		except Exception as E:
-			print (E)
 			pass
 
-		print (yaml_string)
 		readme = f"""## Use Case {int(r['id'])}: {r['use-case']}
 
 {r["prediction-target"]}
