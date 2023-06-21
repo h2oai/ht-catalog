@@ -44,6 +44,9 @@ The use-cases descirbed in this project are relevant to different industries, fo
 
 Following is the collection of 100 use-cases by different industries, different problem types, different data-types, built in H2O Hydrogen Torch. Click on any use-case to get more details.
 
+
+| # | Use-Case       | Industry | Prediction Target | Problem Type | Data Type |
+|---| -------------- | ------- | ----------------- | ----- | ----- |
 | 1. | [Document Signature Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection)| Banking | Detect signatures in the digital documents | Object Detection | Image |
 | 2. | [Document Signature Verification](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_verification)| Banking | Verify, match, and compare the digital signatures | Image Metric Learning | Image |
 | 3. | [Smoke Segmentation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_segmentation)| Manufacturing | Segment the presence and location of smoke within images | Image Segmentation | Image |
@@ -138,9 +141,14 @@ Following is the collection of 100 use-cases by different industries, different 
 | 92. | [Road Footpath Recognition](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/footpath_recognition)| Government | Detect and recognize footpaths or pedestrian walkways in images or video data | Image Semantic Segmentation | Image |
 | 93. | [Resistor Image Classification](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/resistor_image_classification)| Manufacturing | Classify an input resistor image into its corresponding type or category | Image Classification | Image |
 | 94. | [Tire Texture Classification](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tire_texture_classification)| Manufacturing | Classify an input tire image into its corresponding texture category | Image Classification | Image |
-| 95. | [Flower Recognition](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flower_recognition)| Agriculture | classify an input flower image into its corresponding species or category | Image Classification | Image |
+| 95. | [Flower Recognition](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flower_recognition)| Agriculture | Classify an input flower image into its corresponding species or category | Image Classification | Image |
 | 96. | [Railway Defect Classification](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/railway_defect_classification)| Government | Classify an input image or video frame into the corresponding defect category | Image Classification | Image |
 | 97. | [Motorcycle Rider Segementation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/motorcycle_night_ride_segmentation)| Government | Segment the motorcycle and the rider from the surrounding nighttime environment | Image Semantic Segmentation | Image |
 | 98. | [Football Player segmentation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/football_player_segmentation)| Sports | Segment each football player present in the video frames | Image Classification | Image |
 | 99. | [Malaria Cell Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection)| Healthcare | Identify and classify red blood cells as infected or uninfected with malaria parasites | Image Classification | Image |
 | 100. | [Audio Anonmaly Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all)| Manufacturing | Classifies the audio segments into 4 machine parts: valve, fan, slider and pump | Audio Classification | Audio |
+
+### Contribution 🛠️
+
+Please create an [Issue](https://github.com/h2oai/ht-catalog/issues) for any improvements, suggestions or errors in the content.
+
