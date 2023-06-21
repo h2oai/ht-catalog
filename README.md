@@ -9,19 +9,22 @@ H2O Catalog is a collection of 100 different use-cases (with datasets, models, o
 
 The models in this project have a wide range of problem types corresponding to different types of unstructured data (image/video, text, audio)
 
-- `Image Classification`
-- `Image Regression`
-- `Image Semantic Segmentation`
-- `Image Object Detection`
-- `Image Instance Segmentation`
+- `Object Detection`
 - `Image Metric Learning`
-- `Audio Regression`
-- `Audio Classification`
-- `Text Classification`
-- `Text Regression`
+- `Image Segmentation`
+- `Image Classification`
 - `Text Sequence to Sequence`
-- `Text Span Prediction`
+- `Audio Classification`
+- `Image Regression`
+- `Text Classification`
+- `Image Semantic Segmentation`
+- `Text Regression`
 - `Text Token Classification`
+- `Text Metric Learning`
+- `Text Span Prediction`
+- `Speech Recognition`
+- `3D Image Semantic Segmentation`
+- `Audio Regression`
 
 The use-cases descirbed in this project are relevant to different industries, for example:
 
