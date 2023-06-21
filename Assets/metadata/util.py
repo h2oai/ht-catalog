@@ -7,10 +7,9 @@ def rename_usecases():
 		n = "_".join(n.split("_")[1:])
 		os.rename("use-cases/" + f, "use-cases/" + n)
 
-df = pd.read_csv("use_cases.csv")
-
-for i, r in df.head(100).iterrows():
-	r = dict(r)
-
-	print (f"| {int(r['id'])}. | [{r['use-case']}](#)| {r['industry']} | {r['prediction-target']} | {r['problem-type']} | {r['data-type']} |")
-
+def master_readme():
+	df = pd.read_csv("use_cases.csv")
+	for i, r in df.head(100).iterrows():
+		r = dict(r)
+		url = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
+		print (f"| {int(r['id'])}. | [{r['use-case']}]({url + r['github_url'].strip()})| {r['industry']} | {r['prediction-target']} | {r['problem-type']} | {r['data-type']} |")
