@@ -152,3 +152,10 @@ Following is the collection of 100 use-cases by different industries, different 
 
 Please create an [Issue](https://github.com/h2oai/ht-catalog/issues) for any improvements, suggestions or errors in the content.
 
+
+### Credits
+
+- Laksika Tharmalingam (https://github.com/laksi1999) 
+- Sanjeepan Sivapiran (https://github.com/sanjeepan23)
+- Shivam Bansal (https://github.com/shivam5992)
+

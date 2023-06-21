@@ -68,7 +68,10 @@ def individual_usecases():
 ### Dataset
 
 {r["dataset-description"]}
+
 Dataset path: {r["dataset-link"]}
+
+Import this link directly in Hydrogen Torch
 
 ![train data]({url}train%20data.png)
 
@@ -94,8 +97,9 @@ Model Configuration (Hydrogen Torch yaml)
 {r['license']}
 """
 		if 'pest_clas' in url_l:
-			continue
-		open(url_l + "readme.md", "w").write(readme)
+			print (url_l)
+		# 	continue
+		# open(url_l + "readme.md", "w").write(readme)
 
 
 
