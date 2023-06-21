@@ -30,7 +30,8 @@ def master_readme():
 """
 
 def individual_usecases():
-	base = "https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/"
+	base = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
+
 	base_l = "../use-cases/"
 	
 
@@ -55,9 +56,9 @@ def individual_usecases():
 
 {r["prediction-target"]}
 
-`Industry: {r['industry']}`
-`Industry: {r['problem-type']}`
-`Industry: {r['data-type']}`
+- `Industry: {r['industry']}`
+- `Problem Type: {r['problem-type']}`
+- `Data Type: {r['data-type']}`
 
 ![]({url}cover.png)
 ![]({url}cover.jpg)

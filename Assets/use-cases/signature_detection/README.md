@@ -3,14 +3,14 @@
 Detect signatures in the digital documents
 
 - `Industry: Banking`
-- `Industry: Object Detection`
-- `Industry: Image`
+- `Problem Type: Object Detection`
+- `Data Type: Image`
 
-![](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/cover.png)
-![](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/cover.jpg)
-![](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/cover.jpeg)
-![](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/cover.webp)
-![](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/cover)
+![](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/cover.png)
+![](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/cover.webp)
+![](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/cover)
 
 ### Business Problem 
 
@@ -22,7 +22,7 @@ Signature detection in documents has a significant business impact across variou
 
 1000 train images with their masks
 
-![train data](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/train%20data.png)
+![train data](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/train%20data.png)
 
 ### Model Training
 
@@ -130,13 +130,14 @@ training:
 
 ```
 
-![chart](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/chart.png)
+![chart](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/chart.png)
 
 
 ### Prediction
 
-![Predictions](https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/signature_detection/Validation%20Predictions.png)
+![Predictions](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection/Validation%20Predictions.png)
 
 ### License
 
 NA
+
