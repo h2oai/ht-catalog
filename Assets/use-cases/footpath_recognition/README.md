@@ -130,3 +130,7 @@ training:
 ### License
 
 CC BY-SA 4.0
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://www.researchgate.net/publication/358607641_an-Eye_SAFE_NAVIGATION_IN_FOOTPATH_FOR_VISUALLY_IMPAIRED_USING_COMPUTER_VISION_TECHNIQUES

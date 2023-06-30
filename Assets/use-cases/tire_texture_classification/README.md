@@ -134,3 +134,7 @@ training:
 ### License
 
 CC0: Public Domain
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/Z3ZYLI

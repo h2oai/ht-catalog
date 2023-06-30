@@ -130,3 +130,7 @@ training:
 ### License
 
 These datasets are free to use, but if you intend to use them in scientific research, it is necessary to reference this webpage and the Center for Wildfire Research.
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : http://wildfire.fesb.hr/index.php?option=com_content&view=article&id=49&Itemid=54

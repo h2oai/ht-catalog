@@ -134,3 +134,7 @@ training:
 ### License
 
 Attribution 4.0 International (CC BY 4.0)
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://ieee-dataport.org/open-access/detecting-damaged-buildings-post-hurricane-satellite-imagery-based-customized

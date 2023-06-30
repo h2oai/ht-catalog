@@ -148,3 +148,7 @@ training:
 ### License
 
 Unknown
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://github.com/GkcA/Pill-Detection-Yolov3

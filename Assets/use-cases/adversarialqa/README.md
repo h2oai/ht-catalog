@@ -114,3 +114,7 @@ training:
 ### License
 
 cc-by-sa-4.0
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://huggingface.co/datasets/adversarial_qa

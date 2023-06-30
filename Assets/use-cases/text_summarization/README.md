@@ -115,3 +115,7 @@ training:
 ### License
 
 Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : NA

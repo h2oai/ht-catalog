@@ -119,3 +119,7 @@ training:
 ### License
 
 GNU Lesser General Public License
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/stevenpeutz/misinformation-fake-news-text-dataset-79k

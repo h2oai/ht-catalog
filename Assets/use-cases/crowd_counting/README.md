@@ -133,3 +133,7 @@ training:
 ### License
 
 Unknown
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html
