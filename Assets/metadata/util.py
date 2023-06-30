@@ -21,12 +21,9 @@ def master_readme():
 		htm += "\n"
 	print (htm)
 
-
 def individual_usecases():
 	base = "https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/"
-
 	base_l = "../use-cases/"
-	
 
 	df = pd.read_csv("use_cases.csv").fillna("NA")
 	for i, r in df.head(100).iterrows():
@@ -40,7 +37,6 @@ def individual_usecases():
 			for _ in os.listdir(url_l):
 				if _.startswith("log"):
 					yaml_file = [a for a in os.listdir(url_l+ _) if a.endswith(".yaml")][0]
-
 					yaml_string = open(url_l +_+"/"+ yaml_file).read()
 		except Exception as E:
 			pass
@@ -99,19 +95,17 @@ Model Configuration (Hydrogen Torch yaml)
 ### License
 
 {r['license']}
+
+### Acknowledgements
+
+The original dataset used in this use case comes from this source : {r["original-source"]}
 """
 		# if 'pest_clas' in url_l:
 			# print (url_l)
 		# 	continue
 		open(url_l + "readme.md", "w").write(readme)
 
-
-
-
 		# break
-
-# individual_usecases()
-
 
 def html_generator():
 	visited = []
@@ -135,8 +129,7 @@ def html_generator():
 </div>"""
 
 	print (html)	
-		
 
-
-
+# master_readme()
+# individual_usecases()
 # html_generator()
