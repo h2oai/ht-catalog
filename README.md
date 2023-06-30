@@ -151,10 +151,39 @@ Following is the collection of 100 use-cases by different industries, different 
 | 99. | [Malaria Cell Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection)| Healthcare | Identify and classify red blood cells as infected or uninfected with malaria parasites | Image Classification | Image |
 | 100. | [Audio Anonmaly Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all)| Manufacturing | Classifies the audio segments into 4 machine parts: valve, fan, slider and pump | Audio Classification | Audio |
 
+### How To Contribute : Creating an Experiment, Organizing Files, and Making a Pull Request
+
+To contribute to the project, follow these steps:
+
+1. Create an experiment using Hydrogen Torch for a dataset.
+2. Download log files generated from the experiment.
+3. Capture screenshots of train visualization, charts, and validation predictions.
+4. Create a folder in "Assets/use-cases" with the correct dataset name.
+5. Organize files in the folder:
+   - Logs Files as a folder (extracted from downloaded zip)
+   - Validation Predictions Screenshot as "Validation Predictions.png"
+   - Charts Screenshot as "chart.png"
+   - Train Data Screenshot as "train data.png"
+   - Relevant Cover Image as "cover.*"
+6. Update the CSV file in "Assets/metadata/use_cases.csv" with the new use case details.
+7. Run the Assets/metadata/util.py to update the readme files.
+   - `master_readme` to update the readme of master.
+   - `individual_usecases` to create individual readme for your usecase.
+   - `html_generator` to update the index.html file.
+9. Make a pull request to submit your contribution.
+
+By following these steps, you can contribute to this project.
+
 ### Contribution 🛠️
 
 Please create an [Issue](https://github.com/h2oai/ht-catalog/issues) for any improvements, suggestions or errors in the content.
 
+### License
+
+H2O Use-Case Catalog is licensed under the Mozilla Public License Version 2.0. See [LICENSE](https://github.com/h2oai/ht-catalog/tree/main/LICENCE) for more information.
+
+### Copyrights
+Please note that all contributions to this catalog are subject to the copyright terms specified in the [COPYRIGHT](https://github.com/h2oai/ht-catalog/tree/main/COPYRIGHT.md) file.
 
 ### Credits
 
