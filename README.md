@@ -180,7 +180,7 @@ Please create an [Issue](https://github.com/h2oai/ht-catalog/issues) for any imp
 
 ### License
 
-H2O Use-Case Catalog is licensed under the Mozilla Public License Version 2.0. See [LICENSE](https://github.com/h2oai/ht-catalog/tree/main/LICENCE) for more information.
+H2O Use-Case Catalog is licensed under the Mozilla Public License Version 2.0. See [LICENSE](https://github.com/h2oai/ht-catalog/blob/main/LICENSE) for more information.
 
 ### Copyrights
 Please note that all contributions to this catalog are subject to the copyright terms specified in the [COPYRIGHT](https://github.com/h2oai/ht-catalog/tree/main/COPYRIGHT.md) file.
