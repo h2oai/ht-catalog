@@ -22,9 +22,7 @@ Germination seedling detection has applications in agriculture and plant science
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/object_detection/germination-seeing-detection.zip
-
-451 train images with their object coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+451 train images with their object coordinates 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/germination_seedling_detection/train%20data.png)
 

@@ -22,9 +22,7 @@ The Reviews Text Classification use case plays a key role. By accurately classif
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amazon_reviews_text_classification.csv
-
-48093 train texts with their labels Positive or Negative Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+48093 train texts with their labels Positive or Negative 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/amazon_reviews/train%20data.png)
 

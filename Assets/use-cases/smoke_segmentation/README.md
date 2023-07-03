@@ -22,9 +22,7 @@ The utilization of a smoke detection model has far-reaching implications in vari
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/instance_segmentation/bush_fire_image_segment.zip
-
-64 train images segmented using class_id 'smoke' Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+64 train images segmented using class_id 'smoke' 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/smoke_segmentation/train%20data.png)
 

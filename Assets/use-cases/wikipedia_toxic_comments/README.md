@@ -22,9 +22,7 @@ Implementing a toxic comment classification system can have several positive imp
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/jigsaw_text_classification.zip
-
-159571 train texts with 6 labels. Each label has value either 0 or 1. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+159571 train texts with 6 labels. Each label has value either 0 or 1. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/wikipedia_toxic_comments/train%20data.png)
 

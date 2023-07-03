@@ -22,9 +22,7 @@ Traffic light detection is a crucial component of intelligent transportation sys
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/object_detection/traffic-light-detection.zip
-
-1222 train images with green,red,yellow labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1222 train images with green,red,yellow labels 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/traffic_light_detection/train%20data.png)
 

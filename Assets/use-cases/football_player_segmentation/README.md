@@ -22,9 +22,7 @@ Football player segmentation use-case is highly beneficial in the sports industr
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/football-player-segmentation.zip
-
-512 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+512 train images with their masks 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/football_player_segmentation/train%20data.png)
 

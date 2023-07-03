@@ -22,9 +22,7 @@ In fire detection systems, accurate smoke classification enhances early warning 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/wildfire_image_classification.zip
-
-343 images with label  0 or 1  Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+343 images with label  0 or 1  
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/smoke_classification/train%20data.png)
 

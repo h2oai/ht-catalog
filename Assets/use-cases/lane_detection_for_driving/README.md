@@ -22,9 +22,7 @@ Lane detection technology has a significant impact on the field of autonomous dr
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/lane-detection.zip
-
-3075 train images and 129 test images with 3 uniques segmentation labels ['left-lane' 'right-lane' 'background'] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+3075 train images and 129 test images with 3 uniques segmentation labels ['left-lane' 'right-lane' 'background'] 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/lane_detection_for_driving/train%20data.png)
 

@@ -22,9 +22,7 @@ Pest species classification plays a crucial role in industries such as agricultu
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/pest_classification.zip
-
-55865 train images with 132 pest species Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+55865 train images with 132 pest species 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/train%20data.png)
 

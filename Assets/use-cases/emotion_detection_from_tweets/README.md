@@ -22,9 +22,7 @@ Emotion detection from tweets is very useful in social media analytics and marke
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_classification/tweet_emotions.csv
-
-40000 train rows with 13 different classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+40000 train rows with 13 different classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emotion_detection_from_tweets/train%20data.png)
 

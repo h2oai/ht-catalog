@@ -22,9 +22,7 @@ Bank emotion detection has substantial role in the banking and financial service
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_classification/bank_emotion_detection.zip
-
-108 train samples with 2 classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+108 train samples with 2 classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bank_emotion_detection/train%20data.png)
 

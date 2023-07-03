@@ -22,9 +22,7 @@ By automatically assessing the quality of road surfaces, this technology helps t
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/road_image_sih_classification.zip
-
-1659 images with 4 labels.Such as good,poor,very_poor,satisfactory Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1659 images with 4 labels.Such as good,poor,very_poor,satisfactory 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/road_quality_classification/train%20data.png)
 

@@ -22,9 +22,7 @@ A stamp detection model offers several valuable benefits to businesses. It autom
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/stamp_detection.zip
-
-400 images with their coordinates Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+400 images with their coordinates 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/stamp_detection/train%20data.png)
 

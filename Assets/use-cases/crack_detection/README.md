@@ -22,9 +22,7 @@ The surface crack classifier has substantial business impact in industries such 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/surface-crack-detection_v1.zip
-
-36000 train images and 4000 test images with labels postive and negative Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+36000 train images and 4000 test images with labels postive and negative 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crack_detection/train%20data.png)
 

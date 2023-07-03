@@ -22,9 +22,7 @@ By accurately identifying and categorizing the extent of damage caused by hurric
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/Hurriance_Damage_Classification.zip
-
-10000 train images , 2000 validation images, 2000 test images with labels is damage or not Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+10000 train images , 2000 validation images, 2000 test images with labels is damage or not 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hurriance_damage_classification/train%20data.png)
 

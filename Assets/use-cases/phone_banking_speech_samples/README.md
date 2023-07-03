@@ -22,9 +22,7 @@ Transcript generation for US-EN speeches is very useful in various domains. In m
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/minds14_US_speech_recognition.zip
-
-558 train audio samples with their transcript. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+558 train audio samples with their transcript. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/train%20data.png)
 

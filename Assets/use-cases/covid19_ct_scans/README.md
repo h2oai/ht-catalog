@@ -22,9 +22,7 @@ Chest and lungs segmentation in CT scans has significant role in the healthcare 
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/covid_ct_image_semantic_segmentation_3d.zip
-
-20 3d train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+20 3d train images with their masks. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/covid19_ct_scans/train%20data.png)
 

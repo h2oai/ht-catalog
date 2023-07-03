@@ -22,9 +22,7 @@ Trash detection plays a key role in waste management and environmental sustainab
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/object_detection/trash-detection.zip
-
-369 train images with 4 unique labels {glass,paper,metal, plastic} Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+369 train images with 4 unique labels {glass,paper,metal, plastic} 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/trash_detection/train%20data.png)
 

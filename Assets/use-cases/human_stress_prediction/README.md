@@ -22,9 +22,7 @@ Human stress prediction has significant role in the fields of healthcare, wellne
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_classification/stress_prediction.csv
-
-2838 train text samples with 2 different labels. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+2838 train text samples with 2 different labels. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/human_stress_prediction/train%20data.png)
 

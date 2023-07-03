@@ -22,9 +22,7 @@ It plays a crucial role in early detection, diagnosis, and treatment planning fo
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/brain-tumor-classification-mri-v2.zip
-
-2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/brain_mri/train%20data.png)
 

@@ -22,9 +22,7 @@ The usefulness emergency vehicle siren sounds detection is vital in traffic mana
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/audio_classification/emergency-vehicle-siren-sounds.zip
-
-600 train audio samples with 3 different labels such as ambulance,traffic,firetruck. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+600 train audio samples with 3 different labels such as ambulance,traffic,firetruck. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emergency_vehicle_siren_sounds/train%20data.png)
 

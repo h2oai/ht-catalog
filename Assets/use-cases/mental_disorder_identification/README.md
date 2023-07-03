@@ -22,9 +22,7 @@ The usefulness mental disorder identification is significant in healthcare and w
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_classification/mental-disorders-identification.zip
-
-701787 train samples with 2 classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+701787 train samples with 2 classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/mental_disorder_identification/train%20data.png)
 

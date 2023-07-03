@@ -22,9 +22,7 @@ The fiber segmentation in concrete has significant role in the construction and 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/fiber-augmented.zip
-
-7902 train images with their mask Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+7902 train images with their mask 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/fiber_segmentation/train%20data.png)
 

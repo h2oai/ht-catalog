@@ -22,9 +22,7 @@ Newsgroup document classification offers significant business benefits in inform
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_classification/newsgroup_document_classification.csv
-
-1000 train data with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1000 train data with their labels 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/newsgroup_document_classification/train%20data.png)
 

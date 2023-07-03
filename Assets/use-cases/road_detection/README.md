@@ -22,9 +22,7 @@ Road detection technology is essential in the fields of autonomous driving, tran
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/road_data.zip
-
-6226 train images with class id ''road" Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+6226 train images with class id ''road" 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/road_detection/train%20data.png)
 

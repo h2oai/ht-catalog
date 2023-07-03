@@ -22,9 +22,7 @@ The usefulness insurance holder detection is significant for insurance providers
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/text_span_prediction/insurance_holder_detection.zip
-
-7632 train rows with their answers. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+7632 train rows with their answers. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/insurance_holder_detection/train%20data.png)
 

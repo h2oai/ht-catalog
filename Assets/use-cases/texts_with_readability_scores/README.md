@@ -22,9 +22,7 @@ The Readability Scoring tool can have a significant impact on industries that he
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/commonlit_readability_text_regression.zip
-
-2834 train texts with readability scores. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+2834 train texts with readability scores. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/texts_with_readability_scores/train%20data.png)
 

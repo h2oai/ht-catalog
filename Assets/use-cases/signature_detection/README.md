@@ -22,9 +22,7 @@ The utilization of computer vision for signature detection yields a profound imp
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/object_detection/signature_object_detection_v2.zip
-
-1000 train images with their masks Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1000 train images with their masks 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/signature_detection/train%20data.png)
 

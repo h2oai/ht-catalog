@@ -22,9 +22,7 @@ Musical instruments audio classification use-case is highly beneficial in variou
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/audio_classification/musical_instruments_audio_classification.zip
-
-2629 train audio samples with 4 classes. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+2629 train audio samples with 4 classes. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/musical_instruments_audio_classification/train%20data.png)
 

@@ -22,9 +22,7 @@ Audio emotion detection has applications in various fields, including psychology
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/audio_classification/audio_emotion_detection.zip
-
-12798 train images with 7 uniques labels [Angry, Disgusted, Fearful,Happy,Neutral,Sad,Suprised] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+12798 train images with 7 uniques labels [Angry, Disgusted, Fearful,Happy,Neutral,Sad,Suprised] 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_emotion_detection/train%20data.png)
 

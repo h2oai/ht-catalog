@@ -22,9 +22,7 @@ Casting defect classification has a significant impact on the manufacturing and 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/casting_defect_classification.zip
-
-1300 images with labels. such as def or ok Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1300 images with labels. such as def or ok 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/train%20data.png)
 

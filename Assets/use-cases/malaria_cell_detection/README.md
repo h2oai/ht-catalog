@@ -22,9 +22,7 @@ Malaria cell detection is very useful in the healthcare and medical diagnostics 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/Malaria_cell_detection.zip
-
-27558 train images with their labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+27558 train images with their labels 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/malaria_cell_detection/train%20data.png)
 

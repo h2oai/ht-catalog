@@ -22,9 +22,7 @@ Crop classification plays a crucial role in agriculture and precision farming. B
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/Agricultural-crops.zip
-
-829 train images with 30 different classes Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+829 train images with 30 different classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/crop_classification/train%20data.png)
 

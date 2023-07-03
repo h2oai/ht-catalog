@@ -82,9 +82,7 @@ def update_all_usecases_readme():
 
 ### Dataset
 
-Dataset path: {r["dataset-link"]}
-
-{r["dataset-description"]} Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+{r["dataset-description"]} 
 
 ![train data]({url}train%20data.png)
 

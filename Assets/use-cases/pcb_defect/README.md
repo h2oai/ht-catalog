@@ -22,9 +22,7 @@ PCB (Printed Circuit Board) defect detection is crucial in the electronics manuf
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/object_detection/pcb_defect.zip
-
-1500 images with their object labels ['open' 'short' 'mousebite' 'spur' 'copper' 'pin-hole']  Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1500 images with their object labels ['open' 'short' 'mousebite' 'spur' 'copper' 'pin-hole']  
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pcb_defect/train%20data.png)
 

@@ -22,9 +22,7 @@ Nerves segmentation in ultrasound images is very useful in the healthcare indust
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/nerves_image_semantic_segmentation.zip
-
-2323 train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+2323 train images with their masks. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/ultrasound_images_of_brachial_plexus/train%20data.png)
 

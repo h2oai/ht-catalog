@@ -22,9 +22,7 @@ Accurate car parts segmentation in images has significant implications for the a
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/car_parts_coco_format_image_semantic_segmentation.zip
-
-400 train images with their masks. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+400 train images with their masks. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/car_parts_segmentation/train%20data.png)
 

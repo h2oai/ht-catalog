@@ -22,9 +22,7 @@ It enables automatic categorization and identification of food items, which can 
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/food_classification.zip
-
-9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/food_classifications/train%20data.png)
 

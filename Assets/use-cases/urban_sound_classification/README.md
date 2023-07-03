@@ -22,9 +22,7 @@ Urban sound classification has practical applications in urban planning, noise p
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/audio_classification/urban_sound_classification.zip
-
-8732 train images with 10 uniques labels Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+8732 train images with 10 uniques labels 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/urban_sound_classification/train%20data.png)
 

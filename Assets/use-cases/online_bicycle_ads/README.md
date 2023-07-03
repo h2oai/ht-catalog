@@ -22,9 +22,7 @@ Implementing similar image grouping in bicycle ads can have several positive imp
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/bicycle_image_metric_learning.zip
-
-8313 images of 1148 online bicycle ads. Each ad has multiple images marked by their class ID. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+8313 images of 1148 online bicycle ads. Each ad has multiple images marked by their class ID. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/online_bicycle_ads/train%20data.png)
 

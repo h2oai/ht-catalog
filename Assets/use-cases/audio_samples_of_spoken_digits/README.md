@@ -22,9 +22,7 @@ Accurate spoken digits classification plays a key role across multiple industrie
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/amnist_audio_regression.zip
-
-30000 audio samples of spoken digits (0-9) of 60 different speakers. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+30000 audio samples of spoken digits (0-9) of 60 different speakers. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/audio_samples_of_spoken_digits/train%20data.png)
 

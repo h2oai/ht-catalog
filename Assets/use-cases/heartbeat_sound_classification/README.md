@@ -22,9 +22,7 @@ Heartbeat sound classification has significant implications in healthcare and me
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/heartbeat_sound_classification.zip
-
-832 train images with their labels (artifact,extrastole,murmur,normal,unlabel) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+832 train images with their labels (artifact,extrastole,murmur,normal,unlabel) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/train%20data.png)
 

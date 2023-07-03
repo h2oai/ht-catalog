@@ -22,9 +22,7 @@ Textile defect detection has significant role in the textile and fashion industr
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_classification/textile_damage_classification.zip
-
-108000 train images with labels (good or damaged) Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+108000 train images with labels (good or damaged) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/textile_defect_detection/train%20data.png)
 

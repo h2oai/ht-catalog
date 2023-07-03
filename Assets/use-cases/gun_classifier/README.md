@@ -22,9 +22,7 @@ Gun type classification use-case is highly beneficial in security and public saf
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/audio_classification/Gun_sound_detection.zip
-
-851 train audio samples with 9 different classes. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+851 train audio samples with 9 different classes. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/gun_classifier/train%20data.png)
 

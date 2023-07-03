@@ -22,9 +22,7 @@ Person re-identification plays a key roles across multiple industries. In the fi
 
 ### Dataset
 
-Dataset path: s3://h2oai-hydrogen-torch-internal/dev_datasets/market_1501_metric_learning.zip
-
-12936 train images of 751 humans. 534 test images. Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+12936 train images of 751 humans. 534 test images. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/person_images/train%20data.png)
 

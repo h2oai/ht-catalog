@@ -22,9 +22,7 @@ Flood area multi-label segmentation has a valuable business impact in disaster r
 
 ### Dataset
 
-Dataset path: s3://apac-cds/ht_datasets/image_segmentation/flood_segmentation_multi_label.zip
-
-1450 train images and 448 test images with segmenting labels  ['Background' 'Building-flooded' 'Building-non-flooded' 'Road-flooded' 'Road-non-flooded' 'Water' 'Tree' 'Vehicle' 'Pool' 'Grass'] Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+1450 train images and 448 test images with segmenting labels  ['Background' 'Building-flooded' 'Building-non-flooded' 'Road-flooded' 'Road-non-flooded' 'Water' 'Tree' 'Vehicle' 'Pool' 'Grass'] 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flood_area_classification/train%20data.png)
 
