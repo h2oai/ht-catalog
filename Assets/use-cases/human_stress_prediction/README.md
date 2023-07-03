@@ -118,8 +118,8 @@ training:
 
 ### License
 
-Other
+Data files © Original Authors
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : NA
+Original dataset source is https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction

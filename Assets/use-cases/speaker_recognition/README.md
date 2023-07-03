@@ -130,8 +130,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : NA
+Original dataset source is https://www.americanrhetoric.com/speechbank.htm

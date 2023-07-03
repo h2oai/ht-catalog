@@ -6,11 +6,11 @@ Classify the pest species in a given image
 - `Problem Type: Image Classification`
 - `Data Type: Image`
 
-![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/cover.png)
-![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/cover.jpg)
-![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/cover.jpeg)
-![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/cover.webp)
-![](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/cover)
+![](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/cover)
 
 ### Business Problem 
 
@@ -26,7 +26,7 @@ Dataset path: s3://apac-cds/ht_datasets/image_classification/pest_classification
 
 55865 train images with 132 pest species Import this link directly in Hydrogen Torch using Amazon S3 ingestion
 
-![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/train%20data.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/train%20data.png)
 
 ### Solution
 
@@ -124,17 +124,17 @@ training:
 
 ```
 
-![chart](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/chart.png)
+![chart](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/chart.png)
 
 
 ### Prediction
 
-![Predictions](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pest_classification/Validation%20Predictions.png)
+![Predictions](https://github.com/h2oai/ht-catalog/blob/73e76f4b255b46596224efa4da3aedc9320ce970/Assets/use-cases/pest_classification/Validation%20Predictions.png)
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : NA
+Original dataset source is https://www.kaggle.com/datasets/shruthisindhura/pestopia

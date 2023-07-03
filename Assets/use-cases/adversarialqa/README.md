@@ -113,8 +113,8 @@ training:
 
 ### License
 
-cc-by-sa-4.0
+CC BY-NC-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://huggingface.co/datasets/adversarial_qa
+Original dataset source is https://huggingface.co/datasets/adversarial_qa

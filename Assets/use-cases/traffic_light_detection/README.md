@@ -151,4 +151,4 @@ MIT License
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://github.com/Thinklab-SJTU/S2TLD
+Original dataset source is https://github.com/Thinklab-SJTU/S2TLD

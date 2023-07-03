@@ -134,4 +134,4 @@ CC0: Public Domain
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://xeno-canto.org
+Original dataset source is https://xeno-canto.org

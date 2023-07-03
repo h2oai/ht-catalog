@@ -151,4 +151,4 @@ CC BY-NC-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.sciencedirect.com/science/article/pii/S2666016420300244?via%3Dihub
+Original dataset source is https://www.sciencedirect.com/science/article/pii/S2666016420300244?via%3Dihub

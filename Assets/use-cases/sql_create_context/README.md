@@ -117,8 +117,8 @@ training:
 
 ### License
 
-cc-by-4.0
+CC BY-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://huggingface.co/datasets/b-mc2/sql-create-context
+Original dataset source is https://huggingface.co/datasets/b-mc2/sql-create-context

@@ -24,7 +24,7 @@ Product defect classification plays a key role in manufacturing and quality cont
 
 Dataset path: s3://apac-cds/ht_datasets/manufacturing/product_defect_classification.zip
 
-NA Import this link directly in Hydrogen Torch using Amazon S3 ingestion
+6 classes, 1800 image samples split into training and validation Import this link directly in Hydrogen Torch using Amazon S3 ingestion
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/product_defect_classification/train%20data.png)
 
@@ -133,8 +133,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : http://faculty.neu.edu.cn/songkc/en/zdylm/263265/list/index.htm
+Original dataset source is http://faculty.neu.edu.cn/songkc/en/zdylm/263265/list/index.htm

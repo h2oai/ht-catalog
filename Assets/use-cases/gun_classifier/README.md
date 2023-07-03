@@ -130,8 +130,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.researchgate.net/publication/352914408_AN_AUTOMATED_GUNSHOT_AUDIO_CLASSIFICATION_METHOD_BASED_ON_FINGER_PATTERN_FEATURE_GENERATOR_AND_ITERATIVE_RELIEFF_FEATURE_SELECTOR
+Original dataset source is https://www.researchgate.net/publication/352914408_AN_AUTOMATED_GUNSHOT_AUDIO_CLASSIFICATION_METHOD_BASED_ON_FINGER_PATTERN_FEATURE_GENERATOR_AND_ITERATIVE_RELIEFF_FEATURE_SELECTOR

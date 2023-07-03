@@ -122,4 +122,4 @@ CC0: Public Domain
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/niyarrbarman/symptom2disease
+Original dataset source is https://www.kaggle.com/datasets/niyarrbarman/symptom2disease

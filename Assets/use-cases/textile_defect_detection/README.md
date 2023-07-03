@@ -137,4 +137,4 @@ CC BY-NC-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://ieeexplore.ieee.org/document/8954181
+Original dataset source is https://ieeexplore.ieee.org/document/8954181

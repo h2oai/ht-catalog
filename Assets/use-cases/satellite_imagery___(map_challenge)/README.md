@@ -147,8 +147,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.aicrowd.com/challenges/mapping-challenge
+Original dataset source is https://www.aicrowd.com/challenges/mapping-challenge

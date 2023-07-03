@@ -134,4 +134,4 @@ CC0: Public Domain
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : http://www.peterjbentley.com/heartchallenge/
+Original dataset source is http://www.peterjbentley.com/heartchallenge/

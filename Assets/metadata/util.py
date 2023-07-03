@@ -1,3 +1,7 @@
+"""
+Utility script to generate readme and index.html
+"""
+
 import os 
 import pandas as pd 
 
@@ -7,32 +11,40 @@ def rename_usecases():
 		n = "_".join(n.split("_")[1:])
 		os.rename("use-cases/" + f, "use-cases/" + n)
 
-def master_readme():
-	df = pd.read_csv("use_cases.csv")
+def update_master_readme():
+	df = pd.read_csv("use_cases.csv", encoding= 'unicode_escape')
 
-	htm = """
+	html = """
 | # | Use-Case       | Industry | Prediction Target | Problem Type | Data Type |
 |---| -------------- | ------- | ----------------- | ----- | ----- |\n"""
 
-	for i, r in df.head(100).iterrows():
+	for i, r in df.iterrows():
 		r = dict(r) 
-		url = "https://github.com/h2oai/ht-catalog/tree/main/assets/use-cases/"
-		htm += f"| {int(r['id'])}. | [{r['use-case']}]({url + r['github_url'].strip()})| {r['industry']} | {r['prediction-target']} | {r['problem-type']} | {r['data-type']} |"
-		htm += "\n"
-	print (htm)
+		url = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
+		html += f"| {int(r['id'])}. | [{r['use-case']}]({url + r['github_url'].strip()})| {r['industry']} | {r['prediction-target']} | {r['problem-type']} | {r['data-type']} |"
+		html += "\n"
+	return html
 
-def individual_usecases():
-	base = "https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/"
-	base_l = "../use-cases/"
+def update_all_usecases_readme():
+	df = pd.read_csv("use_cases.csv", encoding= 'unicode_escape').fillna("NA")
+	
+	for i, r in df.iterrows():
+		idd = "646864e3c695f7c721514159bd6c59520dab7438"
+		
+		## custom fix for pest_classification 
+		if r['github_url'] == 'pest_classification':
+			idd = "73e76f4b255b46596224efa4da3aedc9320ce970"
 
-	df = pd.read_csv("use_cases.csv").fillna("NA")
-	for i, r in df.head(100).iterrows():
+		## url for github
+		base = f"https://github.com/h2oai/ht-catalog/blob/{idd}/Assets/use-cases/"
+		base_l = "../use-cases/"
+
 		r = dict(r)
-		url = base + r['github_url'].strip()  + "/"
+		url = base + r['github_url'] + "/"
+		url_l = base_l + r['github_url'] + "/"
 
-		url_l = base_l + r['github_url'].strip()  + "/"
+		## create YAML string
 		yaml_string = ""
-
 		try:
 			for _ in os.listdir(url_l):
 				if _.startswith("log"):
@@ -40,6 +52,11 @@ def individual_usecases():
 					yaml_string = open(url_l +_+"/"+ yaml_file).read()
 		except Exception as E:
 			pass
+
+		## create individual readme
+
+		if r["original-source"] == 'NA':
+			r["original-source"] = "Unknown"
 
 		readme = f"""## Use Case {int(r['id'])}: {r['use-case']}
 
@@ -98,24 +115,21 @@ Model Configuration (Hydrogen Torch yaml)
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : {r["original-source"]}
+Original dataset source is {r["original-source"]}
 """
-		# if 'pest_clas' in url_l:
-			# print (url_l)
-		# 	continue
+
+		## add this to each use-case
 		open(url_l + "readme.md", "w").write(readme)
 
-		# break
-
-def html_generator():
+def update_webpage_html():
 	visited = []
 	url = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
 	html = ""
-	df = pd.read_csv("use_cases.csv").fillna("NA")
-	for i, r in df.head(100).iterrows():
+	df = pd.read_csv("use_cases.csv", encoding= 'unicode_escape').fillna("NA")
+	for i, r in df.iterrows():
 		r = dict(r)
 
-		## Do not remove
+		## Uncomment to create new options in dropdown in HTML
 		# if r['industry'].replace(" ", "") not in visited:
 		# 	visited.append(r['industry'].replace(" ", ""))
 		# 	print (f"""<option value="{r['industry'].replace(" ", "")}">{r['industry']}</option>""")
@@ -127,9 +141,19 @@ def html_generator():
 	<p><span class="badge1">{r['problem-type']}</span> <span class="badge1">{r['industry']}</span> <span class="badge1">{r['data-type']}</span> </p>
 	<p class="card-icon"><a target='_blank' href="{url + r['github_url'].strip()}"><i class="fa-solid fa-arrow-right"></i></a></p>
 </div>"""
+	return html
 
-	print (html)	
+if __name__ == '__main__':
+	## paste the readme_table in README.md
+	# readme_table = update_master_readme()
+	# print (readme_table)
+	
+	## replace the webpage_cards html in index.html between <! Add Here> and <! End Here>
+	# webpage_cards = update_webpage_html()
+	# print (webpage_cards)
 
-# master_readme()
-# individual_usecases()
-# html_generator()
+	## update readme of all usecases
+	update_all_usecases_readme()
+	
+
+

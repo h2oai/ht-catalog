@@ -132,8 +132,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html
+Original dataset source is http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html

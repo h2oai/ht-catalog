@@ -129,8 +129,8 @@ training:
 
 ### License
 
-Attribution 4.0 International (CC BY 4.0)
+CC BY-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
+Original dataset source is https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T

@@ -137,4 +137,4 @@ Open Data Commons Open Database License (ODbL) v1.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.scribd.com/document/381301116/DirencNet-ResistorNet#
+Original dataset source is https://www.scribd.com/document/381301116/DirencNet-ResistorNet#

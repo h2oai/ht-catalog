@@ -1,821 +1,968 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>H2O.ai Catalog | Hydrogen Torch Use Cases</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2O.ai Catalog | Hydrogen Torch Use Cases</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://github.com/h2oai/ht-catalog/blob/4e3f96ff2d895bb9c6b60b513d1672bc9e5e67bb/Assets/metadata/favicon.ico" rel="icon">
+    <script type="text/javascript">
+       window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) }
+       heap.load("1090178399");
+    </script>
+    <style>
+        body {
+         font-family: Roboto;
+         margin: 20px;
+        }
+        .filter-container {
+         display: flex;
+         align-items: center;
+         margin-bottom: 20px;
+        }
+        .filter-container p {
+         margin-right: 10px;
+         font-weight: bold;
+        }
+        .filterby {
+         padding: 5px;
+         margin-right: 10px;
+        }
+        .card-icon {
+         position: absolute;
+         bottom: 0px;
+         right: 15px;
+         color: #000;
+         font-size: 24px;
+         background: #ffc107;
+         padding: 10px;
+         border-radius: 8px;
+         color: azure;
+        }
+        .card-icon a{
+         color: azure;
+        }
+        #FilterContainer {
+         margin-left: 10%;
+        }
+        .card-badge {
+         position: absolute;
+         top: 4px;
+         right: 7px;
+         color: #000;
+         /* font-size: 24px; */
+        }
+        .badge1 {
+         margin-right: 1%;
+       font-size: 14px;
+       background: #fda;
+       padding: 3px 9px;
+       border-radius: 5px;
+       line-height: 30px;
+        }
+        .card-title {
+         margin-top: 12px;
+        }
+        .js2 {
+           padding: 5px;
+           background: #ffc107;
+        }
+        .all {
+         width: 30%;
+         height: 333px;
+         padding: 20px;
+         margin-right: 2%;
+         border: 1px solid #d0d0d0;
+        }
 
+       /* Media Query for screens smaller than 600px */
+       @media (max-width: 600px) {
+         .all {
+           width: 100%;
+           margin-right: 0;
+           height: 300px;
+         }
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://github.com/h2oai/ht-catalog/blob/4e3f96ff2d895bb9c6b60b513d1672bc9e5e67bb/Assets/metadata/favicon.ico"/>
-  <script type="text/javascript">
-    window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) }
-    heap.load("1090178399");
-  </script>
+         .card-title {
+           font-size: 1.75rem;
+         }
 
-  <style>
-     body {
-      font-family: Roboto;
-      margin: 20px;
-     }
-     .filter-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-     }
-     .filter-container p {
-      margin-right: 10px;
-      font-weight: bold;
-     }
-     .filterby {
-      padding: 5px;
-      margin-right: 10px;
-     }
-     .card-icon {
-      position: absolute;
-      bottom: 0px;
-      right: 15px;
-      color: #000;
-      font-size: 24px;
-      background: #ffc107;
-      padding: 10px;
-      border-radius: 8px;
-      color: azure;
-     }
-     .card-icon a{
-      color: azure;
-     }
-     #FilterContainer {
-      margin-left: 10%;
-     }
-     .card-badge {
-      position: absolute;
-      top: 4px;
-      right: 7px;
-      color: #000;
-      /* font-size: 24px; */
-     }
-     .badge1 {
-      margin-right: 1%;
-    font-size: 14px;
-    background: #fda;
-    padding: 3px 9px;
-    border-radius: 5px;
-    line-height: 30px;
-     }
-     .card-title {
-      margin-top: 12px;
-     }
-     .js2 {
-        padding: 5px;
-        background: #ffc107;
-     }
-     .all {
-      width: 30%;
-      height: 333px;
-      padding: 20px;
-      margin-right: 2%;
-      border: 1px solid #d0d0d0;
-     }
+         .badge1 {
+           font-size: 1.0rem;
+           margin-bottom: 3px;
+         }
+       }
 
-    /* Media Query for screens smaller than 600px */
-    @media (max-width: 600px) {
-      .all {
-        width: 100%;
-        margin-right: 0;
-        height: 300px;
-      }
+        .filter-class {
+         width: 75%;
+         margin-left: 14%;
+         margin-bottom: 3%;
+         margin-top: 5%;
+        }
+        .heading {
+         margin-top: 4%;
+         font-size: 4.75rem;
+         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+         font-weight: 300;
+         line-height: 1.2;
+         letter-spacing: -0.00833em;
+        }
+        .subheading {
+         font-size: 2.5rem;
+         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+         font-weight: 300;
+         line-height: 1.334;
+         letter-spacing: 0em;
+        }
+        .card:hover{
+         /*box-shadow: 1px 1px 1px #222;    */
+         transform: scale(1.01);
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-      .card-title {
-        font-size: 1.75rem;
-      }
-
-      .badge1 {
-        font-size: 1.0rem;
-        margin-bottom: 3px;
-      }
-    }
-
-     .filter-class {
-      width: 75%;
-      margin-left: 14%;
-      margin-bottom: 3%;
-      margin-top: 5%;
      }
-     .heading {
-      margin-top: 4%;
-      font-size: 4.75rem;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-weight: 300;
-      line-height: 1.2;
-      letter-spacing: -0.00833em;
-     }
-     .subheading {
-      font-size: 2.5rem;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-weight: 300;
-      line-height: 1.334;
-      letter-spacing: 0em;
-     }
-     .card:hover{
-      /*box-shadow: 1px 1px 1px #222;    */
-      transform: scale(1.01);
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
-  }
-  </style>
+    </style>
 </head>
-
 <body>
-
-  <div class="container">
-    <div align="center" class="row">
-      <h1 class='heading'>H2O.ai <span class='js2'>Catalog</span></h1>
-      <p class='subheading'>Collection of Hydrogen Torch Use Cases</p>
+    <div class="container">
+        <div align="center" class="row">
+            <h1 class='heading'>H2O.ai <span class='js2'>Catalog</span></h1>
+            <p class='subheading'>Collection of Hydrogen Torch Use Cases</p>
+        </div>
+        <div class="row g-6 filter-class">
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Industry</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="Banking">
+                        Banking
+                    </option>
+                    <option value="Manufacturing">
+                        Manufacturing
+                    </option>
+                    <option value="AI4Good">
+                        AI4Good
+                    </option>
+                    <option value="Media">
+                        Media
+                    </option>
+                    <option value="Healthcare">
+                        Healthcare
+                    </option>
+                    <option value="Government">
+                        Government
+                    </option>
+                    <option value="Agriculture">
+                        Agriculture
+                    </option>
+                    <option value="Security">
+                        Security
+                    </option>
+                    <option value="Marketing">
+                        Marketing
+                    </option>
+                    <option value="Research">
+                        Research
+                    </option>
+                    <option value="Sports">
+                        Sports
+                    </option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Problem Type</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="ObjectDetection">
+                        Object Detection
+                    </option>
+                    <option value="ImageMetricLearning">
+                        Image Metric Learning
+                    </option>
+                    <option value="ImageSegmentation">
+                        Image Segmentation
+                    </option>
+                    <option value="ImageClassification">
+                        Image Classification
+                    </option>
+                    <option value="TextSequencetoSequence">
+                        Text Sequence to Sequence
+                    </option>
+                    <option value="AudioClassification">
+                        Audio Classification
+                    </option>
+                    <option value="ImageRegression">
+                        Image Regression
+                    </option>
+                    <option value="TextClassification">
+                        Text Classification
+                    </option>
+                    <option value="ImageSemanticSegmentation">
+                        Image Semantic Segmentation
+                    </option>
+                    <option value="TextRegression">
+                        Text Regression
+                    </option>
+                    <option value="TextTokenClassification">
+                        Text Token Classification
+                    </option>
+                    <option value="TextMetricLearning">
+                        Text Metric Learning
+                    </option>
+                    <option value="TextSpanPrediction">
+                        Text Span Prediction
+                    </option>
+                    <option value="SpeechRecognition">
+                        Speech Recognition
+                    </option>
+                    <option value="3DImageSemanticSegmentation">
+                        3D Image Semantic Segmentation
+                    </option>
+                    <option value="AudioRegression">
+                        Audio Regression
+                    </option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Data Type</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="Image">
+                        Image
+                    </option>
+                    <option value="Text">
+                        Text
+                    </option>
+                    <option value="Audio">
+                        Audio
+                    </option>
+                    <option value="Speech">
+                        Speech
+                    </option>
+                    <option value="3DImage">
+                        3D Image
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="row" id="FilterContainer">
+            <!-- paste here start -->
+            <div class="card mb-4 all ObjectDetection Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Document Signature Detection</h3>
+                <p>Detect signatures in the digital documents</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageMetricLearning Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Document Signature Verification</h3>
+                <p>Verify, match, and compare the digital signatures</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_verification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Smoke Segmentation</h3>
+                <p>Segment the presence and location of smoke within images</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Smoke Classification</h3>
+                <p>Classify whether a given image contain smoke(s) or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Underwater Starfish Detection</h3>
+                <p>Detect the underwater starfish using object detection techniques</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/underwater_starfish_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Food Type Classification</h3>
+                <p>Categorize food types based on their visual characteristics</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Media</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/food_classifications" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Surface Crack Classification</h3>
+                <p>Classify whether a given image contain crack(s) or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crack_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Brain Tumor Classification</h3>
+                <p>Predict the type of tumor based on medical imaging data</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Road Quality Classification</h3>
+                <p>Classify the roads based on their quality</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_quality_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Building Segmentation</h3>
+                <p>Segment buildings in the satellite images</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/satellite_imagery___(map_challenge)" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Hurriance Damage Classification</h3>
+                <p>Classify if a given region(area) contains flooding damage or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hurriance_damage_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Flooding Area Segmentation</h3>
+                <p>Segment the water regions in flooding area</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flooding_area_prediction" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Product Defect Classification</h3>
+                <p>Classify the defects in the machinery</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/product_defect_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Flooding Area Segmentation (multi-label)</h3>
+                <p>Segment the flooding area in UAS (Unarmed Aerial System) imageries</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flood_area_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Road Segmentation</h3>
+                <p>Segment the roads, potholes, and footpaths in a given image</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/indian_roads_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Bird Species Classification</h3>
+                <p>Classify the bird species in a given image</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Pest Species Classification</h3>
+                <p>Classify the pest species in a given image</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pest_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Concrete Fiber segmentation</h3>
+                <p>Identify and segment fibers in concrete images</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fiber_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSequencetoSequence Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Document Summarization</h3>
+                <p>Generate a concise summary of a longer text</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/text_summarization" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Whale Audio Detection</h3>
+                <p>Identify whether an audio signal is related to a whale or not</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/whale_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Pill Quality Classification</h3>
+                <p>Classify whether a pill is dirty or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_quality_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Pill Detection</h3>
+                <p>Detect the pills in a given image</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Steel Defect Classification</h3>
+                <p>Identify and classify defects in steel surfaces</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/steel_defect_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Textile Defect Classification</h3>
+                <p>identify whether the textile is damage or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/textile_defect_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">PCB Defect Detection</h3>
+                <p>Detect and classify the defects in Printed Circuit Boards</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pcb_defect" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Tea Leaves Disease Classification</h3>
+                <p>Identify and classify the disease in the leaves</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tea_leaves_disease_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Brain MRI Segmentation</h3>
+                <p>Segment FLAIR abnormality regions in brain MR images</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Casting Defect Classification</h3>
+                <p>Detect and classify the casting defects</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/casting_defect_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageRegression Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Public Crowd Counting</h3>
+                <p>Estimate the number of people in a given area</p>
+                <p><span class="badge1">Image Regression</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crowd_counting" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Document Stamp Detection</h3>
+                <p>Detect stamps in the digital documents using object detection techniques</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/stamp_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ASL Alphabet Classification</h3>
+                <p>Classify the American Sign Language (ASL) alphabet letters from images</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/asl_alphabet_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Crop Classification</h3>
+                <p>Identify different types of crops in an agricultural field</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crop_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Urban Road Detection</h3>
+                <p>Detect and segment the roads in urban areas</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Weather Classification</h3>
+                <p>Classify the weather type from a given image</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/weather_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Wind Turbines Detection</h3>
+                <p>Detect the wind turbines using object detection techniques</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wind_turbines_object_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Skin Cancer Segmentation</h3>
+                <p>Detect and segment skin lesions in medical images</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/skin_cancer_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio AI4Good">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Bird Voice Classification</h3>
+                <p>Identify the bird by using their audio</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_voice_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Urban Sound Classification</h3>
+                <p>Classify categories of audio signals in the urban environments</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/urban_sound_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Printer Defect Detection</h3>
+                <p>Detect malicious defects in 3D printer operations</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/printer_defect_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">AI-Generated Image Detection</h3>
+                <p>Classify whether an image is generated by an AI or not</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ai_generated_image_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Driving Lane Detection</h3>
+                <p>Identify and segment the lanes on the road</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/lane_detection_for_driving" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Audio Emotion Detection</h3>
+                <p>Classify human emotions from audio signals</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_emotion_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Document Classification</h3>
+                <p>Classify different types of documents based on their content</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/document_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Agriculture">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Germination Seedling Detection</h3>
+                <p>Detect seedlings to assess quality of germination process</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/germination_seedling_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Traffic Light Detection</h3>
+                <p>Detect the traffic lights in image data</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/traffic_light_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Trash Detection</h3>
+                <p>Identify and classify various types of trash objects</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/trash_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Hardhat Detection</h3>
+                <p>Detect the presence of hardhats in images</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hardhat_object_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Heartbeat Sound Classification</h3>
+                <p>Classify heartbeat sounds into different categories</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/heartbeat_sound_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Disaster Tweets Classification</h3>
+                <p>Classify tweets as either disaster-related or not disaster-related</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Government</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/disaster_tweets_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Security">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Email Spam Classification</h3>
+                <p>Classify emails into spam or non-spam categories</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/email_spam_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Online Reviews Classification</h3>
+                <p>Classify the online reviews as positive, negative, and neutral</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/amazon_reviews" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Spoken Digits Classification</h3>
+                <p>Classify the spoken digits into 0 to 9</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_samples_of_spoken_digits" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageMetricLearning Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Similar Ads Image Identification</h3>
+                <p>Identify the images of same bicycle within the same advertisement</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/online_bicycle_ads" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSemanticSegmentation Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Car Parts Segmentation</h3>
+                <p>Segment the car parts in a given image containing one or more cars</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/car_parts_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextRegression Text Marketing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Hotel Recommendations</h3>
+                <p>Rate the quality of 6 differnet facilities of the hotels using their reviews</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hotel_reviews" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Environmental Sound Classification</h3>
+                <p>Classify the environmental sounds using audio classification techniques</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/environmental_sounds" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextTokenClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Physical Objects Entity Recognition</h3>
+                <p>Recognize the physical objects of the tokens in each text</p>
+                <p><span class="badge1">Text Token Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/physical_objects_name_specified_texts" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSequencetoSequence Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">News Summarization</h3>
+                <p>Summarize the news articles</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/cnn_and_daily_mail_news_stories" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextRegression Text Marketing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Article Readability Scoring</h3>
+                <p>Calculate the readability scores of the texts</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/texts_with_readability_scores" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Toxic Comment Classification</h3>
+                <p>Classify the online comments into different categories</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wikipedia_toxic_comments" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageMetricLearning Image Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Person Re-Identification</h3>
+                <p>Identify the images of the same person from set of person images</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/person_images" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Security">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Protests Related Texts Identification</h3>
+                <p>Identify the protests related texts</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/protests_related_texts" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextMetricLearning Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Similar Questions Grouping</h3>
+                <p>Identify the similar questions asked in an online forum</p>
+                <p><span class="badge1">Text Metric Learning</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/askubuntu_questions" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextRegression Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Search Queries Wellformedness</h3>
+                <p>Rate the wellformedness of the online search engine queries</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/google_search_queries" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSpanPrediction Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Question Answering in Contexts</h3>
+                <p>Answer the questions from given contexts</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/questions_with_answers_and_contexts" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all SpeechRecognition Speech Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Speech Commands Classification</h3>
+                <p>Transcribe the spoken commands and convert them into actionable instructions</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/commands_speech_recognition" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all SpeechRecognition Speech Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Speech Intent Classification</h3>
+                <p>Categorize the user's intended action or query based on the spoken inputs</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/intent_classification_speech_recognition" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all SpeechRecognition Speech Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Speech Transcript Generation</h3>
+                <p>Generate transcripts for US english speech samples</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Government</span> <span class="badge1">Speech</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/phone_banking_speech_samples" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all 3DImageSemanticSegmentation 3DImage Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">CT-Scan Chest and Lungs Segmentation</h3>
+                <p>Segment the human chest and lungs in CT-Scan images</p>
+                <p><span class="badge1">3D Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">3D Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_ct_scans" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSemanticSegmentation Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Nerves Segmentation in Ultrasound Images</h3>
+                <p>Segment a collection of nerves in the ultrasound images</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ultrasound_images_of_brachial_plexus" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioRegression Text Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Covid-19 Cough Audio Regression</h3>
+                <p>Predict the severity of cough using cough audio</p>
+                <p><span class="badge1">Audio Regression</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_cough_audio_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">News Article Classification</h3>
+                <p>Classify news articles in different categories</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/newsgroup_document_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Fake News Classification</h3>
+                <p>Detect fake news using text classification techniques</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_news_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Biomedical Text Classification</h3>
+                <p>Classify biomedicine scientific articles in different categories</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/biomedical_text_publication_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Book Rating Regression</h3>
+                <p>Predict the book rating using their reviews</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/book_rating_text_regression" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Disease Classification</h3>
+                <p>Predict potential diseases or medical conditions based on reported symptoms</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/symptom_to_desease_prediction" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Tweet Emotion Detection</h3>
+                <p>Detect and classify emotions expressed in tweets</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emotion_detection_from_tweets" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Security">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Fake Job Posting Detection</h3>
+                <p>Detect and classify fraudulent job postings in online platforms</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_job_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Mental Disorder identification</h3>
+                <p>Identify and classify mental disorders</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/mental_disorder_identification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSpanPrediction Text Research">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">SQL Create Context</h3>
+                <p>Generate SQL queries or statements based on contextual information</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Research</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/sql_create_context" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSpanPrediction Text Security">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Adversarial-QA</h3>
+                <p>Develop and test robust question-answering systems against adversarial attacks</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Security</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/adversarialqa" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSequencetoSequence Text Research">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Scientific Papers NER</h3>
+                <p>Extract and classify named entities from scientific papers</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Research</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/scientific_papers" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Bank Emotion Detection</h3>
+                <p>Detect and classify customer emotions during interactions with banking services</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Banking</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bank_emotion_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextSpanPrediction Text Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Insurance Holder Detection</h3>
+                <p>Determine and classify individuals holding insurance policies or claims</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Banking</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/insurance_holder_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Media">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Music Instrument Classification</h3>
+                <p>Classify musical instruments based on audio recordings</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Media</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/musical_instruments_audio_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Human Stress Prediction</h3>
+                <p>Predict individuals stress levels based on physiological or behavioral signals</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/human_stress_prediction" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Gun Type Classification</h3>
+                <p>Recognize and classify firearms or gun-related objects from images or video data</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/gun_classifier" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Siren Sounds Classification</h3>
+                <p>Detect and classify emergency vehicle siren sounds from audio data</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emergency_vehicle_siren_sounds" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Banking">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Speaker Recognition</h3>
+                <p>Identify and verify individuals based on vocal characteristics or speech patterns</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/speaker_recognition" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Security">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Malicious Drones Prediction</h3>
+                <p>Predict and classify potentially harmful or unauthorized drones</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Security</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malicious_drones_prediction" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Face Mask Detection</h3>
+                <p>Detect and classify individuals wearing or not wearing face masks from images or video streams</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/face_mask_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSemanticSegmentation Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Road Footpath Recognition</h3>
+                <p>Detect and recognize footpaths or pedestrian walkways in images or video data</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/footpath_recognition" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Resistor Image Classification</h3>
+                <p>Classify an input resistor image into its corresponding type or category</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/resistor_image_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Tire Texture Classification</h3>
+                <p>Classify an input tire image into its corresponding texture category</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tire_texture_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Flower Recognition</h3>
+                <p>Classify an input flower image into its corresponding species or category</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flower_recognition" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Railway Defect Classification</h3>
+                <p>Classify an input image or video frame into the corresponding defect category</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/railway_defect_classification" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageSemanticSegmentation Image Government">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Motorcycle Rider Segementation</h3>
+                <p>Segment the motorcycle and the rider from the surrounding nighttime environment</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/motorcycle_night_ride_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Sports">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Football Player segmentation</h3>
+                <p>Segment each football player present in the video frames</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Sports</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/football_player_segmentation" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all ImageClassification Image Healthcare">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Malaria Cell Detection</h3>
+                <p>Identify and classify red blood cells as infected or uninfected with malaria parasites</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card mb-4 all AudioClassification Audio Manufacturing">
+                <font color='#FFC107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">Audio Anonmaly Detection</h3>
+                <p>Classifies the audio segments into 4 machine parts: valve, fan, slider and pump</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span></p>
+                <p class="card-icon"><a href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all" target='_blank'><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+        </div>
     </div>
-
-    <div class="row g-6 filter-class">
-      <div class="col-sm-4">
-        <label for="specificSizeSelect">Industry</label>
-        <select class="filterby form-select" id="specificSizeSelect">
-          <option value='all'>All</option>
-            <option value="Banking">Banking</option>
-            <option value="Manufacturing">Manufacturing</option>
-            <option value="AI4Good">AI4Good</option>
-            <option value="Media">Media</option>
-            <option value="Healthcare">Healthcare</option>
-            <option value="Government">Government</option>
-            <option value="Agriculture">Agriculture</option>
-            <option value="Security">Security</option>
-            <option value="Marketing">Marketing</option>
-            <option value="Research">Research</option>
-            <option value="Sports">Sports</option>
-        </select>
-      </div>
-      <div class="col-sm-4">
-        <label for="specificSizeSelect">Problem Type</label>
-        <select class="filterby form-select" id="specificSizeSelect">
-          <option value='all'>All</option>
-            <option value="ObjectDetection">Object Detection</option>
-            <option value="ImageMetricLearning">Image Metric Learning</option>
-            <option value="ImageSegmentation">Image Segmentation</option>
-            <option value="ImageClassification">Image Classification</option>
-            <option value="TextSequencetoSequence">Text Sequence to Sequence</option>
-            <option value="AudioClassification">Audio Classification</option>
-            <option value="ImageRegression">Image Regression</option>
-            <option value="TextClassification">Text Classification</option>
-            <option value="ImageSemanticSegmentation">Image Semantic Segmentation</option>
-            <option value="TextRegression">Text Regression</option>
-            <option value="TextTokenClassification">Text Token Classification</option>
-            <option value="TextMetricLearning">Text Metric Learning</option>
-            <option value="TextSpanPrediction">Text Span Prediction</option>
-            <option value="SpeechRecognition">Speech Recognition</option>
-            <option value="3DImageSemanticSegmentation">3D Image Semantic Segmentation</option>
-            <option value="AudioRegression">Audio Regression</option>
-        </select>
-    </div>
-      <div class="col-sm-4">
-        <label for="specificSizeSelect">Data Type</label>
-        <select class="filterby form-select" id="specificSizeSelect">
-            <option value='all'>All</option>
-            <option value="Image">Image</option>
-            <option value="Text">Text</option>
-            <option value="Audio">Audio</option>
-            <option value="Speech">Speech</option>
-            <option value="3DImage">3D Image</option>
-        </select>
-    </div>
-      
-
-    </div>
-
-    <div class="row" id="FilterContainer">
-      
-        <!-- paste here start -->
-
-    <div class="card mb-4 all ObjectDetection Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Document Signature Detection</h3>
-    <p>Detect signatures in the digital documents</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageMetricLearning Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Document Signature Verification</h3>
-    <p>Verify, match, and compare the digital signatures</p>
-    <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_verification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Smoke Segmentation</h3>
-    <p>Segment the presence and location of smoke within images</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Smoke Classification</h3>
-    <p>Classify whether a given image contain smoke(s) or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Underwater Starfish Detection</h3>
-    <p>Detect the underwater starfish using object detection techniques</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/underwater_starfish_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Food Type Classification</h3>
-    <p>Categorize food types based on their visual characteristics</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Media</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/food_classifications"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Surface Crack Classification</h3>
-    <p>Classify whether a given image contain crack(s) or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crack_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Brain Tumor Classification</h3>
-    <p>Predict the type of tumor based on medical imaging data</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Road Quality Classification </h3>
-    <p>Classify the roads based on their quality</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_quality_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Building Segmentation</h3>
-    <p>Segment buildings in the satellite images</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/satellite_imagery___(map_challenge)"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Hurriance Damage Classification</h3>
-    <p>Classify if a given region(area) contains flooding damage or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hurriance_damage_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Flooding Area Segmentation </h3>
-    <p>Segment the water regions in flooding area</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flooding_area_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Product Defect Classification</h3>
-    <p>Classify the defects in the machinery</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/product_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Flooding Area Segmentation (multi-label)</h3>
-    <p>Segment the flooding area in UAS (Unarmed Aerial System) imageries</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flood_area_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Road Segmentation</h3>
-    <p>Segment the roads, potholes, and footpaths in a given image</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/indian_roads_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Bird Species Classification</h3>
-    <p>Classify the bird species in a given image</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Agriculture">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Pest Species Classification</h3>
-    <p>Classify the pest species in a given image</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pest_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Concrete Fiber segmentation</h3>
-    <p>Identify and segment fibers in concrete images</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fiber_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSequencetoSequence Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Document Summarization</h3>
-    <p>Generate a concise summary of a longer text</p>
-    <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/text_summarization"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Whale Audio Detection</h3>
-    <p>Identify whether an audio signal is related to a whale or not</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/whale_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Healthcare ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Pill Quality Classification</h3>
-    <p>Classify whether a pill is dirty or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_quality_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Healthcare ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Pill Detection</h3>
-    <p>Detect the pills in a given image</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Healthcare </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Steel Defect Classification</h3>
-    <p>Identify and classify defects in steel surfaces</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/steel_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Textile Defect Classification</h3>
-    <p>identify whether the textile is damage or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/textile_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">PCB Defect Detection</h3>
-    <p>Detect and classify the defects in Printed Circuit Boards</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pcb_defect"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Agriculture">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Tea Leaves Disease Classification</h3>
-    <p>Identify and classify the disease in the leaves</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tea_leaves_disease_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Brain MRI Segmentation</h3>
-    <p>Segment FLAIR abnormality regions in brain MR images</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Casting Defect Classification</h3>
-    <p>Detect and classify the casting defects</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/casting_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageRegression Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Public Crowd Counting</h3>
-    <p>Estimate the number of people in a given area</p>
-    <p><span class="badge1">Image Regression</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crowd_counting"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Document Stamp Detection</h3>
-    <p>Detect stamps in the digital documents using object detection techniques</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/stamp_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">ASL Alphabet Classification</h3>
-    <p>Classify the American Sign Language (ASL) alphabet letters from images</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/asl_alphabet_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Agriculture">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Crop Classification</h3>
-    <p>Identify different types of crops in an agricultural field</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crop_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Urban Road Detection</h3>
-    <p>Detect and segment the roads in urban areas</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Weather Classification</h3>
-    <p>Classify the weather type from a given image</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/weather_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Wind Turbines Detection</h3>
-    <p>Detect the wind turbines using object detection techniques</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wind_turbines_object_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Skin Cancer Segmentation</h3>
-    <p>Detect and segment skin lesions in medical images</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/skin_cancer_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio AI4Good">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Bird Voice Classification</h3>
-    <p>Identify the bird by using their audio</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_voice_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Urban Sound Classification</h3>
-    <p>Classify categories of audio signals in the urban environments</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/urban_sound_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Printer Defect Detection</h3>
-    <p>Detect malicious defects in 3D printer operations</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/printer_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">AI-Generated Image Detection</h3>
-    <p>Classify whether an image is generated by an AI or not</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ai_generated_image_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSegmentation Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Driving Lane Detection</h3>
-    <p>Identify and segment the lanes on the road</p>
-    <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/lane_detection_for_driving"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Audio Emotion Detection</h3>
-    <p>Classify human emotions from audio signals</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_emotion_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Document Classification</h3>
-    <p>Classify different types of documents based on their content</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/document_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Agriculture">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Germination Seedling Detection</h3>
-    <p>Detect seedlings to assess quality of germination process</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/germination_seedling_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Traffic Light Detection</h3>
-    <p>Detect the traffic lights in image data</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/traffic_light_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Trash Detection</h3>
-    <p>Identify and classify various types of trash objects </p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/trash_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Hardhat Detection</h3>
-    <p>Detect the presence of hardhats in images</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hardhat_object_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Heartbeat Sound Classification</h3>
-    <p>Classify heartbeat sounds into different categories</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/heartbeat_sound_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Disaster Tweets Classification</h3>
-    <p>Classify tweets as either disaster-related or not disaster-related</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Government</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/disaster_tweets_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Security">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Email Spam Classification</h3>
-    <p>Classify emails into spam or non-spam categories</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/email_spam_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Online Reviews Classification</h3>
-    <p>Classify the online reviews as positive, negative, and neutral</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/amazon_reviews"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Spoken Digits Classification</h3>
-    <p>Classify the spoken digits into 0 to 9</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_samples_of_spoken_digits"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageMetricLearning Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Similar Ads Image Identification</h3>
-    <p>Identify the images of same bicycle within the same advertisement</p>
-    <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/online_bicycle_ads"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSemanticSegmentation Image Manufacturing ">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Car Parts Segmentation</h3>
-    <p>Segment the car parts in a given image containing one or more cars</p>
-    <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/car_parts_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextRegression Text Marketing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Hotel Recommendations</h3>
-    <p>Rate the quality of 6 differnet facilities of the hotels using their reviews</p>
-    <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hotel_reviews"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Environmental Sound Classification</h3>
-    <p>Classify the environmental sounds using audio classification techniques</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/environmental_sounds"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextTokenClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Physical Objects Entity Recognition</h3>
-    <p>Recognize the physical objects of the tokens in each text</p>
-    <p><span class="badge1">Text Token Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/physical_objects_name_specified_texts"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSequencetoSequence Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">News Summarization</h3>
-    <p>Summarize the news articles</p>
-    <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/cnn_and_daily_mail_news_stories"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextRegression Text Marketing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Article Readability Scoring</h3>
-    <p>Calculate the readability scores of the texts</p>
-    <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/texts_with_readability_scores"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Toxic Comment Classification</h3>
-    <p>Classify the online comments into different categories</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wikipedia_toxic_comments"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageMetricLearning Image Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Person Re-Identification</h3>
-    <p>Identify the images of the same person from set of person images</p>
-    <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/person_images"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Security">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Protests Related Texts Identification</h3>
-    <p>Identify the protests related texts</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/protests_related_texts"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextMetricLearning Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Similar Questions Grouping</h3>
-    <p>Identify the similar questions asked in an online forum</p>
-    <p><span class="badge1">Text Metric Learning</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/askubuntu_questions"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextRegression Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Search Queries Wellformedness</h3>
-    <p>Rate the wellformedness of the online search engine queries</p>
-    <p><span class="badge1">Text Regression</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/google_search_queries"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSpanPrediction Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Question Answering in Contexts</h3>
-    <p>Answer the questions from given contexts</p>
-    <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/questions_with_answers_and_contexts"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all SpeechRecognition Speech Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Speech Commands Classification</h3>
-    <p>Transcribe the spoken commands and convert them into actionable instructions</p>
-    <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/commands_speech_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all SpeechRecognition Speech Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Speech Intent Classification</h3>
-    <p>Categorize the user's intended action or query based on the spoken inputs</p>
-    <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/intent_classification_speech_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all SpeechRecognition Speech Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Speech Transcript Generation</h3>
-    <p>Generate transcripts for US english speech samples</p>
-    <p><span class="badge1">Speech Recognition</span> <span class="badge1">Government</span> <span class="badge1">Speech</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/phone_banking_speech_samples"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all 3DImageSemanticSegmentation 3DImage Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">CT-Scan Chest and Lungs Segmentation</h3>
-    <p>Segment the human chest and lungs in CT-Scan images</p>
-    <p><span class="badge1">3D Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">3D Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_ct_scans"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSemanticSegmentation Image Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Nerves Segmentation in Ultrasound Images</h3>
-    <p>Segment a collection of nerves in the ultrasound images</p>
-    <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ultrasound_images_of_brachial_plexus"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioRegression Text Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Covid-19 Cough Audio Regression</h3>
-    <p>Predict the severity of cough using cough audio</p>
-    <p><span class="badge1">Audio Regression</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_cough_audio_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">News Article Classification</h3>
-    <p>Classify news articles in different categories</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/newsgroup_document_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Fake News Classification</h3>
-    <p>Detect fake news using text classification techniques</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_news_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Biomedical Text Classification</h3>
-    <p>Classify biomedicine scientific articles in different categories</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/biomedical_text_publication_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Book Rating Regression</h3>
-    <p>Predict the book rating using their reviews</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/book_rating_text_regression"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Disease Classification</h3>
-    <p>Predict potential diseases or medical conditions based on reported symptoms</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/symptom_to_desease_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Tweet Emotion Detection</h3>
-    <p>Detect and classify emotions expressed in tweets </p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emotion_detection_from_tweets"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Security">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Fake Job Posting Detection</h3>
-    <p>Detect and classify fraudulent job postings in online platforms</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_job_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Mental Disorder identification</h3>
-    <p>Identify and classify mental disorders </p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/mental_disorder_identification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSpanPrediction Text Research">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">SQL Create Context</h3>
-    <p>Generate SQL queries or statements based on contextual information </p>
-    <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Research</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/sql_create_context"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSpanPrediction Text Security">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Adversarial-QA</h3>
-    <p>Develop and test robust question-answering systems against adversarial attacks </p>
-    <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/adversarialqa"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSequencetoSequence Text Research">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Scientific Papers NER</h3>
-    <p>Extract and classify named entities from scientific papers </p>
-    <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Research</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/scientific_papers"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Bank Emotion Detection</h3>
-    <p>Detect and classify customer emotions during interactions with banking services </p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Banking</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bank_emotion_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextSpanPrediction Text Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Insurance Holder Detection</h3>
-    <p>Determine and classify individuals holding insurance policies or claims</p>
-    <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Banking</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/insurance_holder_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Media">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Music Instrument Classification</h3>
-    <p>Classify musical instruments based on audio recordings</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Media</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/musical_instruments_audio_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all TextClassification Text Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Human Stress Prediction</h3>
-    <p>Predict individuals stress levels based on physiological or behavioral signals</p>
-    <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/human_stress_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Gun Type Classification</h3>
-    <p>Recognize and classify firearms or gun-related objects from images or video data</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/gun_classifier"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Siren Sounds Classification</h3>
-    <p>Detect and classify emergency vehicle siren sounds from audio data</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emergency_vehicle_siren_sounds"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Banking">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Speaker Recognition</h3>
-    <p>Identify and verify individuals based on vocal characteristics or speech patterns</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/speaker_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Security">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Malicious Drones Prediction</h3>
-    <p>Predict and classify potentially harmful or unauthorized drones </p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Security</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malicious_drones_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ObjectDetection Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Face Mask Detection</h3>
-    <p>Detect and classify individuals wearing or not wearing face masks from images or video streams</p>
-    <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/face_mask_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSemanticSegmentation Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Road Footpath Recognition</h3>
-    <p>Detect and recognize footpaths or pedestrian walkways in images or video data</p>
-    <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/footpath_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Resistor Image Classification</h3>
-    <p>Classify an input resistor image into its corresponding type or category</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/resistor_image_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Tire Texture Classification</h3>
-    <p>Classify an input tire image into its corresponding texture category</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tire_texture_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Agriculture">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Flower Recognition</h3>
-    <p>Classify an input flower image into its corresponding species or category</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flower_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Railway Defect Classification</h3>
-    <p>Classify an input image or video frame into the corresponding defect category</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/railway_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageSemanticSegmentation Image Government">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Motorcycle Rider Segementation</h3>
-    <p>Segment the motorcycle and the rider from the surrounding nighttime environment</p>
-    <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/motorcycle_night_ride_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Sports">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Football Player segmentation</h3>
-    <p>Segment each football player present in the video frames</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Sports</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/football_player_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all ImageClassification Image Healthcare">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Malaria Cell Detection</h3>
-    <p>Identify and classify red blood cells as infected or uninfected with malaria parasites</p>
-    <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div><div class="card mb-4 all AudioClassification Audio Manufacturing">
-    <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-    <h3 class="card-title">Audio Anonmaly Detection</h3>
-    <p>Classifies the audio segments into 4 machine parts: valve, fan, slider and pump</p>
-    <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span> </p>
-    <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all"><i class="fa-solid fa-arrow-right"></i></a></p>
-</div>
-
-
-
-
-
-
-        <!-- paste here end -->
-      
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js">
-  </script> 
-  <script type="text/javascript">
-     $("select.filterby").change(function(){
-       var filters = $.map($("select.filterby").toArray(), function(e){
-         return $(e).val();
-       }).join(".");
-       
-       $("div#FilterContainer").find("div").hide();
-       $("div#FilterContainer").find("div." + filters).show();
-     });
-  </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js">
+    </script> 
+    <script type="text/javascript">
+        $("select.filterby").change(function(){
+          var filters = $.map($("select.filterby").toArray(), function(e){
+            return $(e).val();
+          }).join(".");
+          
+          $("div#FilterContainer").find("div").hide();
+          $("div#FilterContainer").find("div." + filters).show();
+        });
+    </script>
 </body>
 </html>

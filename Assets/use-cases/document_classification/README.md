@@ -137,4 +137,4 @@ CC0: Public Domain
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://paperswithcode.com/dataset/rvl-cdip
+Original dataset source is https://paperswithcode.com/dataset/rvl-cdip

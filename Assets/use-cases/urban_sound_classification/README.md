@@ -134,4 +134,4 @@ training:
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://urbansounddataset.weebly.com/urbansound8k.html
+Original dataset source is https://urbansounddataset.weebly.com/urbansound8k.html

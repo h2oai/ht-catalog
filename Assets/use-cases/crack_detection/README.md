@@ -137,4 +137,4 @@ Data files © Original Authors
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://data.mendeley.com/datasets/5y9wdsg2zt/2
+Original dataset source is https://data.mendeley.com/datasets/5y9wdsg2zt/2

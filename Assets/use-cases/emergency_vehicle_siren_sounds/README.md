@@ -130,8 +130,8 @@ training:
 
 ### License
 
-Other
+Data files © Original Authors
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/vishnu0399/emergency-vehicle-siren-sounds
+Original dataset source is https://www.kaggle.com/datasets/vishnu0399/emergency-vehicle-siren-sounds

@@ -133,8 +133,8 @@ training:
 
 ### License
 
-Unknown
+CC BY-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.mdpi.com/1424-8220/20/14/3923
+Original dataset source is https://www.mdpi.com/1424-8220/20/14/3923

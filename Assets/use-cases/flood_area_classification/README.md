@@ -129,8 +129,8 @@ training:
 
 ### License
 
-Community Data License Agreement (permissive).
+Community Data License Agreement (permissive)
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://ieeexplore.ieee.org/abstract/document/9460988
+Original dataset source is https://ieeexplore.ieee.org/abstract/document/9460988

@@ -1,9 +1,12 @@
-## H2O Use-Case Catalog
+## H2O.ai Use-Case Catalog
+
 ### 💯 Collection of 100 Hydrogen Torch Use Cases
 
 H2O Catalog is a collection of 100 different use-cases (with datasets, models, outputs) created using H2O Hydrogen Torch platform. The models cover a range of use cases and industries, making them useful for anyone looking to apply deep learning to their data. To view more about Hydrogen Torch checkout the following links:
 
 [H2O Hydrogen Torch](https://h2o.ai/platform/ai-cloud/make/hydrogen-torch/) is democratizing AI by simplifying and streamlining the process of making state-of-the-art deep learning models for all data scientists, from the novice to the expert. Deep learning is able to learn and make intelligent decisions on its own, even with limited and unstructured data available. H2O Hydrogen Torch unlocks value from this unstructured data to help teams understand it at scale. For the enterprise, H2O Hydrogen achieves AI transformation by changing the way they deliver value to both customers and internal teams.  
+
+View Website: https://h2oai.github.io/ht-catalog/
 
 ### 💡 Supported Problem Types
 
@@ -151,12 +154,9 @@ Following is the collection of 100 use-cases by different industries, different 
 | 99. | [Malaria Cell Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection)| Healthcare | Identify and classify red blood cells as infected or uninfected with malaria parasites | Image Classification | Image |
 | 100. | [Audio Anonmaly Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all)| Manufacturing | Classifies the audio segments into 4 machine parts: valve, fan, slider and pump | Audio Classification | Audio |
 
-### How To Contribute
-
-We welcome contributions to the H2O Use Case Catalog! To contribute, please follow the steps mentioned [here](https://github.com/h2oai/ht-catalog/blob/main/CONTRIBUTION.md).
-By following these steps, you can contribute to this project.
-
 ### Contribution 🛠️
+
+To contribute, please follow the steps mentioned [here](https://github.com/h2oai/ht-catalog/blob/main/CONTRIBUTION.md)
 
 Please create an [Issue](https://github.com/h2oai/ht-catalog/issues) for any improvements, suggestions or errors in the content.
 

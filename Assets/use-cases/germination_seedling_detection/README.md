@@ -151,4 +151,4 @@ CC BY-NC-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/jeroencrompvoets/germination-seedling-detection
+Original dataset source is https://www.kaggle.com/datasets/jeroencrompvoets/germination-seedling-detection

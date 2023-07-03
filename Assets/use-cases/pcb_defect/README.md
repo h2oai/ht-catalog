@@ -151,4 +151,4 @@ MIT License
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://arxiv.org/abs/1902.06197
+Original dataset source is https://arxiv.org/abs/1902.06197

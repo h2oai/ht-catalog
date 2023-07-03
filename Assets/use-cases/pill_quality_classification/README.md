@@ -133,8 +133,8 @@ training:
 
 ### License
 
-XSLA license, which is the most common license for MathWorks staff contributions.
+XSLA (MathWorks Staff Contributions)
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://github.com/matlab-deep-learning/pillQC
+Original dataset source is https://github.com/matlab-deep-learning/pillQC

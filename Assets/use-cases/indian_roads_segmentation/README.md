@@ -133,4 +133,4 @@ GPL 2
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/eyantraiit/semantic-segmentation-datasets-of-indian-roads
+Original dataset source is https://www.kaggle.com/datasets/eyantraiit/semantic-segmentation-datasets-of-indian-roads

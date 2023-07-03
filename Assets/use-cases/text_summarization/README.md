@@ -114,8 +114,8 @@ training:
 
 ### License
 
-Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)
+CC BY-NC-SA 3.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : NA
+Original dataset source is https://www.kaggle.com/datasets/nfedorov/audio-summarization

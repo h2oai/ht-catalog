@@ -133,8 +133,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets
+Original dataset source is https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets

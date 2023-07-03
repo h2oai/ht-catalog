@@ -133,4 +133,4 @@ CC BY-NC-SA 4.1
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.researchgate.net/publication/332841858_Association_of_genomic_subtypes_of_lower-grade_gliomas_with_shape_features_automatically_extracted_by_a_deep_learning_algorithm
+Original dataset source is https://www.researchgate.net/publication/332841858_Association_of_genomic_subtypes_of_lower-grade_gliomas_with_shape_features_automatically_extracted_by_a_deep_learning_algorithm

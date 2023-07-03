@@ -114,8 +114,8 @@ training:
 
 ### License
 
-Unknown
+CC BY-NC-SA 3.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://aclanthology.org/N18-2097/
+Original dataset source is https://aclanthology.org/N18-2097/

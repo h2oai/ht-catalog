@@ -133,8 +133,8 @@ training:
 
 ### License
 
-Unknown
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+Original dataset source is https://www.kaggle.com/datasets/alxmamaev/flowers-recognition

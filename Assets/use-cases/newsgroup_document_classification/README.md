@@ -122,4 +122,4 @@ Database Contents License (DbCL) v1.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : http://qwone.com/~jason/20Newsgroups/
+Original dataset source is http://qwone.com/~jason/20Newsgroups/

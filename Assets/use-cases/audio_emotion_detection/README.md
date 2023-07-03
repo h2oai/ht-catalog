@@ -134,4 +134,4 @@ CC BY-NC-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://data.mendeley.com/datasets/xm232yxf7t/1
+Original dataset source is https://data.mendeley.com/datasets/xm232yxf7t/1

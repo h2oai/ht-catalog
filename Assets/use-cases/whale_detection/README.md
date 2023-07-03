@@ -134,4 +134,4 @@ Copyright © 2011 by Cornell University and the Cornell Research Foundation, Inc
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/competitions/whale-detection-challenge/data
+Original dataset source is https://www.kaggle.com/competitions/whale-detection-challenge/data

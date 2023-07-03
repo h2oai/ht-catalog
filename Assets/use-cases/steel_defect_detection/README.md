@@ -133,8 +133,8 @@ training:
 
 ### License
 
-Attribution 4.0 International (CC BY 4.0)
+CC BY-SA 4.0
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : https://www.kaggle.com/competitions/severstal-steel-defect-detection/data?select=train_images
+Original dataset source is https://www.kaggle.com/competitions/severstal-steel-defect-detection/data?select=train_images

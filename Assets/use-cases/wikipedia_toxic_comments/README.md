@@ -123,8 +123,8 @@ training:
 
 ### License
 
-NA
+License Type is Unknown
 
 ### Acknowledgements
 
-The original dataset used in this use case comes from this source : NA
+Original dataset source is Unknown
