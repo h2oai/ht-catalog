@@ -29,7 +29,7 @@ The models in this project have a wide range of problem types corresponding to d
 - `3D Image Semantic Segmentation`
 - `Audio Regression`
 
-The use-cases descirbed in this project are relevant to different industries, for example:
+The use-cases described in this project are relevant to different industries, for example:
 
 - `Banking`
 - `Manufacturing`
