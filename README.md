@@ -39,7 +39,6 @@ The use-cases descirbed in this project are relevant to different industries, fo
 - `Government`
 - `Agriculture`
 - `Healthcare`
-- `Manufacturing` 
 - `Security`
 - `Marketing`
 - `Research`
