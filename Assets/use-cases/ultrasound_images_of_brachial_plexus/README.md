@@ -127,8 +127,8 @@ training:
 
 ### License
 
-License Type is Unknown
+MIT License
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://www.kaggle.com/competitions/ultrasound-nerve-segmentation/data

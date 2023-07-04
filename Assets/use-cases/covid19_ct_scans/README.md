@@ -137,8 +137,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC BY 4.0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://zenodo.org/record/3757476

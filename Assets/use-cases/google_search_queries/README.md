@@ -115,8 +115,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC BY-SA 4.0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://github.com/google-research-datasets/query-wellformedness

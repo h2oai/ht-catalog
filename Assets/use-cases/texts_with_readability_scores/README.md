@@ -115,8 +115,8 @@ training:
 
 ### License
 
-License Type is Unknown
+MIT License
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://www.commonlit.org/blog/introducing-the-clear-corpus-an-open-dataset-to-advance-research-28ff8cfea84a/

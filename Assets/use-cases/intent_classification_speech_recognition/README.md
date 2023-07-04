@@ -112,8 +112,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC BY-NC 4.0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://github.com/skit-ai/speech-to-intent-dataset

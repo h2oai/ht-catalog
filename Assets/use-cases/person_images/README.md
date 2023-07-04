@@ -125,8 +125,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC0: Public Domain
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://zheng-lab.cecs.anu.edu.au/Project/project_reid.html

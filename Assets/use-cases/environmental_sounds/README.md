@@ -128,8 +128,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC BY-NC 3.0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://github.com/karolpiczak/ESC-50

@@ -121,8 +121,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data

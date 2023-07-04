@@ -112,8 +112,8 @@ training:
 
 ### License
 
-License Type is Unknown
+CC BY 4.0
 
 ### Acknowledgements
 
-Original dataset source is Unknown
+Original dataset source is https://pyroomacoustics.readthedocs.io/en/pypi-release/pyroomacoustics.datasets.google_speech_commands.html#:~:text=The%20Speech%20Commands%20Dataset%20has,Creative%20Commons%20BY%204.0%20license.&text=Create%20the%20sound%20object.
