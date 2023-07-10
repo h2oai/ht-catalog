@@ -151,7 +151,8 @@ Following is the collection of 100 use-cases by different industries, different 
 | 97. | [Motorcycle Rider Segementation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/motorcycle_night_ride_segmentation)| Government | Segment the motorcycle and the rider from the surrounding nighttime environment | Image Semantic Segmentation | Image |
 | 98. | [Football Player segmentation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/football_player_segmentation)| Sports | Segment each football player present in the video frames | Image Classification | Image |
 | 99. | [Malaria Cell Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection)| Healthcare | Identify and classify red blood cells as infected or uninfected with malaria parasites | Image Classification | Image |
-| 100. | [Audio Anonmaly Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all)| Manufacturing | Classifies the audio segments into 4 machine parts: valve, fan, slider and pump | Audio Classification | Audio |
+| 100. | [Audio Anomaly Detection](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all)| Manufacturing | Classifies the audio segments into 4 machine parts: valve, fan, slider and pump | Audio Classification | Audio |
+| 101. | [Deforestation Segmentation](https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/deforestation_segmentation)| AI4Good | Segment deforested areas with multi-modal satellite imagery | Image Segmentation | Image |
 
 ### Contribution 🛠️
 
