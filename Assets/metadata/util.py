@@ -34,6 +34,9 @@ def update_all_usecases_readme():
 		## custom fix for pest_classification 
 		if r['github_url'] == 'pest_classification':
 			idd = "73e76f4b255b46596224efa4da3aedc9320ce970"
+		## custom fix for deforestation_segmentation
+		elif r['github_url'] == 'deforestation_segmentation':
+			idd = "78d74498d8534193d3208f31a38cc0aa936d3f86"
 
 		## url for github
 		base = f"https://github.com/h2oai/ht-catalog/blob/{idd}/Assets/use-cases/"
