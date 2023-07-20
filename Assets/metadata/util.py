@@ -126,7 +126,7 @@ def update_webpage_html():
 	visited = []
 	url = "https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/"
 	html = ""
-	df = pd.read_csv("use_cases.csv", encoding= 'unicode_escape').fillna("NA")
+	df = pd.read_csv("use_cases.csv", encoding= 'utf-8').fillna("NA")
 	for i, r in df.iterrows():
 		r = dict(r)
 
@@ -137,8 +137,8 @@ def update_webpage_html():
 		
 		html += f"""<div class="card mb-4 all {r['problem-type'].replace(" ", "")} {r['data-type']} {r['industry']}">
 	<font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
-	<h3 class="card-title">{r['use-case']}</h3>
-	<p>{r['prediction-target']}</p>
+	<h3 class="card-title">{r['use-case-ja']}</h3>
+	<p>{r['prediction-target-ja']}</p>
 	<p><span class="badge1">{r['problem-type']}</span> <span class="badge1">{r['industry']}</span> <span class="badge1">{r['data-type']}</span> </p>
 	<p class="card-icon"><a target='_blank' href="{url + r['github_url'].strip()}"><i class="fa-solid fa-arrow-right"></i></a></p>
 </div>"""
@@ -154,7 +154,7 @@ if __name__ == '__main__':
 	# print (webpage_cards)
 
 	## update readme of all usecases
-	update_all_usecases_readme()
+	print(update_webpage_html())
 	
 
 
