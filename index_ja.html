@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>H2O.ai Catalog | Hydrogen Torch Use Cases</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://github.com/h2oai/ht-catalog/blob/4e3f96ff2d895bb9c6b60b513d1672bc9e5e67bb/Assets/metadata/favicon.ico" rel="icon">
+    <script type="text/javascript">
+       window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) }
+       heap.load("1090178399");
+    </script>
+    <style>
+        body {
+         font-family: Roboto;
+         margin: 20px;
+        }
+        .filter-container {
+         display: flex;
+         align-items: center;
+         margin-bottom: 20px;
+        }
+        .filter-container p {
+         margin-right: 10px;
+         font-weight: bold;
+        }
+        .filterby {
+         padding: 5px;
+         margin-right: 10px;
+        }
+        .card-icon {
+         position: absolute;
+         bottom: 0px;
+         right: 15px;
+         color: #000;
+         font-size: 24px;
+         background: #ffc107;
+         padding: 10px;
+         border-radius: 8px;
+         color: azure;
+        }
+        .card-icon a{
+         color: azure;
+        }
+        #FilterContainer {
+         margin-left: 10%;
+        }
+        .card-badge {
+         position: absolute;
+         top: 4px;
+         right: 7px;
+         color: #000;
+         /* font-size: 24px; */
+        }
+        .badge1 {
+         margin-right: 1%;
+       font-size: 14px;
+       background: #fda;
+       padding: 3px 9px;
+       border-radius: 5px;
+       line-height: 30px;
+        }
+        .card-title {
+         margin-top: 12px;
+        }
+        .js2 {
+           padding: 5px;
+           background: #ffc107;
+        }
+        .all {
+         width: 30%;
+         height: 333px;
+         padding: 20px;
+         margin-right: 2%;
+         border: 1px solid #d0d0d0;
+        }
+
+       /* Media Query for screens smaller than 600px */
+       @media (max-width: 600px) {
+         .all {
+           width: 100%;
+           margin-right: 0;
+           height: 300px;
+         }
+
+         .card-title {
+           font-size: 1.75rem;
+         }
+
+         .badge1 {
+           font-size: 1.0rem;
+           margin-bottom: 3px;
+         }
+       }
+
+        .filter-class {
+         width: 75%;
+         margin-left: 14%;
+         margin-bottom: 3%;
+         margin-top: 5%;
+        }
+        .heading {
+         margin-top: 4%;
+         font-size: 4.75rem;
+         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+         font-weight: 300;
+         line-height: 1.2;
+         letter-spacing: -0.00833em;
+        }
+        .subheading {
+         font-size: 2.5rem;
+         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+         font-weight: 300;
+         line-height: 1.334;
+         letter-spacing: 0em;
+        }
+        .card:hover{
+         /*box-shadow: 1px 1px 1px #222;    */
+         transform: scale(1.01);
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div align="center" class="row">
+            <h1 class='heading'>H2O.ai <span class='js2'>Catalog</span></h1>
+            <p class='subheading'>Collection of Hydrogen Torch Use Cases</p>
+        </div>
+        <div class="row g-6 filter-class">
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Industry</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="Banking">
+                        Banking
+                    </option>
+                    <option value="Manufacturing">
+                        Manufacturing
+                    </option>
+                    <option value="AI4Good">
+                        AI4Good
+                    </option>
+                    <option value="Media">
+                        Media
+                    </option>
+                    <option value="Healthcare">
+                        Healthcare
+                    </option>
+                    <option value="Government">
+                        Government
+                    </option>
+                    <option value="Agriculture">
+                        Agriculture
+                    </option>
+                    <option value="Security">
+                        Security
+                    </option>
+                    <option value="Marketing">
+                        Marketing
+                    </option>
+                    <option value="Research">
+                        Research
+                    </option>
+                    <option value="Sports">
+                        Sports
+                    </option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Problem Type</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="ObjectDetection">
+                        Object Detection
+                    </option>
+                    <option value="ImageMetricLearning">
+                        Image Metric Learning
+                    </option>
+                    <option value="ImageSegmentation">
+                        Image Segmentation
+                    </option>
+                    <option value="ImageClassification">
+                        Image Classification
+                    </option>
+                    <option value="TextSequencetoSequence">
+                        Text Sequence to Sequence
+                    </option>
+                    <option value="AudioClassification">
+                        Audio Classification
+                    </option>
+                    <option value="ImageRegression">
+                        Image Regression
+                    </option>
+                    <option value="TextClassification">
+                        Text Classification
+                    </option>
+                    <option value="ImageSemanticSegmentation">
+                        Image Semantic Segmentation
+                    </option>
+                    <option value="TextRegression">
+                        Text Regression
+                    </option>
+                    <option value="TextTokenClassification">
+                        Text Token Classification
+                    </option>
+                    <option value="TextMetricLearning">
+                        Text Metric Learning
+                    </option>
+                    <option value="TextSpanPrediction">
+                        Text Span Prediction
+                    </option>
+                    <option value="SpeechRecognition">
+                        Speech Recognition
+                    </option>
+                    <option value="3DImageSemanticSegmentation">
+                        3D Image Semantic Segmentation
+                    </option>
+                    <option value="AudioRegression">
+                        Audio Regression
+                    </option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label for="specificSizeSelect">Data Type</label> <select class="filterby form-select" id="specificSizeSelect">
+                    <option value='all'>
+                        All
+                    </option>
+                    <option value="Image">
+                        Image
+                    </option>
+                    <option value="Text">
+                        Text
+                    </option>
+                    <option value="Audio">
+                        Audio
+                    </option>
+                    <option value="Speech">
+                        Speech
+                    </option>
+                    <option value="3DImage">
+                        3D Image
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="row" id="FilterContainer">
+            <!-- paste here start -->
+            <div class="card mb-4 all ObjectDetection Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">署名検出</h3>
+                <p>文書内の署名の検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageMetricLearning Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">署名の認証</h3>
+                <p>署名の照合、比較、認証の実施</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/signature_verification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">煙のセグメンテーション</h3>
+                <p>画像内の煙の有無と部位をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">煙の有無判定</h3>
+                <p>画像に煙が含まれているかどうかを分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/smoke_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">水中のヒトデの検出</h3>
+                <p>水中画像におけるヒトデの物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/underwater_starfish_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">食品の種類の分類</h3>
+                <p>画像内に映る食品の種類を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Media</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/food_classifications"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">表面亀裂の有無判定</h3>
+                <p>画像内に亀裂が含まれているかどうかを分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crack_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">脳腫瘍の有無と種類の判定</h3>
+                <p>医療画像データ内の腫瘍の有無と種類を予測</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">道路品質の分類</h3>
+                <p>道路画像を用い路面状況を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_quality_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">建物の検出</h3>
+                <p>衛星画像内の建物を物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/satellite_imagery___(map_challenge)"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ハリケーン損害の有無判定</h3>
+                <p>ドローンの空撮画像を用い地域内の浸水被害の有無を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hurriance_damage_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">浸水エリアのセグメンテーション</h3>
+                <p>画像内における浸水域の水域をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flooding_area_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">製品の欠陥分類</h3>
+                <p>製品が欠陥を示しているかどうか、また欠陥理由を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/product_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">浸水エリアのセグメンテーション (マルチラベル)</h3>
+                <p>画像内における浸水域の水域場所（建物、道路等）をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flood_area_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">道路のセグメンテーション</h3>
+                <p>画像内の道路、歩道、くぼみ等をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/indian_roads_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">鳥類の分類</h3>
+                <p>画像に映る鳥の種類を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">害虫の種の分類</h3>
+                <p>画像内に映る害虫の種類を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pest_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">コンクリート繊維セグメンテーション</h3>
+                <p>コンクリート画像内の繊維箇所をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fiber_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSequencetoSequence Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">文書の要約</h3>
+                <p>長いテキストの簡潔な要約の生成</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/text_summarization"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">クジラの音声検出</h3>
+                <p>音声データがクジラに関連しているかどうかを識別</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/whale_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Healthcare ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">錠剤の品質判定</h3>
+                <p>錠剤に汚れや欠けがあるかどうかを画像分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_quality_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Healthcare ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">錠剤の検出</h3>
+                <p>画像内の錠剤を物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Healthcare </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pill_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">鋼の欠陥分類</h3>
+                <p>鋼表面の欠陥の有無、欠陥の種類を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/steel_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">繊維の欠陥判定</h3>
+                <p>繊維が損傷しているかどうかを判定</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/textile_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">プリント基盤の欠陥検出</h3>
+                <p>プリント基板内の欠陥箇所と種類を物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/pcb_defect"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">茶葉の病気の分類</h3>
+                <p>葉の病気の種類を画像から分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tea_leaves_disease_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">脳のMRI画像セグメンテーション</h3>
+                <p>脳のMRI画像におけるFLAIR異常部位のセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/brain_mri_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">鋳造製品の欠陥判定</h3>
+                <p>鋳造製品の画像から、欠陥の有無を検出</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/casting_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageRegression Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">群衆の人数推定</h3>
+                <p>画像内に映る人の数を推定</p>
+                <p><span class="badge1">Image Regression</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crowd_counting"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">文書内のスタンプ箇所の検出</h3>
+                <p>文書内のスタンプ箇所をセグメンテーションで検出</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/stamp_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">手話のアルファベット分類</h3>
+                <p>手話のアルファベット表現を画像分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/asl_alphabet_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">作物の分類</h3>
+                <p>さまざまな農作物の種類を画像分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/crop_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">道路のセグメンテーション</h3>
+                <p>衛星画像内の道路をセグメンテーションにより検出</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/road_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">天候の分類</h3>
+                <p>画像内の景色の天候分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/weather_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">風力タービンの検出</h3>
+                <p>画像内の風力タービンを物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wind_turbines_object_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">皮膚がんのセグメンテーション</h3>
+                <p>医療画像内の皮膚病変をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/skin_cancer_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">鳥の声の分類</h3>
+                <p>鳥の鳴き声で鳥の種類を判定</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">AI4Good</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bird_voice_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">街の環境音の分類</h3>
+                <p>オーディオデータの街の環境音をカテゴリ分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/urban_sound_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">プリンターの故障検知</h3>
+                <p>プリンターの異常動作の有無を画像から判定</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/printer_defect_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">AI生成画像の判定</h3>
+                <p>画像がAIによって生成されたものかどうかを判定</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ai_generated_image_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">走行車線の検出</h3>
+                <p>道路上の走行車線のセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/lane_detection_for_driving"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">音声の感情分析</h3>
+                <p>音声から人間の感情（Happy、Sad等）を分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_emotion_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">文書の画像分類</h3>
+                <p>画像に映る文書を内容の種類に基づいて分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/document_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Agriculture">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">種子の検出</h3>
+                <p>画像内の種子を物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/germination_seedling_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">信号機の検出</h3>
+                <p>道路の画像データ内の信号機と状態（赤、黄、青）を物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/traffic_light_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ゴミの検出</h3>
+                <p>画像内に映るゴミを種類別に物体検出</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/trash_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ヘルメットの着用検出</h3>
+                <p>画像内の人物の頭部とヘルメットの着用を物体検知</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hardhat_object_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">心臓の鼓動の分類</h3>
+                <p>心臓の鼓動のオーディオデータから症状を分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/heartbeat_sound_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">災害ツイートの分類</h3>
+                <p>ツイートが災害関連か否かを分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Government</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/disaster_tweets_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Security">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">スパムメール検知</h3>
+                <p>電子メールをスパムまたは非スパムへ分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/email_spam_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">オンラインレビューの分類</h3>
+                <p>オンラインレビューを肯定的、否定的、中立的へ分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/amazon_reviews"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">音声数字認識</h3>
+                <p>数字を読み上げる音声データを0から9に分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/audio_samples_of_spoken_digits"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageMetricLearning Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">類似の広告画像の識別</h3>
+                <p>同じ自転車と判定できる画像を識別</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/online_bicycle_ads"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSemanticSegmentation Image Manufacturing ">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">自動車部品のセグメンテーション</h3>
+                <p>画像に映る自動車のパーツ（ドア、バンパー等）をセグメンテーション</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Manufacturing </span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/car_parts_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextRegression Text Marketing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ホテルの評価</h3>
+                <p>ホテルの6つの評価（部屋、サービス等）レートを、口コミから予測</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/hotel_reviews"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">環境音の分類</h3>
+                <p>オーディオデータから環境音を分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/environmental_sounds"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextTokenClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">物体名の固有表現抽出</h3>
+                <p>テキストから物体を示すトークン（製品名、ブランド名、カテゴリ等）を抽出、分類</p>
+                <p><span class="badge1">Text Token Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/physical_objects_name_specified_texts"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSequencetoSequence Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ニュース要約</h3>
+                <p>ニュース記事の要約</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/cnn_and_daily_mail_news_stories"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextRegression Text Marketing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">記事の読みやすさ評価</h3>
+                <p>テキストの読みやすさスコアを予測</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Marketing</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/texts_with_readability_scores"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">有害なコメントの分類</h3>
+                <p>コメントを6つの観点（危害、ヘイトスピーチ等）で評価</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/wikipedia_toxic_comments"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageMetricLearning Image Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">人物の識別</h3>
+                <p>同じ人物と判定できる画像を識別</p>
+                <p><span class="badge1">Image Metric Learning</span> <span class="badge1">Banking</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/person_images"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Security">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">抗議活動関連テキストの識別</h3>
+                <p>抗議活動に関連するテキストかどうか判定</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/protests_related_texts"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextMetricLearning Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">類似質問のグルーピング</h3>
+                <p>オンラインフォーラムで寄せられた類似の質問をグルーピング</p>
+                <p><span class="badge1">Text Metric Learning</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/askubuntu_questions"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextRegression Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">質問の正確性判定</h3>
+                <p>検索文の正確性を評価</p>
+                <p><span class="badge1">Text Regression</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/google_search_queries"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSpanPrediction Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">質疑応答</h3>
+                <p>与えられたコンテキスト文から質問に対する回答箇所を抽出</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/questions_with_answers_and_contexts"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all SpeechRecognition Speech Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">命令音声の識別</h3>
+                <p>命令音声（Go、Down等）の音声認識</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/commands_speech_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all SpeechRecognition Speech Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">音声の認識</h3>
+                <p>問い合わせ音声の文字起こし</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Banking</span> <span class="badge1">Speech</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/intent_classification_speech_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all SpeechRecognition Speech Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">音声文字起こし</h3>
+                <p>米国英語の音声データの文字起こし</p>
+                <p><span class="badge1">Speech Recognition</span> <span class="badge1">Government</span> <span class="badge1">Speech</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/phone_banking_speech_samples"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all 3DImageSemanticSegmentation 3D Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">胸部CTスキャン画像のセグメンテーション</h3>
+                <p>人のCTスキャン胸部画像から肺をセグメンテーション</p>
+                <p><span class="badge1">3D Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">3D Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_ct_scans"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSemanticSegmentation Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">超音波画像内の神経部位判別</h3>
+                <p>超音波画像内の神経の集合をセグメンテーション</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/ultrasound_images_of_brachial_plexus"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioRegression Text Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">咳音声による新型コロナウイルス感染症の判断</h3>
+                <p>咳音声を使用して、病状の重症度を予測</p>
+                <p><span class="badge1">Audio Regression</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/covid19_cough_audio_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ニュース記事の分類</h3>
+                <p>ニュース記事をさまざまなカテゴリに分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/newsgroup_document_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">フェイクニュースの判定</h3>
+                <p>フェイクニュースかどうかをテキスト分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_news_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">生物医学文書の分類</h3>
+                <p>生物医学の科学論文をカテゴリ別に分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/biomedical_text_publication_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">書籍評価</h3>
+                <p>レビュー内容から評価を予測</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/book_rating_text_regression"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">病気の予測分類</h3>
+                <p>報告された症状に基づいて潜在的な病気や病状を予測</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/symptom_to_desease_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">ツイートの感情分析</h3>
+                <p>ツイート内容を感情カテゴリ（幸福、怒り等）に分類</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Media</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emotion_detection_from_tweets"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Security">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">偽の求人情報の検出</h3>
+                <p>オンラインプラットフォーム上の求人情報が不正かどうか判定</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/fake_job_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">精神障害の識別</h3>
+                <p>投稿された文章から、精神障害の有無を判別</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/mental_disorder_identification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSpanPrediction Text Research">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">SQL文の作成</h3>
+                <p>コンテキスト情報に基づいてSQL文を作成</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Research</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/sql_create_context"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSpanPrediction Text Security">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">QAシステム</h3>
+                <p>質問応答システムの開発</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Security</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/adversarialqa"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSequencetoSequence Text Research">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">科学論文の要旨作成</h3>
+                <p>科学論文の内容に基づいて、要旨を作成</p>
+                <p><span class="badge1">Text Sequence to Sequence</span> <span class="badge1">Research</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/scientific_papers"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">銀行サービスにおける顧客の感情分析</h3>
+                <p>銀行サービスのやり取り中の顧客発言が感情的かそうかを判別</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Banking</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/bank_emotion_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextSpanPrediction Text Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">被保険者の検出</h3>
+                <p>文書内から、被保険者名を検出</p>
+                <p><span class="badge1">Text Span Prediction</span> <span class="badge1">Banking</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/insurance_holder_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Media">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">楽器の分類</h3>
+                <p>オーディオデータから楽器を分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Media</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/musical_instruments_audio_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all TextClassification Text Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">人間のストレス検出</h3>
+                <p>テキストに記録された情報から、個人のストレスレベルを予測</p>
+                <p><span class="badge1">Text Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Text</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/human_stress_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">銃の種類の分類</h3>
+                <p>オーディオデータから銃の種類を分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/gun_classifier"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">サイレン音の分類</h3>
+                <p>オーディオデータから緊急車両のサイレン音を検出、分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Government</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/emergency_vehicle_siren_sounds"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Banking">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">話者の認識</h3>
+                <p>音声データから、誰の声か分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Banking</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/speaker_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Security">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">有害なドローンの検出</h3>
+                <p>画像から飛行物体を分類し、有害なドローンを検出</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Security</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malicious_drones_prediction"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ObjectDetection Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">マスク着用の検知</h3>
+                <p>画像内の人の頭部とマスク着用有無を物体検知</p>
+                <p><span class="badge1">Object Detection</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/face_mask_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSemanticSegmentation Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">歩道のセグメンテーション</h3>
+                <p>道路画像内の歩道をセグメンテーション</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/footpath_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">抵抗器の画像分類</h3>
+                <p>抵抗器の種類を画像分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/resistor_image_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">タイヤの状態の分類</h3>
+                <p>タイヤ画像を品質カテゴリ（正常、ひび割れ等）に分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/tire_texture_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Agriculture">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">花の種類の分類</h3>
+                <p>画像から花の種類を分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Agriculture</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/flower_recognition"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">線路の欠陥検出</h3>
+                <p>線路のレール画像から欠陥の有無を検出</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/railway_defect_classification"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSemanticSegmentation Image Government">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">オートバイライダーのセグメンテーション</h3>
+                <p>ライダーの視点画像から、バイクと周囲の夜間環境をセグメンテーション</p>
+                <p><span class="badge1">Image Semantic Segmentation</span> <span class="badge1">Government</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/motorcycle_night_ride_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Sports">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">サッカー選手のセグメンテーション</h3>
+                <p>画像内に存在する各サッカー選手をセグメンテーション</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Sports</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/football_player_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageClassification Image Healthcare">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">マラリア細胞の検出</h3>
+                <p>赤血球がマラリア原虫に感染しているかどうかを画像分類</p>
+                <p><span class="badge1">Image Classification</span> <span class="badge1">Healthcare</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/malaria_cell_detection"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all AudioClassification Audio Manufacturing">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">機器の音分類</h3>
+                <p>バルブ、ファン、スライダー、ポンプの 4 つの機械部品に音声分類</p>
+                <p><span class="badge1">Audio Classification</span> <span class="badge1">Manufacturing</span> <span class="badge1">Audio</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/anomaly_detection_using_audio___all"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div><div class="card mb-4 all ImageSegmentation Image AI4Good">
+                <font color='#ffc107'><i class="fa-solid fa-2x fa-fire"></i></font>
+                <h3 class="card-title">森林破壊のセグメンテーション</h3>
+                <p>衛星画像から、森林伐採地域をセグメンテーション</p>
+                <p><span class="badge1">Image Segmentation</span> <span class="badge1">AI4Good</span> <span class="badge1">Image</span> </p>
+                <p class="card-icon"><a target='_blank' href="https://github.com/h2oai/ht-catalog/tree/main/Assets/use-cases/deforestation_segmentation"><i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js">
+    </script> 
+    <script type="text/javascript">
+        $("select.filterby").change(function(){
+          var filters = $.map($("select.filterby").toArray(), function(e){
+            return $(e).val();
+          }).join(".");
+          
+          $("div#FilterContainer").find("div").hide();
+          $("div#FilterContainer").find("div." + filters).show();
+        });
+    </script>
+</body>
+</html>
