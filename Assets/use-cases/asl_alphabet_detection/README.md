@@ -22,6 +22,8 @@ ASL (American Sign Language) alphabet detection has a significant impact on acce
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/asl_alphabet_train.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/asl_alphabet_train.zip)
+
 87000 train data with their 29 different labels (A-Z,del,nothing,space) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/asl_alphabet_detection/train%20data.png)

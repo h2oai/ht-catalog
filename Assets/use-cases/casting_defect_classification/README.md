@@ -22,6 +22,8 @@ Casting defect classification has a significant impact on the manufacturing and 
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/casting_defect_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/casting_defect_classification.zip)
+
 1300 images with labels. such as def or ok 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/casting_defect_classification/train%20data.png)

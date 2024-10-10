@@ -22,6 +22,8 @@ Indian roads segmentation plays a key role in transportation and logistics. By a
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/instance_segmentation/indian_road_seg_v4.zip](https://h2o-ht-catalog.s3.amazonaws.com/instance_segmentation/indian_road_seg_v4.zip)
+
 2475 train images, 752 validation images, 753 validation images with labels ['roads' 'potholes' 'footpaths' 'shallow paths' 'backgrounds'] 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/indian_roads_segmentation/train%20data.png)

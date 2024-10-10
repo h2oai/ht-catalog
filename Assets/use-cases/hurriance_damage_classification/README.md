@@ -22,6 +22,8 @@ By accurately identifying and categorizing the extent of damage caused by hurric
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/Hurriance_Damage_Classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/Hurriance_Damage_Classification.zip)
+
 10000 train images , 2000 validation images, 2000 test images with labels is damage or not 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/hurriance_damage_classification/train%20data.png)

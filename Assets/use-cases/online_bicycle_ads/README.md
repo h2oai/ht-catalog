@@ -22,6 +22,8 @@ Implementing similar image grouping in bicycle ads can have several positive imp
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/bicycle_image_metric_learning.zip](https://h2o-ht-catalog.s3.amazonaws.com/bicycle_image_metric_learning.zip)
+
 8313 images of 1148 online bicycle ads. Each ad has multiple images marked by their class ID. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/online_bicycle_ads/train%20data.png)

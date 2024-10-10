@@ -22,6 +22,8 @@ Newsgroup document classification offers significant business benefits in inform
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/text_classification/newsgroup_document_classification.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/newsgroup_document_classification.csv)
+
 1000 train data with their labels 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/newsgroup_document_classification/train%20data.png)

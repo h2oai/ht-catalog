@@ -22,6 +22,8 @@ Cough audio regression in COVID data has substantial role in the healthcare sect
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/audio_regression/covid19-cough-audio-classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_regression/covid19-cough-audio-classification.zip)
+
 25985 train audio samples with their values. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/covid19_cough_audio_classification/train%20data.png)

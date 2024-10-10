@@ -22,6 +22,8 @@ Heartbeat sound classification has significant implications in healthcare and me
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/heartbeat_sound_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/heartbeat_sound_classification.zip)
+
 832 train images with their labels (artifact,extrastole,murmur,normal,unlabel) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/heartbeat_sound_classification/train%20data.png)

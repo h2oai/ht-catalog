@@ -22,6 +22,8 @@ It enables automatic categorization and identification of food items, which can 
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/food_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/food_classification.zip)
+
 9866 images with 11 labels. Such as Bread,Dairy product,Dessert,Egg,Fried food,Meat,Noodles-Pasta,Rice, Seafood,Soup,Vegetable-Fruit 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/food_classifications/train%20data.png)

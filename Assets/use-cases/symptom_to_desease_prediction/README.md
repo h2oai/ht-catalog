@@ -22,6 +22,8 @@ The usefulness symptom to disease prediction is substantial for healthcare provi
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/text_classification/Symptom2Disease.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/Symptom2Disease.csv)
+
 1200 train rows with 24 different categories 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/symptom_to_desease_prediction/train%20data.png)

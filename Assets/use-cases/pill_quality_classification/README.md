@@ -22,6 +22,8 @@ Accurate pill quality classification holds immense business impact, particularly
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/pill_quality_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/pill_quality_classification.zip)
+
 330 train images with their labels [chip,dirt,normal] 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/pill_quality_classification/train%20data.png)

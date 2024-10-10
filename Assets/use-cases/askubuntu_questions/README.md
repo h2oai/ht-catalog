@@ -22,6 +22,8 @@ Implementing similar questions grouping in AskUbuntu can have several positive i
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/ubuntu_text_metric_learning.zip](https://h2o-ht-catalog.s3.amazonaws.com/ubuntu_text_metric_learning.zip)
+
 3134 train texts from 422 groups. 756 test texts. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/askubuntu_questions/train%20data.png)

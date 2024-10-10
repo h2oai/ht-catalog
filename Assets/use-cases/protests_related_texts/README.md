@@ -22,6 +22,8 @@ The identification and analysis of protest-related texts can hplays a key roles 
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/protests.zip](https://h2o-ht-catalog.s3.amazonaws.com/protests.zip)
+
 21020 train and 5204 test texts with one label. The label has value either 0 or 1. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/protests_related_texts/train%20data.png)

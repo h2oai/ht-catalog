@@ -22,6 +22,8 @@ Flower recognition use-case is highly beneficial in various industries, includin
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/flower_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/flower_recognition.zip)
+
 5000 train images with their 5 labels such as lilly,lotus,orchid,sunflower,tulip 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/flower_recognition/train%20data.png)

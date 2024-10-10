@@ -22,6 +22,8 @@ Building segmentation in images has significant implications in the fields of ar
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/object_detection/mapping_challenge_v2.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/mapping_challenge_v2.zip)
+
 8366 train images with their object coordinates 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/satellite_imagery___(map_challenge)/train%20data.png)

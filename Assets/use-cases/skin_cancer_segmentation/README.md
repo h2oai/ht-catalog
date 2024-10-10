@@ -22,6 +22,8 @@ Skin cancer segmentation has a significant impact on the field of dermatology an
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_segmentation/skin_cancer_segmentation.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/skin_cancer_segmentation.zip)
+
 10015 train images with their masks 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/skin_cancer_segmentation/train%20data.png)

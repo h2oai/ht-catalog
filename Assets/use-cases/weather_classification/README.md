@@ -22,6 +22,8 @@ Weather classification has a wide range of applications in industries such as ag
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/weather_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/weather_classification.zip)
+
 1491 train images with 6 labels. such as alien_test,cloudy,foggy,rainy,shine,sunrise, 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/weather_classification/train%20data.png)

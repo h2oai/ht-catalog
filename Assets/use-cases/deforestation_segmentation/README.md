@@ -6,11 +6,11 @@ Segment deforested areas with multi-modal satellite imagery
 - `Problem Type: Image Segmentation`
 - `Data Type: Image`
 
-![](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/cover.png)
-![](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/cover.jpg)
-![](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/cover.jpeg)
-![](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/cover.webp)
-![](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/cover)
+![](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/cover.png)
+![](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/cover.jpg)
+![](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/cover.jpeg)
+![](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/cover.webp)
+![](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/cover)
 
 ### Business Problem 
 
@@ -22,9 +22,11 @@ The Amazon forest encompasses approximately 40% of the remaining rainforests in 
 
 ### Dataset
 
+Dataset link - [s3://0xdata-public/beluga/wildfire/full_r6_image_semantic_segmentation.zip](https://0xdata-public.s3.amazonaws.com/beluga/wildfire/full_r6_image_semantic_segmentation.zip)
+
 8866 train images and 1200 validation multi-modal images from various Sentinel-1, Sentinel-2, and Landsat-8 snapshots combined up to 152 channels. 
 
-![train data](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/train%20data.png)
+![train data](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/train%20data.png)
 
 ### Solution
 
@@ -130,15 +132,14 @@ training:
     train_validation_data: false
     warmup_epochs: 0.0
     weight_decay: 0.0
-
 ```
 
-![chart](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/charts.png)
+![chart](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/chart.png)
 
 
 ### Prediction
 
-![Predictions](https://github.com/h2oai/ht-catalog/blob/52bc9ef77a296365e84c0655c406817c74b48293/Assets/use-cases/deforestation_segmentation/Validation%20Predictions.png)
+![Predictions](https://github.com/h2oai/ht-catalog/blob/78d74498d8534193d3208f31a38cc0aa936d3f86/Assets/use-cases/deforestation_segmentation/Validation%20Predictions.png)
 
 ### License
 

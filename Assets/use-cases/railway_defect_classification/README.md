@@ -22,6 +22,8 @@ Railway defect classification is very useful in the transportation and railway m
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/railway_defect_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/railway_defect_classification.zip)
+
 300 train images with their labels(Defective or Non Defective) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/railway_defect_classification/train%20data.png)
