@@ -22,6 +22,8 @@ Brain MRI segmentation plays a crucial role in the healthcare industry, specific
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_segmentation/lgg-mri-segmentation_v1.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/lgg-mri-segmentation_v1.zip)
+
 1373 train images with it's segmentation mask 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/brain_mri_segmentation/train%20data.png)

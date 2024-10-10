@@ -22,6 +22,8 @@ Textile defect detection has significant role in the textile and fashion industr
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/textile_damage_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/textile_damage_classification.zip)
+
 108000 train images with labels (good or damaged) 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/textile_defect_detection/train%20data.png)

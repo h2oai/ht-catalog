@@ -22,6 +22,8 @@ Whale detection in audios plays a key role in industries related to marine resea
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/audio_classification/whale_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/whale_detection.zip)
+
 30000 audio rows with thei label 0 or 1 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/whale_detection/train%20data.png)
@@ -128,7 +130,7 @@ training:
 
 ### License
 
-Copyright © 2011 by Cornell University and the Cornell Research Foundation, Inc. 
+Copyright ï½© 2011 by Cornell University and the Cornell Research Foundation, Inc. 
 
 ### Acknowledgements
 

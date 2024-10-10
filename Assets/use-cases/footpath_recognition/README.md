@@ -22,6 +22,8 @@ Footpath recognition use-case is highly beneficial in urban planning, transporta
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_segmentation/footpath-image-dataset.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/footpath-image-dataset.zip)
+
 3000 train images with their masks 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/footpath_recognition/train%20data.png)

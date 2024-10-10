@@ -22,6 +22,8 @@ Person re-identification plays a key roles across multiple industries. In the fi
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/market_1501_metric_learning.zip](https://h2o-ht-catalog.s3.amazonaws.com/market_1501_metric_learning.zip)
+
 12936 train images of 751 humans. 534 test images. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/person_images/train%20data.png)

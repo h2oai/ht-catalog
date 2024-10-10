@@ -1,4 +1,4 @@
-## Use Case 100: Audio Anomaly Detection
+## Use Case 100: Audio Anonmaly Detection
 
 Classifies the audio segments into 4 machine parts: valve, fan, slider and pump
 
@@ -21,6 +21,8 @@ Anomaly detection using audio involves analyzing sounds from different machinery
 Implementing anomaly detection using audio - all can have a broad business impact across industries where multiple components or systems are critical for operations. By integrating audio analysis from various sources, potential failures or abnormalities can be detected holistically, improving overall equipment reliability and operational efficiency. Proactive maintenance based on anomaly detection helps prevent costly breakdowns, reduces downtime, and enhances safety. Additionally, this comprehensive approach allows for optimized resource allocation, as maintenance activities can be scheduled based on the detected anomalies across multiple components or systems.
 
 ### Dataset
+
+Dataset link - [s3://h2o-ht-catalog/manufacturing/anomaly_detection_using_audio_all.zip](https://h2o-ht-catalog.s3.amazonaws.com/manufacturing/anomaly_detection_using_audio_all.zip)
 
 4 types of audios (valve, pumps, fans, slide rails) 
 

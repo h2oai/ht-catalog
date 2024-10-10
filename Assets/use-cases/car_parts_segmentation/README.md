@@ -22,6 +22,8 @@ Accurate car parts segmentation in images has significant implications for the a
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/car_parts_coco_format_image_semantic_segmentation.zip](https://h2o-ht-catalog.s3.amazonaws.com/car_parts_coco_format_image_semantic_segmentation.zip)
+
 400 train images with their masks. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/car_parts_segmentation/train%20data.png)

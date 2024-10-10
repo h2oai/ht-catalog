@@ -22,6 +22,8 @@ Transcript generation for US-EN speeches is very useful in various domains. In m
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/minds14_US_speech_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/minds14_US_speech_recognition.zip)
+
 558 train audio samples with their transcript. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/phone_banking_speech_samples/train%20data.png)

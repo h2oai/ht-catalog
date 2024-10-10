@@ -22,6 +22,8 @@ Bank emotion detection has substantial role in the banking and financial service
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/text_classification/bank_emotion_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/bank_emotion_detection.zip)
+
 108 train samples with 2 classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bank_emotion_detection/train%20data.png)

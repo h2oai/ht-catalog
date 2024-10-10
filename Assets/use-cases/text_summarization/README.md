@@ -22,6 +22,8 @@ Text summarization has a wide range of business applications, particularly in in
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/text_sequence_to_sequence/text_summarization.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_sequence_to_sequence/text_summarization.zip)
+
 500 text documents with their summarization 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/text_summarization/train%20data.png)

@@ -22,6 +22,8 @@ Emotion detection from tweets is very useful in social media analytics and marke
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/text_classification/tweet_emotions.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/tweet_emotions.csv)
+
 40000 train rows with 13 different classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/emotion_detection_from_tweets/train%20data.png)

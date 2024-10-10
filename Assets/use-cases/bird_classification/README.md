@@ -22,6 +22,8 @@ Bird species classification plays a key role in various industries. In the field
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/image_classification/bird_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/bird_classification.zip)
+
 2500 train images with 25 bird classes 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/bird_classification/train%20data.png)
@@ -131,7 +133,7 @@ training:
 
 ### License
 
-Data files © Original Authors
+Data files ï½© Original Authors
 
 ### Acknowledgements
 

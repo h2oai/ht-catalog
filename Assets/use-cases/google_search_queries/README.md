@@ -22,6 +22,8 @@ Improving search query well-formedness can hplays a key roles for search engine 
 
 ### Dataset
 
+Dataset link - [s3://h2o-ht-catalog/wellformed_query_text_regression.csv](https://h2o-ht-catalog.s3.amazonaws.com/wellformed_query_text_regression.csv)
+
 17375 train texts with one label. The label has value between 0 to 1. 
 
 ![train data](https://github.com/h2oai/ht-catalog/blob/646864e3c695f7c721514159bd6c59520dab7438/Assets/use-cases/google_search_queries/train%20data.png)

@@ -85,6 +85,8 @@ def update_all_usecases_readme():
 
 ### Dataset
 
+Dataset link - [{r["public-s3-url"]}](https://{r["public-s3-url"].replace("s3://", "").split('/')[0]}.s3.amazonaws.com/{r["public-s3-url"].replace("s3://", "").split('/', 1)[1]})
+
 {r["dataset-description"]} 
 
 ![train data]({url}train%20data.png)
@@ -146,6 +148,7 @@ def update_webpage_html():
 
 if __name__ == '__main__':
 	## paste the readme_table in README.md
+	update_all_usecases_readme()
 	# readme_table = update_master_readme()
 	# print (readme_table)
 	
@@ -154,7 +157,7 @@ if __name__ == '__main__':
 	# print (webpage_cards)
 
 	## update readme of all usecases
-	print(update_webpage_html())
+	# print(update_webpage_html())
 	
 
 
