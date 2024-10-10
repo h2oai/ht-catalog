@@ -1,4 +1,4 @@
-## Use Case 100: Audio Anonmaly Detection
+## Use Case 100: Audio Anomaly Detection
 
 Classifies the audio segments into 4 machine parts: valve, fan, slider and pump
 

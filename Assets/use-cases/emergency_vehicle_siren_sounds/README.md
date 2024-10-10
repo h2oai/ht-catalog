@@ -130,7 +130,7 @@ training:
 
 ### License
 
-Data files ï½© Original Authors
+Data files © Original Authors
 
 ### Acknowledgements
 

@@ -130,7 +130,7 @@ training:
 
 ### License
 
-Copyright ï½© 2011 by Cornell University and the Cornell Research Foundation, Inc. 
+Copyright © 2011 by Cornell University and the Cornell Research Foundation, Inc. 
 
 ### Acknowledgements
 

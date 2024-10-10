@@ -148,9 +148,9 @@ def update_webpage_html():
 
 if __name__ == '__main__':
 	## paste the readme_table in README.md
-	update_all_usecases_readme()
-	# readme_table = update_master_readme()
-	# print (readme_table)
+	# update_all_usecases_readme()
+	readme_table = update_master_readme()
+	print (readme_table)
 	
 	## replace the webpage_cards html in index.html between <! Add Here> and <! End Here>
 	# webpage_cards = update_webpage_html()
