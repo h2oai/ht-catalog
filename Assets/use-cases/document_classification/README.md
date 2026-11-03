@@ -22,7 +22,7 @@ Document classification has a wide range of applications in industries such as l
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/document_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/document_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/document_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/document_classification.zip)
 
 165 train images with 3 uniques labels [scientific_publication, email, resume] 
 

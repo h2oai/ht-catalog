@@ -22,7 +22,7 @@ The usefulness insurance holder detection is significant for insurance providers
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_span_prediction/insurance_holder_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_span_prediction/insurance_holder_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/insurance_holder_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/insurance_holder_detection.zip)
 
 7632 train rows with their answers. 
 

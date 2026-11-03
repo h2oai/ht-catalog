@@ -22,7 +22,7 @@ Implementing a hotel recommendation system based on ratings can have a significa
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/hotel_recommendation_text_regression.csv](https://h2o-ht-catalog.s3.amazonaws.com/hotel_recommendation_text_regression.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/hotel_recommendation_text_regression.csv](https://h2o-ht-catalog.cdn.h2o.ai/hotel_recommendation_text_regression.csv)
 
 50000 train texts with 6 labels. Each label has value between 1 to 5. 
 

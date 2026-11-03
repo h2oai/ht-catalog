@@ -22,7 +22,7 @@ Human stress prediction has significant role in the fields of healthcare, wellne
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/stress_prediction.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/stress_prediction.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/stress_prediction.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/stress_prediction.csv)
 
 2838 train text samples with 2 different labels. 
 

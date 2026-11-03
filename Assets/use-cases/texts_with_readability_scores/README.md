@@ -22,7 +22,7 @@ The Readability Scoring tool can have a significant impact on industries that he
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/commonlit_readability_text_regression.zip](https://h2o-ht-catalog.s3.amazonaws.com/commonlit_readability_text_regression.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/commonlit_readability_text_regression.zip](https://h2o-ht-catalog.cdn.h2o.ai/commonlit_readability_text_regression.zip)
 
 2834 train texts with readability scores. 
 

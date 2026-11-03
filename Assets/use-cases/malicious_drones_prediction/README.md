@@ -22,7 +22,7 @@ Malicious drones prediction use-case is highly beneficial in security, public sa
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/malicious_drones_prediction.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/malicious_drones_prediction.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/malicious_drones_prediction.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/malicious_drones_prediction.zip)
 
 776 train images with 5 different categories such as Aeroplane,Bird,Drone,Helicopter,Malicious UAV 
 

@@ -22,7 +22,7 @@ In marine biology and ecological research, accurate detection of starfish specie
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/cots_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/cots_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/cots_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/cots_detection.zip)
 
 429 images with their object coordinates 
 

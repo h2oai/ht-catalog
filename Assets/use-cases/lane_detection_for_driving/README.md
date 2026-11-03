@@ -22,7 +22,7 @@ Lane detection technology has a significant impact on the field of autonomous dr
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/lane-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/lane-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/lane-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/lane-detection.zip)
 
 3075 train images and 129 test images with 3 uniques segmentation labels ['left-lane' 'right-lane' 'background'] 
 

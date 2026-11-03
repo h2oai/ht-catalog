@@ -22,7 +22,7 @@ The usefulness AdversarialQA lies in enhancing the reliability and security of q
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_span_prediction/adversarialQA.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_span_prediction/adversarialQA.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/adversarialQA.zip](https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/adversarialQA.zip)
 
 30000 train rows with their details 
 

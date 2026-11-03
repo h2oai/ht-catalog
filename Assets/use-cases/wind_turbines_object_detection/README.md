@@ -22,7 +22,7 @@ Wind turbines object detection technology plays a crucial role in the renewable 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/wind_turbines_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/wind_turbines_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/wind_turbines_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/wind_turbines_detection.zip)
 
 2628 train images with their class ids 
 

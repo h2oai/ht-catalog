@@ -22,7 +22,7 @@ Implementing question answering in contexts can hplays a key roles across multip
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/squad_text_span_prediction.zip](https://h2o-ht-catalog.s3.amazonaws.com/squad_text_span_prediction.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/squad_text_span_prediction.zip](https://h2o-ht-catalog.cdn.h2o.ai/squad_text_span_prediction.zip)
 
 87598 train questions for 18891 contexts 
 

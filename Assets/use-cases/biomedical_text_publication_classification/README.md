@@ -22,7 +22,7 @@ Biomedical text publication classification offers valuable business implications
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/biomedical-text-publication-classification.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/biomedical-text-publication-classification.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/biomedical-text-publication-classification.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/biomedical-text-publication-classification.csv)
 
 7570 train text samples with their labels 
 

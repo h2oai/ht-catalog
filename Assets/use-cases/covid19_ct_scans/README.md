@@ -22,7 +22,7 @@ Chest and lungs segmentation in CT scans has significant role in the healthcare 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/covid_ct_image_semantic_segmentation_3d.zip](https://h2o-ht-catalog.s3.amazonaws.com/covid_ct_image_semantic_segmentation_3d.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/covid_ct_image_semantic_segmentation_3d.zip](https://h2o-ht-catalog.cdn.h2o.ai/covid_ct_image_semantic_segmentation_3d.zip)
 
 20 3d train images with their masks. 
 

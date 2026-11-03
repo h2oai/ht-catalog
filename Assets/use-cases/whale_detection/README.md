@@ -22,7 +22,7 @@ Whale detection in audios plays a key role in industries related to marine resea
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/whale_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/whale_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/whale_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/whale_detection.zip)
 
 30000 audio rows with thei label 0 or 1 
 

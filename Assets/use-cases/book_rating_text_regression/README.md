@@ -22,7 +22,7 @@ Book rating text regression has a significant impact on the publishing industry 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_regression/book-rating-text-regression.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_regression/book-rating-text-regression.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_regression/book-rating-text-regression.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_regression/book-rating-text-regression.csv)
 
 10000 train rows with its label 
 

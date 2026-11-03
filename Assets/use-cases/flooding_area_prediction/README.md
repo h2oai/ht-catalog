@@ -22,7 +22,7 @@ Flooding area segmentation has a crucial business impact in urban planning and d
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/Flooding Area Prediction.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/Flooding Area Prediction.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/Flooding%20Area%20Prediction.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/Flooding%20Area%20Prediction.zip)
 
 231 train images and 58 test images with class id "flood" 
 

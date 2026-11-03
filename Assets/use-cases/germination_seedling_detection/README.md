@@ -22,7 +22,7 @@ Germination seedling detection has applications in agriculture and plant science
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/germination-seeing-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/germination-seeing-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/germination-seeing-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/germination-seeing-detection.zip)
 
 451 train images with their object coordinates 
 

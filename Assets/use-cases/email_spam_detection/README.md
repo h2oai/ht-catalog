@@ -22,7 +22,7 @@ Email spam detection is crucial for maintaining efficient communication channels
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/email_spam_classification.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/email_spam_classification.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/email_spam_classification.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/email_spam_classification.csv)
 
 5729 train examples with their labels (spam or not_spam) 
 

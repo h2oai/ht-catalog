@@ -22,7 +22,7 @@ Implementing Physical Objects NER can have a significant impact on various indus
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/conll2003_text_token_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/conll2003_text_token_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/conll2003_text_token_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/conll2003_text_token_classification.zip)
 
 14041 train, 3250 validation, and 3453 test texts with POS,CHUNK, and NER tags. 
 

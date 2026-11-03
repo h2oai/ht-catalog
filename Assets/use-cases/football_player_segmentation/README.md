@@ -22,7 +22,7 @@ Football player segmentation use-case is highly beneficial in the sports industr
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/football-player-segmentation.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/football-player-segmentation.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/football-player-segmentation.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/football-player-segmentation.zip)
 
 512 train images with their masks 
 

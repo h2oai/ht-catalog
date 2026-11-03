@@ -22,7 +22,7 @@ Audio emotion detection has applications in various fields, including psychology
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/audio_emotion_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/audio_emotion_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/audio_emotion_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/audio_emotion_detection.zip)
 
 12798 train images with 7 uniques labels [Angry, Disgusted, Fearful,Happy,Neutral,Sad,Suprised] 
 

@@ -22,7 +22,7 @@ Transcript generation for US-EN speeches is very useful in various domains. In m
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/minds14_US_speech_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/minds14_US_speech_recognition.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/minds14_US_speech_recognition.zip](https://h2o-ht-catalog.cdn.h2o.ai/minds14_US_speech_recognition.zip)
 
 558 train audio samples with their transcript. 
 

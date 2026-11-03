@@ -22,7 +22,7 @@ Pill detection technology offers significant business benefits, especially in he
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/pill_object_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/pill_object_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/pill_object_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/pill_object_detection.zip)
 
 449 train images with their object coordinates 
 

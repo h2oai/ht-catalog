@@ -22,7 +22,7 @@ Intent classification in speech recognition is very useful across industries. It
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/intent_classification_speech_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/intent_classification_speech_recognition.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/intent_classification_speech_recognition.zip](https://h2o-ht-catalog.cdn.h2o.ai/intent_classification_speech_recognition.zip)
 
 563 train audio samples with their transcript. 
 

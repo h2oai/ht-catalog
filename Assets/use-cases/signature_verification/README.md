@@ -22,7 +22,7 @@ The utilization of computer vision techniques for signature verification, partic
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/sign_verification/sign_verification.zip](https://h2o-ht-catalog.s3.amazonaws.com/sign_verification/sign_verification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/sign_verification/sign_verification.zip](https://h2o-ht-catalog.cdn.h2o.ai/sign_verification/sign_verification.zip)
 
 1100 train images with 55 unique labels. 
 

@@ -22,7 +22,7 @@ SQL create context has important business implications for database management a
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_span_prediction/sql-create-context.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_span_prediction/sql-create-context.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/sql-create-context.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_span_prediction/sql-create-context.csv)
 
 202914 train rows with their details 
 

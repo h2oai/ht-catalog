@@ -85,7 +85,7 @@ def update_all_usecases_readme():
 
 ### Dataset
 
-Dataset link - [{r["public-s3-url"]}](https://{r["public-s3-url"].replace("s3://", "").split('/')[0]}.s3.amazonaws.com/{r["public-s3-url"].replace("s3://", "").split('/', 1)[1]})
+Dataset link - [{r["public-cdn-url"]}]({r["public-cdn-url"]})
 
 {r["dataset-description"]} 
 

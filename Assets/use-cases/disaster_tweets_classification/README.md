@@ -22,7 +22,7 @@ Disaster tweets classification is essential for crisis management and emergency 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/disaster_tweets_classification.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/disaster_tweets_classification.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/disaster_tweets_classification.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/disaster_tweets_classification.csv)
 
 11370 train images with their labels(0 or 1) 
 

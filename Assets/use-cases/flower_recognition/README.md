@@ -22,7 +22,7 @@ Flower recognition use-case is highly beneficial in various industries, includin
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/flower_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/flower_recognition.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/flower_recognition.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/flower_recognition.zip)
 
 5000 train images with their 5 labels such as lilly,lotus,orchid,sunflower,tulip 
 

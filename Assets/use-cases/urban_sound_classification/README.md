@@ -22,7 +22,7 @@ Urban sound classification has practical applications in urban planning, noise p
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/urban_sound_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/urban_sound_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/urban_sound_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/urban_sound_classification.zip)
 
 8732 train images with 10 uniques labels 
 
