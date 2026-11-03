@@ -22,7 +22,7 @@ The Reviews Text Classification use case plays a key role. By accurately classif
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/amazon_reviews_text_classification.csv](https://h2o-ht-catalog.s3.amazonaws.com/amazon_reviews_text_classification.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/amazon_reviews_text_classification.csv](https://h2o-ht-catalog.cdn.h2o.ai/amazon_reviews_text_classification.csv)
 
 48093 train texts with their labels Positive or Negative 
 

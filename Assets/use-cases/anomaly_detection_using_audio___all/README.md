@@ -22,7 +22,7 @@ Implementing anomaly detection using audio - all can have a broad business impac
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/manufacturing/anomaly_detection_using_audio_all.zip](https://h2o-ht-catalog.s3.amazonaws.com/manufacturing/anomaly_detection_using_audio_all.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/manufacturing/anomaly_detection_using_audio_all.zip](https://h2o-ht-catalog.cdn.h2o.ai/manufacturing/anomaly_detection_using_audio_all.zip)
 
 4 types of audios (valve, pumps, fans, slide rails) 
 

@@ -22,7 +22,7 @@ Printer defect detection has a direct impact on the printing industry, quality c
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/3D_printer_defect_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/3D_printer_defect_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/3D_printer_defect_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/3D_printer_defect_classification.zip)
 
 1507 train images with defected or no_defected labels 
 

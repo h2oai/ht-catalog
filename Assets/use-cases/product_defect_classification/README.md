@@ -22,7 +22,7 @@ Product defect classification plays a key role in manufacturing and quality cont
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/manufacturing/product_defect_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/manufacturing/product_defect_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/manufacturing/product_defect_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/manufacturing/product_defect_classification.zip)
 
 6 classes, 1800 image samples split into training and validation 
 

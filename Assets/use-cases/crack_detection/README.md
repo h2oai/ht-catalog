@@ -22,7 +22,7 @@ The surface crack classifier has substantial business impact in industries such 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/surface-crack-detection_v1.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/surface-crack-detection_v1.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/surface-crack-detection_v1.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/surface-crack-detection_v1.zip)
 
 36000 train images and 4000 test images with labels postive and negative 
 

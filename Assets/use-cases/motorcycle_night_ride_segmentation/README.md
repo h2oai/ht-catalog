@@ -22,7 +22,7 @@ Motorcycle night ride segmentation use-case is highly beneficial in areas such a
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/Motorcycle_Night_Ride_Dataset.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/Motorcycle_Night_Ride_Dataset.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/Motorcycle_Night_Ride_Dataset.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/Motorcycle_Night_Ride_Dataset.zip)
 
 200 train imags with their masks 
 

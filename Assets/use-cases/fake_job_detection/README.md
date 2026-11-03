@@ -22,7 +22,7 @@ Fake job detection offers critical business benefits for job platforms, recruitm
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/fake_job_postings.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/fake_job_postings.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/fake_job_postings.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/fake_job_postings.csv)
 
 17880 train text samples with 2 classes(0 or 1) 
 

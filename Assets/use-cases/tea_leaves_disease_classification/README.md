@@ -22,7 +22,7 @@ Accurate classification of tea leaf diseases holds significant role in the agric
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/tea_leaves_disease_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/tea_leaves_disease_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/tea_leaves_disease_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/tea_leaves_disease_classification.zip)
 
 885 images with 8 categories 
 

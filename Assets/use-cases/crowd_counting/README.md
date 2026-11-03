@@ -22,7 +22,7 @@ Crowd counting technology has widespread applications in various industries, inc
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_regression/crowd_counting.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_regression/crowd_counting.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_regression/crowd_counting.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_regression/crowd_counting.zip)
 
 2000 images with their value 
 

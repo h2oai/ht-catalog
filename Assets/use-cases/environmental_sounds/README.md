@@ -22,7 +22,7 @@ Environmental sound classification has significant implications across industrie
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/esc10_audio_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/esc10_audio_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/esc10_audio_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/esc10_audio_classification.zip)
 
 5-second-long 400 audio recordings organized into ten classes. 
 

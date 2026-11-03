@@ -22,7 +22,7 @@ Road detection technology is essential in the fields of autonomous driving, tran
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/road_data.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/road_data.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/road_data.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/road_data.zip)
 
 6226 train images with class id ''road" 
 

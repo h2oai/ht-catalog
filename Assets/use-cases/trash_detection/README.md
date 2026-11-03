@@ -22,7 +22,7 @@ Trash detection plays a key role in waste management and environmental sustainab
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/trash-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/trash-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/trash-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/trash-detection.zip)
 
 369 train images with 4 unique labels {glass,paper,metal, plastic} 
 

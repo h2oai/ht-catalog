@@ -22,7 +22,7 @@ The utilization of computer vision for signature detection yields a profound imp
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/signature_object_detection_v2.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/signature_object_detection_v2.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/signature_object_detection_v2.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/signature_object_detection_v2.zip)
 
 1000 train images with their masks 
 

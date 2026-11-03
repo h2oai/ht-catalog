@@ -22,7 +22,7 @@ The utilization of a smoke detection model has far-reaching implications in vari
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/instance_segmentation/bush_fire_image_segment.zip](https://h2o-ht-catalog.s3.amazonaws.com/instance_segmentation/bush_fire_image_segment.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/instance_segmentation/bush_fire_image_segment.zip](https://h2o-ht-catalog.cdn.h2o.ai/instance_segmentation/bush_fire_image_segment.zip)
 
 64 train images segmented using class_id 'smoke' 
 

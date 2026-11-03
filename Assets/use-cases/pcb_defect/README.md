@@ -22,7 +22,7 @@ PCB (Printed Circuit Board) defect detection is crucial in the electronics manuf
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/pcb_defect.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/pcb_defect.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/pcb_defect.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/pcb_defect.zip)
 
 1500 images with their object labels ['open' 'short' 'mousebite' 'spur' 'copper' 'pin-hole']  
 

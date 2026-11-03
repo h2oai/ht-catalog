@@ -22,7 +22,7 @@ Accurate spoken digits classification plays a key role across multiple industrie
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/amnist_audio_regression.zip](https://h2o-ht-catalog.s3.amazonaws.com/amnist_audio_regression.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/amnist_audio_regression.zip](https://h2o-ht-catalog.cdn.h2o.ai/amnist_audio_regression.zip)
 
 30000 audio samples of spoken digits (0-9) of 60 different speakers. 
 

@@ -22,7 +22,7 @@ It plays a crucial role in early detection, diagnosis, and treatment planning fo
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/brain-tumor-classification-mri-v2.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/brain-tumor-classification-mri-v2.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/brain-tumor-classification-mri-v2.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/brain-tumor-classification-mri-v2.zip)
 
 2870 images with 4 labels.Such as pituitary_tumor,no_tumor,meningioma_tumor,glioma_tumor 
 

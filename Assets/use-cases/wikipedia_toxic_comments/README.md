@@ -22,7 +22,7 @@ Implementing a toxic comment classification system can have several positive imp
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/jigsaw_text_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/jigsaw_text_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/jigsaw_text_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/jigsaw_text_classification.zip)
 
 159571 train texts with 6 labels. Each label has value either 0 or 1. 
 

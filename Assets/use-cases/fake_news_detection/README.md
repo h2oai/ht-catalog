@@ -22,7 +22,7 @@ The usefulness fake news detection in documents is crucial for maintaining trust
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/fake_news_detection.csv](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/fake_news_detection.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/fake_news_detection.csv](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/fake_news_detection.csv)
 
 78617 train rows with their labels 
 

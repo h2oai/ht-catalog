@@ -22,7 +22,7 @@ Face mask detection has business impact in various industries, particularly in p
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/face-mask-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/face-mask-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/face-mask-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/face-mask-detection.zip)
 
 853 train images with their masks 
 

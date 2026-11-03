@@ -22,7 +22,7 @@ Crop classification plays a crucial role in agriculture and precision farming. B
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/Agricultural-crops.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/Agricultural-crops.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Agricultural-crops.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Agricultural-crops.zip)
 
 829 train images with 30 different classes 
 

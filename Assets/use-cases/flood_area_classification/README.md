@@ -22,7 +22,7 @@ Flood area multi-label segmentation has a valuable business impact in disaster r
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/flood_segmentation_multi_label.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/flood_segmentation_multi_label.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/flood_segmentation_multi_label.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/flood_segmentation_multi_label.zip)
 
 1450 train images and 448 test images with segmenting labels  ['Background' 'Building-flooded' 'Building-non-flooded' 'Road-flooded' 'Road-non-flooded' 'Water' 'Tree' 'Vehicle' 'Pool' 'Grass'] 
 

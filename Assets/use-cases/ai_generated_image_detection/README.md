@@ -22,7 +22,7 @@ AI generated image detection plays a crucial role in addressing the challenges a
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/ai-generated-image-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/ai-generated-image-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/ai-generated-image-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/ai-generated-image-detection.zip)
 
 100000 train images and 20000 test images with 2 labels [ fake or real ]  
 

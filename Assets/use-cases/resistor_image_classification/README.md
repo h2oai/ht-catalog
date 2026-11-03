@@ -22,7 +22,7 @@ Resistor image classification is very useful in the electronics manufacturing an
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/Resistor.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/Resistor.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Resistor.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Resistor.zip)
 
 2881 train images with 37 different categories 
 

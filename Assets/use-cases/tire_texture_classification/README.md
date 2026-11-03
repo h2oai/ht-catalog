@@ -22,7 +22,7 @@ Tire texture classification use-case is highly beneficial in the automotive indu
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/tire_texture_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/tire_texture_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/tire_texture_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/tire_texture_classification.zip)
 
 703 train images with their labels such as cracked or normal. 
 

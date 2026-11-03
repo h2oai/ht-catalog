@@ -22,7 +22,7 @@ The usefulness emergency vehicle siren sounds detection is vital in traffic mana
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/emergency-vehicle-siren-sounds.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/emergency-vehicle-siren-sounds.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/emergency-vehicle-siren-sounds.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/emergency-vehicle-siren-sounds.zip)
 
 600 train audio samples with 3 different labels such as ambulance,traffic,firetruck. 
 

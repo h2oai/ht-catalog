@@ -22,7 +22,7 @@ The identification and analysis of protest-related texts can hplays a key roles 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/protests.zip](https://h2o-ht-catalog.s3.amazonaws.com/protests.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/protests.zip](https://h2o-ht-catalog.cdn.h2o.ai/protests.zip)
 
 21020 train and 5204 test texts with one label. The label has value either 0 or 1. 
 

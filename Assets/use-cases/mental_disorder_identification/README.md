@@ -22,7 +22,7 @@ The usefulness mental disorder identification is significant in healthcare and w
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_classification/mental-disorders-identification.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_classification/mental-disorders-identification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_classification/mental-disorders-identification.zip](https://h2o-ht-catalog.cdn.h2o.ai/text_classification/mental-disorders-identification.zip)
 
 701787 train samples with 2 classes 
 

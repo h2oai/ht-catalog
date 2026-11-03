@@ -22,7 +22,7 @@ In fire detection systems, accurate smoke classification enhances early warning 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/wildfire_image_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/wildfire_image_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/wildfire_image_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/wildfire_image_classification.zip)
 
 343 images with label  0 or 1  
 

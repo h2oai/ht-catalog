@@ -22,7 +22,7 @@ Speaker recognition is very useful in various industries, including security, te
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/speaker_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/speaker_recognition.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/speaker_recognition.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/speaker_recognition.zip)
 
 2511 train audio samples with 50 different speakers 
 

@@ -22,7 +22,7 @@ Scientific papers NER is very useful in scientific research and knowledge manage
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/text_sequence_to_sequence/scientific papers.zip](https://h2o-ht-catalog.s3.amazonaws.com/text_sequence_to_sequence/scientific papers.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/text_sequence_to_sequence/scientific%20papers.zip](https://h2o-ht-catalog.cdn.h2o.ai/text_sequence_to_sequence/scientific%20papers.zip)
 
 202914 train rows with their summaries 
 

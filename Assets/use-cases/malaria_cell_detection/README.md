@@ -22,7 +22,7 @@ Malaria cell detection is very useful in the healthcare and medical diagnostics 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/Malaria_cell_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/Malaria_cell_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Malaria_cell_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/Malaria_cell_detection.zip)
 
 27558 train images with their labels 
 

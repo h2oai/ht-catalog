@@ -22,7 +22,7 @@ The fiber segmentation in concrete has significant role in the construction and 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/fiber-augmented.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/fiber-augmented.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/fiber-augmented.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/fiber-augmented.zip)
 
 7902 train images with their mask 
 

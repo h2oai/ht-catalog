@@ -22,7 +22,7 @@ Improving search query well-formedness can hplays a key roles for search engine 
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/wellformed_query_text_regression.csv](https://h2o-ht-catalog.s3.amazonaws.com/wellformed_query_text_regression.csv)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/wellformed_query_text_regression.csv](https://h2o-ht-catalog.cdn.h2o.ai/wellformed_query_text_regression.csv)
 
 17375 train texts with one label. The label has value between 0 to 1. 
 

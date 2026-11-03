@@ -22,7 +22,7 @@ Bird voice classification plays a crucial role in ornithology, ecological resear
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/whale_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/whale_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/whale_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/whale_detection.zip)
 
 5407 train images and 687 test images with 41 uniques labels 
 

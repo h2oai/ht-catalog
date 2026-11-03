@@ -22,7 +22,7 @@ Traffic light detection is a crucial component of intelligent transportation sys
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/traffic-light-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/traffic-light-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/traffic-light-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/traffic-light-detection.zip)
 
 1222 train images with green,red,yellow labels 
 

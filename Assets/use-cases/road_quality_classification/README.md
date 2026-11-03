@@ -22,7 +22,7 @@ By automatically assessing the quality of road surfaces, this technology helps t
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/road_image_sih_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/road_image_sih_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/road_image_sih_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/road_image_sih_classification.zip)
 
 1659 images with 4 labels.Such as good,poor,very_poor,satisfactory 
 

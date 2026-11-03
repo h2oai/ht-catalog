@@ -22,7 +22,7 @@ Steel defect detection plays a crucial role in the manufacturing and constructio
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_segmentation/steel_defect_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_segmentation/steel_defect_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/steel_defect_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_segmentation/steel_defect_detection.zip)
 
 7095 train images with 4 class ids 
 

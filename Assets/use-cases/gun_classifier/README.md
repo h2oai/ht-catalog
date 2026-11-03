@@ -22,7 +22,7 @@ Gun type classification use-case is highly beneficial in security and public saf
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/audio_classification/Gun_sound_detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/audio_classification/Gun_sound_detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/Gun_sound_detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/audio_classification/Gun_sound_detection.zip)
 
 851 train audio samples with 9 different classes. 
 

@@ -22,7 +22,7 @@ Pest species classification plays a crucial role in industries such as agricultu
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/image_classification/pest_classification.zip](https://h2o-ht-catalog.s3.amazonaws.com/image_classification/pest_classification.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/image_classification/pest_classification.zip](https://h2o-ht-catalog.cdn.h2o.ai/image_classification/pest_classification.zip)
 
 55865 train images with 132 pest species 
 

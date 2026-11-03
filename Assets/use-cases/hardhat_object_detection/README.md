@@ -22,7 +22,7 @@ Hardhat object detection plays a vital role in construction site safety and work
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/object_detection/hardhat-object-detection.zip](https://h2o-ht-catalog.s3.amazonaws.com/object_detection/hardhat-object-detection.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/object_detection/hardhat-object-detection.zip](https://h2o-ht-catalog.cdn.h2o.ai/object_detection/hardhat-object-detection.zip)
 
 4750 train images with their annotations 
 

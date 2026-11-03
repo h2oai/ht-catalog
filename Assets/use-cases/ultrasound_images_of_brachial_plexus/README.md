@@ -22,7 +22,7 @@ Nerves segmentation in ultrasound images is very useful in the healthcare indust
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/nerves_image_semantic_segmentation.zip](https://h2o-ht-catalog.s3.amazonaws.com/nerves_image_semantic_segmentation.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/nerves_image_semantic_segmentation.zip](https://h2o-ht-catalog.cdn.h2o.ai/nerves_image_semantic_segmentation.zip)
 
 2323 train images with their masks. 
 

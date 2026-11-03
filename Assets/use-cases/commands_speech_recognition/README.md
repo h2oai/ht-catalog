@@ -22,7 +22,7 @@ Implementing commands speech recognition is very useful across industries. It en
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/commands_speech_recognition.zip](https://h2o-ht-catalog.s3.amazonaws.com/commands_speech_recognition.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/commands_speech_recognition.zip](https://h2o-ht-catalog.cdn.h2o.ai/commands_speech_recognition.zip)
 
 6798 train audio samples with their transcript. 
 

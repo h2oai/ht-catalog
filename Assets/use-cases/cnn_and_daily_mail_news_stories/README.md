@@ -22,7 +22,7 @@ Implementing text summarization in news stories can have a significant impact on
 
 ### Dataset
 
-Dataset link - [s3://h2o-ht-catalog/cnn_dailymail_text_sequence_to_sequence.zip](https://h2o-ht-catalog.s3.amazonaws.com/cnn_dailymail_text_sequence_to_sequence.zip)
+Dataset link - [https://h2o-ht-catalog.cdn.h2o.ai/cnn_dailymail_text_sequence_to_sequence.zip](https://h2o-ht-catalog.cdn.h2o.ai/cnn_dailymail_text_sequence_to_sequence.zip)
 
 4000 train, 4000 validation, and 4000 test texts with summaries. 
 
